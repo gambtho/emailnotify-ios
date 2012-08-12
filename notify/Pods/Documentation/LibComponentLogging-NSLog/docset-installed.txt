@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Tom/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.LibComponentLogging-NSLog-1.0.4.docset
+Time: 2012-08-12 01:04:24 +0000

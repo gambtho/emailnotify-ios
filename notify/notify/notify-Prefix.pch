@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'notify' target in the 'notify' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <RestKit/RestKit.h>
+    #import "TestFlight.h"
+    #import "Constants.h"
+    #import "DDLog.h"
+    #import "DDASLLogger.h"
+    #import "DDTTYLogger.h"
+    #import "Notification.h"
+#endif
+
+#define FATAL_CORE_DATA_ERROR(__error__)\
+NSLog(@"*** Fatal error in %s:%d\n%@\n%@", __FILE__, __LINE__, error, [error userInfo]);\
+[(id)[[UIApplication sharedApplication] delegate] performSelector:@selector(fatalCoreDataError:) withObject:error];
