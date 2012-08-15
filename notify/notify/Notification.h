@@ -21,4 +21,7 @@
 @property (nonatomic) BOOL read;
 @property (nonatomic) BOOL highImportance;
 
+-(BOOL) isRead;
+
+
 @end

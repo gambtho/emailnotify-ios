@@ -23,7 +23,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     if (self) {
         self.objectStore = theObjectStore;
         
-        [self setObjectMapping:[self notificationObjectMapping] forResourcePathPattern:TASK_PATH withFetchRequestBlock:^NSFetchRequest *(NSString *resourcePath) {
+        [self setObjectMapping:[self notificationObjectMapping] forResourcePathPattern:NOTIFICATION_PATH withFetchRequestBlock:^NSFetchRequest *(NSString *resourcePath) {
             NSFetchRequest *fetchRequest = [Notification fetchRequest];
             fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"sentDate" ascending:YES]];
             return fetchRequest;

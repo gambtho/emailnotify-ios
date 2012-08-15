@@ -11,12 +11,12 @@
 @implementation Constants
 
 #if DEBUG
-NSString * const HOST = @"http://10.0.1.18:8888";
+NSString * const HOST = @"http://10.0.1.11:8888";
 #else
 NSString * const HOST = @"http://notifyweb.appspot.com";
 #endif
 
-NSString * const TASK_PATH = @"/notifyweb/notifications";
+NSString * const NOTIFICATION_PATH = @"/notifyweb/notifications";
 NSString * const DB_NAME = @"Notify.sqlite";
 NSString * const TF_ID = @"846469c44299f82f9bf854c9258b1b6c_MTIwMzYyMjAxMi0wOC0xMSAyMTo1NTowMS44NTg2OTU";
 

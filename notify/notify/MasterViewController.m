@@ -7,14 +7,19 @@
 //
 
 #import "MasterViewController.h"
-
+#import "NotificationCell.h"
 #import "DetailViewController.h"
+#import "UITableViewController+DateString.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation MasterViewController
+
+static const int ddLogLevel = LOG_LEVEL_INFO;
+
+@synthesize objectManager;
 
 @synthesize userEmail;
 
@@ -27,6 +32,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self getNotifications];
+    
+    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
@@ -79,7 +88,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    NotificationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -125,38 +134,23 @@
 
 - (NSFetchedResultsController *)fetchedResultsController
 {
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
+    DDLogVerbose(@"Getting fetched results controller");
+    if (_fetchedResultsController == nil) {
+        
+        NSFetchRequest *fetchRequest = [[[RKObjectManager sharedManager]
+                                         mappingProvider] fetchRequestForResourcePath:NOTIFICATION_PATH];
+        
+        [NSFetchedResultsController deleteCacheWithName:@"Master"];
+        
+        [fetchRequest setFetchBatchSize:20];
+        
+        [fetchRequest setPredicate:[self currentPredicate]];
+        
+        _fetchedResultsController = [[NSFetchedResultsController alloc]
+                                    initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+        
+        _fetchedResultsController.delegate = self;
     }
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Notification" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-    
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"sentDate" ascending:NO];
-    NSArray *sortDescriptors = @[sortDescriptor];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
-    aFetchedResultsController.delegate = self;
-    self.fetchedResultsController = aFetchedResultsController;
-    
-	NSError *error = nil;
-	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
-	}
-    
     return _fetchedResultsController;
 }    
 
@@ -208,6 +202,18 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
+    
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    else
+    {
+        DDLogInfo(@"Saved context");
+    }
 }
 
 /*
@@ -222,8 +228,84 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    DDLogVerbose(@"Configuring cell");
+    Notification *notification = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NotificationCell *notifyCell = (NotificationCell *)cell;
+    notifyCell.subject.text = notification.subject;
+    notifyCell.sentDate.text = [self getDateString:notification.sentDate];
+    notifyCell.fromAddress.text = notification.fromAddress;
+    notifyCell.read.hidden = [notification isRead];
+}
+
+#pragma Data Access
+
+-(NSPredicate *)currentPredicate
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"completor == %@", self.userEmail];
+    return predicate;
+    
+}
+
+-(void)getNotifications
+{
+    DDLogVerbose(@"Getting notifications");
+    DDLogInfo(@"Host name is %@", HOST);
+    if(userEmail!=nil)
+    {
+        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.userEmail, @"user", nil];
+        NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
+        DDLogVerbose(@"%@", resourcePath);
+        [objectManager loadObjectsAtResourcePath:resourcePath delegate:self];
+    }
+}
+
+-(void)performFetch
+{
+    DDLogVerbose(@"Performing fetch");
+    NSError *error;
+    if(![self.fetchedResultsController performFetch:&error])
+    {
+        FATAL_CORE_DATA_ERROR(error);
+        return;
+    }
+    else{
+#if DEBUG
+        DDLogVerbose(@"Fetch succesful");
+        id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:0];
+        DDLogInfo(@"Number objects fetched: %d", [sectionInfo numberOfObjects]);
+#endif
+    }
+}
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
+{
+    DDLogError(@"Error: %@", [error localizedDescription]);
+    [self performFetch];
+}
+
+- (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
+    DDLogVerbose(@"response code: %d", [response statusCode]);
+    DDLogVerbose(@"response is: %@", [response bodyAsString]);
+}
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
+{
+    DDLogInfo(@"Objectloader loaded objects[%d]", [objects count]);
+    [self performFetch];
+}
+
+-(void)deleteRemote:(Notification *)notification {
+    DDLogVerbose(@"Contacting server to delete %@", notification.subject);
+    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 notification.notificationId, @"notificationId",
+                                 nil];
+    NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
+    
+    [objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+        loader.delegate = self;
+        loader.method = RKRequestMethodDELETE;
+    }];
 }
 
 @end
