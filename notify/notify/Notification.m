@@ -15,7 +15,7 @@
 @dynamic userEmail;
 @dynamic messageBody;
 @dynamic sentDate;
-@dynamic notificationId;
+@dynamic notifyId;
 @dynamic subject;
 @dynamic read;
 @dynamic highImportance;
@@ -25,7 +25,7 @@
     return self.read;
 }
 
--(void)setRead:(BOOL)read
+-(void)setisRead:(BOOL)read
 {
     self.read = read;
 }

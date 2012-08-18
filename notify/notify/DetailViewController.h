@@ -10,7 +10,9 @@
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
-
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) Notification *notifyItem;
+@property (weak, nonatomic) IBOutlet UILabel *subjectLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fromAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sendDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *messageBodyLabel;
 @end

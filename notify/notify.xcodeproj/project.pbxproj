@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4ACAB8FA67624A89A945BF82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80669BB3B0472EA5336FD8 /* libPods.a */; };
 		E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2062A2C15DB31CE00AD5674 /* NotificationCell.m */; };
-		E2062A3115DB360900AD5674 /* UITableViewController+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2062A3015DB360800AD5674 /* UITableViewController+DateString.m */; };
 		E2E40E9015D733D1005AF448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E8F15D733D1005AF448 /* UIKit.framework */; };
 		E2E40E9215D733D1005AF448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E9115D733D1005AF448 /* Foundation.framework */; };
 		E2E40E9415D733D1005AF448 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E9315D733D1005AF448 /* CoreGraphics.framework */; };
@@ -21,6 +20,7 @@
 		E2E40EA815D733D1005AF448 /* notify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EA615D733D1005AF448 /* notify.xcdatamodeld */; };
 		E2E40EAB15D733D1005AF448 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAA15D733D1005AF448 /* MasterViewController.m */; };
 		E2E40EAE15D733D1005AF448 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAD15D733D1005AF448 /* DetailViewController.m */; };
+		E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */; };
 		E2FCFDF515D73A8700030A2B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFDF415D73A8700030A2B /* Constants.m */; };
 		E2FCFE0215D7444300030A2B /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0115D7444300030A2B /* MappingProvider.m */; };
 		E2FCFE0815D745D100030A2B /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0715D745D100030A2B /* Notification.m */; };
@@ -31,8 +31,6 @@
 		A7304360D95E42B8872FC721 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E2062A2B15DB31CE00AD5674 /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
 		E2062A2C15DB31CE00AD5674 /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
-		E2062A2F15DB360800AD5674 /* UITableViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+DateString.h"; sourceTree = "<group>"; };
-		E2062A3015DB360800AD5674 /* UITableViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+DateString.m"; sourceTree = "<group>"; };
 		E2E40E8B15D733D1005AF448 /* notify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E40E8F15D733D1005AF448 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2E40E9115D733D1005AF448 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +48,8 @@
 		E2E40EAA15D733D1005AF448 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		E2E40EAC15D733D1005AF448 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		E2E40EAD15D733D1005AF448 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateString.h"; sourceTree = "<group>"; };
+		E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateString.m"; sourceTree = "<group>"; };
 		E2FCFDF315D73A8700030A2B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E2FCFDF415D73A8700030A2B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		E2FCFE0015D7444300030A2B /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 				E2E40E9815D733D1005AF448 /* Supporting Files */,
 				E2FCFE0015D7444300030A2B /* MappingProvider.h */,
 				E2FCFE0115D7444300030A2B /* MappingProvider.m */,
-				E2062A2F15DB360800AD5674 /* UITableViewController+DateString.h */,
-				E2062A3015DB360800AD5674 /* UITableViewController+DateString.m */,
+				E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */,
+				E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */,
 			);
 			path = notify;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				E2FCFE0215D7444300030A2B /* MappingProvider.m in Sources */,
 				E2FCFE0815D745D100030A2B /* Notification.m in Sources */,
 				E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */,
-				E2062A3115DB360900AD5674 /* UITableViewController+DateString.m in Sources */,
+				E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

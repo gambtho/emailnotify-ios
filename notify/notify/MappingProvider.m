@@ -39,13 +39,13 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     DDLogVerbose(@"creating notificationMapping");
     RKManagedObjectMapping *mapping = [RKManagedObjectMapping mappingForClass:[Notification class]
                                                          inManagedObjectStore:self.objectStore];
-    mapping.primaryKeyAttribute = @"notifcationId";
+    mapping.primaryKeyAttribute = @"notifyId";
+    [mapping mapKeyPath:@"notifyId" toAttribute:@"notifyId"];
     [mapping mapKeyPath:@"fromAddress" toAttribute:@"fromAddress"];
     [mapping mapKeyPath:@"subject" toAttribute:@"subject"];
     [mapping mapKeyPath:@"userEmail" toAttribute:@"userEmail"];
     [mapping mapKeyPath:@"messageBody" toAttribute:@"messageBody"];
     [mapping mapKeyPath:@"sentDate" toAttribute:@"sentDate"];
-    [mapping mapKeyPath:@"id" toAttribute:@"notificationId"];
     [mapping mapKeyPath:@"read" toAttribute:@"read"];
     [mapping mapKeyPath:@"highImportance" toAttribute:@"highImportance"];
 

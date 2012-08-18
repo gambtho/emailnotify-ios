@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "UIViewController+DateString.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -15,11 +16,14 @@
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
+@synthesize subjectLabel;
+@synthesize fromAddressLabel;
+@synthesize sendDateLabel;
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setNotification:(Notification *)newNotifyItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+    if (_notifyItem != newNotifyItem) {
+        _notifyItem = newNotifyItem;
         
         // Update the view.
         [self configureView];
@@ -30,8 +34,12 @@
 {
     // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+    if (self.notifyItem) {
+
+        self.messageBodyLabel.text = self.notifyItem.subject;
+        self.sendDateLabel.text = [self getDateString:self.notifyItem.sentDate];
+        self.fromAddressLabel.text = self.notifyItem.fromAddress;
+        self.subjectLabel.text = self.notifyItem.subject;
     }
 }
 
@@ -44,6 +52,9 @@
 
 - (void)viewDidUnload
 {
+    [self setSubjectLabel:nil];
+    [self setFromAddressLabel:nil];
+    [self setSendDateLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

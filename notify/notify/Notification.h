@@ -16,12 +16,13 @@
 @property (nonatomic, retain) NSString * userEmail;
 @property (nonatomic, retain) NSString * messageBody;
 @property (nonatomic, retain) NSDate * sentDate;
-@property (nonatomic, retain) NSNumber * notificationId;
+@property (nonatomic, retain) NSNumber * notifyId;
 @property (nonatomic, retain) NSString * subject;
 @property (nonatomic) BOOL read;
 @property (nonatomic) BOOL highImportance;
 
 -(BOOL) isRead;
+-(void) setRead:(BOOL)read;
 
 
 @end

@@ -10,7 +10,7 @@
         <attribute name="fromAddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="highImportance" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="messageBody" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="notificationId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="notifyId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="read" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="sentDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>

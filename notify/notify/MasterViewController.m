@@ -9,7 +9,7 @@
 #import "MasterViewController.h"
 #import "NotificationCell.h"
 #import "DetailViewController.h"
-#import "UITableViewController+DateString.h"
+#import "UIViewController+DateString.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -17,7 +17,7 @@
 
 @implementation MasterViewController
 
-static const int ddLogLevel = LOG_LEVEL_INFO;
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @synthesize objectManager;
 
@@ -31,15 +31,16 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+
+    self.userEmail = @"thomas_gamble@homedepot.com";
     [self getNotifications];
-    
+
+    [self performFetch];
     
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+//    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)viewDidUnload
@@ -53,6 +54,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+/*
 - (void)insertNewObject:(id)sender
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
@@ -61,7 +63,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
+//    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
     
     // Save the context.
     NSError *error = nil;
@@ -72,6 +74,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         abort();
     }
 }
+*/
 
 #pragma mark - Table View
 
@@ -102,8 +105,13 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Notification *notificationToDelete = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+        
+        [self deleteRemote:notificationToDelete];
+        [context deleteObject:notificationToDelete];
         
         NSError *error = nil;
         if (![context save:&error]) {
@@ -125,9 +133,11 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
+        Notification *notifyItem = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [notifyItem setRead:TRUE];
+        [[segue destinationViewController] setNotifyItem:notifyItem];
     }
+    [self.tableView reloadData];
 }
 
 #pragma mark - Fetched results controller
@@ -214,6 +224,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     {
         DDLogInfo(@"Saved context");
     }
+ 
 }
 
 /*
@@ -235,14 +246,21 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     notifyCell.subject.text = notification.subject;
     notifyCell.sentDate.text = [self getDateString:notification.sentDate];
     notifyCell.fromAddress.text = notification.fromAddress;
-    notifyCell.read.hidden = [notification isRead];
+    if(![notification isRead])
+       {
+           notifyCell.read.hidden = YES;
+       }
+    else
+       {
+           notifyCell.read.hidden = NO;
+       }
 }
 
 #pragma Data Access
 
 -(NSPredicate *)currentPredicate
 {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"completor == %@", self.userEmail];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userEmail == %@", self.userEmail];
     return predicate;
     
 }
@@ -296,12 +314,13 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 }
 
 -(void)deleteRemote:(Notification *)notification {
+    DDLogVerbose(@"Notification for delete is %d", [notification.notifyId intValue]);
     DDLogVerbose(@"Contacting server to delete %@", notification.subject);
     NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                 notification.notificationId, @"notificationId",
+                                 notification.notifyId, @"id",
                                  nil];
     NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
-    
+    DDLogInfo(@"Resource path for delete is %@", resourcePath);
     [objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
         loader.delegate = self;
         loader.method = RKRequestMethodDELETE;
