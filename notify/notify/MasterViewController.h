@@ -10,12 +10,13 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) RKObjectManager *objectManager;
 
+@property (nonatomic) BOOL pinValidated;
 @property (strong, nonatomic) NSString *userEmail;
 
 @end

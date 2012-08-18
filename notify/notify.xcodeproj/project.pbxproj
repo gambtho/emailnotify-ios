@@ -21,6 +21,11 @@
 		E2E40EAB15D733D1005AF448 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAA15D733D1005AF448 /* MasterViewController.m */; };
 		E2E40EAE15D733D1005AF448 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAD15D733D1005AF448 /* DetailViewController.m */; };
 		E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */; };
+		E2F31C2A15DF2B960061B55E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F31C2915DF2B960061B55E /* Icon.png */; };
+		E2F31C2C15DF2BA60061B55E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F31C2B15DF2BA60061B55E /* Icon.png */; };
+		E2F31C2F15E049780061B55E /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F31C2E15E049780061B55E /* KeychainWrapper.m */; };
+		E2F31C3115E04AC80061B55E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F31C3015E04AC80061B55E /* Security.framework */; };
+		E2F31C3315E04AD00061B55E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F31C3215E04AD00061B55E /* Twitter.framework */; };
 		E2FCFDF515D73A8700030A2B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFDF415D73A8700030A2B /* Constants.m */; };
 		E2FCFE0215D7444300030A2B /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0115D7444300030A2B /* MappingProvider.m */; };
 		E2FCFE0815D745D100030A2B /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0715D745D100030A2B /* Notification.m */; };
@@ -50,6 +55,12 @@
 		E2E40EAD15D733D1005AF448 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateString.h"; sourceTree = "<group>"; };
 		E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateString.m"; sourceTree = "<group>"; };
+		E2F31C2915DF2B960061B55E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E2F31C2B15DF2BA60061B55E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E2F31C2D15E049780061B55E /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		E2F31C2E15E049780061B55E /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		E2F31C3015E04AC80061B55E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E2F31C3215E04AD00061B55E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		E2FCFDF315D73A8700030A2B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E2FCFDF415D73A8700030A2B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		E2FCFE0015D7444300030A2B /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
@@ -63,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F31C3315E04AD00061B55E /* Twitter.framework in Frameworks */,
+				E2F31C3115E04AC80061B55E /* Security.framework in Frameworks */,
 				E2E40E9015D733D1005AF448 /* UIKit.framework in Frameworks */,
 				E2E40E9215D733D1005AF448 /* Foundation.framework in Frameworks */,
 				E2E40E9415D733D1005AF448 /* CoreGraphics.framework in Frameworks */,
@@ -77,6 +90,9 @@
 		E2E40E8015D733D1005AF448 = {
 			isa = PBXGroup;
 			children = (
+				E2F31C3215E04AD00061B55E /* Twitter.framework */,
+				E2F31C3015E04AC80061B55E /* Security.framework */,
+				E2F31C2B15DF2BA60061B55E /* Icon.png */,
 				E2E40E9715D733D1005AF448 /* notify */,
 				E2E40E8E15D733D1005AF448 /* Frameworks */,
 				E2E40E8C15D733D1005AF448 /* Products */,
@@ -107,6 +123,8 @@
 		E2E40E9715D733D1005AF448 /* notify */ = {
 			isa = PBXGroup;
 			children = (
+				E2F31C2D15E049780061B55E /* KeychainWrapper.h */,
+				E2F31C2E15E049780061B55E /* KeychainWrapper.m */,
 				E2FCFE0615D745D100030A2B /* Notification.h */,
 				E2FCFE0715D745D100030A2B /* Notification.m */,
 				E2E40EA015D733D1005AF448 /* AppDelegate.h */,
@@ -133,6 +151,7 @@
 		E2E40E9815D733D1005AF448 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2F31C2915DF2B960061B55E /* Icon.png */,
 				E2E40E9915D733D1005AF448 /* notify-Info.plist */,
 				E2E40E9A15D733D1005AF448 /* InfoPlist.strings */,
 				E2E40E9D15D733D1005AF448 /* main.m */,
@@ -195,6 +214,8 @@
 			files = (
 				E2E40E9C15D733D1005AF448 /* InfoPlist.strings in Resources */,
 				E2E40EA515D733D1005AF448 /* MainStoryboard.storyboard in Resources */,
+				E2F31C2A15DF2B960061B55E /* Icon.png in Resources */,
+				E2F31C2C15DF2BA60061B55E /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +253,7 @@
 				E2FCFE0815D745D100030A2B /* Notification.m in Sources */,
 				E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */,
 				E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */,
+				E2F31C2F15E049780061B55E /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

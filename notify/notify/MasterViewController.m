@@ -10,6 +10,7 @@
 #import "NotificationCell.h"
 #import "DetailViewController.h"
 #import "UIViewController+DateString.h"
+#import "KeychainWrapper.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -20,7 +21,7 @@
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @synthesize objectManager;
-
+@synthesize pinValidated;
 @synthesize userEmail;
 
 - (void)awakeFromNib
@@ -32,7 +33,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
     [super viewDidLoad];
 
-    self.userEmail = @"thomas_gamble@homedepot.com";
+    //self.userEmail = @"thomas_gamble@homedepot.com";
+    self.pinValidated = NO;
+    
     [self getNotifications];
 
     [self performFetch];
@@ -48,6 +51,141 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
+-(void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self presentAlertViewForLogin];
+}
+
+- (void)presentAlertViewForLogin
+{
+    
+    // 1
+    BOOL hasPin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
+    
+    // 2
+    if (hasPin) {
+        // 3
+        NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+        self.userEmail = user;
+        NSString *message = [NSString stringWithFormat:@"What is %@'s password?", user];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
+                                                        message:message
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Done", nil];
+        // 4
+        [alert setAlertViewStyle:UIAlertViewStyleSecureTextInput]; // Gives us the password field
+        alert.tag = kAlertTypePIN;
+        // 5
+        UITextField *pinField = [alert textFieldAtIndex:0];
+        pinField.delegate = self;
+        pinField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        pinField.tag = kTextFieldPIN;
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Setup Credentials"
+                                                        message:@"Secure your notifications!"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Done", nil];
+        // 6
+        [alert setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+        alert.tag = kAlertTypeSetup;
+        UITextField *nameField = [alert textFieldAtIndex:0];
+        nameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        nameField.placeholder = @"Name"; // Replace the standard placeholder text with something more applicable
+        nameField.delegate = self;
+        nameField.tag = kTextFieldName;
+        UITextField *passwordField = [alert textFieldAtIndex:1]; // Capture the Password text field since there are 2 fields
+        passwordField.delegate = self;
+        passwordField.tag = kTextFieldPassword;
+        [alert show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == kAlertTypePIN) {
+        if (buttonIndex == 1 && self.pinValidated) { // User selected "Done"
+            [self performFetch];
+            self.pinValidated = NO;
+        } else { // User selected "Cancel"
+            [self presentAlertViewForLogin];
+            self.userEmail = nil;
+        }
+    } else if (alertView.tag == kAlertTypeSetup) {
+        if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
+            [self performFetch];
+        } else { // User selected "Cancel"
+            [self presentAlertViewForLogin];
+            self.userEmail = nil;
+        }
+    }
+}
+
+// Helper method to congregate the Name and PIN fields for validation.
+- (BOOL)credentialsValidated
+{
+    NSString *name = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+    BOOL pin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
+    if (name && pin) {
+        self.userEmail = name;
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+#pragma mark - Text Field + Alert View Methods
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    // 1
+    switch (textField.tag) {
+        case kTextFieldPIN: // We go here if this is the 2nd+ time used (we've already set a PIN at Setup).
+            NSLog(@"User entered PIN to validate");
+            if ([textField.text length] > 0) {
+                // 2
+                NSUInteger fieldHash = [textField.text hash]; // Get the hash of the entered PIN, minimize contact with the real password
+                // 3
+                if ([KeychainWrapper compareKeychainValueForMatchingPIN:fieldHash]) { // Compare them
+                    NSLog(@"** User Authenticated!!");
+                    self.pinValidated = YES;
+                } else {
+                    NSLog(@"** Wrong Password :(");
+                    self.pinValidated = NO;
+                }
+            }
+            break;
+        case kTextFieldName: // 1st part of the Setup flow.
+            NSLog(@"User entered name");
+            if ([textField.text length] > 0) {
+                [[NSUserDefaults standardUserDefaults] setValue:textField.text forKey:USERNAME];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }
+            break;
+        case kTextFieldPassword: // 2nd half of the Setup flow.
+            NSLog(@"User entered PIN");
+            if ([textField.text length] > 0) {
+                NSUInteger fieldHash = [textField.text hash];
+                // 4
+                NSString *fieldString = [KeychainWrapper securedSHA256DigestHashForPIN:fieldHash];
+                NSLog(@"** Password Hash - %@", fieldString);
+                // Save PIN hash to the keychain (NEVER store the direct PIN)
+                if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                    NSLog(@"** Key saved successfully to Keychain!!");
+                }
+            }
+            break;
+        default:
+            break;
+    }
+}
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
