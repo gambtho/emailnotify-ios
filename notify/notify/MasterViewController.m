@@ -16,13 +16,16 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation MasterViewController
+@implementation MasterViewController {
+    NSString *enteredUser;
+    NSString *enteredPin;
+}
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @synthesize objectManager;
 @synthesize pinValidated;
-@synthesize userEmail;
+@synthesize loggedInUser;
 
 - (void)awakeFromNib
 {
@@ -68,8 +71,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     if (hasPin) {
         // 3
         NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
-        self.userEmail = user;
-        NSString *message = [NSString stringWithFormat:@"What is %@'s password?", user];
+        //self.userEmail = user;
+        NSString *message = [NSString stringWithFormat:@"Username is %@?", user];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
                                                         message:message
                                                        delegate:self
@@ -112,15 +115,15 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             [self performFetch];
             self.pinValidated = NO;
         } else { // User selected "Cancel"
-            [self presentAlertViewForLogin];
-            self.userEmail = nil;
+            //[self presentAlertViewForLogin];
+            self.loggedInUser = nil;
         }
     } else if (alertView.tag == kAlertTypeSetup) {
         if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
             [self performFetch];
         } else { // User selected "Cancel"
-            [self presentAlertViewForLogin];
-            self.userEmail = nil;
+           // [self presentAlertViewForLogin];
+            self.loggedInUser = nil;
         }
     }
 }
@@ -131,7 +134,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     NSString *name = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
     BOOL pin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
     if (name && pin) {
-        self.userEmail = name;
         return YES;
     } else {
         return NO;
@@ -151,7 +153,27 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                 // 3
                 if ([KeychainWrapper compareKeychainValueForMatchingPIN:fieldHash]) { // Compare them
                     NSLog(@"** User Authenticated!!");
+                    NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
+                    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                 [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
+                                                 fieldString, @"token",
+                                                 nil];
+                    NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+                    DDLogInfo(@"User create resource path: %@", resourcePath);
+                    
+                    [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+                        loader.delegate = self;
+                        loader.method = RKRequestMethodPOST;
+                        [loader setUserData:@"user"];                        
+                    }];
+                    
+                    if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
+                        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+                        [[NSUserDefaults standardUserDefaults] synchronize];
+                        NSLog(@"** Key saved successfully to Keychain!!");
+                    }
                     self.pinValidated = YES;
+                    
                 } else {
                     NSLog(@"** Wrong Password :(");
                     self.pinValidated = NO;
@@ -173,6 +195,19 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                 NSString *fieldString = [KeychainWrapper securedSHA256DigestHashForPIN:fieldHash];
                 NSLog(@"** Password Hash - %@", fieldString);
                 // Save PIN hash to the keychain (NEVER store the direct PIN)
+
+                // TODO: Build java to receive this and clean up resubmit/pin code
+                 NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                              [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
+                                              fieldString, @"token",
+                                              nil];
+                 NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+                 DDLogInfo(@"User create resource path: %@", resourcePath);
+                [[RKClient sharedClient] post:resourcePath usingBlock:^(RKRequest *request) {
+                    request.delegate = self;
+                    [request setUserData:@"User"];
+                }];
+                
                 if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
                     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
                     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -183,6 +218,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         default:
             break;
     }
+    
+
 }
 
 
@@ -213,6 +250,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }
 }
 */
+
 
 #pragma mark - Table View
 
@@ -398,7 +436,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 -(NSPredicate *)currentPredicate
 {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userEmail == %@", self.userEmail];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userEmail == %@", [self.loggedInUser getUserAddress]];
     return predicate;
     
 }
@@ -407,9 +445,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
     DDLogVerbose(@"Getting notifications");
     DDLogInfo(@"Host name is %@", HOST);
-    if(userEmail!=nil)
+    if(self.loggedInUser!=nil)
     {
-        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:self.userEmail, @"user", nil];
+        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:[self.loggedInUser getUserAddress], @"user", nil];
         NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
         DDLogVerbose(@"%@", resourcePath);
         [objectManager loadObjectsAtResourcePath:resourcePath delegate:self];
@@ -448,8 +486,22 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
     DDLogInfo(@"Objectloader loaded objects[%d]", [objects count]);
-    [self performFetch];
+    if(objectLoader.userData != @"user")
+    {
+        [self performFetch];
+    }
+    else
+    {
+        loggedInUser = [objects objectAtIndex:0];
+    }
 }
+
+-(void)objectLoaderDidFinishLoading:(RKObjectLoader *)objectLoader
+{
+    DDLogVerbose(@"Completed loading object");
+    DDLogInfo(@"User is now: %@", [self.loggedInUser getUserAddress]);
+}
+
 
 -(void)deleteRemote:(Notification *)notification {
     DDLogVerbose(@"Notification for delete is %d", [notification.notifyId intValue]);

@@ -7,6 +7,7 @@
 //
 
 #import "MappingProvider.h"
+#import "User.h"
 
 @implementation MappingProvider
 
@@ -29,6 +30,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
             return fetchRequest;
         }];
         
+        [self setObjectMapping:[self userObjectMapping] forResourcePathPattern:USER_PATH];
     }
     
     return self;
@@ -59,5 +61,11 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     return mapping;
 }
 
+- (RKObjectMapping *)userObjectMapping {
+    RKObjectMapping *mapping =  [RKObjectMapping mappingForClass:[User class]];
+    [mapping mapKeyPath:@"userAddress" toAttribute:@"userAddress"];
+   
+    return mapping;
+}
 
 @end

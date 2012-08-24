@@ -12,6 +12,7 @@
 
 extern NSString * const HOST;
 extern NSString * const NOTIFICATION_PATH;
+extern NSString * const USER_PATH;
 extern NSString * const DB_NAME;
 extern NSString * const TF_ID;
 

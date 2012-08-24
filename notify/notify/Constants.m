@@ -17,6 +17,7 @@ NSString * const HOST = @"http://notifyweb.appspot.com";
 #endif
 
 NSString * const NOTIFICATION_PATH = @"/_ah/mail/notify";
+NSString * const USER_PATH = @"/notifyweb/user";
 NSString * const DB_NAME = @"Notify.sqlite";
 NSString * const TF_ID = @"846469c44299f82f9bf854c9258b1b6c_MTIwMzYyMjAxMi0wOC0xMSAyMTo1NTowMS44NTg2OTU";
 

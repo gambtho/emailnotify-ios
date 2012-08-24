@@ -15,5 +15,6 @@
 + (id)mappingProviderWithObjectStore:(RKManagedObjectStore *)objectStore;
 - (id)initWithObjectStore:(RKManagedObjectStore *)objectStore;
 - (RKManagedObjectMapping *)notificationObjectMapping;
+- (RKObjectMapping *)userObjectMapping;
 
 @end
