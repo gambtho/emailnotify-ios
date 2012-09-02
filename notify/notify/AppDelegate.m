@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UAirship.h"
+#import "UAPush.h"
 #import "MasterViewController.h"
 #import "MappingProvider.h"
 
@@ -22,6 +23,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [self testFlightSetup];
     [self restKitSetup];
     [self setupLogging];
+    [self airShipSetup:launchOptions];
     
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
@@ -60,6 +62,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 {
     // Saves changes in the application's managed object context before the application terminates.
     [TestFlight passCheckpoint:@"CLOSED APPLICATION"];
+    [UAirship land];
     [self saveContext];
 }
 
@@ -105,6 +108,27 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 #endif
     [TestFlight takeOff:TF_ID];
     [TestFlight passCheckpoint:@"LAUNCHED APPLICATION"];
+}
+
+-(void)airShipSetup:(NSDictionary *)launchOptions
+{
+    //Init Airship launch options
+    NSMutableDictionary *takeOffOptions = [[NSMutableDictionary alloc] init];
+    [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
+    
+    // Create Airship singleton that's used to talk to Urban Airship servers.
+    // Please populate AirshipConfig.plist with your info from http://go.urbanairship.com
+    [UAirship takeOff:takeOffOptions];
+    
+    [[UAPush shared]
+     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                         UIRemoteNotificationTypeSound |
+                                         UIRemoteNotificationTypeAlert)];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Updates the device token and registers the token with UA
+    [[UAPush shared] registerDeviceToken:deviceToken];
 }
 
 #pragma mark - RestKit

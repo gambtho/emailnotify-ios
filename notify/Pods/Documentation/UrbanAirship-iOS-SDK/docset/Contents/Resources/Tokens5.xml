@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GHAsyncTestCase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GHAsyncTestCase</TokenIdentifier>
+			<Abstract type="html">Asynchronous test case with wait and notify.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/setRunLoopModes:</TokenIdentifier>
+			<Abstract type="html">Run loop modes to run while waiting;
+Defaults to NSDefaultRunLoopMode, NSRunLoopCommonModes, NSConnectionReplyMode</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSArray *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GHAsyncTestCase/runLoopModes</TokenIdentifier>
+			<Abstract type="html">Run loop modes to run while waiting;
+Defaults to NSDefaultRunLoopMode, NSRunLoopCommonModes, NSConnectionReplyMode</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSArray *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/prepare</TokenIdentifier>
+			<Abstract type="html">Prepare before calling the asynchronous method.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)prepare</Declaration>
+			
+			
+			<Anchor>//api/name/prepare</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/prepare:</TokenIdentifier>
+			<Abstract type="html">Prepare and specify the selector we will use in notify.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)prepare:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/prepare:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/waitForStatus:timeout:</TokenIdentifier>
+			<Abstract type="html">Wait for notification of status or timeout.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitForStatus:(NSInteger)status timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">kGHUnitWaitStatusSuccess, kGHUnitWaitStatusFailure or custom status</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">Timeout in seconds</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/waitForStatus:timeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/waitFor:timeout:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitFor:(NSInteger)status timeout:(NSTimeInterval)timeout</Declaration>
+			
+			
+			<Anchor>//api/name/waitFor:timeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/waitForTimeout:</TokenIdentifier>
+			<Abstract type="html">Wait for timeout to occur.
+Fails if we did NOT timeout.
+@param timeout</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)waitForTimeout:(NSTimeInterval)timeout</Declaration>
+			
+			
+			<Anchor>//api/name/waitForTimeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/notify:forSelector:</TokenIdentifier>
+			<Abstract type="html">Notify waiting of status for test selector.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)notify:(NSInteger)status forSelector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">Status, for example, kGHUnitWaitStatusSuccess</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">If not NULL, then will verify this selector is where we are waiting.
+          This prevents stray asynchronous callbacks to fail a later test</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notify:forSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/notify:</TokenIdentifier>
+			<Abstract type="html">Notify waiting of status for any selector.</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)notify:(NSInteger)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">Status, for example, kGHUnitWaitStatusSuccess</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notify:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHAsyncTestCase/runForInterval:</TokenIdentifier>
+			<Abstract type="html">Run the run loops for the specified interval.
+@param interval
+@author Adapted from Robert Palmer, pauseForTimeout</Abstract>
+			<DeclaredIn>GHAsyncTestCase.h</DeclaredIn>			
+			
+			<Declaration>- (void)runForInterval:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/runForInterval:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

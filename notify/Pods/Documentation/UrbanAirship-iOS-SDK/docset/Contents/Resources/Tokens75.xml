@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAProduct.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAProduct</TokenIdentifier>
+			<Abstract type="html">This class represents a product in the IAP inventory.  Instances of
+UAProduct should be considered ephemeral, as they are instantiated
+when the inventory is loaded.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>
+			
+			<NodeRef refid="75"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setSkProduct:</TokenIdentifier>
+			<Abstract type="html">The associated SKProduct instance.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SKProduct *skProduct</Declaration>
+			
+			
+			<Anchor>//api/name/skProduct</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/skProduct</TokenIdentifier>
+			<Abstract type="html">The associated SKProduct instance.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SKProduct *skProduct</Declaration>
+			
+			
+			<Anchor>//api/name/skProduct</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setProductIdentifier:</TokenIdentifier>
+			<Abstract type="html">The product identifier string.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The product identifier string.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setPreviewURL:</TokenIdentifier>
+			<Abstract type="html">The preview image URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/previewURL</TokenIdentifier>
+			<Abstract type="html">The preview image URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setPreview:</TokenIdentifier>
+			<Abstract type="html">The preview image view.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAsyncImageView *preview</Declaration>
+			
+			
+			<Anchor>//api/name/preview</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/preview</TokenIdentifier>
+			<Abstract type="html">The preview image view.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAsyncImageView *preview</Declaration>
+			
+			
+			<Anchor>//api/name/preview</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setIconURL:</TokenIdentifier>
+			<Abstract type="html">The icon URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/iconURL</TokenIdentifier>
+			<Abstract type="html">The icon URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setIcon:</TokenIdentifier>
+			<Abstract type="html">The icon image view.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAsyncImageView *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/icon</TokenIdentifier>
+			<Abstract type="html">The icon image view.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAsyncImageView *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setDownloadURL:</TokenIdentifier>
+			<Abstract type="html">The download URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *downloadURL</Declaration>
+			
+			
+			<Anchor>//api/name/downloadURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/downloadURL</TokenIdentifier>
+			<Abstract type="html">The download URL.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *downloadURL</Declaration>
+			
+			
+			<Anchor>//api/name/downloadURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setRevision:</TokenIdentifier>
+			<Abstract type="html">The revision number.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/revision</TokenIdentifier>
+			<Abstract type="html">The revision number.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setFileSize:</TokenIdentifier>
+			<Abstract type="html">The file size in bytes.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) double fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/fileSize</TokenIdentifier>
+			<Abstract type="html">The file size in bytes.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) double fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setPrice:</TokenIdentifier>
+			<Abstract type="html">The price as a string.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			
+			
+			<Anchor>//api/name/price</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/price</TokenIdentifier>
+			<Abstract type="html">The price as a string.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			
+			
+			<Anchor>//api/name/price</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setPriceNumber:</TokenIdentifier>
+			<Abstract type="html">The price as an NSDecimalNumber.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDecimalNumber *priceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/priceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/priceNumber</TokenIdentifier>
+			<Abstract type="html">The price as an NSDecimalNumber.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDecimalNumber *priceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/priceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setProductDescription:</TokenIdentifier>
+			<Abstract type="html">The product description.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productDescription</Declaration>
+			
+			
+			<Anchor>//api/name/productDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/productDescription</TokenIdentifier>
+			<Abstract type="html">The product description.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productDescription</Declaration>
+			
+			
+			<Anchor>//api/name/productDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setTitle:</TokenIdentifier>
+			<Abstract type="html">The product title.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/title</TokenIdentifier>
+			<Abstract type="html">The product title.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setReceipt:</TokenIdentifier>
+			<Abstract type="html">The purchase receipt, if present.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *receipt</Declaration>
+			
+			
+			<Anchor>//api/name/receipt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/receipt</TokenIdentifier>
+			<Abstract type="html">The purchase receipt, if present.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *receipt</Declaration>
+			
+			
+			<Anchor>//api/name/receipt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setIsFree:</TokenIdentifier>
+			<Abstract type="html">A BOOL indicating whether the product is free.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isFree</Declaration>
+			
+			
+			<Anchor>//api/name/isFree</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/isFree</TokenIdentifier>
+			<Abstract type="html">A BOOL indicating whether the product is free.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isFree</Declaration>
+			
+			
+			<Anchor>//api/name/isFree</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setStatus:</TokenIdentifier>
+			<Abstract type="html">The current status of the product, as a UAProductStatus enum value.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAProductStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/status</TokenIdentifier>
+			<Abstract type="html">The current status of the product, as a UAProductStatus enum value.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAProductStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setProgress:</TokenIdentifier>
+			<Abstract type="html">The product&apos;s download progress as a float between 0 and 1.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/progress</TokenIdentifier>
+			<Abstract type="html">The product&apos;s download progress as a float between 0 and 1.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setTransaction:</TokenIdentifier>
+			<Abstract type="html">The product&apos;s associated SKPaymentTranscation.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) SKPaymentTransaction *transaction</Declaration>
+			
+			
+			<Anchor>//api/name/transaction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProduct/transaction</TokenIdentifier>
+			<Abstract type="html">The product&apos;s associated SKPaymentTranscation.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) SKPaymentTransaction *transaction</Declaration>
+			
+			
+			<Anchor>//api/name/transaction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAProduct/productFromDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>+ (UAProduct *)productFromDictionary:(NSDictionary *)item</Declaration>
+			
+			
+			<Anchor>//api/name/productFromDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/compare:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>- (NSComparisonResult)compare:(UAProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/compare:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/resetStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetStatus</Declaration>
+			
+			
+			<Anchor>//api/name/resetStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/hasUpdate</TokenIdentifier>
+			<Abstract type="html">Indicates whether the product has an update available.</Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasUpdate</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if an update is available, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasUpdate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProduct/setProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProduct.h</DeclaredIn>			
+			
+			<Declaration>- (void)setProgress:(float)_progress</Declaration>
+			
+			
+			<Anchor>//api/name/setProgress:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

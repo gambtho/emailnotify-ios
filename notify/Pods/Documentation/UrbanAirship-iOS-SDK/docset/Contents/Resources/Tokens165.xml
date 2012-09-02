@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GHTestRunnerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GHTestRunnerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>
+			
+			<NodeRef refid="165"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunnerDidStart:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunnerDidStart:(GHTestRunner *)runner</Declaration>
+			
+			
+			<Anchor>//api/name/testRunnerDidStart:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunner:didStartTest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunner:(GHTestRunner *)runner didStartTest:(id&lt;GHTest&gt;)test</Declaration>
+			
+			
+			<Anchor>//api/name/testRunner:didStartTest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunner:didUpdateTest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunner:(GHTestRunner *)runner didUpdateTest:(id&lt;GHTest&gt;)test</Declaration>
+			
+			
+			<Anchor>//api/name/testRunner:didUpdateTest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunner:didEndTest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunner:(GHTestRunner *)runner didEndTest:(id&lt;GHTest&gt;)test</Declaration>
+			
+			
+			<Anchor>//api/name/testRunner:didEndTest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunnerDidCancel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunnerDidCancel:(GHTestRunner *)runner</Declaration>
+			
+			
+			<Anchor>//api/name/testRunnerDidCancel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunnerDidEnd:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunnerDidEnd:(GHTestRunner *)runner</Declaration>
+			
+			
+			<Anchor>//api/name/testRunnerDidEnd:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunner:didLog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunner:(GHTestRunner *)runner didLog:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/testRunner:didLog:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestRunnerDelegate/testRunner:test:didLog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTestRunner.h</DeclaredIn>			
+			
+			<Declaration>- (void)testRunner:(GHTestRunner *)runner test:(id&lt;GHTest&gt;)test didLog:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/testRunner:test:didLog:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

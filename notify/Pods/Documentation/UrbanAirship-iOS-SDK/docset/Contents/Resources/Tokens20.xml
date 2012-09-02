@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GTMRegexStringSegment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GTMRegexStringSegment</TokenIdentifier>
+			<Abstract type="html">Class returned by the nextObject for the enumerators from GTMRegex</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegexStringSegment/isMatch</TokenIdentifier>
+			<Abstract type="html">Returns YES if this segment from from a match of the regex, false if it was a segment between matches.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isMatch</Declaration>
+			
+			
+			<Anchor>//api/name/isMatch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegexStringSegment/string</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased string w/ the full text segment from the original string.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/string</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegexStringSegment/subPatternString:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased string w/ the |index| sub pattern from this segment of the original string.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)subPatternString:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/subPatternString:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

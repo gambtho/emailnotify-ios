@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAEventCustom.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAEventCustom</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAEventCustom/initWithType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithType:(NSString *)aType</Declaration>
+			
+			
+			<Anchor>//api/name/initWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAEventCustom/eventWithType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
+			
+			<Declaration>+ (id)eventWithType:(NSString *)aType</Declaration>
+			
+			
+			<Anchor>//api/name/eventWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAEventCustom/initWithType:andContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithType:(NSString *)aType andContext:(NSDictionary *)context</Declaration>
+			
+			
+			<Anchor>//api/name/initWithType:andContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAEventCustom/eventWithType:andContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
+			
+			<Declaration>+ (id)eventWithType:(NSString *)aType andContext:(NSDictionary *)context</Declaration>
+			
+			
+			<Anchor>//api/name/eventWithType:andContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

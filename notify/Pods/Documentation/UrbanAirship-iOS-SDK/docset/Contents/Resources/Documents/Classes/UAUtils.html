@@ -1,0 +1,722 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UAUtils Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UAUtils Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/UUID">&nbsp;&nbsp;&nbsp;&nbsp;+ UUID</option>
+	
+	<option value="//api/name/deviceID">&nbsp;&nbsp;&nbsp;&nbsp;+ deviceID</option>
+	
+	<option value="//api/name/deviceModelName">&nbsp;&nbsp;&nbsp;&nbsp;+ deviceModelName</option>
+	
+	<option value="//api/name/getReadableFileSizeFromBytes:">&nbsp;&nbsp;&nbsp;&nbsp;+ getReadableFileSizeFromBytes:</option>
+	
+	<option value="//api/name/md5:">&nbsp;&nbsp;&nbsp;&nbsp;+ md5:</option>
+	
+	<option value="//api/name/parseJSON:">&nbsp;&nbsp;&nbsp;&nbsp;+ parseJSON:</option>
+	
+	<option value="//api/name/pluralize:singularForm:pluralForm:">&nbsp;&nbsp;&nbsp;&nbsp;+ pluralize:singularForm:pluralForm:</option>
+	
+	<option value="//api/name/requestWentWrong:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWentWrong:</option>
+	
+	<option value="//api/name/requestWentWrong:keyword:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWentWrong:keyword:</option>
+	
+	<option value="//api/name/requestWithURL:method:delegate:finish:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWithURL:method:delegate:finish:</option>
+	
+	<option value="//api/name/requestWithURL:method:delegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestWithURL:method:delegate:finish:fail:</option>
+	
+	<option value="//api/name/responseFromRequest:">&nbsp;&nbsp;&nbsp;&nbsp;+ responseFromRequest:</option>
+	
+	<option value="//api/name/urlEncodedStringWithString:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;+ urlEncodedStringWithString:encoding:</option>
+	
+	<option value="//api/name/userAuthHeaderString">&nbsp;&nbsp;&nbsp;&nbsp;+ userAuthHeaderString</option>
+	
+	<option value="//api/name/userRequestWithURL:method:delegate:finish:">&nbsp;&nbsp;&nbsp;&nbsp;+ userRequestWithURL:method:delegate:finish:</option>
+	
+	<option value="//api/name/userRequestWithURL:method:delegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;+ userRequestWithURL:method:delegate:finish:fail:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Digest/Hash Utils">Digest/Hash Utils</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Device ID Utils">Device ID Utils</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_URL Encoding">URL Encoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_HTTP Authenticated Request Helpers">HTTP Authenticated Request Helpers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_HTTP Response Helpers">HTTP Response Helpers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UI Formatting Helpers">UI Formatting Helpers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/UUID">UUID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceID">deviceID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceModelName">deviceModelName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getReadableFileSizeFromBytes:">getReadableFileSizeFromBytes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/md5:">md5:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseJSON:">parseJSON:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pluralize:singularForm:pluralForm:">pluralize:singularForm:pluralForm:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWentWrong:">requestWentWrong:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWentWrong:keyword:">requestWentWrong:keyword:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithURL:method:delegate:finish:">requestWithURL:method:delegate:finish:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithURL:method:delegate:finish:fail:">requestWithURL:method:delegate:finish:fail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseFromRequest:">responseFromRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/urlEncodedStringWithString:encoding:">urlEncodedStringWithString:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userAuthHeaderString">userAuthHeaderString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userRequestWithURL:method:delegate:finish:">userRequestWithURL:method:delegate:finish:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userRequestWithURL:method:delegate:finish:fail:">userRequestWithURL:method:delegate:finish:fail:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UAUtils Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UAUtils Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UAUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Digest/Hash Utils" name="task_Digest/Hash Utils"></a>
+						<h3 class="subsubtitle task-title">Digest/Hash Utils</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/md5:">+&nbsp;md5:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Device ID Utils" name="task_Device ID Utils"></a>
+						<h3 class="subsubtitle task-title">Device ID Utils</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/UUID">+&nbsp;UUID</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceModelName">+&nbsp;deviceModelName</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceID">+&nbsp;deviceID</a></code>
+		<span class="tooltip"><p>Gets the Urban Airship Device ID.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="URL Encoding" name="task_URL Encoding"></a>
+						<h3 class="subsubtitle task-title">URL Encoding</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/urlEncodedStringWithString:encoding:">+&nbsp;urlEncodedStringWithString:encoding:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="HTTP Authenticated Request Helpers" name="task_HTTP Authenticated Request Helpers"></a>
+						<h3 class="subsubtitle task-title">HTTP Authenticated Request Helpers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userRequestWithURL:method:delegate:finish:">+&nbsp;userRequestWithURL:method:delegate:finish:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userRequestWithURL:method:delegate:finish:fail:">+&nbsp;userRequestWithURL:method:delegate:finish:fail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithURL:method:delegate:finish:">+&nbsp;requestWithURL:method:delegate:finish:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithURL:method:delegate:finish:fail:">+&nbsp;requestWithURL:method:delegate:finish:fail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userAuthHeaderString">+&nbsp;userAuthHeaderString</a></code>
+		<span class="tooltip"><p>Returns a basic auth header string.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="HTTP Response Helpers" name="task_HTTP Response Helpers"></a>
+						<h3 class="subsubtitle task-title">HTTP Response Helpers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseFromRequest:">+&nbsp;responseFromRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseJSON:">+&nbsp;parseJSON:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWentWrong:">+&nbsp;requestWentWrong:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWentWrong:keyword:">+&nbsp;requestWentWrong:keyword:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="UI Formatting Helpers" name="task_UI Formatting Helpers"></a>
+						<h3 class="subsubtitle task-title">UI Formatting Helpers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pluralize:singularForm:pluralForm:">+&nbsp;pluralize:singularForm:pluralForm:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getReadableFileSizeFromBytes:">+&nbsp;getReadableFileSizeFromBytes:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/UUID" title="UUID"></a>
+	<h3 class="subsubtitle method-title">UUID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)UUID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceID" title="deviceID"></a>
+	<h3 class="subsubtitle method-title">deviceID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the Urban Airship Device ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)deviceID</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The device ID, or an empty string if the ID cannot be retrieved or created.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the Urban Airship Device ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UAUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceModelName" title="deviceModelName"></a>
+	<h3 class="subsubtitle method-title">deviceModelName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)deviceModelName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getReadableFileSizeFromBytes:" title="getReadableFileSizeFromBytes:"></a>
+	<h3 class="subsubtitle method-title">getReadableFileSizeFromBytes:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getReadableFileSizeFromBytes:(double)<em>bytes</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/md5:" title="md5:"></a>
+	<h3 class="subsubtitle method-title">md5:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)md5:(NSString *)<em>sourceString</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseJSON:" title="parseJSON:"></a>
+	<h3 class="subsubtitle method-title">parseJSON:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)parseJSON:(NSString *)<em>responseString</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pluralize:singularForm:pluralForm:" title="pluralize:singularForm:pluralForm:"></a>
+	<h3 class="subsubtitle method-title">pluralize:singularForm:pluralForm:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)pluralize:(int)<em>count</em> singularForm:(NSString *)<em>singular</em> pluralForm:(NSString *)<em>plural</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWentWrong:" title="requestWentWrong:"></a>
+	<h3 class="subsubtitle method-title">requestWentWrong:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWentWrong:keyword:" title="requestWentWrong:keyword:"></a>
+	<h3 class="subsubtitle method-title">requestWentWrong:keyword:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)<em>request</em> keyword:(NSString *)<em>keyword</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithURL:method:delegate:finish:" title="requestWithURL:method:delegate:finish:"></a>
+	<h3 class="subsubtitle method-title">requestWithURL:method:delegate:finish:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)<em>url</em> method:(NSString *)<em>method</em> delegate:(id)<em>delegate</em> finish:(SEL)<em>selector</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithURL:method:delegate:finish:fail:" title="requestWithURL:method:delegate:finish:fail:"></a>
+	<h3 class="subsubtitle method-title">requestWithURL:method:delegate:finish:fail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)<em>url</em> method:(NSString *)<em>method</em> delegate:(id)<em>delegate</em> finish:(SEL)<em>sel1</em> fail:(SEL)<em>sel2</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseFromRequest:" title="responseFromRequest:"></a>
+	<h3 class="subsubtitle method-title">responseFromRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)responseFromRequest:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/urlEncodedStringWithString:encoding:" title="urlEncodedStringWithString:encoding:"></a>
+	<h3 class="subsubtitle method-title">urlEncodedStringWithString:encoding:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)urlEncodedStringWithString:(NSString *)<em>string</em> encoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userAuthHeaderString" title="userAuthHeaderString"></a>
+	<h3 class="subsubtitle method-title">userAuthHeaderString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a basic auth header string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)userAuthHeaderString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An HTTP Basic Auth header string value for the user&rsquo;s credentials.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a basic auth header string.</p>
+
+<p>The return value takes the form of: <code>Basic [Base64 Encoded "username:password"]</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UAUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userRequestWithURL:method:delegate:finish:" title="userRequestWithURL:method:delegate:finish:"></a>
+	<h3 class="subsubtitle method-title">userRequestWithURL:method:delegate:finish:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)<em>url</em> method:(NSString *)<em>method</em> delegate:(id)<em>delegate</em> finish:(SEL)<em>selector</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userRequestWithURL:method:delegate:finish:fail:" title="userRequestWithURL:method:delegate:finish:fail:"></a>
+	<h3 class="subsubtitle method-title">userRequestWithURL:method:delegate:finish:fail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)<em>url</em> method:(NSString *)<em>method</em> delegate:(id)<em>delegate</em> finish:(SEL)<em>sel1</em> fail:(SEL)<em>sel2</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

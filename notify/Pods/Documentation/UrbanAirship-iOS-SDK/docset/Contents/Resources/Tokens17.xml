@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GHUnitIPhoneViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GHUnitIPhoneViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/setSuite:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) GHTestSuite *suite</Declaration>
+			
+			
+			<Anchor>//api/name/suite</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GHUnitIPhoneViewController/suite</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) GHTestSuite *suite</Declaration>
+			
+			
+			<Anchor>//api/name/suite</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/reloadTest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadTest:(id&lt;GHTest&gt;)test</Declaration>
+			
+			
+			<Anchor>//api/name/reloadTest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/scrollToTest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)scrollToTest:(id&lt;GHTest&gt;)test</Declaration>
+			
+			
+			<Anchor>//api/name/scrollToTest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/scrollToBottom</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)scrollToBottom</Declaration>
+			
+			
+			<Anchor>//api/name/scrollToBottom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/setStatusText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setStatusText:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/setStatusText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/runTests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)runTests</Declaration>
+			
+			
+			<Anchor>//api/name/runTests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/reload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)reload</Declaration>
+			
+			
+			<Anchor>//api/name/reload</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/loadDefaults</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/loadDefaults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/saveDefaults</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/saveDefaults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GHUnitIPhoneViewController/dataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHUnitIPhoneViewController.h</DeclaredIn>			
+			
+			<Declaration>- (GHUnitIPhoneTableViewDataSource *)dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

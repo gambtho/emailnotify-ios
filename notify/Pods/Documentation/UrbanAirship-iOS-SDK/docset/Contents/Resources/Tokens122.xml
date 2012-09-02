@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionUIUtil.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionUIUtil</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionUIUtil.h</DeclaredIn>
+			
+			<NodeRef refid="122"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UASubscriptionUIUtil/date:isBetweenDate:andDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionUIUtil.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)date:(NSDate *)date isBetweenDate:(NSDate *)beginDate andDate:(NSDate *)endDate</Declaration>
+			
+			
+			<Anchor>//api/name/date:isBetweenDate:andDate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UASubscriptionUIUtil/localizedAutorenewableDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionUIUtil.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)localizedAutorenewableDuration:(UAAutorenewableDuration)duration</Declaration>
+			
+			
+			<Anchor>//api/name/localizedAutorenewableDuration:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

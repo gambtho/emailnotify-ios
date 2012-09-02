@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAProductObserverProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAProductObserverProtocol</TokenIdentifier>
+			<Abstract type="html">Implementers of this protocol will receive callbacks
+from UAProduct instances when their state changes,
+if the implementer has registered as an observer.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>
+			
+			<NodeRef refid="183"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAProductObserverProtocol/productStatusChanged:</TokenIdentifier>
+			<Abstract type="html">Called when the product&apos;s status has changed.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (void)productStatusChanged:(NSNumber *)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">A UAProductStatus enum value wrapped in an NSNumber.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/productStatusChanged:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAProductObserverProtocol/productProgressChanged:</TokenIdentifier>
+			<Abstract type="html">Called periodically when the product&apos;s download progress has updated.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (void)productProgressChanged:(NSNumber *)progress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>a</Name>
+					<Abstract type="html">floating point progress value between 0 and 1, wrapped in an NSNumber.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/productProgressChanged:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

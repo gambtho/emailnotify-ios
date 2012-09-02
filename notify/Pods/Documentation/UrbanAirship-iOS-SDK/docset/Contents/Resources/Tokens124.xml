@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UATagUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UATagUtils</TokenIdentifier>
+			<Abstract type="html">Device type: iPhone, iPad or iPod</Abstract>
+			<DeclaredIn>UATagUtils.h</DeclaredIn>
+			
+			<NodeRef refid="124"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UATagUtils/createTags:</TokenIdentifier>
+			<Abstract type="html">Creates an autoreleased NSArray containing tags specified in the
+tags parameter, a bit field accepting UATagType flags.</Abstract>
+			<DeclaredIn>UATagUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)createTags:(UATagType)tags</Declaration>
+			
+			
+			<Anchor>//api/name/createTags:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

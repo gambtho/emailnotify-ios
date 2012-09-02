@@ -1,4 +1,6 @@
 platform :ios
 pod 'RestKit', '~> 0.10.1'
 pod 'TestFlightSDK', '~> 1.0'
+pod 'UrbanAirship-iOS-SDK', '~> 1.3.1'
+pod 'LibComponentLogging-pods'
 pod 'CocoaLumberjack', '~> 1.6'

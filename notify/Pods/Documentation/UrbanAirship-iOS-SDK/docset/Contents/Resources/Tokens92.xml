@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAStoreFront.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFront</TokenIdentifier>
+			<Abstract type="html">This singleton is the primary interface to IAP.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/setSfObserver:</TokenIdentifier>
+			<Abstract type="html">The StoreKit observer for IAP.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreKitObserver *sfObserver</Declaration>
+			
+			
+			<Anchor>//api/name/sfObserver</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFront/sfObserver</TokenIdentifier>
+			<Abstract type="html">The StoreKit observer for IAP.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreKitObserver *sfObserver</Declaration>
+			
+			
+			<Anchor>//api/name/sfObserver</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/setDownloadManager:</TokenIdentifier>
+			<Abstract type="html">The download manager for IAP.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontDownloadManager *downloadManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">A UAStoreFrontDownloadManager instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/downloadManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFront/downloadManager</TokenIdentifier>
+			<Abstract type="html">The download manager for IAP.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontDownloadManager *downloadManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">A UAStoreFrontDownloadManager instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/downloadManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/setDelegate:</TokenIdentifier>
+			<Abstract type="html">A delegate implementing the UAStoreFrontDelegate protocol.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;UAStoreFrontDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An object implementing the UAStoreFrontDelegate protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFront/delegate</TokenIdentifier>
+			<Abstract type="html">A delegate implementing the UAStoreFrontDelegate protocol.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;UAStoreFrontDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An object implementing the UAStoreFrontDelegate protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/setInventory:</TokenIdentifier>
+			<Abstract type="html">The IAP inventory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAInventory *inventory</Declaration>
+			
+			<ReturnValue><Abstract type="html">A UAInventory instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/inventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFront/inventory</TokenIdentifier>
+			<Abstract type="html">The IAP inventory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAInventory *inventory</Declaration>
+			
+			<ReturnValue><Abstract type="html">A UAInventory instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/inventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/setPurchaseReceipts:</TokenIdentifier>
+			<Abstract type="html">The local store of of purchase receipts.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *purchaseReceipts</Declaration>
+			
+			<ReturnValue><Abstract type="html">an NSMutableDictionary mapping product identifiers to receipt dictionaries.</Abstract></ReturnValue>
+			<Anchor>//api/name/purchaseReceipts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFront/purchaseReceipts</TokenIdentifier>
+			<Abstract type="html">The local store of of purchase receipts.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *purchaseReceipts</Declaration>
+			
+			<ReturnValue><Abstract type="html">an NSMutableDictionary mapping product identifiers to receipt dictionaries.</Abstract></ReturnValue>
+			<Anchor>//api/name/purchaseReceipts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/initialized</TokenIdentifier>
+			<Abstract type="html">Test whether the singleton has been initialized.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)initialized</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if initialized, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/initialized</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/useCustomUI:</TokenIdentifier>
+			<Abstract type="html">Sets a custom UI class for IAP to use.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)useCustomUI:(Class)customUIClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>customUIClass</Name>
+					<Abstract type="html">A class implementing the UAStoreFrontUIProtocol.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/useCustomUI:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/quitStoreFront</TokenIdentifier>
+			<Abstract type="html">Quits the IAP UI.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)quitStoreFront</Declaration>
+			
+			
+			<Anchor>//api/name/quitStoreFront</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/displayStoreFront:animated:</TokenIdentifier>
+			<Abstract type="html">Displays the IAP UI.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The calling view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">A boolean indicating whether the transition should be animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayStoreFront:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/displayStoreFront:withProductID:animated:</TokenIdentifier>
+			<Abstract type="html">Displays the IAP UI.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController withProductID:(NSString *)ID animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The calling view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>ID</Name>
+					<Abstract type="html">The identifier of the product to display.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">A boolean indicating whether the transition should be animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayStoreFront:withProductID:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/setOrderBy:</TokenIdentifier>
+			<Abstract type="html">Sets the display order of products in the inventory.
+The default is order by product ID, descending.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setOrderBy:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A display order key constant.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOrderBy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/setOrderBy:ascending:</TokenIdentifier>
+			<Abstract type="html">Sets the display order of products in the inventory.
+The default is order by product ID, descending.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setOrderBy:(NSString *)key ascending:(BOOL)ascending</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A display order key constant.</Abstract>
+				</Parameter><Parameter>
+					<Name>ascending</Name>
+					<Abstract type="html">A boolean indicating whether to sort in ascending order.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOrderBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/purchase:</TokenIdentifier>
+			<Abstract type="html">Directly purchases a specific product.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)purchase:(NSString *)productIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">The identifier for the product to be purchased.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purchase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/land</TokenIdentifier>
+			<Abstract type="html">Cleanup routine called by UAirship when tearing down the library.
+You should not ordinarily call this method directly.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)land</Declaration>
+			
+			
+			<Anchor>//api/name/land</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/registerObserver:</TokenIdentifier>
+			<Abstract type="html">Registers an observer for inventory and payment callbacks.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">An object implementing the UAStoreFrontObserver protocol.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/unregisterObserver:</TokenIdentifier>
+			<Abstract type="html">Unregisters a previously registered observer.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unregisterObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">An object implementing the UAStoreFrontObserver protocol, which was previously registered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unregisterObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/addReceipt:</TokenIdentifier>
+			<Abstract type="html">Adds a receipt for a product instance</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (void)addReceipt:(UAProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The product whose receipt should be added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addReceipt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/hasReceipt:</TokenIdentifier>
+			<Abstract type="html">Returns YES if there is a receipt for the product in question, NO otherwise.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasReceipt:(UAProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The product in question.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL indicating whether the local receipt store has a receipt associated with the product.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasReceipt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/directoryExistsAtPath:orOldPath:</TokenIdentifier>
+			<Abstract type="html">Returns YES if a directory exists at either of the passed path strings.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)directoryExistsAtPath:(NSString *)path orOldPath:(NSString *)oldPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">A directory path as an NSString.</Abstract>
+				</Parameter><Parameter>
+					<Name>oldPath</Name>
+					<Abstract type="html">A directory path as an NSString.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a BOOL indicating whether either directory path exists.</Abstract></ReturnValue>
+			<Anchor>//api/name/directoryExistsAtPath:orOldPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/setDownloadDirectory:</TokenIdentifier>
+			<Abstract type="html">Sets the download directory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)setDownloadDirectory:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">A directory path as an NSString.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL indicating whether the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/setDownloadDirectory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/setDownloadDirectory:withProductIDSubdir:</TokenIdentifier>
+			<Abstract type="html">Sets the download directory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)setDownloadDirectory:(NSString *)path withProductIDSubdir:(BOOL)makeSubdir</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">A directory path as an NSString.</Abstract>
+				</Parameter><Parameter>
+					<Name>makeSubdir</Name>
+					<Abstract type="html">A BOOL indicating whether to create a subdirectory named after the product identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL indicating whether the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/setDownloadDirectory:withProductIDSubdir:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFront/uiClass</TokenIdentifier>
+			<Abstract type="html">Returns the UI class IAP is using.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>- (Class)uiClass</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Class object representing the UI class IAP is using.</Abstract></ReturnValue>
+			<Anchor>//api/name/uiClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/loadInventory</TokenIdentifier>
+			<Abstract type="html">Loads the inventory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)loadInventory</Declaration>
+			
+			
+			<Anchor>//api/name/loadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/resetAndLoadInventory</TokenIdentifier>
+			<Abstract type="html">Resets and loads the inventory.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)resetAndLoadInventory</Declaration>
+			
+			
+			<Anchor>//api/name/resetAndLoadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/reloadInventoryIfFailed</TokenIdentifier>
+			<Abstract type="html">Reloads the inventory if it has previously failed.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)reloadInventoryIfFailed</Declaration>
+			
+			
+			<Anchor>//api/name/reloadInventoryIfFailed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/productsForType:</TokenIdentifier>
+			<Abstract type="html">Returns an array of products corresponding to a UAProductType enum.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)productsForType:(UAProductType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">A UAProduct type enum expressing the subset of products desired.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A subset of products as an NSArray.</Abstract></ReturnValue>
+			<Anchor>//api/name/productsForType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/updateAllProducts</TokenIdentifier>
+			<Abstract type="html">Purchases all updated products.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)updateAllProducts</Declaration>
+			
+			
+			<Anchor>//api/name/updateAllProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFront/restoreAllProducts</TokenIdentifier>
+			<Abstract type="html">Restores all products.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
+			
+			<Declaration>+ (void)restoreAllProducts</Declaration>
+			
+			
+			<Anchor>//api/name/restoreAllProducts</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

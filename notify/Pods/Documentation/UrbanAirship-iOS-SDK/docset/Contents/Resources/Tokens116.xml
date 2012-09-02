@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionRootViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionRootViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionRootViewController.h</DeclaredIn>
+			
+			<NodeRef refid="116"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionRootViewController/segmentAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionRootViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)segmentAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/segmentAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionRootViewController/loadSettingsView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionRootViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadSettingsView</Declaration>
+			
+			
+			<Anchor>//api/name/loadSettingsView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionRootViewController/loadAllSubscriptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionRootViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadAllSubscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/loadAllSubscriptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionRootViewController/loadPurchasedSubscriptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionRootViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadPurchasedSubscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/loadPurchasedSubscriptions</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

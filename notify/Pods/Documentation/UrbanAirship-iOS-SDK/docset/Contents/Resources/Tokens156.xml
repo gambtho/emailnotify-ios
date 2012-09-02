@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+GTMRegexAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(GTMRegexAdditions)</TokenIdentifier>
+			<Abstract type="html">Some helpers to streamline usage of GTMRegex</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>
+			
+			<NodeRef refid="156"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_matchesPattern:</TokenIdentifier>
+			<Abstract type="html">Returns YES if the full string matches regex |pattern| using the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_matchesPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_matchesPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_subPatternsOfPattern:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased array of strings that contain the subpattern matches of |pattern| using the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)gtm_subPatternsOfPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_subPatternsOfPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_firstSubStringMatchedByPattern:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased string w/ the first substring that matched the regex |pattern| using the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_firstSubStringMatchedByPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_firstSubStringMatchedByPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_subStringMatchesPattern:</TokenIdentifier>
+			<Abstract type="html">Returns YES if a substring string matches regex |pattern| using the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_subStringMatchesPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_subStringMatchesPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_allSubstringsMatchedByPattern:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased array of substrings in the string that match the regex |pattern| using the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)gtm_allSubstringsMatchedByPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_allSubstringsMatchedByPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_segmentEnumeratorForPattern:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased segment enumerator that will break the string using pattern w/ the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)gtm_segmentEnumeratorForPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_segmentEnumeratorForPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_matchSegmentEnumeratorForPattern:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased segment enumerator that will only return matching segments from the string using pattern w/ the default match options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)gtm_matchSegmentEnumeratorForPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_matchSegmentEnumeratorForPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMRegexAdditions)/gtm_stringByReplacingMatchesOfPattern:withReplacement:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased string with all matches for pattern |pattern| are replaced w/ |replacementPattern|.  Uses the default match options.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_stringByReplacingMatchesOfPattern:(NSString *)pattern withReplacement:(NSString *)replacementPattern</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByReplacingMatchesOfPattern:withReplacement:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+GTMCALayerUnitTestingDelegateMethods.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(GTMCALayerUnitTestingDelegateMethods)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMCALayer+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="153"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMCALayerUnitTestingDelegateMethods)/gtm_shouldEncodeStateForSublayersOfLayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMCALayer+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_shouldEncodeStateForSublayersOfLayer:(CALayer *)layer</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_shouldEncodeStateForSublayersOfLayer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

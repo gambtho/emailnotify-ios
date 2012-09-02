@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GTMSystemVersion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GTMSystemVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/getMajor:minor:bugFix:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (void)getMajor:(SInt32 *)major minor:(SInt32 *)minor bugFix:(SInt32 *)bugFix</Declaration>
+			
+			
+			<Anchor>//api/name/getMajor:minor:bugFix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/build</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/build</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isBuildLessThan:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBuildLessThan:(NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/isBuildLessThan:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isBuildLessThanOrEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBuildLessThanOrEqualTo:(NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/isBuildLessThanOrEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isBuildGreaterThan:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBuildGreaterThan:(NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/isBuildGreaterThan:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isBuildGreaterThanOrEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBuildGreaterThanOrEqualTo:(NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/isBuildGreaterThanOrEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isBuildEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBuildEqualTo:(NSString *)build</Declaration>
+			
+			
+			<Anchor>//api/name/isBuildEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isPanther</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isPanther</Declaration>
+			
+			
+			<Anchor>//api/name/isPanther</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isTiger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTiger</Declaration>
+			
+			
+			<Anchor>//api/name/isTiger</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isLeopard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isLeopard</Declaration>
+			
+			
+			<Anchor>//api/name/isLeopard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isSnowLeopard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isSnowLeopard</Declaration>
+			
+			
+			<Anchor>//api/name/isSnowLeopard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isPantherOrGreater</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isPantherOrGreater</Declaration>
+			
+			
+			<Anchor>//api/name/isPantherOrGreater</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isTigerOrGreater</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTigerOrGreater</Declaration>
+			
+			
+			<Anchor>//api/name/isTigerOrGreater</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isLeopardOrGreater</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isLeopardOrGreater</Declaration>
+			
+			
+			<Anchor>//api/name/isLeopardOrGreater</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/isSnowLeopardOrGreater</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isSnowLeopardOrGreater</Declaration>
+			
+			
+			<Anchor>//api/name/isSnowLeopardOrGreater</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMSystemVersion/runtimeArchitecture</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMSystemVersion.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)runtimeArchitecture</Declaration>
+			
+			
+			<Anchor>//api/name/runtimeArchitecture</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

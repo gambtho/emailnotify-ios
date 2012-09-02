@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAZipDownloadContentProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAZipDownloadContentProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UADownloadContent.h</DeclaredIn>
+			
+			<NodeRef refid="196"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAZipDownloadContentProtocol/decompressDidSucceed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)decompressDidSucceed:(UAZipDownloadContent *)zipDownloadContent</Declaration>
+			
+			
+			<Anchor>//api/name/decompressDidSucceed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAZipDownloadContentProtocol/decompressDidFail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)decompressDidFail:(UAZipDownloadContent *)zipDownloadContent</Declaration>
+			
+			
+			<Anchor>//api/name/decompressDidFail:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

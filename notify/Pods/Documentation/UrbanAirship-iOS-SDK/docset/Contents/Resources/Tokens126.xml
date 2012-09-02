@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAUtils</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>
+			
+			<NodeRef refid="126"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/md5:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)md5:(NSString *)sourceString</Declaration>
+			
+			
+			<Anchor>//api/name/md5:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/UUID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)UUID</Declaration>
+			
+			
+			<Anchor>//api/name/UUID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceModelName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)deviceModelName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceModelName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceID</TokenIdentifier>
+			<Abstract type="html">Gets the Urban Airship Device ID.</Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)deviceID</Declaration>
+			
+			<ReturnValue><Abstract type="html">The device ID, or an empty string if the ID cannot be retrieved or created.</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/urlEncodedStringWithString:encoding:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)urlEncodedStringWithString:(NSString *)string encoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/urlEncodedStringWithString:encoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:fail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
+			
+			
+			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:fail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/requestWithURL:method:delegate:finish:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:fail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
+			
+			
+			<Anchor>//api/name/requestWithURL:method:delegate:finish:fail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userAuthHeaderString</TokenIdentifier>
+			<Abstract type="html">Returns a basic auth header string.</Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)userAuthHeaderString</Declaration>
+			
+			<ReturnValue><Abstract type="html">An HTTP Basic Auth header string value for the user&apos;s credentials.</Abstract></ReturnValue>
+			<Anchor>//api/name/userAuthHeaderString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/responseFromRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (id)responseFromRequest:(UA_ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/responseFromRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/parseJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (id)parseJSON:(NSString *)responseString</Declaration>
+			
+			
+			<Anchor>//api/name/parseJSON:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/requestWentWrong:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:keyword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request keyword:(NSString *)keyword</Declaration>
+			
+			
+			<Anchor>//api/name/requestWentWrong:keyword:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/pluralize:singularForm:pluralForm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pluralize:(int)count singularForm:(NSString *)singular pluralForm:(NSString *)plural</Declaration>
+			
+			
+			<Anchor>//api/name/pluralize:singularForm:pluralForm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/getReadableFileSizeFromBytes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getReadableFileSizeFromBytes:(double)bytes</Declaration>
+			
+			
+			<Anchor>//api/name/getReadableFileSizeFromBytes:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

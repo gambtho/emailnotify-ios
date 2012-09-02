@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAPushMoreSettingsViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAPushMoreSettingsViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>
+			
+			<NodeRef refid="80"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushMoreSettingsViewController/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushMoreSettingsViewController/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushMoreSettingsViewController/setFooterImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *footerImageView</Declaration>
+			
+			
+			<Anchor>//api/name/footerImageView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushMoreSettingsViewController/footerImageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *footerImageView</Declaration>
+			
+			
+			<Anchor>//api/name/footerImageView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushMoreSettingsViewController/setLocationCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableViewCell *locationCell</Declaration>
+			
+			
+			<Anchor>//api/name/locationCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushMoreSettingsViewController/locationCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableViewCell *locationCell</Declaration>
+			
+			
+			<Anchor>//api/name/locationCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushMoreSettingsViewController/initCells</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)initCells</Declaration>
+			
+			
+			<Anchor>//api/name/initCells</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushMoreSettingsViewController/updateCellValues</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushMoreSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateCellValues</Declaration>
+			
+			
+			<Anchor>//api/name/updateCellValues</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

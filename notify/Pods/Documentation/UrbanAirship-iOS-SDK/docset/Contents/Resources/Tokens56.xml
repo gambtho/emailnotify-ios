@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAInboxMessageList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInboxMessageList</TokenIdentifier>
+			<Abstract type="html">The primary interface to the contents of the inbox.
+Use this class to asychronously retrieve messges from the server,
+delete or mark messages as read, retrieve individual messages from the
+list.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxMessageList/shared</TokenIdentifier>
+			<Abstract type="html">The shared singleton accessor.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>+ (UAInboxMessageList *)shared</Declaration>
+			
+			
+			<Anchor>//api/name/shared</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxMessageList/land</TokenIdentifier>
+			<Abstract type="html">Teardown method.  This method is called as appropriate by the library,
+and thus you will not oridinarlly need to call it directly.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>+ (void)land</Declaration>
+			
+			
+			<Anchor>//api/name/land</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/retrieveMessageList</TokenIdentifier>
+			<Abstract type="html">Fetch new messages from the server.  This will result in a
+callback to observers at [UAInboxMessageListObserver messageListWillLoad] when loading starts,
+and [UAInboxMessageListObserver messageListLoaded] upon completion.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (void)retrieveMessageList</Declaration>
+			
+			
+			<Anchor>//api/name/retrieveMessageList</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/performBatchUpdateCommand:withMessageIndexSet:</TokenIdentifier>
+			<Abstract type="html">Update the message list by marking messages as read, or deleting them.
+This eventually will result in an asyncrhonous observer callback to
+[UAInboxMessageListObserver batchMarkAsReadFinished],
+[UAInboxMessageListObserver batchMarkAsReadFailed],
+[UAInboxMessageListObserver batchDeleteFinished], or
+[UAInboxMessageListObserver batchDeleteFailed].</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (void)performBatchUpdateCommand:(UABatchUpdateCommand)command withMessageIndexSet:(NSIndexSet *)messageIndexSet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>command</Name>
+					<Abstract type="html">the UABatchUpdateCommand to perform.</Abstract>
+				</Parameter><Parameter>
+					<Name>messageIndexSet</Name>
+					<Abstract type="html">an NSIndexSet of message IDs representing the subset of the inbox to update.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performBatchUpdateCommand:withMessageIndexSet:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/messageCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of messages currently in the inbox.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (int)messageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The message count as an integer.</Abstract></ReturnValue>
+			<Anchor>//api/name/messageCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/messageForID:</TokenIdentifier>
+			<Abstract type="html">Returns the message associated with a particular ID.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (UAInboxMessage *)messageForID:(NSString *)mid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mid</Name>
+					<Abstract type="html">The message ID as an NSString.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The associated UAInboxMessage object.</Abstract></ReturnValue>
+			<Anchor>//api/name/messageForID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/messageAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the message associated with a particular message list index.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (UAInboxMessage *)messageAtIndex:(int)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The message list index as an integer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The associated UAInboxMessage object.</Abstract></ReturnValue>
+			<Anchor>//api/name/messageAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/indexOfMessage:</TokenIdentifier>
+			<Abstract type="html">Returns the index of a particular message within the message list.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>- (int)indexOfMessage:(UAInboxMessage *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The UAInboxMessage object of interest.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The index of the message as an integer.</Abstract></ReturnValue>
+			<Anchor>//api/name/indexOfMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/setMessages:</TokenIdentifier>
+			<Abstract type="html">The list of messages on disk as an NSMutableArray.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *messages</Declaration>
+			
+			
+			<Anchor>//api/name/messages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageList/messages</TokenIdentifier>
+			<Abstract type="html">The list of messages on disk as an NSMutableArray.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *messages</Declaration>
+			
+			
+			<Anchor>//api/name/messages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/setUnreadCount:</TokenIdentifier>
+			<Abstract type="html">The number of messages that are currently unread or -1
+if the message list is not loaded.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int unreadCount</Declaration>
+			
+			
+			<Anchor>//api/name/unreadCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageList/unreadCount</TokenIdentifier>
+			<Abstract type="html">The number of messages that are currently unread or -1
+if the message list is not loaded.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int unreadCount</Declaration>
+			
+			
+			<Anchor>//api/name/unreadCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/setIsBatchUpdating:</TokenIdentifier>
+			<Abstract type="html">YES if a batch update is currently being performed on the message list,
+NO otherwise.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL isBatchUpdating</Declaration>
+			
+			
+			<Anchor>//api/name/isBatchUpdating</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageList/isBatchUpdating</TokenIdentifier>
+			<Abstract type="html">YES if a batch update is currently being performed on the message list,
+NO otherwise.</Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL isBatchUpdating</Declaration>
+			
+			
+			<Anchor>//api/name/isBatchUpdating</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageList/setIsRetrieving:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isRetrieving</Declaration>
+			
+			
+			<Anchor>//api/name/isRetrieving</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageList/isRetrieving</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInboxMessageList.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isRetrieving</Declaration>
+			
+			
+			<Anchor>//api/name/isRetrieving</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

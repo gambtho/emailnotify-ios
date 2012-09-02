@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAUserObserver.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAUserObserver</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>
+			
+			<NodeRef refid="195"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/userUpdated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userUpdateFailed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userUpdateFailed</Declaration>
+			
+			
+			<Anchor>//api/name/userUpdateFailed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRecoveryStarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRecoveryStarted</Declaration>
+			
+			
+			<Anchor>//api/name/userRecoveryStarted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRecoveryFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRecoveryFinished</Declaration>
+			
+			
+			<Anchor>//api/name/userRecoveryFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRecoveryFailed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRecoveryFailed</Declaration>
+			
+			
+			<Anchor>//api/name/userRecoveryFailed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRetrieveStarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRetrieveStarted</Declaration>
+			
+			
+			<Anchor>//api/name/userRetrieveStarted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRetrieveFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRetrieveFinished</Declaration>
+			
+			
+			<Anchor>//api/name/userRetrieveFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAUserObserver/userRetrieveFailed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)userRetrieveFailed</Declaration>
+			
+			
+			<Anchor>//api/name/userRetrieveFailed</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -11,7 +11,7 @@
 @implementation Constants
 
 #if DEBUG
-NSString * const HOST = @"http://127.0.0.1:8888";
+NSString * const HOST = @"http://10.0.1.22:8888";
 #else
 NSString * const HOST = @"http://notifyweb.appspot.com";
 #endif

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UABaseLocationProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UABaseLocationProvider</TokenIdentifier>
+			<Abstract type="html">This is the base class for location providers. You should not
+implement this class directly. See the documentation for CLLocationManager for
+CLLocationManager details. https://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/description</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">Location manager used for providing location data. Setting this value has
+the side effect of assigning this class as the delegate of the
+new CLLocationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UABaseLocationProvider/locationManager</TokenIdentifier>
+			<Abstract type="html">Location manager used for providing location data. Setting this value has
+the side effect of assigning this class as the delegate of the
+new CLLocationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setMaximumElapsedTimeForCachedLocation:</TokenIdentifier>
+			<Abstract type="html">In certain cases, cached values are immediately returned when starting a location service.
+Any location with a time interval older than this value will be considered invalid.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval maximumElapsedTimeForCachedLocation</Declaration>
+			
+			
+			<Anchor>//api/name/maximumElapsedTimeForCachedLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UABaseLocationProvider/maximumElapsedTimeForCachedLocation</TokenIdentifier>
+			<Abstract type="html">In certain cases, cached values are immediately returned when starting a location service.
+Any location with a time interval older than this value will be considered invalid.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval maximumElapsedTimeForCachedLocation</Declaration>
+			
+			
+			<Anchor>//api/name/maximumElapsedTimeForCachedLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/distanceFilter</TokenIdentifier>
+			<Abstract type="html">The distance filter one the locationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocationDistance)distanceFilter</Declaration>
+			
+			
+			<Anchor>//api/name/distanceFilter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setDistanceFilter:</TokenIdentifier>
+			<Abstract type="html">Changes the distanceFilter on the locationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDistanceFilter:(CLLocationDistance)distanceFilter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>distanceFilter</Name>
+					<Abstract type="html">The new distance filter</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDistanceFilter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/desiredAccuracy</TokenIdentifier>
+			<Abstract type="html">The desired accuracy currently set on the locationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocationAccuracy)desiredAccuracy</Declaration>
+			
+			
+			<Anchor>//api/name/desiredAccuracy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setDesiredAccuracy:</TokenIdentifier>
+			<Abstract type="html">Changes the desiredAccuracy on the locationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>desiredAccuracy</Name>
+					<Abstract type="html">The new desiredAccuracy</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDesiredAccuracy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/purpose</TokenIdentifier>
+			<Abstract type="html">Current purpose attached to the CLLocationMananger locationManager</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)purpose</Declaration>
+			
+			<ReturnValue><Abstract type="html">Current purpose on the locationManager</Abstract></ReturnValue>
+			<Anchor>//api/name/purpose</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setPurpose:</TokenIdentifier>
+			<Abstract type="html">Sets the purpose on the CLLocationManager locationManger which is displayed to the user
+when the UIAlertView is displayed asking the user for location permission.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPurpose:(NSString *)newPurpose</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newPurpose</Name>
+					<Abstract type="html">String to be set on the locationManager</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPurpose:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/location</TokenIdentifier>
+			<Abstract type="html">The most recently received location available from the CLLocationManager object. This may be more accurate than
+the last reported location, and it may also be nil. See CLLocationManager documentation for more details.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocation *)location</Declaration>
+			
+			<ReturnValue><Abstract type="html">The most recent location, if one is availablenil if no recent location is available</Abstract></ReturnValue>
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate that receives location updates</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;UALocationProviderDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UABaseLocationProvider/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate that receives location updates</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;UALocationProviderDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setServiceStatus:</TokenIdentifier>
+			<Abstract type="html">Status of the location service.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UALocationProviderStatus serviceStatus</Declaration>
+			
+			
+			<Anchor>//api/name/serviceStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UABaseLocationProvider/serviceStatus</TokenIdentifier>
+			<Abstract type="html">Status of the location service.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UALocationProviderStatus serviceStatus</Declaration>
+			
+			
+			<Anchor>//api/name/serviceStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/setProvider:</TokenIdentifier>
+			<Abstract type="html">Provider type must be set by subclasses</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) UALocationServiceProviderType *provider</Declaration>
+			
+			
+			<Anchor>//api/name/provider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UABaseLocationProvider/provider</TokenIdentifier>
+			<Abstract type="html">Provider type must be set by subclasses</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) UALocationServiceProviderType *provider</Declaration>
+			
+			
+			<Anchor>//api/name/provider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Initializes the object with a delegate</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDelegate:(id&lt;UALocationProviderDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">Delegate object that implements the UALocationProviderDelegate protocol</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/locationChangeMeetsAccuracyRequirements:from:</TokenIdentifier>
+			<Abstract type="html">Calculates location change accuracy</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)locationChangeMeetsAccuracyRequirements:(CLLocation *)newLocation from:(CLLocation *)oldLocation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newLocation</Name>
+					<Abstract type="html">The updated location from the location service.</Abstract>
+				</Parameter><Parameter>
+					<Name>oldLocation</Name>
+					<Abstract type="html">The location that the new location is compared to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the location meets accuracy requirementsNO if the location does not meet accuracy requirements</Abstract></ReturnValue>
+			<Anchor>//api/name/locationChangeMeetsAccuracyRequirements:from:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/startReportingLocation</TokenIdentifier>
+			<Abstract type="html">Empty method meant to be overridden.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)startReportingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/startReportingLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABaseLocationProvider/stopReportingLocation</TokenIdentifier>
+			<Abstract type="html">Empty method meant to be overridden.</Abstract>
+			<DeclaredIn>UABaseLocationProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopReportingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/stopReportingLocation</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

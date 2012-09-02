@@ -1,0 +1,1174 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UAAnalytics Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UAAnalytics Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/connection">&nbsp;&nbsp;&nbsp;&nbsp;connection</option>
+	
+	<option value="//api/name/databaseSize">&nbsp;&nbsp;&nbsp;&nbsp;databaseSize</option>
+	
+	<option value="//api/name/isEnteringForeground">&nbsp;&nbsp;&nbsp;&nbsp;isEnteringForeground</option>
+	
+	<option value="//api/name/notificationUserInfo">&nbsp;&nbsp;&nbsp;&nbsp;notificationUserInfo</option>
+	
+	<option value="//api/name/oldestEventTime">&nbsp;&nbsp;&nbsp;&nbsp;oldestEventTime</option>
+	
+	<option value="//api/name/sendBackgroundTask">&nbsp;&nbsp;&nbsp;&nbsp;sendBackgroundTask</option>
+	
+	<option value="//api/name/sendInterval">&nbsp;&nbsp;&nbsp;&nbsp;sendInterval</option>
+	
+	<option value="//api/name/sendTimer">&nbsp;&nbsp;&nbsp;&nbsp;sendTimer</option>
+	
+	<option value="//api/name/server">&nbsp;&nbsp;&nbsp;&nbsp;server</option>
+	
+	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;session</option>
+	
+	<option value="//api/name/x_ua_max_batch">&nbsp;&nbsp;&nbsp;&nbsp;x_ua_max_batch</option>
+	
+	<option value="//api/name/x_ua_max_total">&nbsp;&nbsp;&nbsp;&nbsp;x_ua_max_total</option>
+	
+	<option value="//api/name/x_ua_max_wait">&nbsp;&nbsp;&nbsp;&nbsp;x_ua_max_wait</option>
+	
+	<option value="//api/name/x_ua_min_batch_interval">&nbsp;&nbsp;&nbsp;&nbsp;x_ua_min_batch_interval</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- addEvent:</option>
+	
+	<option value="//api/name/analyticsRequest">&nbsp;&nbsp;&nbsp;&nbsp;- analyticsRequest</option>
+	
+	<option value="//api/name/didBecomeActive">&nbsp;&nbsp;&nbsp;&nbsp;- didBecomeActive</option>
+	
+	<option value="//api/name/enterBackground">&nbsp;&nbsp;&nbsp;&nbsp;- enterBackground</option>
+	
+	<option value="//api/name/enterForeground">&nbsp;&nbsp;&nbsp;&nbsp;- enterForeground</option>
+	
+	<option value="//api/name/handleNotification:">&nbsp;&nbsp;&nbsp;&nbsp;- handleNotification:</option>
+	
+	<option value="//api/name/initSession">&nbsp;&nbsp;&nbsp;&nbsp;- initSession</option>
+	
+	<option value="//api/name/initWithOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithOptions:</option>
+	
+	<option value="//api/name/invalidate">&nbsp;&nbsp;&nbsp;&nbsp;- invalidate</option>
+	
+	<option value="//api/name/invalidateBackgroundTask">&nbsp;&nbsp;&nbsp;&nbsp;- invalidateBackgroundTask</option>
+	
+	<option value="//api/name/lastSendTime">&nbsp;&nbsp;&nbsp;&nbsp;- lastSendTime</option>
+	
+	<option value="//api/name/prepareEventsForUpload">&nbsp;&nbsp;&nbsp;&nbsp;- prepareEventsForUpload</option>
+	
+	<option value="//api/name/refreshSessionWhenActive">&nbsp;&nbsp;&nbsp;&nbsp;- refreshSessionWhenActive</option>
+	
+	<option value="//api/name/refreshSessionWhenNetworkChanged">&nbsp;&nbsp;&nbsp;&nbsp;- refreshSessionWhenNetworkChanged</option>
+	
+	<option value="//api/name/resetEventsDatabaseStatus">&nbsp;&nbsp;&nbsp;&nbsp;- resetEventsDatabaseStatus</option>
+	
+	<option value="//api/name/restoreFromDefault">&nbsp;&nbsp;&nbsp;&nbsp;- restoreFromDefault</option>
+	
+	<option value="//api/name/saveDefault">&nbsp;&nbsp;&nbsp;&nbsp;- saveDefault</option>
+	
+	<option value="//api/name/send">&nbsp;&nbsp;&nbsp;&nbsp;- send</option>
+	
+	<option value="//api/name/setLastSendTime:">&nbsp;&nbsp;&nbsp;&nbsp;- setLastSendTime:</option>
+	
+	<option value="//api/name/setSendInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- setSendInterval:</option>
+	
+	<option value="//api/name/setupSendTimer:">&nbsp;&nbsp;&nbsp;&nbsp;- setupSendTimer:</option>
+	
+	<option value="//api/name/shouldSendAnalytics">&nbsp;&nbsp;&nbsp;&nbsp;- shouldSendAnalytics</option>
+	
+	<option value="//api/name/updateAnalyticsParametersWithHeaderValues:">&nbsp;&nbsp;&nbsp;&nbsp;- updateAnalyticsParametersWithHeaderValues:</option>
+	
+	<option value="//api/name/willResignActive">&nbsp;&nbsp;&nbsp;&nbsp;- willResignActive</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection">connection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/databaseSize">databaseSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEnteringForeground">isEnteringForeground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notificationUserInfo">notificationUserInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/oldestEventTime">oldestEventTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendBackgroundTask">sendBackgroundTask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendInterval">sendInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendTimer">sendTimer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/server">server</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x_ua_max_batch">x_ua_max_batch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x_ua_max_total">x_ua_max_total</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x_ua_max_wait">x_ua_max_wait</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x_ua_min_batch_interval">x_ua_min_batch_interval</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addEvent:">addEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analyticsRequest">analyticsRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBecomeActive">didBecomeActive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enterBackground">enterBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enterForeground">enterForeground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleNotification:">handleNotification:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initSession">initSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithOptions:">initWithOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidate">invalidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidateBackgroundTask">invalidateBackgroundTask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastSendTime">lastSendTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareEventsForUpload">prepareEventsForUpload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshSessionWhenActive">refreshSessionWhenActive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshSessionWhenNetworkChanged">refreshSessionWhenNetworkChanged</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetEventsDatabaseStatus">resetEventsDatabaseStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreFromDefault">restoreFromDefault</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveDefault">saveDefault</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/send">send</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLastSendTime:">setLastSendTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSendInterval:">setSendInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupSendTimer:">setupSendTimer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldSendAnalytics">shouldSendAnalytics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateAnalyticsParametersWithHeaderValues:">updateAnalyticsParametersWithHeaderValues:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willResignActive">willResignActive</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UAAnalytics Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UAAnalytics Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/UAHTTPConnectionDelegate.html">UAHTTPConnectionDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UAAnalytics.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/server">&nbsp;&nbsp;server</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/databaseSize">&nbsp;&nbsp;databaseSize</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x_ua_max_total">&nbsp;&nbsp;x_ua_max_total</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x_ua_max_batch">&nbsp;&nbsp;x_ua_max_batch</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x_ua_max_wait">&nbsp;&nbsp;x_ua_max_wait</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x_ua_min_batch_interval">&nbsp;&nbsp;x_ua_min_batch_interval</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendInterval">&nbsp;&nbsp;sendInterval</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/oldestEventTime">&nbsp;&nbsp;oldestEventTime</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendTimer">&nbsp;&nbsp;sendTimer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendBackgroundTask">&nbsp;&nbsp;sendBackgroundTask</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notificationUserInfo">&nbsp;&nbsp;notificationUserInfo</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithOptions:">&ndash;&nbsp;initWithOptions:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addEvent:">&ndash;&nbsp;addEvent:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleNotification:">&ndash;&nbsp;handleNotification:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidate">&ndash;&nbsp;invalidate</a></code>
+		<span class="tooltip"><p>This class contains an NSTimer. This timer must be invalidated before
+this class is released, or there will be a memory leak. Call invalidate
+before deallocating this class</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastSendTime">&ndash;&nbsp;lastSendTime</a></code>
+		<span class="tooltip"><p>Date representing the last attempt to <a href="#//api/name/send">send</a> analytics</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection">&nbsp;&nbsp;connection</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEnteringForeground">&nbsp;&nbsp;isEnteringForeground</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initSession">&ndash;&nbsp;initSession</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreFromDefault">&ndash;&nbsp;restoreFromDefault</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveDefault">&ndash;&nbsp;saveDefault</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetEventsDatabaseStatus">&ndash;&nbsp;resetEventsDatabaseStatus</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/send">&ndash;&nbsp;send</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSendInterval:">&ndash;&nbsp;setSendInterval:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupSendTimer:">&ndash;&nbsp;setupSendTimer:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateAnalyticsParametersWithHeaderValues:">&ndash;&nbsp;updateAnalyticsParametersWithHeaderValues:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldSendAnalytics">&ndash;&nbsp;shouldSendAnalytics</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLastSendTime:">&ndash;&nbsp;setLastSendTime:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enterForeground">&ndash;&nbsp;enterForeground</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enterBackground">&ndash;&nbsp;enterBackground</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBecomeActive">&ndash;&nbsp;didBecomeActive</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willResignActive">&ndash;&nbsp;willResignActive</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshSessionWhenNetworkChanged">&ndash;&nbsp;refreshSessionWhenNetworkChanged</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshSessionWhenActive">&ndash;&nbsp;refreshSessionWhenActive</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidateBackgroundTask">&ndash;&nbsp;invalidateBackgroundTask</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analyticsRequest">&ndash;&nbsp;analyticsRequest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareEventsForUpload">&ndash;&nbsp;prepareEventsForUpload</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connection" title="connection"></a>
+	<h3 class="subsubtitle method-title">connection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UAHTTPConnection *connection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/databaseSize" title="databaseSize"></a>
+	<h3 class="subsubtitle method-title">databaseSize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int databaseSize</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEnteringForeground" title="isEnteringForeground"></a>
+	<h3 class="subsubtitle method-title">isEnteringForeground</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isEnteringForeground</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notificationUserInfo" title="notificationUserInfo"></a>
+	<h3 class="subsubtitle method-title">notificationUserInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSDictionary *notificationUserInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/oldestEventTime" title="oldestEventTime"></a>
+	<h3 class="subsubtitle method-title">oldestEventTime</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSTimeInterval oldestEventTime</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendBackgroundTask" title="sendBackgroundTask"></a>
+	<h3 class="subsubtitle method-title">sendBackgroundTask</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) UIBackgroundTaskIdentifier sendBackgroundTask</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendInterval" title="sendInterval"></a>
+	<h3 class="subsubtitle method-title">sendInterval</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int sendInterval</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendTimer" title="sendTimer"></a>
+	<h3 class="subsubtitle method-title">sendTimer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSTimer *sendTimer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/server" title="server"></a>
+	<h3 class="subsubtitle method-title">server</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *server</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="subsubtitle method-title">session</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSMutableDictionary *session</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x_ua_max_batch" title="x_ua_max_batch"></a>
+	<h3 class="subsubtitle method-title">x_ua_max_batch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int x_ua_max_batch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x_ua_max_total" title="x_ua_max_total"></a>
+	<h3 class="subsubtitle method-title">x_ua_max_total</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int x_ua_max_total</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x_ua_max_wait" title="x_ua_max_wait"></a>
+	<h3 class="subsubtitle method-title">x_ua_max_wait</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int x_ua_max_wait</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x_ua_min_batch_interval" title="x_ua_min_batch_interval"></a>
+	<h3 class="subsubtitle method-title">x_ua_min_batch_interval</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) int x_ua_min_batch_interval</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addEvent:" title="addEvent:"></a>
+	<h3 class="subsubtitle method-title">addEvent:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addEvent:(UAEvent *)<em>event</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analyticsRequest" title="analyticsRequest"></a>
+	<h3 class="subsubtitle method-title">analyticsRequest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (UAHTTPRequest *)analyticsRequest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBecomeActive" title="didBecomeActive"></a>
+	<h3 class="subsubtitle method-title">didBecomeActive</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didBecomeActive</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enterBackground" title="enterBackground"></a>
+	<h3 class="subsubtitle method-title">enterBackground</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)enterBackground</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enterForeground" title="enterForeground"></a>
+	<h3 class="subsubtitle method-title">enterForeground</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)enterForeground</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleNotification:" title="handleNotification:"></a>
+	<h3 class="subsubtitle method-title">handleNotification:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleNotification:(NSDictionary *)<em>userInfo</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initSession" title="initSession"></a>
+	<h3 class="subsubtitle method-title">initSession</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)initSession</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithOptions:" title="initWithOptions:"></a>
+	<h3 class="subsubtitle method-title">initWithOptions:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidate" title="invalidate"></a>
+	<h3 class="subsubtitle method-title">invalidate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This class contains an NSTimer. This timer must be invalidated before
+this class is released, or there will be a memory leak. Call invalidate
+before deallocating this class</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This class contains an NSTimer. This timer must be invalidated before
+this class is released, or there will be a memory leak. Call invalidate
+before deallocating this class</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UAAnalytics.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidateBackgroundTask" title="invalidateBackgroundTask"></a>
+	<h3 class="subsubtitle method-title">invalidateBackgroundTask</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidateBackgroundTask</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastSendTime" title="lastSendTime"></a>
+	<h3 class="subsubtitle method-title">lastSendTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Date representing the last attempt to <a href="#//api/name/send">send</a> analytics</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)lastSendTime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Date representing the last attempt to <a href="#//api/name/send">send</a> analytics</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UAAnalytics.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareEventsForUpload" title="prepareEventsForUpload"></a>
+	<h3 class="subsubtitle method-title">prepareEventsForUpload</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)prepareEventsForUpload</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshSessionWhenActive" title="refreshSessionWhenActive"></a>
+	<h3 class="subsubtitle method-title">refreshSessionWhenActive</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)refreshSessionWhenActive</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshSessionWhenNetworkChanged" title="refreshSessionWhenNetworkChanged"></a>
+	<h3 class="subsubtitle method-title">refreshSessionWhenNetworkChanged</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)refreshSessionWhenNetworkChanged</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetEventsDatabaseStatus" title="resetEventsDatabaseStatus"></a>
+	<h3 class="subsubtitle method-title">resetEventsDatabaseStatus</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)resetEventsDatabaseStatus</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreFromDefault" title="restoreFromDefault"></a>
+	<h3 class="subsubtitle method-title">restoreFromDefault</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)restoreFromDefault</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveDefault" title="saveDefault"></a>
+	<h3 class="subsubtitle method-title">saveDefault</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)saveDefault</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/send" title="send"></a>
+	<h3 class="subsubtitle method-title">send</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)send</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLastSendTime:" title="setLastSendTime:"></a>
+	<h3 class="subsubtitle method-title">setLastSendTime:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setLastSendTime:(NSDate *)<em>lastSendTime</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSendInterval:" title="setSendInterval:"></a>
+	<h3 class="subsubtitle method-title">setSendInterval:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setSendInterval:(int)<em>sendTimer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupSendTimer:" title="setupSendTimer:"></a>
+	<h3 class="subsubtitle method-title">setupSendTimer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setupSendTimer:(NSTimeInterval)<em>timeInterval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldSendAnalytics" title="shouldSendAnalytics"></a>
+	<h3 class="subsubtitle method-title">shouldSendAnalytics</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldSendAnalytics</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateAnalyticsParametersWithHeaderValues:" title="updateAnalyticsParametersWithHeaderValues:"></a>
+	<h3 class="subsubtitle method-title">updateAnalyticsParametersWithHeaderValues:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateAnalyticsParametersWithHeaderValues:(NSHTTPURLResponse *)<em>response</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willResignActive" title="willResignActive"></a>
+	<h3 class="subsubtitle method-title">willResignActive</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)willResignActive</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

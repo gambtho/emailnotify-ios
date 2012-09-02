@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAirship.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAirship</TokenIdentifier>
+			<Abstract type="html">UAirship manages the shared state for all Urban Airship services. [UAirship takeOff:] should be
+called from [UIApplication application:didFinishLaunchingWithOptions] to initialize the shared
+instance.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>
+			
+			<NodeRef refid="146"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setDeviceToken:</TokenIdentifier>
+			<Abstract type="html">The current APNS/remote notification device token.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/deviceToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/deviceToken</TokenIdentifier>
+			<Abstract type="html">The current APNS/remote notification device token.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/deviceToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setAnalytics:</TokenIdentifier>
+			<Abstract type="html">The shared analytics manager. There are not currently any user-defined events,
+so this is for internal library use only at this time.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAnalytics *analytics</Declaration>
+			
+			
+			<Anchor>//api/name/analytics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/analytics</TokenIdentifier>
+			<Abstract type="html">The shared analytics manager. There are not currently any user-defined events,
+so this is for internal library use only at this time.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAAnalytics *analytics</Declaration>
+			
+			
+			<Anchor>//api/name/analytics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setServer:</TokenIdentifier>
+			<Abstract type="html">The Urban Airship API server. Defaults to https://device-api.urbanairship.com.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/server</TokenIdentifier>
+			<Abstract type="html">The Urban Airship API server. Defaults to https://device-api.urbanairship.com.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setAppId:</TokenIdentifier>
+			<Abstract type="html">The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
+an NSDictionary passed in to [UAAirship takeOff:] with the
+UAirshipTakeOffOptionsAirshipConfigKey. If APPSTOREORADHOC_BUILD is set to YES, the value set
+in PRODUCTIONAPPKEY will be used. If APPSTOREORADHOC_BUILD is set to NO, the value set in
+DEVELOPMENTAPPKEY will be used.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *appId</Declaration>
+			
+			
+			<Anchor>//api/name/appId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/appId</TokenIdentifier>
+			<Abstract type="html">The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
+an NSDictionary passed in to [UAAirship takeOff:] with the
+UAirshipTakeOffOptionsAirshipConfigKey. If APPSTOREORADHOC_BUILD is set to YES, the value set
+in PRODUCTIONAPPKEY will be used. If APPSTOREORADHOC_BUILD is set to NO, the value set in
+DEVELOPMENTAPPKEY will be used.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *appId</Declaration>
+			
+			
+			<Anchor>//api/name/appId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setAppSecret:</TokenIdentifier>
+			<Abstract type="html">The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
+an NSDictionary passed in to [UAAirship takeOff:] with the
+UAirshipTakeOffOptionsAirshipConfigKey. If APPSTOREORADHOC_BUILD is set to YES, the value set
+in PRODUCTIONAPPSECRET will be used. If APPSTOREORADHOC_BUILD is set to NO, the value set in
+DEVELOPMENTAPPSECRET will be used.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *appSecret</Declaration>
+			
+			
+			<Anchor>//api/name/appSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/appSecret</TokenIdentifier>
+			<Abstract type="html">The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
+an NSDictionary passed in to [UAAirship takeOff:] with the
+UAirshipTakeOffOptionsAirshipConfigKey. If APPSTOREORADHOC_BUILD is set to YES, the value set
+in PRODUCTIONAPPSECRET will be used. If APPSTOREORADHOC_BUILD is set to NO, the value set in
+DEVELOPMENTAPPSECRET will be used.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *appSecret</Declaration>
+			
+			
+			<Anchor>//api/name/appSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/set:</TokenIdentifier>
+			<Abstract type="html">This flag is set to YES if the device token has been updated. It is intended for use by
+UAUser and should not be used by implementing applications. To receive updates when the
+device token changes, applications should implement a UARegistrationObserver and observe
+UAPush.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL deviceTokenHasChanged UA_DEPRECATED ( __UA_LIB_1_3_0__ )</Declaration>
+			
+			
+			<Anchor>//api/name/)</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/)</TokenIdentifier>
+			<Abstract type="html">This flag is set to YES if the device token has been updated. It is intended for use by
+UAUser and should not be used by implementing applications. To receive updates when the
+device token changes, applications should implement a UARegistrationObserver and observe
+UAPush.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL deviceTokenHasChanged UA_DEPRECATED ( __UA_LIB_1_3_0__ )</Declaration>
+			
+			
+			<Anchor>//api/name/)</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setReady:</TokenIdentifier>
+			<Abstract type="html">This flag is set to YES if the shared instance of
+UAirship has been initialized and is ready for use.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL ready</Declaration>
+			
+			
+			<Anchor>//api/name/ready</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/ready</TokenIdentifier>
+			<Abstract type="html">This flag is set to YES if the shared instance of
+UAirship has been initialized and is ready for use.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL ready</Declaration>
+			
+			
+			<Anchor>//api/name/ready</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/setLocationService:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, getter=locationService) UALocationService *locationService</Declaration>
+			
+			
+			<Anchor>//api/name/locationService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAirship/locationService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, getter=locationService) UALocationService *locationService</Declaration>
+			
+			
+			<Anchor>//api/name/locationService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/locationService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (UALocationService *)locationService</Declaration>
+			
+			
+			<Anchor>//api/name/locationService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAirship/setLogging:</TokenIdentifier>
+			<Abstract type="html">Enables or disables logging. Logging is enabled by default, but it will be disabled when the
+APPSTOREORADHOC_BUILD AirshipConfig flag is set to YES. This flag overrides the
+AirshipConfig settings.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setLogging:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">If YES, console logging is enabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLogging:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAirship/takeOff:</TokenIdentifier>
+			<Abstract type="html">Initializes UAirship and performs all necessary setup. This creates the shared instance, loads
+configuration values, initializes the analytics/reporting
+module and creates a UAUser if one does not already exist.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>+ (void)takeOff:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">An NSDictionary containing UAirshipTakeOffOptions[...] keys and values. This
+dictionary must contain the launch options.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/takeOff:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAirship/land</TokenIdentifier>
+			<Abstract type="html">Perform teardown on the shared instance. This should be called when an application
+terminates.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>+ (void)land</Declaration>
+			
+			
+			<Anchor>//api/name/land</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAirship/shared</TokenIdentifier>
+			<Abstract type="html">Returns the shared UAirship instance. This will raise an exception
+if [UAirship takeOff:] has not been called.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>+ (UAirship *)shared</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared UAirship instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/shared</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/registerDeviceToken:</TokenIdentifier>
+			<Abstract type="html">Register a device token with UA. This will register a device token without an alias or tags.
+If an alias is set on the device token, it will be removed. Tags will not be changed.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerDeviceToken:(NSData *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">The device token to register.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerDeviceToken:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/registerDeviceTokenWithExtraInfo:</TokenIdentifier>
+			<Abstract type="html">Register the current device token with UA.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerDeviceTokenWithExtraInfo:(NSDictionary *)info</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>info</Name>
+					<Abstract type="html">An NSDictionary containing registraton keys and values. See
+http://urbanairship.com/docs/push.html#registration for details.
+
+Add a UARegistrationObserver to UAPush to receive success or failure callbacks.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerDeviceTokenWithExtraInfo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/registerDeviceToken:withAlias:</TokenIdentifier>
+			<Abstract type="html">Register a device token and alias with UA.  An alias should only have a small
+number (&lt; 10) of device tokens associated with it. Use the tags API for arbitrary
+groupings.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerDeviceToken:(NSData *)token withAlias:(NSString *)alias</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">The device token to register.</Abstract>
+				</Parameter><Parameter>
+					<Name>alias</Name>
+					<Abstract type="html">The alias to register for this device token.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerDeviceToken:withAlias:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/registerDeviceToken:withExtraInfo:</TokenIdentifier>
+			<Abstract type="html">Register a device token with a custom API payload.</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerDeviceToken:(NSData *)token withExtraInfo:(NSDictionary *)info</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">The device token to register.</Abstract>
+				</Parameter><Parameter>
+					<Name>info</Name>
+					<Abstract type="html">An NSDictionary containing registraton keys and values. See
+https://docs.urbanairship.com/display/DOCS/Server%3A+iOS+Push+API for details.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerDeviceToken:withExtraInfo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/unRegisterDeviceToken</TokenIdentifier>
+			<Abstract type="html">Remove this device token&apos;s registration from the server.
+This call is equivalent to an API DELETE call, as described here:
+http://urbanairship.com/docs/push.html#registration</Abstract>
+			<DeclaredIn>UAirship.h</DeclaredIn>			
+			
+			<Declaration>- (void)unRegisterDeviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/unRegisterDeviceToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAirship/configureUserAgent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAirship+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)configureUserAgent</Declaration>
+			
+			
+			<Anchor>//api/name/configureUserAgent</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

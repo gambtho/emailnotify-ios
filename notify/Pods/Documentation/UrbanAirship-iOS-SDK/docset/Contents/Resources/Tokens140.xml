@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UA_FMStatement.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_FMStatement</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>
+			
+			<NodeRef refid="140"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/close</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/statement</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (sqlite3_stmt *)statement</Declaration>
+			
+			
+			<Anchor>//api/name/statement</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/setStatement:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)setStatement:(sqlite3_stmt *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setStatement:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/query</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/setQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)setQuery:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setQuery:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/useCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (long)useCount</Declaration>
+			
+			
+			<Anchor>//api/name/useCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_FMStatement/setUseCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_FMDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUseCount:(long)value</Declaration>
+			
+			
+			<Anchor>//api/name/setUseCount:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GTMRegex.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GTMRegex</TokenIdentifier>
+			<Abstract type="html">Class for doing Extended Regex operations w/ libregex (see re_format(7)).</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMRegex/regexWithPattern:</TokenIdentifier>
+			<Abstract type="html">Create a new, autoreleased object w/ the given regex pattern with the default options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>+ (id)regexWithPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/regexWithPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMRegex/regexWithPattern:options:</TokenIdentifier>
+			<Abstract type="html">Create a new, autoreleased object w/ the given regex pattern and specify the matching options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>+ (id)regexWithPattern:(NSString *)pattern options:(GTMRegexOptions)options</Declaration>
+			
+			
+			<Anchor>//api/name/regexWithPattern:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMRegex/regexWithPattern:options:withError:</TokenIdentifier>
+			<Abstract type="html">Create a new, autoreleased object w/ the given regex pattern, specify the matching options and receive any error consuming the pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>+ (id)regexWithPattern:(NSString *)pattern options:(GTMRegexOptions)options withError:(NSError **)outErrorOrNULL</Declaration>
+			
+			
+			<Anchor>//api/name/regexWithPattern:options:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMRegex/escapedPatternForString:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased copy of |str| w/ any pattern chars in it escaped so they have no meaning when used w/in a pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)escapedPatternForString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/escapedPatternForString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/initWithPattern:</TokenIdentifier>
+			<Abstract type="html">Initialize a new object w/ the given regex pattern with the default options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPattern:(NSString *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/initWithPattern:options:</TokenIdentifier>
+			<Abstract type="html">Initialize a new object w/ the given regex pattern and specify the matching options</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPattern:(NSString *)pattern options:(GTMRegexOptions)options</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPattern:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/initWithPattern:options:withError:</TokenIdentifier>
+			<Abstract type="html">Initialize a new object w/ the given regex pattern, specify the matching options, and receive any error consuming the pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPattern:(NSString *)pattern options:(GTMRegexOptions)options withError:(NSError **)outErrorOrNULL</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPattern:options:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/subPatternCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of sub patterns in the pattern</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)subPatternCount</Declaration>
+			
+			
+			<Anchor>//api/name/subPatternCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/matchesString:</TokenIdentifier>
+			<Abstract type="html">Returns YES if the whole string |str| matches the pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)matchesString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/matchesString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/subPatternsOfString:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased array of string that contain the subpattern matches for the string.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)subPatternsOfString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/subPatternsOfString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/firstSubStringMatchedInString:</TokenIdentifier>
+			<Abstract type="html">Returns the first match for this pattern in |str|.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)firstSubStringMatchedInString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/firstSubStringMatchedInString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/matchesSubStringInString:</TokenIdentifier>
+			<Abstract type="html">Returns YES if this pattern some substring of |str|.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)matchesSubStringInString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/matchesSubStringInString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/segmentEnumeratorForString:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased enumerator that will walk segments (GTMRegexStringSegment of |str| based on the pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)segmentEnumeratorForString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/segmentEnumeratorForString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/matchSegmentEnumeratorForString:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased enumerator that will walk only the matching segments (GTMRegexStringSegment of |str| based on the pattern.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)matchSegmentEnumeratorForString:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/matchSegmentEnumeratorForString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMRegex/stringByReplacingMatchesInString:withReplacement:</TokenIdentifier>
+			<Abstract type="html">Returns a new, autoreleased string with all matches of the pattern in |str| replaced with |replacementPattern|.</Abstract>
+			<DeclaredIn>GTMRegex.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByReplacingMatchesInString:(NSString *)str withReplacement:(NSString *)replacementPattern</Declaration>
+			
+			
+			<Anchor>//api/name/stringByReplacingMatchesInString:withReplacement:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

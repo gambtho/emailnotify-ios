@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAPushUI.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAPushUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushUI.h</DeclaredIn>
+			
+			<NodeRef refid="88"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushUI/setLocalizationBundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
+			
+			
+			<Anchor>//api/name/localizationBundle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushUI/localizationBundle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
+			
+			
+			<Anchor>//api/name/localizationBundle</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

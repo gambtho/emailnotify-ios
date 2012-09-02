@@ -1,0 +1,893 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UALocationEvent Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UALocationEvent Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/locationEventWithLocation:locationManager:andUpdateType:">&nbsp;&nbsp;&nbsp;&nbsp;+ locationEventWithLocation:locationManager:andUpdateType:</option>
+	
+	<option value="//api/name/locationEventWithLocation:provider:andUpdateType:">&nbsp;&nbsp;&nbsp;&nbsp;+ locationEventWithLocation:provider:andUpdateType:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithLocation:locationManager:andUpdateType:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLocation:locationManager:andUpdateType:</option>
+	
+	<option value="//api/name/initWithLocation:provider:andUpdateType:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLocation:provider:andUpdateType:</option>
+	
+	<option value="//api/name/initWithLocationContext:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLocationContext:</option>
+	
+	<option value="//api/name/populateDictionary:withLocationManagerValues:">&nbsp;&nbsp;&nbsp;&nbsp;- populateDictionary:withLocationManagerValues:</option>
+	
+	<option value="//api/name/populateDictionary:withLocationProviderValues:">&nbsp;&nbsp;&nbsp;&nbsp;- populateDictionary:withLocationProviderValues:</option>
+	
+	<option value="//api/name/populateDictionary:withLocationValues:">&nbsp;&nbsp;&nbsp;&nbsp;- populateDictionary:withLocationValues:</option>
+	
+	<option value="//api/name/stringAsIntFromDouble:">&nbsp;&nbsp;&nbsp;&nbsp;- stringAsIntFromDouble:</option>
+	
+	<option value="//api/name/stringFromDoubleToSevenDigits:">&nbsp;&nbsp;&nbsp;&nbsp;- stringFromDoubleToSevenDigits:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Object Creation">Object Creation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Support Methods">Support Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationEventWithLocation:locationManager:andUpdateType:">locationEventWithLocation:locationManager:andUpdateType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationEventWithLocation:provider:andUpdateType:">locationEventWithLocation:provider:andUpdateType:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLocation:locationManager:andUpdateType:">initWithLocation:locationManager:andUpdateType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLocation:provider:andUpdateType:">initWithLocation:provider:andUpdateType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLocationContext:">initWithLocationContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/populateDictionary:withLocationManagerValues:">populateDictionary:withLocationManagerValues:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/populateDictionary:withLocationProviderValues:">populateDictionary:withLocationProviderValues:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/populateDictionary:withLocationValues:">populateDictionary:withLocationValues:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringAsIntFromDouble:">stringAsIntFromDouble:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringFromDoubleToSevenDigits:">stringFromDoubleToSevenDigits:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UALocationEvent Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UALocationEvent Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/UAEvent.html">UAEvent</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UALocationEvent.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A UALocationEvent captures all the necessary information for
+<a href="../Classes/UAAnalytics.html">UAAnalytics</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Object Creation" name="task_Object Creation"></a>
+						<h3 class="subsubtitle task-title">Object Creation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLocationContext:">&ndash;&nbsp;initWithLocationContext:</a></code>
+		<span class="tooltip"><p>Create a UALocationEvent</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLocation:provider:andUpdateType:">&ndash;&nbsp;initWithLocation:provider:andUpdateType:</a></code>
+		<span class="tooltip"><p>Creates a UALocationEvent parsing the necessary data from the method parameters</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLocation:locationManager:andUpdateType:">&ndash;&nbsp;initWithLocation:locationManager:andUpdateType:</a></code>
+		<span class="tooltip"><p>Creates a UALocationEvent parsing the necessary data form the method parameters.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationEventWithLocation:provider:andUpdateType:">+&nbsp;locationEventWithLocation:provider:andUpdateType:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationEventWithLocation:locationManager:andUpdateType:">+&nbsp;locationEventWithLocation:locationManager:andUpdateType:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Support Methods" name="task_Support Methods"></a>
+						<h3 class="subsubtitle task-title">Support Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/populateDictionary:withLocationValues:">&ndash;&nbsp;populateDictionary:withLocationValues:</a></code>
+		<span class="tooltip"><p>Creates a dictionary with the appropriate data gathered from the CLLocation</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/populateDictionary:withLocationManagerValues:">&ndash;&nbsp;populateDictionary:withLocationManagerValues:</a></code>
+		<span class="tooltip"><p>Creates a dictionary with the appropriate data gathered from the CLLocationManager</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/populateDictionary:withLocationProviderValues:">&ndash;&nbsp;populateDictionary:withLocationProviderValues:</a></code>
+		<span class="tooltip"><p>Creates a dictionary with the appropriate data gathered from the object conforming to the <a href="../Protocols/UALocationProviderProtocol.html">UALocationProviderProtocol</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringFromDoubleToSevenDigits:">&ndash;&nbsp;stringFromDoubleToSevenDigits:</a></code>
+		<span class="tooltip"><p>Converts a double to a string keeping seven digit of precision
+Seven digits produces sub meter accuracy at the equator.
+<a href="http://en.wikipedia.org/wiki/Decimal_degrees">http://en.wikipedia.org/wiki/Decimal_degrees</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringAsIntFromDouble:">&ndash;&nbsp;stringAsIntFromDouble:</a></code>
+		<span class="tooltip"><p>Converts a double to a string and truncating it
+to an int.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/locationEventWithLocation:locationManager:andUpdateType:" title="locationEventWithLocation:locationManager:andUpdateType:"></a>
+	<h3 class="subsubtitle method-title">locationEventWithLocation:locationManager:andUpdateType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UALocationEvent *)locationEventWithLocation:(CLLocation *)<em>loction</em> locationManager:(CLLocationManager *)<em>locationManager</em> andUpdateType:(UALocationEventUpdateType *)<em>updateType</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locationEventWithLocation:provider:andUpdateType:" title="locationEventWithLocation:provider:andUpdateType:"></a>
+	<h3 class="subsubtitle method-title">locationEventWithLocation:provider:andUpdateType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UALocationEvent *)locationEventWithLocation:(CLLocation *)<em>location</em> provider:(id&lt;UALocationProviderProtocol&gt;)<em>provider</em> andUpdateType:(UALocationEventUpdateType *)<em>updateType</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithLocation:locationManager:andUpdateType:" title="initWithLocation:locationManager:andUpdateType:"></a>
+	<h3 class="subsubtitle method-title">initWithLocation:locationManager:andUpdateType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a UALocationEvent parsing the necessary data form the method parameters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithLocation:(CLLocation *)<em>location</em> locationManager:(CLLocationManager *)<em>locationManager</em> andUpdateType:(UALocationEventUpdateType *)<em>updateType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>Location going to <a href="../Classes/UAAnalytics.html">UAAnalytics</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locationManager</em></dt>
+			<dd><p>The location manager that produced the location</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>updateType</em></dt>
+			<dd><p>One of the UALocationEvent updated types, see header for more details</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UALocationEvent populated with the necessary values</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a UALocationEvent parsing the necessary data form the method parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithLocation:provider:andUpdateType:" title="initWithLocation:provider:andUpdateType:"></a>
+	<h3 class="subsubtitle method-title">initWithLocation:provider:andUpdateType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a UALocationEvent parsing the necessary data from the method parameters</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithLocation:(CLLocation *)<em>location</em> provider:(id&lt;UALocationProviderProtocol&gt;)<em>provider</em> andUpdateType:(UALocationEventUpdateType *)<em>updateType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>Location going to <a href="../Classes/UAAnalytics.html">UAAnalytics</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>provider</em></dt>
+			<dd><p>Provider that produced the location</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>updateType</em></dt>
+			<dd><p>One of the UALocationEvent updated types, see header for more details</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UALocationEvent populated with the necessary values</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a UALocationEvent parsing the necessary data from the method parameters</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithLocationContext:" title="initWithLocationContext:"></a>
+	<h3 class="subsubtitle method-title">initWithLocationContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a UALocationEvent</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithLocationContext:(NSDictionary *)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>A dictionary populated with all required data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A UALocationEvent populated with appropriate values</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a UALocationEvent</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/populateDictionary:withLocationManagerValues:" title="populateDictionary:withLocationManagerValues:"></a>
+	<h3 class="subsubtitle method-title">populateDictionary:withLocationManagerValues:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a dictionary with the appropriate data gathered from the CLLocationManager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)populateDictionary:(NSMutableDictionary *)<em>dictionary</em> withLocationManagerValues:(CLLocationManager *)<em>locationManager</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The dictionary to populate with values</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locationManager</em></dt>
+			<dd><p>The location manager to parse values from</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a dictionary with the appropriate data gathered from the CLLocationManager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/populateDictionary:withLocationProviderValues:" title="populateDictionary:withLocationProviderValues:"></a>
+	<h3 class="subsubtitle method-title">populateDictionary:withLocationProviderValues:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a dictionary with the appropriate data gathered from the object conforming to the <a href="../Protocols/UALocationProviderProtocol.html">UALocationProviderProtocol</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)populateDictionary:(NSMutableDictionary *)<em>dictionary</em> withLocationProviderValues:(id&lt;UALocationProviderProtocol&gt;)<em>locationProvider</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The dictionary to populate with values</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locationProvider</em></dt>
+			<dd><p>The object implementing the <a href="../Protocols/UALocationProviderProtocol.html">UALocationProviderProtocol</a> to parse data from</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a dictionary with the appropriate data gathered from the object conforming to the <a href="../Protocols/UALocationProviderProtocol.html">UALocationProviderProtocol</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/populateDictionary:withLocationValues:" title="populateDictionary:withLocationValues:"></a>
+	<h3 class="subsubtitle method-title">populateDictionary:withLocationValues:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a dictionary with the appropriate data gathered from the CLLocation</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)populateDictionary:(NSMutableDictionary *)<em>dictionary</em> withLocationValues:(CLLocation *)<em>location</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The dictionary to populate with values</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>Location to parse values from</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a dictionary with the appropriate data gathered from the CLLocation</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringAsIntFromDouble:" title="stringAsIntFromDouble:"></a>
+	<h3 class="subsubtitle method-title">stringAsIntFromDouble:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a double to a string and truncating it
+to an int.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringAsIntFromDouble:(double)<em>doubleValue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>doubleValue</em></dt>
+			<dd><p>The double to convert and truncate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString representing the double as an int</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Converts a double to a string and truncating it
+to an int.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringFromDoubleToSevenDigits:" title="stringFromDoubleToSevenDigits:"></a>
+	<h3 class="subsubtitle method-title">stringFromDoubleToSevenDigits:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts a double to a string keeping seven digit of precision
+Seven digits produces sub meter accuracy at the equator.
+<a href="http://en.wikipedia.org/wiki/Decimal_degrees">http://en.wikipedia.org/wiki/Decimal_degrees</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringFromDoubleToSevenDigits:(double)<em>doubleValue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>doubleValue</em></dt>
+			<dd><p>The double to convert.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString representing the 7 digit value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Converts a double to a string keeping seven digit of precision
+Seven digits produces sub meter accuracy at the equator.
+<a href="http://en.wikipedia.org/wiki/Decimal_degrees">http://en.wikipedia.org/wiki/Decimal_degrees</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UALocationEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

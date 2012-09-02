@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/CALayer+GTMUnitTestingAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/CALayer(GTMUnitTestingAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMCALayer+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="148"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CALayer(GTMUnitTestingAdditions)/gtm_shouldEncodeStateForSublayers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMCALayer+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_shouldEncodeStateForSublayers</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_shouldEncodeStateForSublayers</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

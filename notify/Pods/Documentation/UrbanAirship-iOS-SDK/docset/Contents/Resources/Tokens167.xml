@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GTMUnitTestingEncoding.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GTMUnitTestingEncoding</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="167"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GTMUnitTestingEncoding/gtm_unitTestEncodeState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (void)gtm_unitTestEncodeState:(NSCoder *)inCoder</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_unitTestEncodeState:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

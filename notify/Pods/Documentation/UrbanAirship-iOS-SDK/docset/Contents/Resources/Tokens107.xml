@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionContentsViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentsViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>
+			
+			<NodeRef refid="107"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/setContentsTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UITableView *contentsTable</Declaration>
+			
+			
+			<Anchor>//api/name/contentsTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentsViewController/contentsTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UITableView *contentsTable</Declaration>
+			
+			
+			<Anchor>//api/name/contentsTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/setSubscriptionKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentsViewController/subscriptionKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/updateDataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/updateDataSource</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

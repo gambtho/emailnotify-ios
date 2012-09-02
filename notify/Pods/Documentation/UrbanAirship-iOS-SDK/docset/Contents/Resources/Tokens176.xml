@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAInboxJavaScriptDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAInboxJavaScriptDelegate</TokenIdentifier>
+			<Abstract type="html">A standard protocol for accessing native Objective-C functionality from your
+Rich Push messages.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>
+			
+			<NodeRef refid="176"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAInboxJavaScriptDelegate/callbackArguments:withOptions:</TokenIdentifier>
+			<Abstract type="html">Delegates must implement this method. Implementations take an array of string arguments
+and a dictionary of key-value pairs (all strings), process them, and return a string
+containing Javascript that will be evaluated in a message&apos;s UIWebView.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)callbackArguments:(NSArray *)args withOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/callbackArguments:withOptions:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

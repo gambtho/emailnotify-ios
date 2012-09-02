@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GTMUnitTestViewDrawer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GTMUnitTestViewDrawer</TokenIdentifier>
+			<Abstract type="html">\cond Protocols</Abstract>
+			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="166"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GTMUnitTestViewDrawer/gtm_unitTestViewDrawRect:contextInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (void)gtm_unitTestViewDrawRect:(CGRect)rect contextInfo:(void *)contextInfo</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_unitTestViewDrawRect:contextInfo:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>UrbanAirship-iOS-SDK 1.3.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UrbanAirship-iOS-SDK 1.3.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UrbanAirship-iOS-SDK 1.3.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>iOS Urban Airship Library</h1>
+
+<h2>Overview</h2>
+
+<p>Urban Airship&rsquo;s libUArship is a drop-in static library that provides a simple way to
+integrate Urban Airship services into your iOS applications. This entire project will
+allow you to build the library files and all sample projects. If you just want to
+include the library in your app, you can simply download the latest <code>lib`UAirship`.zip</code>
+and a sample project. These zips contain a pre-compiled universal arm6/arm7/i386 library.</p>
+
+<h2>Working with the Library</h2>
+
+<p>Copy lib<a href="Classes/UAirship.html"><code>UAirship</code></a> Files</p>
+
+<h6>#</h6>
+
+<p>Download and unzip the latest version of lib<a href="Classes/UAirship.html"><code>UAirship</code></a>.  If you are using one of our sample
+projects, copy the <code>Airship</code> directory into the same directory as your project::</p>
+
+<pre><code>cp -r Airship /SomeDirectory/ (where /SomeDirectory/YourProject/ is your project)
+</code></pre>
+
+<p>If you are not using a sample project, you&rsquo;ll need to import the source files for the User
+Interface into your project. These are located under /Airship/UI/Default</p>
+
+<p>Required Libraries</p>
+
+<h6>#</h6>
+
+<p>The core library requires your application to link against the following Frameworks (sample UIs
+have additional linking requirements)::</p>
+
+<pre><code>libUAirship-&lt;current_version&gt;.a
+CFNetwork.framework
+CoreGraphics.framework
+Foundation.framework
+MobileCoreServices.framework
+Security.framework
+SystemConfiguration.framework
+UIKit.framework
+libz.dylib
+libsqlite3.dylib
+CoreTelephony.framework (Exists in iOS 4+ only, so make it a weak link for 3.x compatibility)
+StoreKit.framework
+CoreLocation.framework
+</code></pre>
+
+<p>Build Settings</p>
+
+<h6>#</h6>
+
+<p><strong>Compiler</strong></p>
+
+<p>LLVM 4.0 is the default compiler for all projects and the static library.</p>
+
+<p><strong>Header search path</strong></p>
+
+<p>Ensure that your build target&rsquo;s header search path includes the Airship directory.</p>
+
+<h2>Quickstart</h2>
+
+<p>Prerequisite</p>
+
+<h6>#</h6>
+
+<p>Before getting started you must perform the steps above outlined above.</p>
+
+<p>In addition you&rsquo;ll need to include <em><a href="Classes/UAirship.html"><code>UAirship</code></a>.h</em> in your source files.</p>
+
+<p>The AirshipConfig File</p>
+
+<h6>#</h6>
+
+<p>The library uses a .plist configuration file named <code>AirshipConfig.plist</code> to manage your production and development
+application profiles. Example copies of this file are available in all of the sample projects. Place this file
+in your project and set the following values to the ones in your application at <a href="http://go.urbanairship.com"><code>http://go.urbanairship.com</code></a></p>
+
+<p>You can also edit the file as plain-text::</p>
+
+<pre><code>    {
+     /* NOTE: DO NOT USE THE MASTER SECRET */
+    "APP_STORE_OR_AD_HOC_BUILD" = NO; /* set to YES for production builds */
+    "DEVELOPMENT_APP_KEY" = "Your development app key";
+    "DEVELOPMENT_APP_SECRET" = "Your development app secret";
+    "PRODUCTION_APP_KEY" = "Your production app key";
+    "PRODUCTION_APP_SECRET" = "Your production app secret";
+    }
+</code></pre>
+
+<p>If you are using development builds and testing using the Apple sandbox set <code>APP_STORE_OR_AD_HOC_BUILD</code> to false. For
+App Store and Ad-Hoc builds, set it to YES.</p>
+
+<p>Advanced users may add scripting or preprocessing logic to this .plist file to automate the switch from
+development to production keys based on the build type.</p>
+
+<p>Third party Package &ndash; License &ndash; Copyright / Creator</p>
+
+<h6>#</h6>
+
+<p>asi-http-request    BSD     Copyright &copy; 2007-2010, All-Seeing Interactive.</p>
+
+<p>fmdb    MIT     Copyright &copy; 2008 Flying Meat Inc. gus@flyingmeat.com</p>
+
+<p>SBJSON  MIT     Copyright &copy; 2007-2010 Stig Brautaset.</p>
+
+<p>Base64  BSD     Copyright 2009-2010 Matt Gallagher.</p>
+
+<p>ZipFile-OC  BSD     Copyright &copy; 1998-2005 Gilles Vollant.</p>
+
+<p>GHUnit  Apache 2    Copyright 2007 Google Inc.</p>
+
+<p>Google Toolkit  Apache 2    Copyright 2007 Google Inc.</p>
+
+<p><a href="Classes/Reachability.html">Reachability</a> BSD     Copyright &copy; 2010 Apple Inc.</p>
+
+<p>MTPopupWindow   MIT     Copyright 2011 Marin Todorov</p>
+
+<p>JRSwizzle MIT Copyright 2012 Jonathan Rentzsch</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/CLASSNAME.html">CLASSNAME</a></li>
+							
+							<li><a href="Classes/FMDatabase.html">FMDatabase</a></li>
+							
+							<li><a href="Classes/FMResultSet.html">FMResultSet</a></li>
+							
+							<li><a href="Classes/FMStatement.html">FMStatement</a></li>
+							
+							<li><a href="Classes/GHAsyncTestCase.html">GHAsyncTestCase</a></li>
+							
+							<li><a href="Classes/GHTest.html">GHTest</a></li>
+							
+							<li><a href="Classes/GHTestCase.html">GHTestCase</a></li>
+							
+							<li><a href="Classes/GHTestGroup.html">GHTestGroup</a></li>
+							
+							<li><a href="Classes/GHTestOperation.html">GHTestOperation</a></li>
+							
+							<li><a href="Classes/GHTestRunner.html">GHTestRunner</a></li>
+							
+							<li><a href="Classes/GHTestSuite.html">GHTestSuite</a></li>
+							
+							<li><a href="Classes/GHTesting.html">GHTesting</a></li>
+							
+							<li><a href="Classes/GHUnitIPhoneAppDelegate.html">GHUnitIPhoneAppDelegate</a></li>
+							
+							<li><a href="Classes/GHUnitIPhoneTableViewDataSource.html">GHUnitIPhoneTableViewDataSource</a></li>
+							
+							<li><a href="Classes/GHUnitIPhoneTestViewController.html">GHUnitIPhoneTestViewController</a></li>
+							
+							<li><a href="Classes/GHUnitIPhoneView.html">GHUnitIPhoneView</a></li>
+							
+							<li><a href="Classes/GHUnitIPhoneViewController.html">GHUnitIPhoneViewController</a></li>
+							
+							<li><a href="Classes/GTMIPhoneUnitTestDelegate.html">GTMIPhoneUnitTestDelegate</a></li>
+							
+							<li><a href="Classes/GTMRegex.html">GTMRegex</a></li>
+							
+							<li><a href="Classes/GTMRegexStringSegment.html">GTMRegexStringSegment</a></li>
+							
+							<li><a href="Classes/GTMSystemVersion.html">GTMSystemVersion</a></li>
+							
+							<li><a href="Classes/GTMTestCase.html">GTMTestCase</a></li>
+							
+							<li><a href="Classes/GTMUnitTestDevLog.html">GTMUnitTestDevLog</a></li>
+							
+							<li><a href="Classes/GTMUnitTestDevLogDebug.html">GTMUnitTestDevLogDebug</a></li>
+							
+							<li><a href="Classes/GTMUnitTestView.html">GTMUnitTestView</a></li>
+							
+							<li><a href="Classes/Reachability.html">Reachability</a></li>
+							
+							<li><a href="Classes/SenTestCase.html">SenTestCase</a></li>
+							
+							<li><a href="Classes/UAAnalytics.html">UAAnalytics</a></li>
+							
+							<li><a href="Classes/UAAnalyticsDBManager.html">UAAnalyticsDBManager</a></li>
+							
+							<li><a href="Classes/UAAsyncImageView.html">UAAsyncImageView</a></li>
+							
+							<li><a href="Classes/UABarButtonSegmentedControl.html">UABarButtonSegmentedControl</a></li>
+							
+							<li><a href="Classes/UABaseLocationProvider.html">UABaseLocationProvider</a></li>
+							
+							<li><a href="Classes/UABeveledLoadingIndicator.html">UABeveledLoadingIndicator</a></li>
+							
+							<li><a href="Classes/UAContentInventory.html">UAContentInventory</a></li>
+							
+							<li><a href="Classes/UAContentURLCache.html">UAContentURLCache</a></li>
+							
+							<li><a href="Classes/UADateUtils.html">UADateUtils</a></li>
+							
+							<li><a href="Classes/UADownloadContent.html">UADownloadContent</a></li>
+							
+							<li><a href="Classes/UADownloadManager.html">UADownloadManager</a></li>
+							
+							<li><a href="Classes/UAEvent.html">UAEvent</a></li>
+							
+							<li><a href="Classes/UAEventAppActive.html">UAEventAppActive</a></li>
+							
+							<li><a href="Classes/UAEventAppBackground.html">UAEventAppBackground</a></li>
+							
+							<li><a href="Classes/UAEventAppExit.html">UAEventAppExit</a></li>
+							
+							<li><a href="Classes/UAEventAppForeground.html">UAEventAppForeground</a></li>
+							
+							<li><a href="Classes/UAEventAppInactive.html">UAEventAppInactive</a></li>
+							
+							<li><a href="Classes/UAEventAppInit.html">UAEventAppInit</a></li>
+							
+							<li><a href="Classes/UAEventCustom.html">UAEventCustom</a></li>
+							
+							<li><a href="Classes/UAEventDeviceRegistration.html">UAEventDeviceRegistration</a></li>
+							
+							<li><a href="Classes/UAEventPushReceived.html">UAEventPushReceived</a></li>
+							
+							<li><a href="Classes/UAHTTPConnection.html">UAHTTPConnection</a></li>
+							
+							<li><a href="Classes/UAHTTPRequest.html">UAHTTPRequest</a></li>
+							
+							<li><a href="Classes/UAInbox.html">UAInbox</a></li>
+							
+							<li><a href="Classes/UAInboxAlertHandler.html">UAInboxAlertHandler</a></li>
+							
+							<li><a href="Classes/UAInboxDBManager.html">UAInboxDBManager</a></li>
+							
+							<li><a href="Classes/UAInboxDefaultJSDelegate.html">UAInboxDefaultJSDelegate</a></li>
+							
+							<li><a href="Classes/UAInboxMessage.html">UAInboxMessage</a></li>
+							
+							<li><a href="Classes/UAInboxMessageList.html">UAInboxMessageList</a></li>
+							
+							<li><a href="Classes/UAInboxMessageListCell.html">UAInboxMessageListCell</a></li>
+							
+							<li><a href="Classes/UAInboxMessageListController.html">UAInboxMessageListController</a></li>
+							
+							<li><a href="Classes/UAInboxMessageViewController.html">UAInboxMessageViewController</a></li>
+							
+							<li><a href="Classes/UAInboxNavUI.html">UAInboxNavUI</a></li>
+							
+							<li><a href="Classes/UAInboxOverlayController.html">UAInboxOverlayController</a></li>
+							
+							<li><a href="Classes/UAInboxPushHandler.html">UAInboxPushHandler</a></li>
+							
+							<li><a href="Classes/UAInboxUI.html">UAInboxUI</a></li>
+							
+							<li><a href="Classes/UAInboxURLCache.html">UAInboxURLCache</a></li>
+							
+							<li><a href="Classes/UAInventory.html">UAInventory</a></li>
+							
+							<li><a href="Classes/UAKeychainUtils.html">UAKeychainUtils</a></li>
+							
+							<li><a href="Classes/UALocalStorageDirectory.html">UALocalStorageDirectory</a></li>
+							
+							<li><a href="Classes/UALocationCommonValues.html">UALocationCommonValues</a></li>
+							
+							<li><a href="Classes/UALocationDemoAnnotation.html">UALocationDemoAnnotation</a></li>
+							
+							<li><a href="Classes/UALocationEvent.html">UALocationEvent</a></li>
+							
+							<li><a href="Classes/UALocationService.html">UALocationService</a></li>
+							
+							<li><a href="Classes/UALocationSettingsViewController.html">UALocationSettingsViewController</a></li>
+							
+							<li><a href="Classes/UAMapPresentationController.html">UAMapPresentationController</a></li>
+							
+							<li><a href="Classes/UAObservable.html">UAObservable</a></li>
+							
+							<li><a href="Classes/UAProduct.html">UAProduct</a></li>
+							
+							<li><a href="Classes/UAProductDetailViewController.html">UAProductDetailViewController</a></li>
+							
+							<li><a href="Classes/UAProductDetailiPadViewController.html">UAProductDetailiPadViewController</a></li>
+							
+							<li><a href="Classes/UAProductInventory.html">UAProductInventory</a></li>
+							
+							<li><a href="Classes/UAPush.html">UAPush</a></li>
+							
+							<li><a href="Classes/UAPushMoreSettingsViewController.html">UAPushMoreSettingsViewController</a></li>
+							
+							<li><a href="Classes/UAPushNotificationHandler.html">UAPushNotificationHandler</a></li>
+							
+							<li><a href="Classes/UAPushSettingsAddTagViewController.html">UAPushSettingsAddTagViewController</a></li>
+							
+							<li><a href="Classes/UAPushSettingsAliasViewController.html">UAPushSettingsAliasViewController</a></li>
+							
+							<li><a href="Classes/UAPushSettingsSoundsViewController.html">UAPushSettingsSoundsViewController</a></li>
+							
+							<li><a href="Classes/UAPushSettingsTagsViewController.html">UAPushSettingsTagsViewController</a></li>
+							
+							<li><a href="Classes/UAPushSettingsTokenViewController.html">UAPushSettingsTokenViewController</a></li>
+							
+							<li><a href="Classes/UAPushSettingsViewController.html">UAPushSettingsViewController</a></li>
+							
+							<li><a href="Classes/UAPushUI.html">UAPushUI</a></li>
+							
+							<li><a href="Classes/UASQLite.html">UASQLite</a></li>
+							
+							<li><a href="Classes/UASignificantChangeProvider.html">UASignificantChangeProvider</a></li>
+							
+							<li><a href="Classes/UAStandardLocationProvider.html">UAStandardLocationProvider</a></li>
+							
+							<li><a href="Classes/UAStoreFront.html">UAStoreFront</a></li>
+							
+							<li><a href="Classes/UAStoreFrontAlertHandler.html">UAStoreFrontAlertHandler</a></li>
+							
+							<li><a href="Classes/UAStoreFrontCell.html">UAStoreFrontCell</a></li>
+							
+							<li><a href="Classes/UAStoreFrontCellView.html">UAStoreFrontCellView</a></li>
+							
+							<li><a href="Classes/UAStoreFrontDownloadManager.html">UAStoreFrontDownloadManager</a></li>
+							
+							<li><a href="Classes/UAStoreFrontSplitViewController.html">UAStoreFrontSplitViewController</a></li>
+							
+							<li><a href="Classes/UAStoreFrontUI.html">UAStoreFrontUI</a></li>
+							
+							<li><a href="Classes/UAStoreFrontViewController.html">UAStoreFrontViewController</a></li>
+							
+							<li><a href="Classes/UAStoreFrontiPadViewController.html">UAStoreFrontiPadViewController</a></li>
+							
+							<li><a href="Classes/UAStoreKitObserver.html">UAStoreKitObserver</a></li>
+							
+							<li><a href="Classes/UASubscription.html">UASubscription</a></li>
+							
+							<li><a href="Classes/UASubscriptionAlertHandler.html">UASubscriptionAlertHandler</a></li>
+							
+							<li><a href="Classes/UASubscriptionContent.html">UASubscriptionContent</a></li>
+							
+							<li><a href="Classes/UASubscriptionContentCell.html">UASubscriptionContentCell</a></li>
+							
+							<li><a href="Classes/UASubscriptionContentDetailViewController.html">UASubscriptionContentDetailViewController</a></li>
+							
+							<li><a href="Classes/UASubscriptionContentsViewController.html">UASubscriptionContentsViewController</a></li>
+							
+							<li><a href="Classes/UASubscriptionDownloadManager.html">UASubscriptionDownloadManager</a></li>
+							
+							<li><a href="Classes/UASubscriptionInventory.html">UASubscriptionInventory</a></li>
+							
+							<li><a href="Classes/UASubscriptionManager.html">UASubscriptionManager</a></li>
+							
+							<li><a href="Classes/UASubscriptionObserver.html">UASubscriptionObserver</a></li>
+							
+							<li><a href="Classes/UASubscriptionProduct.html">UASubscriptionProduct</a></li>
+							
+							<li><a href="Classes/UASubscriptionProductCell.html">UASubscriptionProductCell</a></li>
+							
+							<li><a href="Classes/UASubscriptionProductCellView.html">UASubscriptionProductCellView</a></li>
+							
+							<li><a href="Classes/UASubscriptionProductDetailViewController.html">UASubscriptionProductDetailViewController</a></li>
+							
+							<li><a href="Classes/UASubscriptionRootViewController.html">UASubscriptionRootViewController</a></li>
+							
+							<li><a href="Classes/UASubscriptionSettingsViewController.html">UASubscriptionSettingsViewController</a></li>
+							
+							<li><a href="Classes/UASubscriptionTableViewDelegate.html">UASubscriptionTableViewDelegate</a></li>
+							
+							<li><a href="Classes/UASubscriptionTableViewDelegateAllProducts.html">UASubscriptionTableViewDelegateAllProducts</a></li>
+							
+							<li><a href="Classes/UASubscriptionTableViewDelegatePurchasedProducts.html">UASubscriptionTableViewDelegatePurchasedProducts</a></li>
+							
+							<li><a href="Classes/UASubscriptionUI.html">UASubscriptionUI</a></li>
+							
+							<li><a href="Classes/UASubscriptionUIUtil.html">UASubscriptionUIUtil</a></li>
+							
+							<li><a href="Classes/UATableCell.html">UATableCell</a></li>
+							
+							<li><a href="Classes/UATagUtils.html">UATagUtils</a></li>
+							
+							<li><a href="Classes/UAUser.html">UAUser</a></li>
+							
+							<li><a href="Classes/UAUtils.html">UAUtils</a></li>
+							
+							<li><a href="Classes/UAViewUtils.html">UAViewUtils</a></li>
+							
+							<li><a href="Classes/UAZipDownloadContent.html">UAZipDownloadContent</a></li>
+							
+							<li><a href="Classes/UA_ASIAuthenticationDialog.html">UA_ASIAuthenticationDialog</a></li>
+							
+							<li><a href="Classes/UA_ASIAutorotatingViewController.html">UA_ASIAutorotatingViewController</a></li>
+							
+							<li><a href="Classes/UA_ASIDataCompressor.html">UA_ASIDataCompressor</a></li>
+							
+							<li><a href="Classes/UA_ASIDataDecompressor.html">UA_ASIDataDecompressor</a></li>
+							
+							<li><a href="Classes/UA_ASIDownloadCache.html">UA_ASIDownloadCache</a></li>
+							
+							<li><a href="Classes/UA_ASIFormDataRequest.html">UA_ASIFormDataRequest</a></li>
+							
+							<li><a href="Classes/UA_ASIHTTPRequest.html">UA_ASIHTTPRequest</a></li>
+							
+							<li><a href="Classes/UA_ASIInputStream.html">UA_ASIInputStream</a></li>
+							
+							<li><a href="Classes/UA_ASINetworkQueue.html">UA_ASINetworkQueue</a></li>
+							
+							<li><a href="Classes/UA_FMDatabase.html">UA_FMDatabase</a></li>
+							
+							<li><a href="Classes/UA_FMResultSet.html">UA_FMResultSet</a></li>
+							
+							<li><a href="Classes/UA_FMStatement.html">UA_FMStatement</a></li>
+							
+							<li><a href="Classes/UA_SBJSON.html">UA_SBJSON</a></li>
+							
+							<li><a href="Classes/UA_SBJsonBase.html">UA_SBJsonBase</a></li>
+							
+							<li><a href="Classes/UA_SBJsonParser.html">UA_SBJsonParser</a></li>
+							
+							<li><a href="Classes/UA_SBJsonWriter.html">UA_SBJsonWriter</a></li>
+							
+							<li><a href="Classes/UA_ZipArchive.html">UA_ZipArchive</a></li>
+							
+							<li><a href="Classes/UAirship.html">UAirship</a></li>
+							
+							<li><a href="Classes/ZipArchive.html">ZipArchive</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/GHSenTestCase.html">GHSenTestCase</a></li>
+							
+							<li><a href="Protocols/GHTest.html">GHTest</a></li>
+							
+							<li><a href="Protocols/GHTestCaseLogWriter.html">GHTestCaseLogWriter</a></li>
+							
+							<li><a href="Protocols/GHTestDelegate.html">GHTestDelegate</a></li>
+							
+							<li><a href="Protocols/GHTestGroup.html">GHTestGroup</a></li>
+							
+							<li><a href="Protocols/GHTestRunnerDelegate.html">GHTestRunnerDelegate</a></li>
+							
+							<li><a href="Protocols/GTMUnitTestViewDrawer.html">GTMUnitTestViewDrawer</a></li>
+							
+							<li><a href="Protocols/GTMUnitTestingEncoding.html">GTMUnitTestingEncoding</a></li>
+							
+							<li><a href="Protocols/GTMUnitTestingImaging.html">GTMUnitTestingImaging</a></li>
+							
+							<li><a href="Protocols/NSAnimationDelegate.html">NSAnimationDelegate</a></li>
+							
+							<li><a href="Protocols/NSConnectionDelegate.html">NSConnectionDelegate</a></li>
+							
+							<li><a href="Protocols/NSImageDelegate.html">NSImageDelegate</a></li>
+							
+							<li><a href="Protocols/NSTabViewDelegate.html">NSTabViewDelegate</a></li>
+							
+							<li><a href="Protocols/SenTestCase.html">SenTestCase</a></li>
+							
+							<li><a href="Protocols/UADownloadManagerDelegate.html">UADownloadManagerDelegate</a></li>
+							
+							<li><a href="Protocols/UAHTTPConnectionDelegate.html">UAHTTPConnectionDelegate</a></li>
+							
+							<li><a href="Protocols/UAInboxJavaScriptDelegate.html">UAInboxJavaScriptDelegate</a></li>
+							
+							<li><a href="Protocols/UAInboxMessageListObserver.html">UAInboxMessageListObserver</a></li>
+							
+							<li><a href="Protocols/UAInboxPushHandlerDelegate.html">UAInboxPushHandlerDelegate</a></li>
+							
+							<li><a href="Protocols/UAInboxUIProtocol.html">UAInboxUIProtocol</a></li>
+							
+							<li><a href="Protocols/UALocationProviderDelegate.html">UALocationProviderDelegate</a></li>
+							
+							<li><a href="Protocols/UALocationProviderProtocol.html">UALocationProviderProtocol</a></li>
+							
+							<li><a href="Protocols/UALocationServiceDelegate.html">UALocationServiceDelegate</a></li>
+							
+							<li><a href="Protocols/UAProductObserverProtocol.html">UAProductObserverProtocol</a></li>
+							
+							<li><a href="Protocols/UAPushNotificationDelegate.html">UAPushNotificationDelegate</a></li>
+							
+							<li><a href="Protocols/UAPushSettingsAddTagDelegate.html">UAPushSettingsAddTagDelegate</a></li>
+							
+							<li><a href="Protocols/UAPushUIProtocol.html">UAPushUIProtocol</a></li>
+							
+							<li><a href="Protocols/UARegistrationObserver.html">UARegistrationObserver</a></li>
+							
+							<li><a href="Protocols/UAStoreFrontAlertProtocol.html">UAStoreFrontAlertProtocol</a></li>
+							
+							<li><a href="Protocols/UAStoreFrontDelegate.html">UAStoreFrontDelegate</a></li>
+							
+							<li><a href="Protocols/UAStoreFrontObserverProtocol.html">UAStoreFrontObserverProtocol</a></li>
+							
+							<li><a href="Protocols/UAStoreFrontUIProtocol.html">UAStoreFrontUIProtocol</a></li>
+							
+							<li><a href="Protocols/UASubscriptionAlertProtocol.html">UASubscriptionAlertProtocol</a></li>
+							
+							<li><a href="Protocols/UASubscriptionManagerObserver.html">UASubscriptionManagerObserver</a></li>
+							
+							<li><a href="Protocols/UASubscriptionUIProtocol.html">UASubscriptionUIProtocol</a></li>
+							
+							<li><a href="Protocols/UAUserObserver.html">UAUserObserver</a></li>
+							
+							<li><a href="Protocols/UAZipDownloadContentProtocol.html">UAZipDownloadContentProtocol</a></li>
+							
+							<li><a href="Protocols/UA_ASICacheDelegate.html">UA_ASICacheDelegate</a></li>
+							
+							<li><a href="Protocols/UA_ASIHTTPRequestDelegate.html">UA_ASIHTTPRequestDelegate</a></li>
+							
+							<li><a href="Protocols/UA_ASIProgressDelegate.html">UA_ASIProgressDelegate</a></li>
+							
+							<li><a href="Protocols/UA_SBJsonParserOptions.html">UA_SBJsonParserOptions</a></li>
+							
+							<li><a href="Protocols/UA_SBJsonWriterOptions.html">UA_SBJsonWriterOptions</a></li>
+							
+							<li><a href="Protocols/UA_ZipArchiveDelegate.html">UA_ZipArchiveDelegate</a></li>
+							
+							<li><a href="Protocols/ZipArchiveDelegate.html">ZipArchiveDelegate</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/CALayer+GTMUnitTestingAdditions.html">CALayer(GTMUnitTestingAdditions)</a></li>
+							
+							<li><a href="Categories/NSException+GHTestMacros_GTMSenTestAdditions.html">NSException(GHTestMacros_GTMSenTestAdditions)</a></li>
+							
+							<li><a href="Categories/NSException+GHUTestFailureExceptions.html">NSException(GHUTestFailureExceptions)</a></li>
+							
+							<li><a href="Categories/NSException+GTMSenTestAdditions.html">NSException(GTMSenTestAdditions)</a></li>
+							
+							<li><a href="Categories/NSNumber+GTM64BitAdditions.html">NSNumber(GTM64BitAdditions)</a></li>
+							
+							<li><a href="Categories/NSObject+GTMCALayerUnitTestingDelegateMethods.html">NSObject(GTMCALayerUnitTestingDelegateMethods)</a></li>
+							
+							<li><a href="Categories/NSObject+GTMUnitTestingAdditions.html">NSObject(GTMUnitTestingAdditions)</a></li>
+							
+							<li><a href="Categories/NSObject+GTMUnitTestingEncodingAdditions.html">NSObject(GTMUnitTestingEncodingAdditions)</a></li>
+							
+							<li><a href="Categories/NSString+GTMRegexAdditions.html">NSString(GTMRegexAdditions)</a></li>
+							
+							<li><a href="Categories/NSValue+GHValueFormatter.html">NSValue(GHValueFormatter)</a></li>
+							
+							<li><a href="Categories/UIImage+GTMUnitTestingAdditions.html">UIImage(GTMUnitTestingAdditions)</a></li>
+							
+							<li><a href="Categories/UIView+GTMUnitTestingAdditions.html">UIView(GTMUnitTestingAdditions)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionProduct.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionProduct</TokenIdentifier>
+			<Abstract type="html">This class represents a subscription product available for purchase.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>
+			
+			<NodeRef refid="112"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setProductIdentifier:</TokenIdentifier>
+			<Abstract type="html">The product identifier.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The product identifier.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setSubscribeURL:</TokenIdentifier>
+			<Abstract type="html">The URL used to subscribe to this product.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *subscribeURL</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/subscribeURL</TokenIdentifier>
+			<Abstract type="html">The URL used to subscribe to this product.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *subscribeURL</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setPreviewURL:</TokenIdentifier>
+			<Abstract type="html">The URL for this product&apos;s preview image.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/previewURL</TokenIdentifier>
+			<Abstract type="html">The URL for this product&apos;s preview image.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setIconURL:</TokenIdentifier>
+			<Abstract type="html">The URL for this product&apos;s icon.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/iconURL</TokenIdentifier>
+			<Abstract type="html">The URL for this product&apos;s icon.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setDuration:</TokenIdentifier>
+			<Abstract type="html">The duration in days.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/duration</TokenIdentifier>
+			<Abstract type="html">The duration in days.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setSubscriptionKey:</TokenIdentifier>
+			<Abstract type="html">The subscription key.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/subscriptionKey</TokenIdentifier>
+			<Abstract type="html">The subscription key.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setSubscriptionName:</TokenIdentifier>
+			<Abstract type="html">The subscription name.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionName</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/subscriptionName</TokenIdentifier>
+			<Abstract type="html">The subscription name.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionName</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setSkProduct:</TokenIdentifier>
+			<Abstract type="html">The SKProduct (from Apple) that this product provides. nil if the product is not for sale</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SKProduct *skProduct</Declaration>
+			
+			
+			<Anchor>//api/name/skProduct</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/skProduct</TokenIdentifier>
+			<Abstract type="html">The SKProduct (from Apple) that this product provides. nil if the product is not for sale</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SKProduct *skProduct</Declaration>
+			
+			
+			<Anchor>//api/name/skProduct</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setTitle:</TokenIdentifier>
+			<Abstract type="html">The title.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/title</TokenIdentifier>
+			<Abstract type="html">The title.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setProductDescription:</TokenIdentifier>
+			<Abstract type="html">The description.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productDescription</Declaration>
+			
+			
+			<Anchor>//api/name/productDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/productDescription</TokenIdentifier>
+			<Abstract type="html">The description.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productDescription</Declaration>
+			
+			
+			<Anchor>//api/name/productDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setPrice:</TokenIdentifier>
+			<Abstract type="html">The price represented as an NSString.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			
+			
+			<Anchor>//api/name/price</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/price</TokenIdentifier>
+			<Abstract type="html">The price represented as an NSString.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			
+			
+			<Anchor>//api/name/price</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setPriceNumber:</TokenIdentifier>
+			<Abstract type="html">The price represented as an NSDecimalNumber.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDecimalNumber *priceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/priceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/priceNumber</TokenIdentifier>
+			<Abstract type="html">The price represented as an NSDecimalNumber.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDecimalNumber *priceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/priceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setIsPurchasing:</TokenIdentifier>
+			<Abstract type="html">YES if the product is currently being purchased, NO otherwise.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPurchasing</Declaration>
+			
+			
+			<Anchor>//api/name/isPurchasing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/isPurchasing</TokenIdentifier>
+			<Abstract type="html">YES if the product is currently being purchased, NO otherwise.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPurchasing</Declaration>
+			
+			
+			<Anchor>//api/name/isPurchasing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setPurchased:</TokenIdentifier>
+			<Abstract type="html">This flag is set if this product is a member of the [UASubscription purchasedProducts] array.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL purchased</Declaration>
+			
+			
+			<Anchor>//api/name/purchased</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/purchased</TokenIdentifier>
+			<Abstract type="html">This flag is set if this product is a member of the [UASubscription purchasedProducts] array.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL purchased</Declaration>
+			
+			
+			<Anchor>//api/name/purchased</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setStartDate:</TokenIdentifier>
+			<Abstract type="html">The start date for this specific purchased product&apos;s time slice.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/startDate</TokenIdentifier>
+			<Abstract type="html">The start date for this specific purchased product&apos;s time slice.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setEndDate:</TokenIdentifier>
+			<Abstract type="html">The end date for this specific purchased product&apos;s time slice.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/endDate</TokenIdentifier>
+			<Abstract type="html">The end date for this specific purchased product&apos;s time slice.</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setIsForSale:</TokenIdentifier>
+			<Abstract type="html">YES if the product is listed for sale in iTunes Connect, otherwise NO</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isForSale</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the product is listed for sale in iTunes Connect, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isForSale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/isForSale</TokenIdentifier>
+			<Abstract type="html">YES if the product is listed for sale in iTunes Connect, otherwise NO</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isForSale</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the product is listed for sale in iTunes Connect, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isForSale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setProductType:</TokenIdentifier>
+			<Abstract type="html">UASubscriptionProductTypeLegacy, UASubscriptionProductTypeAutorenewable or UASubscriptionProductTypeFree</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UASubscriptionProductType productType</Declaration>
+			
+			<ReturnValue><Abstract type="html">UASubscriptionProductTypeLegacy, UASubscriptionProductTypeAutorenewable or UASubscriptionProductTypeFree</Abstract></ReturnValue>
+			<Anchor>//api/name/productType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/productType</TokenIdentifier>
+			<Abstract type="html">UASubscriptionProductTypeLegacy, UASubscriptionProductTypeAutorenewable or UASubscriptionProductTypeFree</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UASubscriptionProductType productType</Declaration>
+			
+			<ReturnValue><Abstract type="html">UASubscriptionProductTypeLegacy, UASubscriptionProductTypeAutorenewable or UASubscriptionProductTypeFree</Abstract></ReturnValue>
+			<Anchor>//api/name/productType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setAutorenewableDuration:</TokenIdentifier>
+			<Abstract type="html">The duration of this autorenewable product. UAAutorenewableDurationNone returned if not an autorenewable</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAAutorenewableDuration autorenewableDuration</Declaration>
+			
+			
+			<Anchor>//api/name/autorenewableDuration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProduct/autorenewableDuration</TokenIdentifier>
+			<Abstract type="html">The duration of this autorenewable product. UAAutorenewableDurationNone returned if not an autorenewable</Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAAutorenewableDuration autorenewableDuration</Declaration>
+			
+			
+			<Anchor>//api/name/autorenewableDuration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/initWithDict:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDict:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/initWithSubscriptionProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithSubscriptionProduct:(UASubscriptionProduct *)sp</Declaration>
+			
+			
+			<Anchor>//api/name/initWithSubscriptionProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProduct/setPurchasingInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionProduct.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPurchasingInfo:(NSDictionary *)purchasingInfo</Declaration>
+			
+			
+			<Anchor>//api/name/setPurchasingInfo:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionAlertHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionAlertHandler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>
+			
+			<NodeRef refid="103"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionAlertHandler/showUserEmailAlert:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)showUserEmailAlert:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/showUserEmailAlert:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionAlertHandler/updateUserEmailAlert:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateUserEmailAlert:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/updateUserEmailAlert:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionAlertHandler/failedTransactionAlert:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)failedTransactionAlert:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/failedTransactionAlert:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionAlertHandler/failedRestoreAlert:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)failedRestoreAlert:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/failedRestoreAlert:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionAlertHandler/onUpdateOrientation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionAlertHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)onUpdateOrientation:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/onUpdateOrientation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

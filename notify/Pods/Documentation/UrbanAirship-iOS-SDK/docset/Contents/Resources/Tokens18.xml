@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GTMIPhoneUnitTestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GTMIPhoneUnitTestDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMIPhoneUnitTestDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMIPhoneUnitTestDelegate/runTests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMIPhoneUnitTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)runTests</Declaration>
+			
+			
+			<Anchor>//api/name/runTests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMIPhoneUnitTestDelegate/totalSuccesses</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMIPhoneUnitTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)totalSuccesses</Declaration>
+			
+			
+			<Anchor>//api/name/totalSuccesses</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GTMIPhoneUnitTestDelegate/totalFailures</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMIPhoneUnitTestDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)totalFailures</Declaration>
+			
+			
+			<Anchor>//api/name/totalFailures</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

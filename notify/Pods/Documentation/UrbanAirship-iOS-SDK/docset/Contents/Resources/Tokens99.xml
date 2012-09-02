@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAStoreFrontViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>
+			
+			<NodeRef refid="99"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setProductTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableView *productTable</Declaration>
+			
+			
+			<Anchor>//api/name/productTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/productTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UITableView *productTable</Declaration>
+			
+			
+			<Anchor>//api/name/productTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setFilterSegmentedControl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UISegmentedControl *filterSegmentedControl</Declaration>
+			
+			
+			<Anchor>//api/name/filterSegmentedControl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/filterSegmentedControl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UISegmentedControl *filterSegmentedControl</Declaration>
+			
+			
+			<Anchor>//api/name/filterSegmentedControl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setActivityView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/activityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setStatusLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *statusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/statusLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/statusLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *statusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/statusLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setLoadingView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/loadingView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setToolBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIToolbar *toolBar</Declaration>
+			
+			
+			<Anchor>//api/name/toolBar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/toolBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIToolbar *toolBar</Declaration>
+			
+			
+			<Anchor>//api/name/toolBar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setDetailViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAProductDetailViewController *detailViewController</Declaration>
+			
+			
+			<Anchor>//api/name/detailViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/detailViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAProductDetailViewController *detailViewController</Declaration>
+			
+			
+			<Anchor>//api/name/detailViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setProducts:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *products</Declaration>
+			
+			
+			<Anchor>//api/name/products</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/products</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *products</Declaration>
+			
+			
+			<Anchor>//api/name/products</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/setProductID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productID</Declaration>
+			
+			
+			<Anchor>//api/name/productID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontViewController/productID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productID</Declaration>
+			
+			
+			<Anchor>//api/name/productID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/segmentAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)segmentAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/segmentAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/initNibNames</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)initNibNames</Declaration>
+			
+			
+			<Anchor>//api/name/initNibNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/products</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)products</Declaration>
+			
+			
+			<Anchor>//api/name/products</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/productsForTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)productsForTableView:(UITableView *)tableView</Declaration>
+			
+			
+			<Anchor>//api/name/productsForTableView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/done:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)done:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/done:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/updateAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateAll</Declaration>
+			
+			
+			<Anchor>//api/name/updateAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/customizeAccessoryViewForCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)customizeAccessoryViewForCell:(UITableViewCell *)cell</Declaration>
+			
+			
+			<Anchor>//api/name/customizeAccessoryViewForCell:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/customTableViewContentOffset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)customTableViewContentOffset</Declaration>
+			
+			
+			<Anchor>//api/name/customTableViewContentOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/filterContentForSearchText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)filterContentForSearchText:(NSString *)searchText</Declaration>
+			
+			
+			<Anchor>//api/name/filterContentForSearchText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/showLoading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showLoading</Declaration>
+			
+			
+			<Anchor>//api/name/showLoading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/hideLoading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)hideLoading</Declaration>
+			
+			
+			<Anchor>//api/name/hideLoading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/inventoryStatusChanged:</TokenIdentifier>
+			<Abstract type="html">Called when the inventory status has changed.</Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)inventoryStatusChanged:(NSNumber *)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">A UAInventoryStatus enum value wrapped in an NSNumber.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/inventoryStatusChanged:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontViewController/loadProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadProduct:(NSString *)productID</Declaration>
+			
+			
+			<Anchor>//api/name/loadProduct:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

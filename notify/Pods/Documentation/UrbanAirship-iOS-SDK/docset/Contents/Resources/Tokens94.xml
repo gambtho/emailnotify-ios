@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAStoreFrontCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>
+			
+			<NodeRef refid="94"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/setIconContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAAsyncImageView *iconContainer</Declaration>
+			
+			
+			<Anchor>//api/name/iconContainer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCell/iconContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAAsyncImageView *iconContainer</Declaration>
+			
+			
+			<Anchor>//api/name/iconContainer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/setActivityView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCell/activityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIActivityIndicatorView *activityView</Declaration>
+			
+			
+			<Anchor>//api/name/activityView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/setProgressView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIProgressView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCell/progressView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UIProgressView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/setProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAProduct *product</Declaration>
+			
+			
+			<Anchor>//api/name/product</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCell/product</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAProduct *product</Declaration>
+			
+			
+			<Anchor>//api/name/product</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/setCellView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAStoreFrontCellView *cellView</Declaration>
+			
+			
+			<Anchor>//api/name/cellView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCell/cellView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAStoreFrontCellView *cellView</Declaration>
+			
+			
+			<Anchor>//api/name/cellView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/refreshCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshCell</Declaration>
+			
+			
+			<Anchor>//api/name/refreshCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/refreshCellWithProductStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshCellWithProductStatus:(UAProductStatus)status</Declaration>
+			
+			
+			<Anchor>//api/name/refreshCellWithProductStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/refreshProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshProgress:(float)progress</Declaration>
+			
+			
+			<Anchor>//api/name/refreshProgress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCell/refreshPriceLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontCell.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshPriceLabel:(UAProductStatus)status</Declaration>
+			
+			
+			<Anchor>//api/name/refreshPriceLabel:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

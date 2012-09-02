@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAInventory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInventory</TokenIdentifier>
+			<Abstract type="html">This class manages the IAP inventory.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/setStatus:</TokenIdentifier>
+			<Abstract type="html">The the inventory&apos;s status, as a UAInventoryStatus enum value.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAInventoryStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInventory/status</TokenIdentifier>
+			<Abstract type="html">The the inventory&apos;s status, as a UAInventoryStatus enum value.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UAInventoryStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/setOrderBy:</TokenIdentifier>
+			<Abstract type="html">The key used to determine the inventory&apos;s sort order.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *orderBy</Declaration>
+			
+			
+			<Anchor>//api/name/orderBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInventory/orderBy</TokenIdentifier>
+			<Abstract type="html">The key used to determine the inventory&apos;s sort order.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *orderBy</Declaration>
+			
+			
+			<Anchor>//api/name/orderBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/setPurchasingProductIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *purchasingProductIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/purchasingProductIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInventory/purchasingProductIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *purchasingProductIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/purchasingProductIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/loadInventory</TokenIdentifier>
+			<Abstract type="html">Loads the inventory.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadInventory</Declaration>
+			
+			
+			<Anchor>//api/name/loadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/groupInventory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)groupInventory</Declaration>
+			
+			
+			<Anchor>//api/name/groupInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/resetReloadCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetReloadCount</Declaration>
+			
+			
+			<Anchor>//api/name/resetReloadCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/reloadInventory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadInventory</Declaration>
+			
+			
+			<Anchor>//api/name/reloadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/productsForType:</TokenIdentifier>
+			<Abstract type="html">Returns a subset of products corresponding to a particular product type.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)productsForType:(UAProductType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The UAProductType enum value corresponding to the product type.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A subset of products as an NSArray.</Abstract></ReturnValue>
+			<Anchor>//api/name/productsForType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/productWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns the UAProduct instance from the inventory that corresponds to a particular identifier.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UAProduct *)productWithIdentifier:(NSString *)productId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productId</Name>
+					<Abstract type="html">The associated product identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A UAProduct instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/productWithIdentifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/hasProductWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Checks whether the inventory contains a particular product by identifier.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasProductWithIdentifier:(NSString *)productId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productId</Name>
+					<Abstract type="html">The product identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the associated product is present in the inventory, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasProductWithIdentifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/productAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UAProduct *)productAtIndex:(int)index</Declaration>
+			
+			
+			<Anchor>//api/name/productAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/setOrderBy:ascending:</TokenIdentifier>
+			<Abstract type="html">Sets the product display order.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)setOrderBy:(NSString *)key ascending:(BOOL)ascending</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A key constant that determines the sort order.</Abstract>
+				</Parameter><Parameter>
+					<Name>ascending</Name>
+					<Abstract type="html">A BOOL indicating whether to sort in ascending order.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOrderBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/sortInventory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)sortInventory</Declaration>
+			
+			
+			<Anchor>//api/name/sortInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/purchase:</TokenIdentifier>
+			<Abstract type="html">Purchases a particular product by identifier.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)purchase:(NSString *)productIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">The product&apos;s associated identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purchase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInventory/updateAll</TokenIdentifier>
+			<Abstract type="html">Purchases all updated products.</Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateAll</Declaration>
+			
+			
+			<Anchor>//api/name/updateAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInventory/localizedPrice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInventory.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)localizedPrice:(SKProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/localizedPrice:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

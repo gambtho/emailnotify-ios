@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAContentURLCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAContentURLCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAContentURLCache/cacheWithExpirationInterval:withPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>+ (UAContentURLCache *)cacheWithExpirationInterval:(NSTimeInterval)interval withPath:(NSString *)pathString</Declaration>
+			
+			
+			<Anchor>//api/name/cacheWithExpirationInterval:withPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/initWithExpirationInterval:withPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithExpirationInterval:(NSTimeInterval)interval withPath:(NSString *)pathString</Declaration>
+			
+			
+			<Anchor>//api/name/initWithExpirationInterval:withPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/setContent:forProductURL:withVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setContent:(NSURL *)contentURL forProductURL:(NSURL *)productURL withVersion:(NSNumber *)version</Declaration>
+			
+			
+			<Anchor>//api/name/setContent:forProductURL:withVersion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/contentForProductURL:withVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)contentForProductURL:(NSURL *)productURL withVersion:(NSNumber *)version</Declaration>
+			
+			
+			<Anchor>//api/name/contentForProductURL:withVersion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/setContentDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *contentDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/contentDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAContentURLCache/contentDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *contentDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/contentDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/setTimestampDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *timestampDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/timestampDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAContentURLCache/timestampDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *timestampDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/timestampDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/setPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAContentURLCache/path</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/setExpirationInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval expirationInterval</Declaration>
+			
+			
+			<Anchor>//api/name/expirationInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAContentURLCache/expirationInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval expirationInterval</Declaration>
+			
+			
+			<Anchor>//api/name/expirationInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/compoundKeyFromURL:andVersion:</TokenIdentifier>
+			<Abstract type="html">Sets up a compound key for use with the content cache</Abstract>
+			<DeclaredIn>UAContentURLCache+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)compoundKeyFromURL:(NSURL *)URL andVersion:(NSNumber *)version</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The NSURL that will be the first part of the key</Abstract>
+				</Parameter><Parameter>
+					<Name>version</Name>
+					<Abstract type="html">The NSNumber that represents the version number of the product to be cached</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSString Compound key created by concatenating the two values with a delimiter &quot;&lt;-version_product-&gt;&quot;</Abstract></ReturnValue>
+			<Anchor>//api/name/compoundKeyFromURL:andVersion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/productURLAndVersionFromCompoundKey:</TokenIdentifier>
+			<Abstract type="html">Deconstructs a compound key for the product</Abstract>
+			<DeclaredIn>UAContentURLCache+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)productURLAndVersionFromCompoundKey:(NSString *)compoundKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>compoundKey</Name>
+					<Abstract type="html">NSString in the form versionNumber&lt;delimiter&gt;productURL</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSDictionary with the values for the version number and the productURLnil If the product is not found, or the key cannot be parsed</Abstract></ReturnValue>
+			<Anchor>//api/name/productURLAndVersionFromCompoundKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/readFromDisk</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)readFromDisk</Declaration>
+			
+			
+			<Anchor>//api/name/readFromDisk</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAContentURLCache/saveToDisk</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAContentURLCache+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveToDisk</Declaration>
+			
+			
+			<Anchor>//api/name/saveToDisk</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

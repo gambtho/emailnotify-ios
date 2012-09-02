@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionContentDetailViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentDetailViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>
+			
+			<NodeRef refid="106"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setContent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UASubscriptionContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/content</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) UASubscriptionContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setContentName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentName</Declaration>
+			
+			
+			<Anchor>//api/name/contentName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/contentName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentName</Declaration>
+			
+			
+			<Anchor>//api/name/contentName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setIconContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *iconContainer</Declaration>
+			
+			
+			<Anchor>//api/name/iconContainer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/iconContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *iconContainer</Declaration>
+			
+			
+			<Anchor>//api/name/iconContainer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setRevision:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/revision</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setFileSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/fileSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setDetailTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *detailTable</Declaration>
+			
+			
+			<Anchor>//api/name/detailTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/detailTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *detailTable</Declaration>
+			
+			
+			<Anchor>//api/name/detailTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setPreviewImageCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *previewImageCell</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/previewImageCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *previewImageCell</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/setPreviewImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *previewImage</Declaration>
+			
+			
+			<Anchor>//api/name/previewImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentDetailViewController/previewImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *previewImage</Declaration>
+			
+			
+			<Anchor>//api/name/previewImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/download:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)download:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/download:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentDetailViewController/refreshUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshUI</Declaration>
+			
+			
+			<Anchor>//api/name/refreshUI</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UAUser Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UAUser Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/alias">&nbsp;&nbsp;&nbsp;&nbsp;alias</option>
+	
+	<option value="//api/name/email">&nbsp;&nbsp;&nbsp;&nbsp;email</option>
+	
+	<option value="//api/name/inRecovery">&nbsp;&nbsp;&nbsp;&nbsp;inRecovery</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/recoveryEmail">&nbsp;&nbsp;&nbsp;&nbsp;recoveryEmail</option>
+	
+	<option value="//api/name/recoveryPoller">&nbsp;&nbsp;&nbsp;&nbsp;recoveryPoller</option>
+	
+	<option value="//api/name/recoveryStarted">&nbsp;&nbsp;&nbsp;&nbsp;recoveryStarted</option>
+	
+	<option value="//api/name/recoveryStatusUrl">&nbsp;&nbsp;&nbsp;&nbsp;recoveryStatusUrl</option>
+	
+	<option value="//api/name/retrievingUser">&nbsp;&nbsp;&nbsp;&nbsp;retrievingUser</option>
+	
+	<option value="//api/name/sentRecoveryEmail">&nbsp;&nbsp;&nbsp;&nbsp;sentRecoveryEmail</option>
+	
+	<option value="//api/name/tags">&nbsp;&nbsp;&nbsp;&nbsp;tags</option>
+	
+	<option value="//api/name/url">&nbsp;&nbsp;&nbsp;&nbsp;url</option>
+	
+	<option value="//api/name/userState">&nbsp;&nbsp;&nbsp;&nbsp;userState</option>
+	
+	<option value="//api/name/username">&nbsp;&nbsp;&nbsp;&nbsp;username</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/defaultUser">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultUser</option>
+	
+	<option value="//api/name/land">&nbsp;&nbsp;&nbsp;&nbsp;+ land</option>
+	
+	<option value="//api/name/setDefaultUsername:withPassword:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultUsername:withPassword:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelRecovery">&nbsp;&nbsp;&nbsp;&nbsp;- cancelRecovery</option>
+	
+	<option value="//api/name/checkRecoveryStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- checkRecoveryStatus:</option>
+	
+	<option value="//api/name/createUser">&nbsp;&nbsp;&nbsp;&nbsp;- createUser</option>
+	
+	<option value="//api/name/createUserDictionary">&nbsp;&nbsp;&nbsp;&nbsp;- createUserDictionary</option>
+	
+	<option value="//api/name/createUserWithEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- createUserWithEmail:</option>
+	
+	<option value="//api/name/defaultUserCreated">&nbsp;&nbsp;&nbsp;&nbsp;- defaultUserCreated</option>
+	
+	<option value="//api/name/didMergeWithUser:">&nbsp;&nbsp;&nbsp;&nbsp;- didMergeWithUser:</option>
+	
+	<option value="//api/name/initializeUser">&nbsp;&nbsp;&nbsp;&nbsp;- initializeUser</option>
+	
+	<option value="//api/name/loadUser">&nbsp;&nbsp;&nbsp;&nbsp;- loadUser</option>
+	
+	<option value="//api/name/modifyUserWithEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- modifyUserWithEmail:</option>
+	
+	<option value="//api/name/notifyObserversUserUpdated">&nbsp;&nbsp;&nbsp;&nbsp;- notifyObserversUserUpdated</option>
+	
+	<option value="//api/name/requestWentWrong:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWentWrong:</option>
+	
+	<option value="//api/name/retrieveUser">&nbsp;&nbsp;&nbsp;&nbsp;- retrieveUser</option>
+	
+	<option value="//api/name/saveUserData">&nbsp;&nbsp;&nbsp;&nbsp;- saveUserData</option>
+	
+	<option value="//api/name/setUserEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- setUserEmail:</option>
+	
+	<option value="//api/name/startRecovery">&nbsp;&nbsp;&nbsp;&nbsp;- startRecovery</option>
+	
+	<option value="//api/name/startRecoveryPoller">&nbsp;&nbsp;&nbsp;&nbsp;- startRecoveryPoller</option>
+	
+	<option value="//api/name/stopRecoveryPoller">&nbsp;&nbsp;&nbsp;&nbsp;- stopRecoveryPoller</option>
+	
+	<option value="//api/name/updateUserInfo:withDelegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserInfo:withDelegate:finish:fail:</option>
+	
+	<option value="//api/name/updateUserState">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserState</option>
+	
+	<option value="//api/name/updateUserWithDelegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserWithDelegate:finish:fail:</option>
+	
+	<option value="//api/name/userRequestWentWrong:">&nbsp;&nbsp;&nbsp;&nbsp;- userRequestWentWrong:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alias">alias</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/email">email</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inRecovery">inRecovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryEmail">recoveryEmail</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryPoller">recoveryPoller</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryStarted">recoveryStarted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryStatusUrl">recoveryStatusUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retrievingUser">retrievingUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sentRecoveryEmail">sentRecoveryEmail</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tags">tags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/url">url</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userState">userState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/username">username</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultUser">defaultUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/land">land</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultUsername:withPassword:">setDefaultUsername:withPassword:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelRecovery">cancelRecovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkRecoveryStatus:">checkRecoveryStatus:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createUser">createUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createUserDictionary">createUserDictionary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createUserWithEmail:">createUserWithEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultUserCreated">defaultUserCreated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didMergeWithUser:">didMergeWithUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeUser">initializeUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadUser">loadUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modifyUserWithEmail:">modifyUserWithEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyObserversUserUpdated">notifyObserversUserUpdated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWentWrong:">requestWentWrong:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retrieveUser">retrieveUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveUserData">saveUserData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserEmail:">setUserEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRecovery">startRecovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRecoveryPoller">startRecoveryPoller</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRecoveryPoller">stopRecoveryPoller</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserInfo:withDelegate:finish:fail:">updateUserInfo:withDelegate:finish:fail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserState">updateUserState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserWithDelegate:finish:fail:">updateUserWithDelegate:finish:fail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userRequestWentWrong:">userRequestWentWrong:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UAUser Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UAUser Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/UAObservable.html">UAObservable</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UAUser.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryEmail">&nbsp;&nbsp;recoveryEmail</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryStatusUrl">&nbsp;&nbsp;recoveryStatusUrl</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryPoller">&nbsp;&nbsp;recoveryPoller</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userState">&nbsp;&nbsp;userState</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/email">&nbsp;&nbsp;email</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alias">&nbsp;&nbsp;alias</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tags">&nbsp;&nbsp;tags</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultUser">+&nbsp;defaultUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/land">+&nbsp;land</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultUserCreated">&ndash;&nbsp;defaultUserCreated</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserEmail:">&ndash;&nbsp;setUserEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRecovery">&ndash;&nbsp;startRecovery</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelRecovery">&ndash;&nbsp;cancelRecovery</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inRecovery">&nbsp;&nbsp;inRecovery</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryStarted">&nbsp;&nbsp;recoveryStarted</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sentRecoveryEmail">&nbsp;&nbsp;sentRecoveryEmail</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retrievingUser">&nbsp;&nbsp;retrievingUser</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultUsername:withPassword:">+&nbsp;setDefaultUsername:withPassword:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeUser">&ndash;&nbsp;initializeUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadUser">&ndash;&nbsp;loadUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createUser">&ndash;&nbsp;createUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createUserWithEmail:">&ndash;&nbsp;createUserWithEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modifyUserWithEmail:">&ndash;&nbsp;modifyUserWithEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retrieveUser">&ndash;&nbsp;retrieveUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRecoveryPoller">&ndash;&nbsp;startRecoveryPoller</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRecoveryPoller">&ndash;&nbsp;stopRecoveryPoller</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkRecoveryStatus:">&ndash;&nbsp;checkRecoveryStatus:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didMergeWithUser:">&ndash;&nbsp;didMergeWithUser:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveUserData">&ndash;&nbsp;saveUserData</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUserState">&ndash;&nbsp;updateUserState</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyObserversUserUpdated">&ndash;&nbsp;notifyObserversUserUpdated</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWentWrong:">&ndash;&nbsp;requestWentWrong:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userRequestWentWrong:">&ndash;&nbsp;userRequestWentWrong:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUserInfo:withDelegate:finish:fail:">&ndash;&nbsp;updateUserInfo:withDelegate:finish:fail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUserWithDelegate:finish:fail:">&ndash;&nbsp;updateUserWithDelegate:finish:fail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createUserDictionary">&ndash;&nbsp;createUserDictionary</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alias" title="alias"></a>
+	<h3 class="subsubtitle method-title">alias</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *alias</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/email" title="email"></a>
+	<h3 class="subsubtitle method-title">email</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *email</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inRecovery" title="inRecovery"></a>
+	<h3 class="subsubtitle method-title">inRecovery</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL inRecovery</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *password</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryEmail" title="recoveryEmail"></a>
+	<h3 class="subsubtitle method-title">recoveryEmail</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *recoveryEmail</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryPoller" title="recoveryPoller"></a>
+	<h3 class="subsubtitle method-title">recoveryPoller</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSTimer *recoveryPoller</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryStarted" title="recoveryStarted"></a>
+	<h3 class="subsubtitle method-title">recoveryStarted</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL recoveryStarted</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryStatusUrl" title="recoveryStatusUrl"></a>
+	<h3 class="subsubtitle method-title">recoveryStatusUrl</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *recoveryStatusUrl</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retrievingUser" title="retrievingUser"></a>
+	<h3 class="subsubtitle method-title">retrievingUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL retrievingUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sentRecoveryEmail" title="sentRecoveryEmail"></a>
+	<h3 class="subsubtitle method-title">sentRecoveryEmail</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL sentRecoveryEmail</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tags" title="tags"></a>
+	<h3 class="subsubtitle method-title">tags</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSMutableSet *tags</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="subsubtitle method-title">url</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *url</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userState" title="userState"></a>
+	<h3 class="subsubtitle method-title">userState</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) UAUserState userState</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="subsubtitle method-title">username</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSString *username</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultUser" title="defaultUser"></a>
+	<h3 class="subsubtitle method-title">defaultUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (UAUser *)defaultUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/land" title="land"></a>
+	<h3 class="subsubtitle method-title">land</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)land</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultUsername:withPassword:" title="setDefaultUsername:withPassword:"></a>
+	<h3 class="subsubtitle method-title">setDefaultUsername:withPassword:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultUsername:(NSString *)<em>defaultUsername</em> withPassword:(NSString *)<em>defaultPassword</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelRecovery" title="cancelRecovery"></a>
+	<h3 class="subsubtitle method-title">cancelRecovery</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelRecovery</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkRecoveryStatus:" title="checkRecoveryStatus:"></a>
+	<h3 class="subsubtitle method-title">checkRecoveryStatus:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)checkRecoveryStatus:(NSTimer *)<em>timer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createUser" title="createUser"></a>
+	<h3 class="subsubtitle method-title">createUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)createUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createUserDictionary" title="createUserDictionary"></a>
+	<h3 class="subsubtitle method-title">createUserDictionary</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)createUserDictionary</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createUserWithEmail:" title="createUserWithEmail:"></a>
+	<h3 class="subsubtitle method-title">createUserWithEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)createUserWithEmail:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultUserCreated" title="defaultUserCreated"></a>
+	<h3 class="subsubtitle method-title">defaultUserCreated</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)defaultUserCreated</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didMergeWithUser:" title="didMergeWithUser:"></a>
+	<h3 class="subsubtitle method-title">didMergeWithUser:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didMergeWithUser:(NSDictionary *)<em>userData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeUser" title="initializeUser"></a>
+	<h3 class="subsubtitle method-title">initializeUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)initializeUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadUser" title="loadUser"></a>
+	<h3 class="subsubtitle method-title">loadUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)loadUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modifyUserWithEmail:" title="modifyUserWithEmail:"></a>
+	<h3 class="subsubtitle method-title">modifyUserWithEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)modifyUserWithEmail:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyObserversUserUpdated" title="notifyObserversUserUpdated"></a>
+	<h3 class="subsubtitle method-title">notifyObserversUserUpdated</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)notifyObserversUserUpdated</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWentWrong:" title="requestWentWrong:"></a>
+	<h3 class="subsubtitle method-title">requestWentWrong:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestWentWrong:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retrieveUser" title="retrieveUser"></a>
+	<h3 class="subsubtitle method-title">retrieveUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)retrieveUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveUserData" title="saveUserData"></a>
+	<h3 class="subsubtitle method-title">saveUserData</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)saveUserData</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserEmail:" title="setUserEmail:"></a>
+	<h3 class="subsubtitle method-title">setUserEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setUserEmail:(NSString *)<em>address</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRecovery" title="startRecovery"></a>
+	<h3 class="subsubtitle method-title">startRecovery</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startRecovery</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRecoveryPoller" title="startRecoveryPoller"></a>
+	<h3 class="subsubtitle method-title">startRecoveryPoller</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startRecoveryPoller</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRecoveryPoller" title="stopRecoveryPoller"></a>
+	<h3 class="subsubtitle method-title">stopRecoveryPoller</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRecoveryPoller</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUserInfo:withDelegate:finish:fail:" title="updateUserInfo:withDelegate:finish:fail:"></a>
+	<h3 class="subsubtitle method-title">updateUserInfo:withDelegate:finish:fail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateUserInfo:(NSDictionary *)<em>info</em> withDelegate:(id)<em>delegate</em> finish:(SEL)<em>finishSelector</em> fail:(SEL)<em>failSelector</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUserState" title="updateUserState"></a>
+	<h3 class="subsubtitle method-title">updateUserState</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateUserState</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUserWithDelegate:finish:fail:" title="updateUserWithDelegate:finish:fail:"></a>
+	<h3 class="subsubtitle method-title">updateUserWithDelegate:finish:fail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateUserWithDelegate:(id)<em>delegate</em> finish:(SEL)<em>finishSelector</em> fail:(SEL)<em>failSelector</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userRequestWentWrong:" title="userRequestWentWrong:"></a>
+	<h3 class="subsubtitle method-title">userRequestWentWrong:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)userRequestWentWrong:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

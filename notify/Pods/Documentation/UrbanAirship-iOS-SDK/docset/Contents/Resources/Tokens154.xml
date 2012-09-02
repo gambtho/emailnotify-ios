@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+GTMUnitTestingAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(GTMUnitTestingAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="154"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_setUnitTestSaveToDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>+ (void)gtm_setUnitTestSaveToDirectory:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_setUnitTestSaveToDirectory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_getUnitTestSaveToDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)gtm_getUnitTestSaveToDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_getUnitTestSaveToDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_areSystemSettingsValidForDoingImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_areSystemSettingsValidForDoingImage</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_areSystemSettingsValidForDoingImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageUTI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (CFStringRef)gtm_imageUTI</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_imageUTI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageExtension</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_imageExtension</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_imageExtension</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageDataForImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)gtm_imageDataForImage:(CGImageRef)image</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_imageDataForImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToImageNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_saveToImageNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToImageNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToImageAt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_saveToImageAt:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToImageAt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_compareWithImageAt:diffImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_compareWithImageAt:(NSString *)path diffImage:(CGImageRef *)diff</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_compareWithImageAt:diffImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_pathForImageNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_pathForImageNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_pathForImageNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (CGImageRef)gtm_imageWithContentsOfFile:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_imageWithContentsOfFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToPathForImageNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_saveToPathForImageNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToPathForImageNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageRepresentation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)gtm_imageRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_imageRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_stateExtension</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_stateExtension</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stateExtension</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToStateNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_saveToStateNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToStateNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToStateAt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_saveToStateAt:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToStateAt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_compareWithStateAt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)gtm_compareWithStateAt:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_compareWithStateAt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_pathForStateNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_pathForStateNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_pathForStateNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToPathForStateNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_saveToPathForStateNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_saveToPathForStateNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_stateRepresentation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)gtm_stateRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stateRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_unitTestEncodeState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			
+			<Declaration>- (void)gtm_unitTestEncodeState:(NSCoder *)inCoder</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_unitTestEncodeState:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

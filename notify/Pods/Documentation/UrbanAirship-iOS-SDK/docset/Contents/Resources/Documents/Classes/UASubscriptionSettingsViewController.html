@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UASubscriptionSettingsViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UASubscriptionSettingsViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cancelEmailButton">&nbsp;&nbsp;&nbsp;&nbsp;cancelEmailButton</option>
+	
+	<option value="//api/name/emailButton">&nbsp;&nbsp;&nbsp;&nbsp;emailButton</option>
+	
+	<option value="//api/name/emailHints">&nbsp;&nbsp;&nbsp;&nbsp;emailHints</option>
+	
+	<option value="//api/name/emailInput">&nbsp;&nbsp;&nbsp;&nbsp;emailInput</option>
+	
+	<option value="//api/name/recoveryAlert">&nbsp;&nbsp;&nbsp;&nbsp;recoveryAlert</option>
+	
+	<option value="//api/name/recoveryHints">&nbsp;&nbsp;&nbsp;&nbsp;recoveryHints</option>
+	
+	<option value="//api/name/resendEmailButton">&nbsp;&nbsp;&nbsp;&nbsp;resendEmailButton</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- cancelEmail:</option>
+	
+	<option value="//api/name/hideRecoveryAlert">&nbsp;&nbsp;&nbsp;&nbsp;- hideRecoveryAlert</option>
+	
+	<option value="//api/name/resendEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- resendEmail:</option>
+	
+	<option value="//api/name/showRecoveryAlert">&nbsp;&nbsp;&nbsp;&nbsp;- showRecoveryAlert</option>
+	
+	<option value="//api/name/showRecoveryFailAlert">&nbsp;&nbsp;&nbsp;&nbsp;- showRecoveryFailAlert</option>
+	
+	<option value="//api/name/submitEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- submitEmail:</option>
+	
+	<option value="//api/name/updateUI">&nbsp;&nbsp;&nbsp;&nbsp;- updateUI</option>
+	
+	<option value="//api/name/validateEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- validateEmail:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelEmailButton">cancelEmailButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emailButton">emailButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emailHints">emailHints</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emailInput">emailInput</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryAlert">recoveryAlert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recoveryHints">recoveryHints</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resendEmailButton">resendEmailButton</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelEmail:">cancelEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hideRecoveryAlert">hideRecoveryAlert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resendEmail:">resendEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showRecoveryAlert">showRecoveryAlert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showRecoveryFailAlert">showRecoveryFailAlert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/submitEmail:">submitEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUI">updateUI</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validateEmail:">validateEmail:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UASubscriptionSettingsViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UASubscriptionSettingsViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/UAUserObserver.html">UAUserObserver</a><br />UIAlertViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UASubscriptionSettingsViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emailHints">&nbsp;&nbsp;emailHints</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emailInput">&nbsp;&nbsp;emailInput</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emailButton">&nbsp;&nbsp;emailButton</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resendEmailButton">&nbsp;&nbsp;resendEmailButton</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelEmailButton">&nbsp;&nbsp;cancelEmailButton</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryHints">&nbsp;&nbsp;recoveryHints</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recoveryAlert">&nbsp;&nbsp;recoveryAlert</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/submitEmail:">&ndash;&nbsp;submitEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resendEmail:">&ndash;&nbsp;resendEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelEmail:">&ndash;&nbsp;cancelEmail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUI">&ndash;&nbsp;updateUI</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showRecoveryAlert">&ndash;&nbsp;showRecoveryAlert</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hideRecoveryAlert">&ndash;&nbsp;hideRecoveryAlert</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showRecoveryFailAlert">&ndash;&nbsp;showRecoveryFailAlert</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validateEmail:">&ndash;&nbsp;validateEmail:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelEmailButton" title="cancelEmailButton"></a>
+	<h3 class="subsubtitle method-title">cancelEmailButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UIButton *cancelEmailButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emailButton" title="emailButton"></a>
+	<h3 class="subsubtitle method-title">emailButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UIButton *emailButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emailHints" title="emailHints"></a>
+	<h3 class="subsubtitle method-title">emailHints</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UILabel *emailHints</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emailInput" title="emailInput"></a>
+	<h3 class="subsubtitle method-title">emailInput</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UITextField *emailInput</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryAlert" title="recoveryAlert"></a>
+	<h3 class="subsubtitle method-title">recoveryAlert</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) UIAlertView *recoveryAlert</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recoveryHints" title="recoveryHints"></a>
+	<h3 class="subsubtitle method-title">recoveryHints</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UILabel *recoveryHints</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resendEmailButton" title="resendEmailButton"></a>
+	<h3 class="subsubtitle method-title">resendEmailButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) IBOutlet UIButton *resendEmailButton</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelEmail:" title="cancelEmail:"></a>
+	<h3 class="subsubtitle method-title">cancelEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)cancelEmail:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hideRecoveryAlert" title="hideRecoveryAlert"></a>
+	<h3 class="subsubtitle method-title">hideRecoveryAlert</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)hideRecoveryAlert</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resendEmail:" title="resendEmail:"></a>
+	<h3 class="subsubtitle method-title">resendEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)resendEmail:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showRecoveryAlert" title="showRecoveryAlert"></a>
+	<h3 class="subsubtitle method-title">showRecoveryAlert</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)showRecoveryAlert</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showRecoveryFailAlert" title="showRecoveryFailAlert"></a>
+	<h3 class="subsubtitle method-title">showRecoveryFailAlert</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)showRecoveryFailAlert</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/submitEmail:" title="submitEmail:"></a>
+	<h3 class="subsubtitle method-title">submitEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)submitEmail:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUI" title="updateUI"></a>
+	<h3 class="subsubtitle method-title">updateUI</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateUI</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validateEmail:" title="validateEmail:"></a>
+	<h3 class="subsubtitle method-title">validateEmail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)validateEmail:(NSString *)<em>candidate</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GTMUnitTestDevLog.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GTMUnitTestDevLog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/log:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)log:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/log:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/log:args:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)log:(NSString *)format args:(va_list)args</Declaration>
+			
+			
+			<Anchor>//api/name/log:args:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/enableTracking</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)enableTracking</Declaration>
+			
+			
+			<Anchor>//api/name/enableTracking</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/disableTracking</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)disableTracking</Declaration>
+			
+			
+			<Anchor>//api/name/disableTracking</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/isTrackingEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTrackingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/isTrackingEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/expectString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expectString:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/expectString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/expectPattern:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expectPattern:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/expectPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/expect:casesOfString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expect:(NSUInteger)n casesOfString:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/expect:casesOfString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/expect:casesOfPattern:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expect:(NSUInteger)n casesOfPattern:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/expect:casesOfPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/expect:casesOfPattern:args:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expect:(NSUInteger)n casesOfPattern:(NSString *)format args:(va_list)args</Declaration>
+			
+			
+			<Anchor>//api/name/expect:casesOfPattern:args:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/verifyNoMoreLogsExpected</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)verifyNoMoreLogsExpected</Declaration>
+			
+			
+			<Anchor>//api/name/verifyNoMoreLogsExpected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GTMUnitTestDevLog/resetExpectedLogs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)resetExpectedLogs</Declaration>
+			
+			
+			<Anchor>//api/name/resetExpectedLogs</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

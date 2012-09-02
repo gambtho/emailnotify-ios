@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAProductDetailiPadViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAProductDetailiPadViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailiPadViewController.h</DeclaredIn>
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailiPadViewController/constructHtmlForWebViewWithDescription:AndImageURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailiPadViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)constructHtmlForWebViewWithDescription:(NSString *)description AndImageURL:(NSURL *)imageURL</Declaration>
+			
+			
+			<Anchor>//api/name/constructHtmlForWebViewWithDescription:AndImageURL:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

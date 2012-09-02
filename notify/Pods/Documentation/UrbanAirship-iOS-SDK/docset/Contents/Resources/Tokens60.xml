@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAInboxNavUI.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInboxNavUI</TokenIdentifier>
+			<Abstract type="html">This class is an alternative rich push UI impelementation.  When it is
+designated as the [UAInbox uiClass], launching the inbox will cause it
+to be displayed in either a navigation controller (in the iPhone UI idiom)
+or a popover controller (in the iPad UI idiom).</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setUseOverlay:</TokenIdentifier>
+			<Abstract type="html">Set this property to YES if the class should display in-app messages
+using UAInboxOverlayController, and NO if it should navigate to the
+inbox and display the message as though it had been selected.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL useOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/useOverlay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/useOverlay</TokenIdentifier>
+			<Abstract type="html">Set this property to YES if the class should display in-app messages
+using UAInboxOverlayController, and NO if it should navigate to the
+inbox and display the message as though it had been selected.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL useOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/useOverlay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setPopoverSize:</TokenIdentifier>
+			<Abstract type="html">The size of the popover controller&apos;s window.
+Defaults to 320 x 1100.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize popoverSize</Declaration>
+			
+			
+			<Anchor>//api/name/popoverSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/popoverSize</TokenIdentifier>
+			<Abstract type="html">The size of the popover controller&apos;s window.
+Defaults to 320 x 1100.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize popoverSize</Declaration>
+			
+			
+			<Anchor>//api/name/popoverSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setPopoverButton:</TokenIdentifier>
+			<Abstract type="html">The button used to launch the popover display.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIBarButtonItem *popoverButton</Declaration>
+			
+			
+			<Anchor>//api/name/popoverButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/popoverButton</TokenIdentifier>
+			<Abstract type="html">The button used to launch the popover display.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIBarButtonItem *popoverButton</Declaration>
+			
+			
+			<Anchor>//api/name/popoverButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setPopoverController:</TokenIdentifier>
+			<Abstract type="html">The popover controller used for displaying the inbox in the iPad UI idiom.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIPopoverController *popoverController</Declaration>
+			
+			
+			<Anchor>//api/name/popoverController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/popoverController</TokenIdentifier>
+			<Abstract type="html">The popover controller used for displaying the inbox in the iPad UI idiom.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIPopoverController *popoverController</Declaration>
+			
+			
+			<Anchor>//api/name/popoverController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setNavigationController:</TokenIdentifier>
+			<Abstract type="html">The navigation controller used for displaying the inbox in the iPhone idiom.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UINavigationController *navigationController</Declaration>
+			
+			
+			<Anchor>//api/name/navigationController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/navigationController</TokenIdentifier>
+			<Abstract type="html">The navigation controller used for displaying the inbox in the iPhone idiom.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UINavigationController *navigationController</Declaration>
+			
+			
+			<Anchor>//api/name/navigationController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setInboxParentController:</TokenIdentifier>
+			<Abstract type="html">The parent view controller the inbox will be launched from.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIViewController *inboxParentController</Declaration>
+			
+			
+			<Anchor>//api/name/inboxParentController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/inboxParentController</TokenIdentifier>
+			<Abstract type="html">The parent view controller the inbox will be launched from.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIViewController *inboxParentController</Declaration>
+			
+			
+			<Anchor>//api/name/inboxParentController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/setLocalizationBundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
+			
+			
+			<Anchor>//api/name/localizationBundle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxNavUI/localizationBundle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
+			
+			
+			<Anchor>//api/name/localizationBundle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/quitInbox</TokenIdentifier>
+			<Abstract type="html">Hide the inbox UI and perform any resource cleanup.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)quitInbox</Declaration>
+			
+			
+			<Anchor>//api/name/quitInbox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/displayInbox:animated:</TokenIdentifier>
+			<Abstract type="html">Display the inbox UI.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The parent view controller</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to animate the transition</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayInbox:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/displayMessage:message:</TokenIdentifier>
+			<Abstract type="html">Display the inbox UI and open a specific message.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The parent view controller</Abstract>
+				</Parameter><Parameter>
+					<Name>messageID</Name>
+					<Abstract type="html">The ID for the message to display</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayMessage:message:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/loadLaunchMessage</TokenIdentifier>
+			<Abstract type="html">Open the Rich Push Inbox directly to the message associated with
+the push notification that launched or foregrounded the application.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)loadLaunchMessage</Declaration>
+			
+			
+			<Anchor>//api/name/loadLaunchMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxNavUI/newMessageArrived:</TokenIdentifier>
+			<Abstract type="html">Handle an incoming push message.</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>- (void)newMessageArrived:(NSDictionary *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">An NSDictionary with the push notification contents.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/newMessageArrived:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/setRuniPhoneTargetOniPad:</TokenIdentifier>
+			<Abstract type="html">Instructs the UI class to place the UI in an existing UINavigationController on the iPad
+rather than using a UIPopoverController</Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setRuniPhoneTargetOniPad:(BOOL)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">Set to YES if the iPhone/NavigationController UI should be used even when the
+application is using the iPad UI idiom</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRuniPhoneTargetOniPad:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxNavUI/land</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAInboxNavUI.h</DeclaredIn>			
+			
+			<Declaration>+ (void)land</Declaration>
+			
+			
+			<Anchor>//api/name/land</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

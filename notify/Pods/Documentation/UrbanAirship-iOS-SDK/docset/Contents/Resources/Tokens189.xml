@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAStoreFrontDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAStoreFrontDelegate</TokenIdentifier>
+			<Abstract type="html">Implementers of this protocol will receive
+callbacks from IAP regarding purchase and
+UI activity.</Abstract>
+			<DeclaredIn>UAStoreFrontDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="189"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontDelegate/productPurchased:</TokenIdentifier>
+			<Abstract type="html">Indicates that a product has been purchased.</Abstract>
+			<DeclaredIn>UAStoreFrontDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)productPurchased:(UAProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The associated UAProduct instance.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/productPurchased:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontDelegate/storeFrontWillHide</TokenIdentifier>
+			<Abstract type="html">Indicates that the store front view will hide via
+[UAStoreFront quitStoreFront]</Abstract>
+			<DeclaredIn>UAStoreFrontDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storeFrontWillHide</Declaration>
+			
+			
+			<Anchor>//api/name/storeFrontWillHide</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontDelegate/productsDownloadProgress:count:</TokenIdentifier>
+			<Abstract type="html">Called periodically with product download progress.</Abstract>
+			<DeclaredIn>UAStoreFrontDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)productsDownloadProgress:(float)progress count:(int)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">A float between 0 and 1, indicating the current download progress</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of current downloads.  When 0, downloads are finished.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/productsDownloadProgress:count:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

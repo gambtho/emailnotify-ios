@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GHTestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GHTestDelegate</TokenIdentifier>
+			<Abstract type="html">Test delegate for notification when a test starts and ends.</Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>
+			
+			<NodeRef refid="163"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidStart:source:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)testDidStart:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			
+			
+			<Anchor>//api/name/testDidStart:source:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidUpdate:source:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)testDidUpdate:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			
+			
+			<Anchor>//api/name/testDidUpdate:source:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidEnd:source:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)testDidEnd:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			
+			
+			<Anchor>//api/name/testDidEnd:source:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/test:didLog:source:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)test:(id&lt;GHTest&gt;)test didLog:(NSString *)message source:(id&lt;GHTest&gt;)source</Declaration>
+			
+			
+			<Anchor>//api/name/test:didLog:source:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

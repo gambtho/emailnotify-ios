@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAEventAppActive.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAEventAppActive</TokenIdentifier>
+			<Abstract type="html">This event is recorded when the app becomes active: on foreground
+or when resuming after losing focus for any of the reasons that would
+trigger a UAEventAppInactive event.</Abstract>
+			<DeclaredIn>UAEvent.h</DeclaredIn>
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

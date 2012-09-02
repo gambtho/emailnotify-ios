@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionContentCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>
+			
+			<NodeRef refid="105"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContentDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
+			
+			
+			<Anchor>//api/name/contentDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/contentDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
+			
+			
+			<Anchor>//api/name/contentDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setIcon:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/icon</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setRestoreButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
+			
+			
+			<Anchor>//api/name/restoreButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/restoreButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
+			
+			
+			<Anchor>//api/name/restoreButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setProgressBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
+			
+			
+			<Anchor>//api/name/progressBar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/progressBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
+			
+			
+			<Anchor>//api/name/progressBar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/content</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/refreshCellByContent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshCellByContent</Declaration>
+			
+			
+			<Anchor>//api/name/refreshCellByContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setButtonState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setButtonState:(BOOL)contentIsDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/setButtonState:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/actionButtonClicked:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)actionButtonClicked:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/actionButtonClicked:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

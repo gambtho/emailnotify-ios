@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UASubscriptionSettingsViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionSettingsViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>
+			
+			<NodeRef refid="117"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailHints:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UILabel *emailHints</Declaration>
+			
+			
+			<Anchor>//api/name/emailHints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailHints</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UILabel *emailHints</Declaration>
+			
+			
+			<Anchor>//api/name/emailHints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailInput:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UITextField *emailInput</Declaration>
+			
+			
+			<Anchor>//api/name/emailInput</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailInput</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UITextField *emailInput</Declaration>
+			
+			
+			<Anchor>//api/name/emailInput</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *emailButton</Declaration>
+			
+			
+			<Anchor>//api/name/emailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *emailButton</Declaration>
+			
+			
+			<Anchor>//api/name/emailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setResendEmailButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *resendEmailButton</Declaration>
+			
+			
+			<Anchor>//api/name/resendEmailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/resendEmailButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *resendEmailButton</Declaration>
+			
+			
+			<Anchor>//api/name/resendEmailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setCancelEmailButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *cancelEmailButton</Declaration>
+			
+			
+			<Anchor>//api/name/cancelEmailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/cancelEmailButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UIButton *cancelEmailButton</Declaration>
+			
+			
+			<Anchor>//api/name/cancelEmailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setRecoveryHints:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UILabel *recoveryHints</Declaration>
+			
+			
+			<Anchor>//api/name/recoveryHints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/recoveryHints</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) IBOutlet UILabel *recoveryHints</Declaration>
+			
+			
+			<Anchor>//api/name/recoveryHints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setRecoveryAlert:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) UIAlertView *recoveryAlert</Declaration>
+			
+			
+			<Anchor>//api/name/recoveryAlert</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/recoveryAlert</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) UIAlertView *recoveryAlert</Declaration>
+			
+			
+			<Anchor>//api/name/recoveryAlert</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/submitEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)submitEmail:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/submitEmail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/resendEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)resendEmail:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/resendEmail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/cancelEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)cancelEmail:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/cancelEmail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/updateUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateUI</Declaration>
+			
+			
+			<Anchor>//api/name/updateUI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/showRecoveryAlert</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showRecoveryAlert</Declaration>
+			
+			
+			<Anchor>//api/name/showRecoveryAlert</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/hideRecoveryAlert</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)hideRecoveryAlert</Declaration>
+			
+			
+			<Anchor>//api/name/hideRecoveryAlert</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/showRecoveryFailAlert</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showRecoveryFailAlert</Declaration>
+			
+			
+			<Anchor>//api/name/showRecoveryFailAlert</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/validateEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)validateEmail:(NSString *)candidate</Declaration>
+			
+			
+			<Anchor>//api/name/validateEmail:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

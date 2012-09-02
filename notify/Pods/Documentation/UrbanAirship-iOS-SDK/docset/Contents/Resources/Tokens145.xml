@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UA_ZipArchive.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_ZipArchive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>
+			
+			<NodeRef refid="145"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ZipArchive/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/CreateZipFile2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)CreateZipFile2:(NSString *)zipFile</Declaration>
+			
+			
+			<Anchor>//api/name/CreateZipFile2:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/addFileToZip:newname:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)addFileToZip:(NSString *)file newname:(NSString *)newname</Declaration>
+			
+			
+			<Anchor>//api/name/addFileToZip:newname:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/CloseZipFile2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)CloseZipFile2</Declaration>
+			
+			
+			<Anchor>//api/name/CloseZipFile2</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipOpenFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)UnzipOpenFile:(NSString *)zipFile</Declaration>
+			
+			
+			<Anchor>//api/name/UnzipOpenFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipFileTo:overWrite:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)UnzipFileTo:(NSString *)path overWrite:(BOOL)overwrite</Declaration>
+			
+			
+			<Anchor>//api/name/UnzipFileTo:overWrite:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipCloseFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)UnzipCloseFile</Declaration>
+			
+			
+			<Anchor>//api/name/UnzipCloseFile</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

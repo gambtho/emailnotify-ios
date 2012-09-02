@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAAnalytics.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAAnalytics</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setServer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/server</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setSession:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableDictionary *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/session</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableDictionary *session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setDatabaseSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int databaseSize</Declaration>
+			
+			
+			<Anchor>//api/name/databaseSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/databaseSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int databaseSize</Declaration>
+			
+			
+			<Anchor>//api/name/databaseSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setX_ua_max_total:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_total</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/x_ua_max_total</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_total</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setX_ua_max_batch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_batch</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_batch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/x_ua_max_batch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_batch</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_batch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setX_ua_max_wait:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_wait</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_wait</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/x_ua_max_wait</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_max_wait</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_max_wait</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setX_ua_min_batch_interval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_min_batch_interval</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_min_batch_interval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/x_ua_min_batch_interval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int x_ua_min_batch_interval</Declaration>
+			
+			
+			<Anchor>//api/name/x_ua_min_batch_interval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setSendInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int sendInterval</Declaration>
+			
+			
+			<Anchor>//api/name/sendInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/sendInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int sendInterval</Declaration>
+			
+			
+			<Anchor>//api/name/sendInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setOldestEventTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval oldestEventTime</Declaration>
+			
+			
+			<Anchor>//api/name/oldestEventTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/oldestEventTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval oldestEventTime</Declaration>
+			
+			
+			<Anchor>//api/name/oldestEventTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setSendTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSTimer *sendTimer</Declaration>
+			
+			
+			<Anchor>//api/name/sendTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/sendTimer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSTimer *sendTimer</Declaration>
+			
+			
+			<Anchor>//api/name/sendTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setSendBackgroundTask:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) UIBackgroundTaskIdentifier sendBackgroundTask</Declaration>
+			
+			
+			<Anchor>//api/name/sendBackgroundTask</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/sendBackgroundTask</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) UIBackgroundTaskIdentifier sendBackgroundTask</Declaration>
+			
+			
+			<Anchor>//api/name/sendBackgroundTask</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setNotificationUserInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSDictionary *notificationUserInfo</Declaration>
+			
+			
+			<Anchor>//api/name/notificationUserInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/notificationUserInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSDictionary *notificationUserInfo</Declaration>
+			
+			
+			<Anchor>//api/name/notificationUserInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/initWithOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/initWithOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/addEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>			
+			
+			<Declaration>- (void)addEvent:(UAEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/addEvent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/handleNotification:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleNotification:(NSDictionary *)userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/handleNotification:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/invalidate</TokenIdentifier>
+			<Abstract type="html">This class contains an NSTimer. This timer must be invalidated before
+this class is released, or there will be a memory leak. Call invalidate
+before deallocating this class</Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidate</Declaration>
+			
+			
+			<Anchor>//api/name/invalidate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/lastSendTime</TokenIdentifier>
+			<Abstract type="html">Date representing the last attempt to send analytics</Abstract>
+			<DeclaredIn>UAAnalytics.h</DeclaredIn>			
+			
+			<Declaration>- (NSDate *)lastSendTime</Declaration>
+			
+			
+			<Anchor>//api/name/lastSendTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setConnection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAHTTPConnection *connection</Declaration>
+			
+			
+			<Anchor>//api/name/connection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/connection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAHTTPConnection *connection</Declaration>
+			
+			
+			<Anchor>//api/name/connection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setIsEnteringForeground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isEnteringForeground</Declaration>
+			
+			
+			<Anchor>//api/name/isEnteringForeground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAAnalytics/isEnteringForeground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL isEnteringForeground</Declaration>
+			
+			
+			<Anchor>//api/name/isEnteringForeground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/initSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)initSession</Declaration>
+			
+			
+			<Anchor>//api/name/initSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/restoreFromDefault</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreFromDefault</Declaration>
+			
+			
+			<Anchor>//api/name/restoreFromDefault</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/saveDefault</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveDefault</Declaration>
+			
+			
+			<Anchor>//api/name/saveDefault</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/resetEventsDatabaseStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetEventsDatabaseStatus</Declaration>
+			
+			
+			<Anchor>//api/name/resetEventsDatabaseStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/send</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)send</Declaration>
+			
+			
+			<Anchor>//api/name/send</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setSendInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSendInterval:(int)sendTimer</Declaration>
+			
+			
+			<Anchor>//api/name/setSendInterval:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setupSendTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)setupSendTimer:(NSTimeInterval)timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/setupSendTimer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/updateAnalyticsParametersWithHeaderValues:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateAnalyticsParametersWithHeaderValues:(NSHTTPURLResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/updateAnalyticsParametersWithHeaderValues:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/shouldSendAnalytics</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldSendAnalytics</Declaration>
+			
+			
+			<Anchor>//api/name/shouldSendAnalytics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/setLastSendTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLastSendTime:(NSDate *)lastSendTime</Declaration>
+			
+			
+			<Anchor>//api/name/setLastSendTime:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/enterForeground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)enterForeground</Declaration>
+			
+			
+			<Anchor>//api/name/enterForeground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/enterBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)enterBackground</Declaration>
+			
+			
+			<Anchor>//api/name/enterBackground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/didBecomeActive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)didBecomeActive</Declaration>
+			
+			
+			<Anchor>//api/name/didBecomeActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/willResignActive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)willResignActive</Declaration>
+			
+			
+			<Anchor>//api/name/willResignActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/refreshSessionWhenNetworkChanged</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshSessionWhenNetworkChanged</Declaration>
+			
+			
+			<Anchor>//api/name/refreshSessionWhenNetworkChanged</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/refreshSessionWhenActive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshSessionWhenActive</Declaration>
+			
+			
+			<Anchor>//api/name/refreshSessionWhenActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/invalidateBackgroundTask</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidateBackgroundTask</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateBackgroundTask</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/analyticsRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (UAHTTPRequest *)analyticsRequest</Declaration>
+			
+			
+			<Anchor>//api/name/analyticsRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAAnalytics/prepareEventsForUpload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAAnalytics+Internal.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)prepareEventsForUpload</Declaration>
+			
+			
+			<Anchor>//api/name/prepareEventsForUpload</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UAStoreKitObserver.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreKitObserver</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>
+			
+			<NodeRef refid="101"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/setRestoring:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL restoring</Declaration>
+			
+			
+			<Anchor>//api/name/restoring</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreKitObserver/restoring</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL restoring</Declaration>
+			
+			
+			<Anchor>//api/name/restoring</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/restoreAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreAll</Declaration>
+			
+			
+			<Anchor>//api/name/restoreAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/failedTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)failedTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/failedTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/finishTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/finishTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/finishUnknownTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishUnknownTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/finishUnknownTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/payForProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)payForProduct:(SKProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/payForProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/productFromTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (UAProduct *)productFromTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/productFromTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreKitObserver/completeTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreKitObserver.h</DeclaredIn>			
+			
+			<Declaration>- (void)completeTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/completeTransaction:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1365 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UASubscriptionInventory Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<a id="developerHome" href="../index.html">Urban Airship</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UASubscriptionInventory Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/hasLoaded">&nbsp;&nbsp;&nbsp;&nbsp;hasLoaded</option>
+	
+	<option value="//api/name/serverDate">&nbsp;&nbsp;&nbsp;&nbsp;serverDate</option>
+	
+	<option value="//api/name/subscriptions">&nbsp;&nbsp;&nbsp;&nbsp;subscriptions</option>
+	
+	<option value="//api/name/userSubscriptions">&nbsp;&nbsp;&nbsp;&nbsp;userSubscriptions</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/isReceiptValid:">&nbsp;&nbsp;&nbsp;&nbsp;+ isReceiptValid:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/containsProduct:">&nbsp;&nbsp;&nbsp;&nbsp;- containsProduct:</option>
+	
+	<option value="//api/name/contentForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- contentForKey:</option>
+	
+	<option value="//api/name/contentInventoryUpdated">&nbsp;&nbsp;&nbsp;&nbsp;- contentInventoryUpdated</option>
+	
+	<option value="//api/name/download:">&nbsp;&nbsp;&nbsp;&nbsp;- download:</option>
+	
+	<option value="//api/name/loadInventory">&nbsp;&nbsp;&nbsp;&nbsp;- loadInventory</option>
+	
+	<option value="//api/name/loadProducts">&nbsp;&nbsp;&nbsp;&nbsp;- loadProducts</option>
+	
+	<option value="//api/name/loadPurchases">&nbsp;&nbsp;&nbsp;&nbsp;- loadPurchases</option>
+	
+	<option value="//api/name/productForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- productForKey:</option>
+	
+	<option value="//api/name/productInventoryUpdated">&nbsp;&nbsp;&nbsp;&nbsp;- productInventoryUpdated</option>
+	
+	<option value="//api/name/purchase:">&nbsp;&nbsp;&nbsp;&nbsp;- purchase:</option>
+	
+	<option value="//api/name/setUserPurchaseInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- setUserPurchaseInfo:</option>
+	
+	<option value="//api/name/subscriptionForContent:">&nbsp;&nbsp;&nbsp;&nbsp;- subscriptionForContent:</option>
+	
+	<option value="//api/name/subscriptionForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- subscriptionForKey:</option>
+	
+	<option value="//api/name/subscriptionForProduct:">&nbsp;&nbsp;&nbsp;&nbsp;- subscriptionForProduct:</option>
+	
+	<option value="//api/name/subscriptionTransactionDidComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- subscriptionTransactionDidComplete:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Access Subscription Inventory">Access Subscription Inventory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Load Inventory and Purchases">Load Inventory and Purchases</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Purchase and Download">Purchase and Download</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Query Subscriptions">Query Subscriptions</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasLoaded">hasLoaded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serverDate">serverDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscriptions">subscriptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userSubscriptions">userSubscriptions</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReceiptValid:">isReceiptValid:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containsProduct:">containsProduct:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentForKey:">contentForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentInventoryUpdated">contentInventoryUpdated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/download:">download:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadInventory">loadInventory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadProducts">loadProducts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadPurchases">loadPurchases</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/productForKey:">productForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/productInventoryUpdated">productInventoryUpdated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/purchase:">purchase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserPurchaseInfo:">setUserPurchaseInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscriptionForContent:">subscriptionForContent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscriptionForKey:">subscriptionForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscriptionForProduct:">subscriptionForProduct:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscriptionTransactionDidComplete:">subscriptionTransactionDidComplete:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UASubscriptionInventory Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UASubscriptionInventory Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/UAObservable.html">UAObservable</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UASubscriptionInventory.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides access to the full inventory
+of <a href="#//api/name/subscriptions">subscriptions</a> offered for sale in this application.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Access Subscription Inventory" name="task_Access Subscription Inventory"></a>
+						<h3 class="subsubtitle task-title">Access Subscription Inventory</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasLoaded">&nbsp;&nbsp;hasLoaded</a></code>
+		<span class="tooltip"><p>YES if the inventory has successfully loaded, otherwise NO</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userSubscriptions">&nbsp;&nbsp;userSubscriptions</a></code>
+		<span class="tooltip"><p>The array of <a href="#//api/name/subscriptions">subscriptions</a> the user has purchased</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscriptions">&nbsp;&nbsp;subscriptions</a></code>
+		<span class="tooltip"><p>The array of all available subscriptions</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serverDate">&nbsp;&nbsp;serverDate</a></code>
+		<span class="tooltip"><p>The time of the last purchased product update. Useful for preventing users from setting back
+their clocks to access expired content.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Load Inventory and Purchases" name="task_Load Inventory and Purchases"></a>
+						<h3 class="subsubtitle task-title">Load Inventory and Purchases</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadInventory">&ndash;&nbsp;loadInventory</a></code>
+		<span class="tooltip"><p>Load all products, content and purchases</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadProducts">&ndash;&nbsp;loadProducts</a></code>
+		<span class="tooltip"><p>Load all products</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadPurchases">&ndash;&nbsp;loadPurchases</a></code>
+		<span class="tooltip"><p>Load the content inventory and all of the user&rsquo;s purchases.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Purchase and Download" name="task_Purchase and Download"></a>
+						<h3 class="subsubtitle task-title">Purchase and Download</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/purchase:">&ndash;&nbsp;purchase:</a></code>
+		<span class="tooltip"><p>Purchase a subscription product.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReceiptValid:">+&nbsp;isReceiptValid:</a></code>
+		<span class="tooltip"><p>Check the UA receipt verification response.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/download:">&ndash;&nbsp;download:</a></code>
+		<span class="tooltip"><p>Download subscription content.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Query Subscriptions" name="task_Query Subscriptions"></a>
+						<h3 class="subsubtitle task-title">Query Subscriptions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentForKey:">&ndash;&nbsp;contentForKey:</a></code>
+		<span class="tooltip"><p>Return the subscription content matching a particular content key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscriptionForKey:">&ndash;&nbsp;subscriptionForKey:</a></code>
+		<span class="tooltip"><p>Return the subscription matching a particular subscription key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscriptionForProduct:">&ndash;&nbsp;subscriptionForProduct:</a></code>
+		<span class="tooltip"><p>Return the subscription matching a particular subscription product.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscriptionForContent:">&ndash;&nbsp;subscriptionForContent:</a></code>
+		<span class="tooltip"><p>Return the subscription matching a particular instance of subscription content.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containsProduct:">&ndash;&nbsp;containsProduct:</a></code>
+		<span class="tooltip"><p>Check whether the inventory contains a particular product by identifier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/productForKey:">&ndash;&nbsp;productForKey:</a></code>
+		<span class="tooltip"><p>Return the subscription product matching a particular subscription product key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscriptionTransactionDidComplete:">&ndash;&nbsp;subscriptionTransactionDidComplete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/productInventoryUpdated">&ndash;&nbsp;productInventoryUpdated</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentInventoryUpdated">&ndash;&nbsp;contentInventoryUpdated</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserPurchaseInfo:">&ndash;&nbsp;setUserPurchaseInfo:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/hasLoaded" title="hasLoaded"></a>
+	<h3 class="subsubtitle method-title">hasLoaded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YES if the inventory has successfully loaded, otherwise NO</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL hasLoaded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>YES if the inventory has successfully loaded, otherwise NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serverDate" title="serverDate"></a>
+	<h3 class="subsubtitle method-title">serverDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time of the last purchased product update. Useful for preventing users from setting back
+their clocks to access expired content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDate *serverDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The time of the last purchased product update. Useful for preventing users from setting back
+their clocks to access expired content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscriptions" title="subscriptions"></a>
+	<h3 class="subsubtitle method-title">subscriptions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The array of all available subscriptions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSMutableArray *subscriptions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The array of all available subscriptions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userSubscriptions" title="userSubscriptions"></a>
+	<h3 class="subsubtitle method-title">userSubscriptions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The array of <a href="#//api/name/subscriptions">subscriptions</a> the user has purchased</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSMutableArray *userSubscriptions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The array of <a href="#//api/name/subscriptions">subscriptions</a> the user has purchased</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isReceiptValid:" title="isReceiptValid:"></a>
+	<h3 class="subsubtitle method-title">isReceiptValid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check the UA receipt verification response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isReceiptValid:(NSString *)<em>responseString</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseString</em></dt>
+			<dd><p>The receipt validatation response string (JSON).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the receipt was validated, otherwise NO</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Check the UA receipt verification response.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/containsProduct:" title="containsProduct:"></a>
+	<h3 class="subsubtitle method-title">containsProduct:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check whether the inventory contains a particular product by identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)containsProduct:(NSString *)<em>productID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productID</em></dt>
+			<dd><p>The product identifier.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the inventory contains the associated product, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Check whether the inventory contains a particular product by identifier.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentForKey:" title="contentForKey:"></a>
+	<h3 class="subsubtitle method-title">contentForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the subscription content matching a particular content key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UASubscriptionContent *)contentForKey:(NSString *)<em>contentKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentKey</em></dt>
+			<dd><p>The content key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A matching <a href="../Classes/UASubscriptionContent.html">UASubscriptionContent</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the subscription content matching a particular content key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentInventoryUpdated" title="contentInventoryUpdated"></a>
+	<h3 class="subsubtitle method-title">contentInventoryUpdated</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)contentInventoryUpdated</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/download:" title="download:"></a>
+	<h3 class="subsubtitle method-title">download:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Download subscription content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)download:(UASubscriptionContent *)<em>content</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>content</em></dt>
+			<dd><p>The content to download</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Download subscription content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadInventory" title="loadInventory"></a>
+	<h3 class="subsubtitle method-title">loadInventory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load all products, content and purchases</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadInventory</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load all products, content and purchases</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadProducts" title="loadProducts"></a>
+	<h3 class="subsubtitle method-title">loadProducts</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load all products</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadProducts</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load all products</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadPurchases" title="loadPurchases"></a>
+	<h3 class="subsubtitle method-title">loadPurchases</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load the content inventory and all of the user&rsquo;s purchases.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadPurchases</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load the content inventory and all of the user&rsquo;s purchases.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/productForKey:" title="productForKey:"></a>
+	<h3 class="subsubtitle method-title">productForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the subscription product matching a particular subscription product key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UASubscriptionProduct *)productForKey:(NSString *)<em>productKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productKey</em></dt>
+			<dd><p>The subscription product key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A matching <a href="../Classes/UASubscriptionProduct.html">UASubscriptionProduct</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the subscription product matching a particular subscription product key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/productInventoryUpdated" title="productInventoryUpdated"></a>
+	<h3 class="subsubtitle method-title">productInventoryUpdated</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)productInventoryUpdated</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/purchase:" title="purchase:"></a>
+	<h3 class="subsubtitle method-title">purchase:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Purchase a subscription product.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)purchase:(UASubscriptionProduct *)<em>product</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>product</em></dt>
+			<dd><p>The product to purchase</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Purchase a subscription product.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserPurchaseInfo:" title="setUserPurchaseInfo:"></a>
+	<h3 class="subsubtitle method-title">setUserPurchaseInfo:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setUserPurchaseInfo:(NSDictionary *)<em>purchaseInfo</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscriptionForContent:" title="subscriptionForContent:"></a>
+	<h3 class="subsubtitle method-title">subscriptionForContent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the subscription matching a particular instance of subscription content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UASubscription *)subscriptionForContent:(UASubscriptionContent *)<em>content</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>content</em></dt>
+			<dd><p>The subscription content.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A matching <a href="../Classes/UASubscription.html">UASubscription</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the subscription matching a particular instance of subscription content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscriptionForKey:" title="subscriptionForKey:"></a>
+	<h3 class="subsubtitle method-title">subscriptionForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the subscription matching a particular subscription key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UASubscription *)subscriptionForKey:(NSString *)<em>subscriptionKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subscriptionKey</em></dt>
+			<dd><p>The subscription key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A matching <a href="../Classes/UASubscription.html">UASubscription</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the subscription matching a particular subscription key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscriptionForProduct:" title="subscriptionForProduct:"></a>
+	<h3 class="subsubtitle method-title">subscriptionForProduct:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the subscription matching a particular subscription product.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UASubscription *)subscriptionForProduct:(UASubscriptionProduct *)<em>product</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>product</em></dt>
+			<dd><p>The subscription product.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A matching <a href="../Classes/UASubscription.html">UASubscription</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the subscription matching a particular subscription product.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UASubscriptionInventory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscriptionTransactionDidComplete:" title="subscriptionTransactionDidComplete:"></a>
+	<h3 class="subsubtitle method-title">subscriptionTransactionDidComplete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)subscriptionTransactionDidComplete:(SKPaymentTransaction *)<em>transaction</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

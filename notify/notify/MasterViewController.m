@@ -35,8 +35,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    //self.userEmail = @"thomas_gamble@homedepot.com";
     self.pinValidated = NO;
     
     [self getNotifications];
@@ -58,199 +56,17 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self presentAlertViewForLogin];
-}
-
-- (void)presentAlertViewForLogin
-{
     
-    // 1
-    BOOL hasPin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
-    
-    // 2
-    if (hasPin) {
-        // 3
-        NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
-        //self.userEmail = user;
-        NSString *message = [NSString stringWithFormat:@"Username is %@?", user];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
-                                                        message:message
-                                                       delegate:self
-                                              cancelButtonTitle:@"Cancel"
-                                              otherButtonTitles:@"Done", nil];
-        // 4
-        [alert setAlertViewStyle:UIAlertViewStyleSecureTextInput]; // Gives us the password field
-        alert.tag = kAlertTypePIN;
-        // 5
-        UITextField *pinField = [alert textFieldAtIndex:0];
-        pinField.delegate = self;
-        pinField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-        pinField.tag = kTextFieldPIN;
-        [alert show];
-    } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Setup Credentials"
-                                                        message:@"Secure your notifications!"
-                                                       delegate:self
-                                              cancelButtonTitle:@"Cancel"
-                                              otherButtonTitles:@"Done", nil];
-        // 6
-        [alert setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
-        alert.tag = kAlertTypeSetup;
-        UITextField *nameField = [alert textFieldAtIndex:0];
-        nameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-        nameField.placeholder = @"Name"; // Replace the standard placeholder text with something more applicable
-        nameField.delegate = self;
-        nameField.tag = kTextFieldName;
-        UITextField *passwordField = [alert textFieldAtIndex:1]; // Capture the Password text field since there are 2 fields
-        passwordField.delegate = self;
-        passwordField.tag = kTextFieldPassword;
-        [alert show];
+    if(self.loggedInUser==nil)
+    {
+        [self presentAlertViewForLogin];
     }
 }
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    if (alertView.tag == kAlertTypePIN) {
-        if (buttonIndex == 1 && self.pinValidated) { // User selected "Done"
-            [self performFetch];
-            self.pinValidated = NO;
-        } else { // User selected "Cancel"
-            //[self presentAlertViewForLogin];
-            self.loggedInUser = nil;
-        }
-    } else if (alertView.tag == kAlertTypeSetup) {
-        if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
-            [self performFetch];
-        } else { // User selected "Cancel"
-           // [self presentAlertViewForLogin];
-            self.loggedInUser = nil;
-        }
-    }
-}
-
-// Helper method to congregate the Name and PIN fields for validation.
-- (BOOL)credentialsValidated
-{
-    NSString *name = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
-    BOOL pin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
-    if (name && pin) {
-        return YES;
-    } else {
-        return NO;
-    }
-}
-
-#pragma mark - Text Field + Alert View Methods
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    // 1
-    switch (textField.tag) {
-        case kTextFieldPIN: // We go here if this is the 2nd+ time used (we've already set a PIN at Setup).
-            NSLog(@"User entered PIN to validate");
-            if ([textField.text length] > 0) {
-                // 2
-                NSUInteger fieldHash = [textField.text hash]; // Get the hash of the entered PIN, minimize contact with the real password
-                // 3
-                if ([KeychainWrapper compareKeychainValueForMatchingPIN:fieldHash]) { // Compare them
-                    NSLog(@"** User Authenticated!!");
-                    NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
-                    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                 [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
-                                                 fieldString, @"token",
-                                                 nil];
-                    NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
-                    DDLogInfo(@"User create resource path: %@", resourcePath);
-                    
-                    [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
-                        loader.delegate = self;
-                        loader.method = RKRequestMethodPOST;
-                        [loader setUserData:@"user"];                        
-                    }];
-                    
-                    if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
-                        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
-                        [[NSUserDefaults standardUserDefaults] synchronize];
-                        NSLog(@"** Key saved successfully to Keychain!!");
-                    }
-                    self.pinValidated = YES;
-                    
-                } else {
-                    NSLog(@"** Wrong Password :(");
-                    self.pinValidated = NO;
-                }
-            }
-            break;
-        case kTextFieldName: // 1st part of the Setup flow.
-            NSLog(@"User entered name");
-            if ([textField.text length] > 0) {
-                [[NSUserDefaults standardUserDefaults] setValue:textField.text forKey:USERNAME];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-            }
-            break;
-        case kTextFieldPassword: // 2nd half of the Setup flow.
-            NSLog(@"User entered PIN");
-            if ([textField.text length] > 0) {
-                NSUInteger fieldHash = [textField.text hash];
-                // 4
-                NSString *fieldString = [KeychainWrapper securedSHA256DigestHashForPIN:fieldHash];
-                NSLog(@"** Password Hash - %@", fieldString);
-                // Save PIN hash to the keychain (NEVER store the direct PIN)
-
-                // TODO: Build java to receive this and clean up resubmit/pin code
-                 NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                              [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
-                                              fieldString, @"token",
-                                              nil];
-                 NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
-                 DDLogInfo(@"User create resource path: %@", resourcePath);
-                [[RKClient sharedClient] post:resourcePath usingBlock:^(RKRequest *request) {
-                    request.delegate = self;
-                    [request setUserData:@"User"];
-                }];
-                
-                if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
-                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
-                    [[NSUserDefaults standardUserDefaults] synchronize];
-                    NSLog(@"** Key saved successfully to Keychain!!");
-                }
-            }
-            break;
-        default:
-            break;
-    }
-    
-
-}
-
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-/*
-- (void)insertNewObject:(id)sender
-{
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-//    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-}
-*/
-
 
 #pragma mark - Table View
 
@@ -320,9 +136,10 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (NSFetchedResultsController *)fetchedResultsController
 {
-    DDLogVerbose(@"Getting fetched results controller");
+    
     if (_fetchedResultsController == nil) {
-        
+      
+        DDLogVerbose(@"Getting fetched results controller");
         NSFetchRequest *fetchRequest = [[[RKObjectManager sharedManager]
                                          mappingProvider] fetchRequestForResourcePath:NOTIFICATION_PATH];
         
@@ -443,10 +260,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 -(void)getNotifications
 {
-    DDLogVerbose(@"Getting notifications");
-    DDLogInfo(@"Host name is %@", HOST);
+
     if(self.loggedInUser!=nil)
     {
+        DDLogVerbose(@"Getting notifications");
+        DDLogInfo(@"Host name is %@", HOST);
+        [NSFetchedResultsController deleteCacheWithName:@"Notifications"];
+        [self.fetchedResultsController.fetchRequest setPredicate:[self currentPredicate]];
         NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:[self.loggedInUser getUserAddress], @"user", nil];
         NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
         DDLogVerbose(@"%@", resourcePath);
@@ -457,6 +277,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 -(void)performFetch
 {
     DDLogVerbose(@"Performing fetch");
+    DDLogInfo(@"User is now: %@", [self.loggedInUser getUserAddress]);
     NSError *error;
     if(![self.fetchedResultsController performFetch:&error])
     {
@@ -475,7 +296,15 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     DDLogError(@"Error: %@", [error localizedDescription]);
-    [self performFetch];
+    if(objectLoader.userData = @"user")
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Unable to validate login!" delegate:Nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+        [alert show];
+        _fetchedResultsController = nil;
+        [self getNotifications];
+        [self performFetch];
+        [self.tableView reloadData];
+    }
 }
 
 - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
@@ -486,13 +315,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
     DDLogInfo(@"Objectloader loaded objects[%d]", [objects count]);
-    if(objectLoader.userData != @"user")
-    {
-        [self performFetch];
-    }
-    else
+    if(objectLoader.userData == @"user")
     {
         loggedInUser = [objects objectAtIndex:0];
+        _fetchedResultsController = nil;
+        [self getNotifications];
+        [self performFetch];
+        [self.tableView reloadData];
     }
 }
 
@@ -517,4 +346,166 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }];
 }
 
+#pragma mark Login
+- (void)presentAlertViewForLogin
+{
+    
+    // 1
+    BOOL hasPin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
+    
+    // 2
+    if (hasPin) {
+        // 3
+        NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+        //self.userEmail = user;
+        NSString *message = [NSString stringWithFormat:@"Username is %@?", user];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
+                                                        message:message
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Done", nil];
+        // 4
+        [alert setAlertViewStyle:UIAlertViewStyleSecureTextInput]; // Gives us the password field
+        alert.tag = kAlertTypePIN;
+        // 5
+        UITextField *pinField = [alert textFieldAtIndex:0];
+        pinField.delegate = self;
+        pinField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        pinField.tag = kTextFieldPIN;
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Setup Credentials"
+                                                        message:@"Secure your notifications!"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Done", nil];
+        // 6
+        [alert setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+        alert.tag = kAlertTypeSetup;
+        UITextField *nameField = [alert textFieldAtIndex:0];
+        nameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        nameField.placeholder = @"Name"; // Replace the standard placeholder text with something more applicable
+        nameField.delegate = self;
+        nameField.tag = kTextFieldName;
+        UITextField *passwordField = [alert textFieldAtIndex:1]; // Capture the Password text field since there are 2 fields
+        passwordField.delegate = self;
+        passwordField.tag = kTextFieldPassword;
+        [alert show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == kAlertTypePIN) {
+        if (buttonIndex == 1 && self.pinValidated) { // User selected "Done"
+            [self performFetch];
+            self.pinValidated = NO;
+        } else { // User selected "Cancel"
+            //[self presentAlertViewForLogin];
+            self.loggedInUser = nil;
+        }
+    } else if (alertView.tag == kAlertTypeSetup) {
+        if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
+            [self performFetch];
+        } else { // User selected "Cancel"
+            // [self presentAlertViewForLogin];
+            self.loggedInUser = nil;
+        }
+    }
+}
+
+// Helper method to congregate the Name and PIN fields for validation.
+- (BOOL)credentialsValidated
+{
+    NSString *name = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+    BOOL pin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
+    if (name && pin) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+#pragma mark - Text Field + Alert View Methods
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    // 1
+    switch (textField.tag) {
+        case kTextFieldPIN: // We go here if this is the 2nd+ time used (we've already set a PIN at Setup).
+            NSLog(@"User entered PIN to validate");
+            if ([textField.text length] > 0) {
+                // 2
+                NSUInteger fieldHash = [textField.text hash]; // Get the hash of the entered PIN, minimize contact with the real password
+                // 3
+                if ([KeychainWrapper compareKeychainValueForMatchingPIN:fieldHash]) { // Compare them
+                    NSLog(@"** User Authenticated!!");
+                    NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
+                    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                 [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
+                                                 fieldString, @"token",
+                                                 nil];
+                    NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+                    DDLogInfo(@"User create resource path: %@", resourcePath);
+                    
+                    [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+                        loader.delegate = self;
+                        loader.method = RKRequestMethodPOST;
+                        [loader setUserData:@"user"];
+                    }];
+                    
+                    if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
+                        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+                        [[NSUserDefaults standardUserDefaults] synchronize];
+                        NSLog(@"** Key saved successfully to Keychain!!");
+                    }
+                    self.pinValidated = YES;
+                    
+                } else {
+                    NSLog(@"** Wrong Password :(");
+                    self.pinValidated = NO;
+                }
+            }
+            break;
+        case kTextFieldName: // 1st part of the Setup flow.
+            NSLog(@"User entered name");
+            if ([textField.text length] > 0) {
+                [[NSUserDefaults standardUserDefaults] setValue:textField.text forKey:USERNAME];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }
+            break;
+        case kTextFieldPassword: // 2nd half of the Setup flow.
+            NSLog(@"User entered PIN");
+            if ([textField.text length] > 0) {
+                NSUInteger fieldHash = [textField.text hash];
+                // 4
+                NSString *fieldString = [KeychainWrapper securedSHA256DigestHashForPIN:fieldHash];
+                NSLog(@"** Password Hash - %@", fieldString);
+                // Save PIN hash to the keychain (NEVER store the direct PIN)
+                
+                NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                             [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
+                                             fieldString, @"token",
+                                             nil];
+                NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+                DDLogInfo(@"User create resource path: %@", resourcePath);
+                
+                [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+                    loader.delegate = self;
+                    loader.method = RKRequestMethodPOST;
+                    [loader setUserData:@"user"];
+                }];
+                
+                if ([KeychainWrapper createKeychainValue:fieldString forIdentifier:PIN_SAVED]) {
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                    NSLog(@"** Key saved successfully to Keychain!!");
+                }
+            }
+            break;
+        default:
+            break;
+    }
+    
+    
+}
 @end

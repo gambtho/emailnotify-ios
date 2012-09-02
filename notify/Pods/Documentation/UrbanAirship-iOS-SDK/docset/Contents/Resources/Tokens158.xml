@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIImage+GTMUnitTestingAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(GTMUnitTestingAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>
+			
+			<NodeRef refid="158"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
