@@ -296,14 +296,15 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     DDLogError(@"Error: %@", [error localizedDescription]);
-    if(objectLoader.userData = @"user")
+    if(objectLoader.userData == @"user")
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Unable to validate login!" delegate:Nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
         [alert show];
         _fetchedResultsController = nil;
-        [self getNotifications];
-        [self performFetch];
-        [self.tableView reloadData];
+        self.loggedInUser = nil;
+       // [self getNotifications];
+      //  [self performFetch];
+          [self.tableView reloadData];
     }
 }
 

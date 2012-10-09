@@ -103,7 +103,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 -(void)testFlightSetup
 {
 #if DEBUG
-    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+//    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
     [TestFlight passCheckpoint:@"SET DEVICE IDENTIFIER"];
 #endif
     [TestFlight takeOff:TF_ID];
@@ -113,6 +113,9 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 -(void)airShipSetup:(NSDictionary *)launchOptions
 {
     //Init Airship launch options
+    
+    [UAirship setLogging:YES];
+    
     NSMutableDictionary *takeOffOptions = [[NSMutableDictionary alloc] init];
     [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
     
@@ -124,12 +127,21 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
      registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
+    
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    UALOG(@"APN device token: %@", deviceToken);
+    
+    // Sets the alias. It will be sent to the server on registration.
+    NSString *yourAlias = @"thomas_gamble@homedepot.com";
+    [UAPush shared].alias = yourAlias;
+    
     // Updates the device token and registers the token with UA
     [[UAPush shared] registerDeviceToken:deviceToken];
 }
+
 
 #pragma mark - RestKit
 

@@ -10,11 +10,11 @@
 
 @implementation Constants
 
-#if DEBUG
-NSString * const HOST = @"http://10.0.1.22:8888";
-#else
+//#if DEBUG
+//NSString * const HOST = @"http://10.0.1.22:8888";
+//#else
 NSString * const HOST = @"http://notifyweb.appspot.com";
-#endif
+//#endif
 
 NSString * const NOTIFICATION_PATH = @"/_ah/mail/notify";
 NSString * const USER_PATH = @"/notifyweb/user";

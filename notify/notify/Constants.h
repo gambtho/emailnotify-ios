@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Thomas Gamble. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 
 @interface Constants : NSObject
 

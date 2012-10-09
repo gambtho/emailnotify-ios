@@ -447,6 +447,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
    limitations under the License.
 
 
+## TestFlightSDK
+
+All text and design is copyright © 2010-2012 TestFlight App, Inc.
+
+All rights reserved.
+
+https://testflightapp.com/tos/
+
+
 ## UrbanAirship-iOS-SDK
 
 /*

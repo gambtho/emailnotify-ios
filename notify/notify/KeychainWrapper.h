@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Thomas Gamble. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import <Security/Security.h>
 #import <CommonCrypto/CommonHMAC.h>
 

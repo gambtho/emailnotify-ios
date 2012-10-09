@@ -6,9 +6,7 @@
 //  Copyright (c) 2012 Thomas Gamble. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "User.h"
-#import <CoreData/CoreData.h>
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate, UITextFieldDelegate, RKRequestDelegate>
 

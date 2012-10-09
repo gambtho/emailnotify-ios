@@ -67,7 +67,11 @@ NO  - sends log statements to TestFlight log only
 logToSTDERR                 [ NSNumber numberWithBool:YES ] YES - default, sends log statements to STDERR when debugger is attached
 NO  - sends log statements to TestFlight log only
 sendLogOnlyOnCrash          [ NSNumber numberWithBool:YES ] NO  - default, sends logs to TestFlight at the end of every session
-YES - sends logs statements to TestFlight only if there was a crash</Abstract>
+YES - sends logs statements to TestFlight only if there was a crash
+attachBacktraceToFeedback   [ NSNumber numberWithBool:YES ] NO  - default, feedback is sent exactly as the user enters it
+YES - attaches the current backtrace, with symbols, to the feedback.
+disableInAppUpdates         [ NSNumber numberWithBool:YES ] NO  - default, in application updates are allowed
+YES - the in application update screen will not be displayed</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -134,7 +138,7 @@ directive that is only active for non-app store builds.
 			<Declaration>+ (void)setDeviceIdentifier:(NSString *)deviceIdentifer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>deviceIdentifier</Name>
+					<Name>deviceIdentifer</Name>
 					<Abstract type="html">The current devices device identifier</Abstract>
 				</Parameter>
 			</Parameters>

@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Thomas Gamble. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Notification *notifyItem;
