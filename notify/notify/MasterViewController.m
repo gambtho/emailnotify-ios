@@ -26,6 +26,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 @synthesize objectManager;
 @synthesize pinValidated;
 @synthesize loggedInUser;
+@synthesize loginButton;
 
 - (void)awakeFromNib
 {
@@ -41,7 +42,14 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
     [self performFetch];
     
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    if(self.loggedInUser == nil)
+    {
+        self.loginButton.title = @"Login";
+    }
+    else
+    {
+        self.loginButton.title = @"Logout";
+    }
 
 //    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
@@ -49,6 +57,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)viewDidUnload
 {
+    [self setLoginButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -401,16 +410,20 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         if (buttonIndex == 1 && self.pinValidated) { // User selected "Done"
             [self performFetch];
             self.pinValidated = NO;
+            self.loginButton.title = @"Logout";
         } else { // User selected "Cancel"
             //[self presentAlertViewForLogin];
             self.loggedInUser = nil;
+            self.loginButton.title = @"Login";
         }
     } else if (alertView.tag == kAlertTypeSetup) {
         if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
             [self performFetch];
+            self.loginButton.title = @"Logout";
         } else { // User selected "Cancel"
             // [self presentAlertViewForLogin];
             self.loggedInUser = nil;
+            self.loginButton.title = @"Login";
         }
     }
 }
@@ -508,5 +521,24 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }
     
     
+}
+- (IBAction)login:(id)sender {
+    if(self.loggedInUser == nil)
+    {
+        [self presentAlertViewForLogin];
+    }
+    else
+    {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:USERNAME];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:PIN_SAVED];
+        [KeychainWrapper deleteItemFromKeychainWithIdentifier:PIN_SAVED];
+        
+        self.loginButton.title = @"Login";
+        self.loggedInUser = nil;
+        _fetchedResultsController = nil;
+        
+        [self performFetch];
+        [self.tableView reloadData];
+    }
 }
 @end

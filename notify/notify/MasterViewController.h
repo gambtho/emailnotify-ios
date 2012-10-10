@@ -13,7 +13,9 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) RKObjectManager *objectManager;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 
+- (IBAction)login:(id)sender;
 @property (nonatomic) BOOL pinValidated;
 @property (strong, nonatomic) User *loggedInUser;
 
