@@ -1,36 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIView+GTMUnitTestingAdditions.html">
+	<File path="Protocols/UAPushUIProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIView(GTMUnitTestingAdditions)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UAPushUIProtocol</TokenIdentifier>
+			<Abstract type="html">Implement this protocol to provide a custom UI for use with UAPush. The default
+implementation, UAPushUI, is provided in the library&apos;s sample UI distribution.</Abstract>
+			<DeclaredIn>UAPush.h</DeclaredIn>
 			
 			<NodeRef refid="159"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIView(GTMUnitTestingAdditions)/gtm_unitTestEncodeState:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushUIProtocol/openApnsSettings:animated:</TokenIdentifier>
+			<Abstract type="html">Open a push settings screen. The default implementation provides settings for toggling push
+on and off and managing quiet time.</Abstract>
+			<DeclaredIn>UAPush.h</DeclaredIn>			
 			
-			<Declaration>- (void)gtm_unitTestEncodeState:(NSCoder *)inCoder</Declaration>
+			<Declaration>+ (void)openApnsSettings:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The parent view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to animate the display, otherwise NO</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/gtm_unitTestEncodeState:</Anchor>
+			<Anchor>//api/name/openApnsSettings:animated:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIView(GTMUnitTestingAdditions)/gtm_shouldEncodeStateForSubviews</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushUIProtocol/closeApnsSettingsAnimated:</TokenIdentifier>
+			<Abstract type="html">Close the push settings screen.</Abstract>
+			<DeclaredIn>UAPush.h</DeclaredIn>			
+			
+			<Declaration>+ (void)closeApnsSettingsAnimated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to animate the view transition, otherwise NO</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/closeApnsSettingsAnimated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushUIProtocol/openTokenSettings:animated:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>			
+			<DeclaredIn>UAPush.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_shouldEncodeStateForSubviews</Declaration>
+			<Declaration>+ (void)openTokenSettings:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_shouldEncodeStateForSubviews</Anchor>
+			<Anchor>//api/name/openTokenSettings:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushUIProtocol/closeTokenSettingsAnimated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPush.h</DeclaredIn>			
+			
+			<Declaration>+ (void)closeTokenSettingsAnimated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/closeTokenSettingsAnimated:</Anchor>
 		</Token>
 		
 	</File>

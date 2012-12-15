@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAPushUI.html">
+	<File path="Classes/UAStoreFrontSplitViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAPushUI</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontSplitViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushUI.h</DeclaredIn>
+			<DeclaredIn>UAStoreFrontSplitViewController.h</DeclaredIn>
 			
 			<NodeRef refid="88"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushUI/setLocalizationBundle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontSplitViewController/productListViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushUI.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontSplitViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
-			
-			
-			<Anchor>//api/name/localizationBundle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushUI/localizationBundle</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
+			<Declaration>- (UAStoreFrontViewController *)productListViewController</Declaration>
 			
 			
-			<Anchor>//api/name/localizationBundle</Anchor>
+			<Anchor>//api/name/productListViewController</Anchor>
 		</Token>
 		
 	</File>

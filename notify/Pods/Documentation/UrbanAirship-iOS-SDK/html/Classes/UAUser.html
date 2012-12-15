@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.7 </a></h1>
 				<a id="developerHome" href="../index.html">Urban Airship</a>
 			</div>
 			
@@ -82,6 +82,8 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/cancelListeningForDeviceToken">&nbsp;&nbsp;&nbsp;&nbsp;- cancelListeningForDeviceToken</option>
+	
 	<option value="//api/name/cancelRecovery">&nbsp;&nbsp;&nbsp;&nbsp;- cancelRecovery</option>
 	
 	<option value="//api/name/checkRecoveryStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- checkRecoveryStatus:</option>
@@ -94,11 +96,17 @@
 	
 	<option value="//api/name/defaultUserCreated">&nbsp;&nbsp;&nbsp;&nbsp;- defaultUserCreated</option>
 	
+	<option value="//api/name/deviceTokenHasChanged">&nbsp;&nbsp;&nbsp;&nbsp;- deviceTokenHasChanged</option>
+	
 	<option value="//api/name/didMergeWithUser:">&nbsp;&nbsp;&nbsp;&nbsp;- didMergeWithUser:</option>
 	
 	<option value="//api/name/initializeUser">&nbsp;&nbsp;&nbsp;&nbsp;- initializeUser</option>
 	
+	<option value="//api/name/listenForDeviceTokenReg">&nbsp;&nbsp;&nbsp;&nbsp;- listenForDeviceTokenReg</option>
+	
 	<option value="//api/name/loadUser">&nbsp;&nbsp;&nbsp;&nbsp;- loadUser</option>
+	
+	<option value="//api/name/migrateUser">&nbsp;&nbsp;&nbsp;&nbsp;- migrateUser</option>
 	
 	<option value="//api/name/modifyUserWithEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- modifyUserWithEmail:</option>
 	
@@ -106,9 +114,17 @@
 	
 	<option value="//api/name/requestWentWrong:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWentWrong:</option>
 	
+	<option value="//api/name/retrieveRequestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- retrieveRequestFailed:</option>
+	
+	<option value="//api/name/retrieveRequestSucceeded:">&nbsp;&nbsp;&nbsp;&nbsp;- retrieveRequestSucceeded:</option>
+	
 	<option value="//api/name/retrieveUser">&nbsp;&nbsp;&nbsp;&nbsp;- retrieveUser</option>
 	
 	<option value="//api/name/saveUserData">&nbsp;&nbsp;&nbsp;&nbsp;- saveUserData</option>
+	
+	<option value="//api/name/serverDeviceToken">&nbsp;&nbsp;&nbsp;&nbsp;- serverDeviceToken</option>
+	
+	<option value="//api/name/setServerDeviceToken:">&nbsp;&nbsp;&nbsp;&nbsp;- setServerDeviceToken:</option>
 	
 	<option value="//api/name/setUserEmail:">&nbsp;&nbsp;&nbsp;&nbsp;- setUserEmail:</option>
 	
@@ -118,11 +134,15 @@
 	
 	<option value="//api/name/stopRecoveryPoller">&nbsp;&nbsp;&nbsp;&nbsp;- stopRecoveryPoller</option>
 	
+	<option value="//api/name/updateDefaultDeviceToken">&nbsp;&nbsp;&nbsp;&nbsp;- updateDefaultDeviceToken</option>
+	
 	<option value="//api/name/updateUserInfo:withDelegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserInfo:withDelegate:finish:fail:</option>
 	
 	<option value="//api/name/updateUserState">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserState</option>
 	
 	<option value="//api/name/updateUserWithDelegate:finish:fail:">&nbsp;&nbsp;&nbsp;&nbsp;- updateUserWithDelegate:finish:fail:</option>
+	
+	<option value="//api/name/userCreationDidFail:">&nbsp;&nbsp;&nbsp;&nbsp;- userCreationDidFail:</option>
 	
 	<option value="//api/name/userRequestWentWrong:">&nbsp;&nbsp;&nbsp;&nbsp;- userRequestWentWrong:</option>
 	
@@ -139,6 +159,8 @@
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
 	
 </ul></li>
 
@@ -194,6 +216,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelListeningForDeviceToken">cancelListeningForDeviceToken</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelRecovery">cancelRecovery</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkRecoveryStatus:">checkRecoveryStatus:</a></span></li>
@@ -206,11 +230,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultUserCreated">defaultUserCreated</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceTokenHasChanged">deviceTokenHasChanged</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didMergeWithUser:">didMergeWithUser:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeUser">initializeUser</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listenForDeviceTokenReg">listenForDeviceTokenReg</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadUser">loadUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/migrateUser">migrateUser</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modifyUserWithEmail:">modifyUserWithEmail:</a></span></li>
 	
@@ -218,9 +248,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWentWrong:">requestWentWrong:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retrieveRequestFailed:">retrieveRequestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retrieveRequestSucceeded:">retrieveRequestSucceeded:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retrieveUser">retrieveUser</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveUserData">saveUserData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serverDeviceToken">serverDeviceToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setServerDeviceToken:">setServerDeviceToken:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserEmail:">setUserEmail:</a></span></li>
 	
@@ -230,11 +268,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRecoveryPoller">stopRecoveryPoller</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateDefaultDeviceToken">updateDefaultDeviceToken</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserInfo:withDelegate:finish:fail:">updateUserInfo:withDelegate:finish:fail:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserState">updateUserState</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserWithDelegate:finish:fail:">updateUserWithDelegate:finish:fail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userCreationDidFail:">userCreationDidFail:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userRequestWentWrong:">userRequestWentWrong:</a></span></li>
 	
@@ -280,7 +322,7 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -559,6 +601,84 @@
 </li>
 						</ul>
 						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serverDeviceToken">&ndash;&nbsp;serverDeviceToken</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setServerDeviceToken:">&ndash;&nbsp;setServerDeviceToken:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceTokenHasChanged">&ndash;&nbsp;deviceTokenHasChanged</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/migrateUser">&ndash;&nbsp;migrateUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listenForDeviceTokenReg">&ndash;&nbsp;listenForDeviceTokenReg</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelListeningForDeviceToken">&ndash;&nbsp;cancelListeningForDeviceToken</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateDefaultDeviceToken">&ndash;&nbsp;updateDefaultDeviceToken</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retrieveRequestSucceeded:">&ndash;&nbsp;retrieveRequestSucceeded:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retrieveRequestFailed:">&ndash;&nbsp;retrieveRequestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userCreationDidFail:">&ndash;&nbsp;userCreationDidFail:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -773,6 +893,17 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/cancelListeningForDeviceToken" title="cancelListeningForDeviceToken"></a>
+	<h3 class="subsubtitle method-title">cancelListeningForDeviceToken</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelListeningForDeviceToken</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/cancelRecovery" title="cancelRecovery"></a>
 	<h3 class="subsubtitle method-title">cancelRecovery</h3>
 	
@@ -839,6 +970,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/deviceTokenHasChanged" title="deviceTokenHasChanged"></a>
+	<h3 class="subsubtitle method-title">deviceTokenHasChanged</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deviceTokenHasChanged</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/didMergeWithUser:" title="didMergeWithUser:"></a>
 	<h3 class="subsubtitle method-title">didMergeWithUser:</h3>
 	
@@ -861,12 +1003,34 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/listenForDeviceTokenReg" title="listenForDeviceTokenReg"></a>
+	<h3 class="subsubtitle method-title">listenForDeviceTokenReg</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)listenForDeviceTokenReg</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/loadUser" title="loadUser"></a>
 	<h3 class="subsubtitle method-title">loadUser</h3>
 	
 	
 
 	<div class="method-subsection method-declaration"><code>- (void)loadUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/migrateUser" title="migrateUser"></a>
+	<h3 class="subsubtitle method-title">migrateUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)migrateUser</code></div>
 
     
 </div>
@@ -905,6 +1069,28 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/retrieveRequestFailed:" title="retrieveRequestFailed:"></a>
+	<h3 class="subsubtitle method-title">retrieveRequestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)retrieveRequestFailed:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retrieveRequestSucceeded:" title="retrieveRequestSucceeded:"></a>
+	<h3 class="subsubtitle method-title">retrieveRequestSucceeded:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)retrieveRequestSucceeded:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/retrieveUser" title="retrieveUser"></a>
 	<h3 class="subsubtitle method-title">retrieveUser</h3>
 	
@@ -922,6 +1108,28 @@
 	
 
 	<div class="method-subsection method-declaration"><code>- (void)saveUserData</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serverDeviceToken" title="serverDeviceToken"></a>
+	<h3 class="subsubtitle method-title">serverDeviceToken</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)serverDeviceToken</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setServerDeviceToken:" title="setServerDeviceToken:"></a>
+	<h3 class="subsubtitle method-title">setServerDeviceToken:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setServerDeviceToken:(NSString *)<em>token</em></code></div>
 
     
 </div>
@@ -971,6 +1179,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/updateDefaultDeviceToken" title="updateDefaultDeviceToken"></a>
+	<h3 class="subsubtitle method-title">updateDefaultDeviceToken</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateDefaultDeviceToken</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/updateUserInfo:withDelegate:finish:fail:" title="updateUserInfo:withDelegate:finish:fail:"></a>
 	<h3 class="subsubtitle method-title">updateUserInfo:withDelegate:finish:fail:</h3>
 	
@@ -1004,6 +1223,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/userCreationDidFail:" title="userCreationDidFail:"></a>
+	<h3 class="subsubtitle method-title">userCreationDidFail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)userCreationDidFail:(UA_ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/userRequestWentWrong:" title="userRequestWentWrong:"></a>
 	<h3 class="subsubtitle method-title">userRequestWentWrong:</h3>
 	
@@ -1027,9 +1257,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-12-15)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

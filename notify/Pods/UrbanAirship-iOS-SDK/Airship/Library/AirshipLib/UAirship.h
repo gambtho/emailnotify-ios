@@ -47,7 +47,7 @@ extern NSString * const UAirshipTakeOffOptionsAirshipConfigKey;
 /**
  * The takeOff options key for passing in the options dictionary provided
  * by [UIApplication application:didFinishLaunchingWithOptions]. This key/value
- * pair should always be included in the takeOff options.
+ * pair must always be included in the takeOff options.
  */
 extern NSString * const UAirshipTakeOffOptionsLaunchOptionsKey;
 
@@ -70,6 +70,12 @@ extern NSString * const UAirshipTakeOffOptionsDefaultUsernameKey;
 extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
 
 /**
+ * The takeOff method must be called on the main thread. Not doing so results in 
+ * this exception being thrown.
+ */
+extern NSString * const UAirshipTakeOffBackgroundThreadException;
+
+/**
  * UAirship manages the shared state for all Urban Airship services. [UAirship takeOff:] should be
  * called from [UIApplication application:didFinishLaunchingWithOptions] to initialize the shared
  * instance.
@@ -81,7 +87,6 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
     NSString *appId;
     NSString *appSecret;
 
-    BOOL deviceTokenHasChanged;
     BOOL ready;
     
 }
@@ -103,33 +108,25 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
 @property (nonatomic, copy) NSString *server;
 
 /**
- * The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
- * an NSDictionary passed in to [UAAirship takeOff:] with the
- * UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
- * in PRODUCTION_APP_KEY will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
- * DEVELOPMENT_APP_KEY will be used.
+ * The current Urban Airship app key. This value is loaded from the `AirshipConfig.plist` file or
+ * an NSDictionary passed in to [UAirship takeOff:] with the
+ * UAirshipTakeOffOptionsAirshipConfigKey. If `APP_STORE_OR_AD_HOC_BUILD` is set to `YES`, the value set
+ * in `PRODUCTION_APP_KEY` will be used. If `APP_STORE_OR_AD_HOC_BUILD` is set to `NO`, the value set in
+ * `DEVELOPMENT_APP_KEY` will be used.
  */
 @property (nonatomic, copy) NSString *appId;
 
 /**
  * The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
- * an NSDictionary passed in to [UAAirship takeOff:] with the
- * UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
- * in PRODUCTION_APP_SECRET will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
- * DEVELOPMENT_APP_SECRET will be used.
+ * an NSDictionary passed in to `[UAirship takeOff:]` with the
+ * `UAirshipTakeOffOptionsAirshipConfigKey`. If `APP_STORE_OR_AD_HOC_BUILD` is set to `YES`, the value set
+ * in `PRODUCTION_APP_SECRET` will be used. If `APP_STORE_OR_AD_HOC_BUILD` is set to `NO`, the value set in
+ * `DEVELOPMENT_APP_SECRET` will be used.
  */
 @property (nonatomic, copy) NSString *appSecret;
 
 /**
- * This flag is set to YES if the device token has been updated. It is intended for use by
- * UAUser and should not be used by implementing applications. To receive updates when the
- * device token changes, applications should implement a UARegistrationObserver and observe
- * UAPush.
- */
-@property (nonatomic, assign) BOOL deviceTokenHasChanged UA_DEPRECATED(__UA_LIB_1_3_0__);
-
-/**
- * This flag is set to YES if the shared instance of
+ * This flag is set to `YES` if the shared instance of
  * UAirship has been initialized and is ready for use.
  */
 @property (nonatomic, assign) BOOL ready;
@@ -139,20 +136,29 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
 ///---------------------------------------------------------------------------------------
 
 @property (nonatomic, retain, getter = locationService) UALocationService *locationService;
-- (UALocationService*)locationService;
+- (UALocationService *)locationService;
 
 ///---------------------------------------------------------------------------------------
 /// @name Logging
 ///---------------------------------------------------------------------------------------
 
 /**
- * Enables or disables logging. Logging is enabled by default, but it will be disabled when the 
- * APP_STORE_OR_AD_HOC_BUILD AirshipConfig flag is set to YES. This flag overrides the
- * AirshipConfig settings.
+ * Enables or disables logging. Logging is enabled by default, though the log level must still be set
+ * to an appropriate value. This flag overrides the AirshipConfig settings if called after takeOff.
  *
  * @param enabled If YES, console logging is enabled.
  */
 + (void)setLogging:(BOOL)enabled;
+
+/**
+ * Sets the log level for the Urban Airship library. The log level defaults to UALogLevelDebug
+ * for development apps, and UALogLevelError for production apps (when the APP_STORE_OR_AD_HOC_BUILD
+ * AirshipConfig flag is set to YES). Setting LOG_LEVEL in the AirshipConfig settings will override
+ * these defaults, but will not override a value set with this method.
+ * 
+ * @param level The desired UALogLevel value.
+ */
++ (void)setLogLevel:(UALogLevel)level;
 
 ///---------------------------------------------------------------------------------------
 /// @name Lifecycle
@@ -181,6 +187,8 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
  * @param options An NSDictionary containing UAirshipTakeOffOptions[...] keys and values. This
  * dictionary must contain the launch options.
  *
+ * @warning takeOff: must be called on the main thread. Not doing so results in an UAirshipTakeOffMainThreadException
+ *
  */
 + (void)takeOff:(NSDictionary *)options;
 
@@ -202,7 +210,7 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
 /// @name APNS Device Token Registration
 ///---------------------------------------------------------------------------------------
 
-/**
+/*
  * Register a device token with UA. This will register a device token without an alias or tags.
  * If an alias is set on the device token, it will be removed. Tags will not be changed.
  *
@@ -213,7 +221,7 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
  */
 - (void)registerDeviceToken:(NSData *)token UA_DEPRECATED(__UA_LIB_1_3_0__);
 
-/**
+/*
  * Register the current device token with UA.
  *
  * @param info An NSDictionary containing registraton keys and values. See
@@ -224,7 +232,7 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
  */
 - (void)registerDeviceTokenWithExtraInfo:(NSDictionary *)info UA_DEPRECATED(__UA_LIB_1_3_0__);
 
-/**
+/*
  * Register a device token and alias with UA.  An alias should only have a small
  * number (< 10) of device tokens associated with it. Use the tags API for arbitrary
  * groupings.
@@ -237,7 +245,7 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
  */
 - (void)registerDeviceToken:(NSData *)token withAlias:(NSString *)alias UA_DEPRECATED(__UA_LIB_1_3_0__);
 
-/**
+/*
  * Register a device token with a custom API payload.
  *
  * Add a UARegistrationObserver to UAPush to receive success or failure callbacks.
@@ -249,13 +257,13 @@ extern NSString * const UAirshipTakeOffOptionsDefaultPasswordKey;
  */
 - (void)registerDeviceToken:(NSData *)token withExtraInfo:(NSDictionary *)info UA_DEPRECATED(__UA_LIB_1_3_0__);
 
-/**
+/*
  * Remove this device token's registration from the server.
  * This call is equivalent to an API DELETE call, as described here:
  * http://urbanairship.com/docs/push.html#registration
  *
  * Add a UARegistrationObserver to UAPush to receive success or failure callbacks.
-  * @warning Deprecated: Use the method on UAPush instead
+ * @warning Deprecated: Use the pushEnabled property on UAPush instead
  */
 - (void)unRegisterDeviceToken UA_DEPRECATED(__UA_LIB_1_3_0__);
 

@@ -1,42 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStoreFrontCellView.html">
+	<File path="Classes/UASubscriptionContent.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontCellView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContent</TokenIdentifier>
+			<Abstract type="html">This class represents subscription content available for download.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>
 			
 			<NodeRef refid="95"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setTitle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setContentName:</TokenIdentifier>
+			<Abstract type="html">The content name.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *contentName</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/contentName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/title</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/contentName</TokenIdentifier>
+			<Abstract type="html">The content name.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *contentName</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/contentName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setDescription:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setContentKey:</TokenIdentifier>
+			<Abstract type="html">The content key.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *contentKey</Declaration>
+			
+			
+			<Anchor>//api/name/contentKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/contentKey</TokenIdentifier>
+			<Abstract type="html">The content key.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *contentKey</Declaration>
+			
+			
+			<Anchor>//api/name/contentKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setSubscriptionKey:</TokenIdentifier>
+			<Abstract type="html">The associated subscription key.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/subscriptionKey</TokenIdentifier>
+			<Abstract type="html">The associated subscription key.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setProductIdentifier:</TokenIdentifier>
+			<Abstract type="html">The associated product identifier, if present.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The associated product identifier, if present.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setIconURL:</TokenIdentifier>
+			<Abstract type="html">The URL for the content&apos;s icon.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/iconURL</TokenIdentifier>
+			<Abstract type="html">The URL for the content&apos;s icon.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *iconURL</Declaration>
+			
+			
+			<Anchor>//api/name/iconURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setPreviewURL:</TokenIdentifier>
+			<Abstract type="html">The URL for the content&apos;s preview image.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/previewURL</TokenIdentifier>
+			<Abstract type="html">The URL for the content&apos;s preview image.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setDownloadURL:</TokenIdentifier>
+			<Abstract type="html">The content&apos;s download URL.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *downloadURL</Declaration>
+			
+			
+			<Anchor>//api/name/downloadURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/downloadURL</TokenIdentifier>
+			<Abstract type="html">The content&apos;s download URL.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *downloadURL</Declaration>
+			
+			
+			<Anchor>//api/name/downloadURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setRevision:</TokenIdentifier>
+			<Abstract type="html">The revision number.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/revision</TokenIdentifier>
+			<Abstract type="html">The revision number.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setFileSize:</TokenIdentifier>
+			<Abstract type="html">The file size in bytes.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/fileSize</TokenIdentifier>
+			<Abstract type="html">The file size in bytes.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setDescription:</TokenIdentifier>
+			<Abstract type="html">The content&apos;s description.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
@@ -45,9 +221,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/description</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/description</TokenIdentifier>
+			<Abstract type="html">The content&apos;s description.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
@@ -56,179 +232,102 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setPrice:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setPublishDate:</TokenIdentifier>
+			<Abstract type="html">The time and date the content was published.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *publishDate</Declaration>
 			
 			
-			<Anchor>//api/name/price</Anchor>
+			<Anchor>//api/name/publishDate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/price</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/publishDate</TokenIdentifier>
+			<Abstract type="html">The time and date the content was published.</Abstract>
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *publishDate</Declaration>
 			
 			
-			<Anchor>//api/name/price</Anchor>
+			<Anchor>//api/name/publishDate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setProgress:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setProgress:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *progress</Declaration>
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
 			
 			
 			<Anchor>//api/name/progress</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/progress</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/progress</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *progress</Declaration>
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
 			
 			
 			<Anchor>//api/name/progress</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setPriceBorderColor:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setDownloaded:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL downloaded</Declaration>
 			
 			
-			<Anchor>//api/name/priceBorderColor</Anchor>
+			<Anchor>//api/name/downloaded</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/priceBorderColor</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/downloaded</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL downloaded</Declaration>
 			
 			
-			<Anchor>//api/name/priceBorderColor</Anchor>
+			<Anchor>//api/name/downloaded</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setProduct:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/setDownloading:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) UAProduct *product</Declaration>
+			<Declaration>@property (nonatomic, readonly, assign) BOOL downloading</Declaration>
 			
 			
-			<Anchor>//api/name/product</Anchor>
+			<Anchor>//api/name/downloading</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/product</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContent/downloading</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) UAProduct *product</Declaration>
+			<Declaration>@property (nonatomic, readonly, assign) BOOL downloading</Declaration>
 			
 			
-			<Anchor>//api/name/product</Anchor>
+			<Anchor>//api/name/downloading</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setProgressHidden:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContent/initWithDict:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContent.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL descriptionHidden , progressHidden</Declaration>
-			
-			
-			<Anchor>//api/name/progressHidden</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontCellView/progressHidden</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL descriptionHidden , progressHidden</Declaration>
+			<Declaration>- (id)initWithDict:(NSDictionary *)dict</Declaration>
 			
 			
-			<Anchor>//api/name/progressHidden</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/refreshCellView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)refreshCellView</Declaration>
-			
-			
-			<Anchor>//api/name/refreshCellView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/refreshCellViewWithProductStatus:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)refreshCellViewWithProductStatus:(UAProductStatus)status</Declaration>
-			
-			
-			<Anchor>//api/name/refreshCellViewWithProductStatus:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/refreshProgressView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)refreshProgressView:(float)progress</Declaration>
-			
-			
-			<Anchor>//api/name/refreshProgressView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/refreshPriceLabelView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)refreshPriceLabelView:(UAProductStatus)status</Declaration>
-			
-			
-			<Anchor>//api/name/refreshPriceLabelView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setHighlighted:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)setHighlighted:(BOOL)h</Declaration>
-			
-			
-			<Anchor>//api/name/setHighlighted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontCellView/setSelected:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)setSelected:(BOOL)s</Declaration>
-			
-			
-			<Anchor>//api/name/setSelected:</Anchor>
+			<Anchor>//api/name/initWithDict:</Anchor>
 		</Token>
 		
 	</File>

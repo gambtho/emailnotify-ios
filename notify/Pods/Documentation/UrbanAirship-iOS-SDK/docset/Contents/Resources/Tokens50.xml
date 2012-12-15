@@ -1,234 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAHTTPRequest.html">
+	<File path="Classes/UAInboxMessageViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAHTTPRequest</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInboxMessageViewController</TokenIdentifier>
+			<Abstract type="html">This class is a reference implementation of a view controller embedding
+a UIWebview sourcing content from a rich push message.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>
 			
 			<NodeRef refid="50"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setUrl:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageViewController/setWebView:</TokenIdentifier>
+			<Abstract type="html">The UIWebView used to display the message content.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, nonatomic) NSURL *url</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWebView *webView</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/webView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/url</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageViewController/webView</TokenIdentifier>
+			<Abstract type="html">The UIWebView used to display the message content.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, nonatomic) NSURL *url</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWebView *webView</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/webView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setHTTPMethod:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageViewController/setMessage:</TokenIdentifier>
+			<Abstract type="html">The UAInboxMessage being displayed.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *HTTPMethod</Declaration>
+			<Declaration>@property (nonatomic, retain) UAInboxMessage *message</Declaration>
 			
 			
-			<Anchor>//api/name/HTTPMethod</Anchor>
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/HTTPMethod</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageViewController/message</TokenIdentifier>
+			<Abstract type="html">The UAInboxMessage being displayed.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *HTTPMethod</Declaration>
+			<Declaration>@property (nonatomic, retain) UAInboxMessage *message</Declaration>
 			
 			
-			<Anchor>//api/name/HTTPMethod</Anchor>
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setHeaders:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageViewController/setShouldShowAlerts:</TokenIdentifier>
+			<Abstract type="html">Set this property to YES is the class should show alert dialogs in erroneous
+situations, NO otherwise.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, nonatomic) NSDictionary *headers</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL shouldShowAlerts</Declaration>
 			
 			
-			<Anchor>//api/name/headers</Anchor>
+			<Anchor>//api/name/shouldShowAlerts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/headers</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageViewController/shouldShowAlerts</TokenIdentifier>
+			<Abstract type="html">Set this property to YES is the class should show alert dialogs in erroneous
+situations, NO otherwise.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, nonatomic) NSDictionary *headers</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL shouldShowAlerts</Declaration>
 			
 			
-			<Anchor>//api/name/headers</Anchor>
+			<Anchor>//api/name/shouldShowAlerts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setUsername:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageViewController/loadMessageAtIndex:</TokenIdentifier>
+			<Abstract type="html">Load a UAInboxMessage at a particular index in the message list.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *username</Declaration>
+			<Declaration>- (void)loadMessageAtIndex:(int)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The corresponding index in the message list as an integer.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/username</Anchor>
+			<Anchor>//api/name/loadMessageAtIndex:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/username</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageViewController/loadMessageForID:</TokenIdentifier>
+			<Abstract type="html">Load a UAInboxMessage by message ID.</Abstract>
+			<DeclaredIn>UAInboxMessageViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *username</Declaration>
+			<Declaration>- (void)loadMessageForID:(NSString *)mid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mid</Name>
+					<Abstract type="html">The message ID as an NSString.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/username</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setPassword:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (copy, nonatomic) NSString *password</Declaration>
-			
-			
-			<Anchor>//api/name/password</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/password</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (copy, nonatomic) NSString *password</Declaration>
-			
-			
-			<Anchor>//api/name/password</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setBody:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSData *body</Declaration>
-			
-			
-			<Anchor>//api/name/body</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/body</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSData *body</Declaration>
-			
-			
-			<Anchor>//api/name/body</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setCompressBody:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (assign, nonatomic) BOOL compressBody</Declaration>
-			
-			
-			<Anchor>//api/name/compressBody</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/compressBody</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (assign, nonatomic) BOOL compressBody</Declaration>
-			
-			
-			<Anchor>//api/name/compressBody</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/setUserInfo:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) id userInfo</Declaration>
-			
-			
-			<Anchor>//api/name/userInfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPRequest/userInfo</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) id userInfo</Declaration>
-			
-			
-			<Anchor>//api/name/userInfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAHTTPRequest/requestWithURLString:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>+ (UAHTTPRequest *)requestWithURLString:(NSString *)urlString</Declaration>
-			
-			
-			<Anchor>//api/name/requestWithURLString:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/initWithURLString:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithURLString:(NSString *)urlString</Declaration>
-			
-			
-			<Anchor>//api/name/initWithURLString:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/addRequestHeader:value:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)addRequestHeader:(NSString *)header value:(NSString *)value</Declaration>
-			
-			
-			<Anchor>//api/name/addRequestHeader:value:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPRequest/appendBodyData:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)appendBodyData:(NSData *)data</Declaration>
-			
-			
-			<Anchor>//api/name/appendBodyData:</Anchor>
+			<Anchor>//api/name/loadMessageForID:</Anchor>
 		</Token>
 		
 	</File>

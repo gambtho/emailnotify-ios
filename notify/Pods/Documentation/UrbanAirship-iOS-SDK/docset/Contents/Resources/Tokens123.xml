@@ -1,36 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UATableCell.html">
+	<File path="Classes/UA_ASIDataDecompressor.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UATableCell</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_ASIDataDecompressor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UATableCell.h</DeclaredIn>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>
 			
 			<NodeRef refid="123"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UATableCell/setIsOdd:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIDataDecompressor/decompressor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UATableCell.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL isOdd</Declaration>
+			<Declaration>+ (id)decompressor</Declaration>
 			
 			
-			<Anchor>//api/name/isOdd</Anchor>
+			<Anchor>//api/name/decompressor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UATableCell/isOdd</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIDataDecompressor/uncompressBytes:length:error:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UATableCell.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL isOdd</Declaration>
+			<Declaration>- (NSData *)uncompressBytes:(Bytef *)bytes length:(NSUInteger)length error:(NSError **)err</Declaration>
 			
 			
-			<Anchor>//api/name/isOdd</Anchor>
+			<Anchor>//api/name/uncompressBytes:length:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIDataDecompressor/uncompressData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)uncompressData:(NSData *)compressedData error:(NSError **)err</Declaration>
+			
+			
+			<Anchor>//api/name/uncompressData:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIDataDecompressor/uncompressDataFromFile:toFile:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)uncompressDataFromFile:(NSString *)sourcePath toFile:(NSString *)destinationPath error:(NSError **)err</Declaration>
+			
+			
+			<Anchor>//api/name/uncompressDataFromFile:toFile:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIDataDecompressor/setupStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>- (NSError *)setupStream</Declaration>
+			
+			
+			<Anchor>//api/name/setupStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIDataDecompressor/closeStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>- (NSError *)closeStream</Declaration>
+			
+			
+			<Anchor>//api/name/closeStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIDataDecompressor/setStreamReady:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL streamReady</Declaration>
+			
+			
+			<Anchor>//api/name/streamReady</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIDataDecompressor/streamReady</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIDataDecompressor.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL streamReady</Declaration>
+			
+			
+			<Anchor>//api/name/streamReady</Anchor>
 		</Token>
 		
 	</File>

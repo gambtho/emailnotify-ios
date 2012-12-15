@@ -1,160 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UALocalStorageDirectory.html">
+	<File path="Classes/UAProductDetailViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UALocalStorageDirectory</TokenIdentifier>
-			<Abstract type="html">This class provides an abstracted interface to a local storage directory
-that corresponds to one of the four types enumerated in Apple&apos;s iOS Data
-Storage Guidelines. When referring to a path through an instance of this class,
-the directory will be transparently created on disk if necessary, setting appropriate
-file attributes, and migrating any existing content from a set of old locations.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAProductDetailViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>
 			
 			<NodeRef refid="67"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UALocalStorageDirectory/uaDirectory</TokenIdentifier>
-			<Abstract type="html">Convenience constructor for a UALocalStorageDirectory instance pointing to the main UA storage directory.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>+ (UALocalStorageDirectory *)uaDirectory</Declaration>
+			<Declaration>@property (nonatomic, retain) UAProduct *product</Declaration>
 			
-			<ReturnValue><Abstract type="html">a UALocalStorageDirectory instance pointing to the main UA storage directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/uaDirectory</Anchor>
+			
+			<Anchor>//api/name/product</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UALocalStorageDirectory/localStorageDirectoryWithType:withSubpath:withOldPaths:</TokenIdentifier>
-			<Abstract type="html">Convenience constructor for an arbitrary UALocalStorageDirectory.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/product</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>+ (UALocalStorageDirectory *)localStorageDirectoryWithType:(UALocalStorageType)storageType withSubpath:(NSString *)nameString withOldPaths:(NSSet *)oldPathsSet</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>storageType</Name>
-					<Abstract type="html">A UALocalStorageType enum corresponding to the purpose and lifecycle of the directory.</Abstract>
-				</Parameter><Parameter>
-					<Name>nameString</Name>
-					<Abstract type="html">A subpath string to be appended to the base directory.</Abstract>
-				</Parameter><Parameter>
-					<Name>oldPathsSet</Name>
-					<Abstract type="html">An NSSet of directories as NSStrings to check for old content and migrate if necessary.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a UALocalStorageDirectory instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/localStorageDirectoryWithType:withSubpath:withOldPaths:</Anchor>
+			<Declaration>@property (nonatomic, retain) UAProduct *product</Declaration>
+			
+			
+			<Anchor>//api/name/product</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocalStorageDirectory/subDirectoryWithPathComponent:</TokenIdentifier>
-			<Abstract type="html">Returns a full path string of a subdirectory to be located under the receiver&apos;s path.
-If this subpath does not currently exist, it will be created automatically.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setProductTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)subDirectoryWithPathComponent:(NSString *)component</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>component</Name>
-					<Abstract type="html">A subcomponent to be appended to the receiver&apos;s path</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A full path as an NSString.</Abstract></ReturnValue>
-			<Anchor>//api/name/subDirectoryWithPathComponent:</Anchor>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *productTitle</Declaration>
+			
+			
+			<Anchor>//api/name/productTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocalStorageDirectory/setStorageType:</TokenIdentifier>
-			<Abstract type="html">The directory&apos;s storage type.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/productTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) UALocalStorageType storageType</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *productTitle</Declaration>
 			
 			
-			<Anchor>//api/name/storageType</Anchor>
+			<Anchor>//api/name/productTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocalStorageDirectory/storageType</TokenIdentifier>
-			<Abstract type="html">The directory&apos;s storage type.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setIconContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) UALocalStorageType storageType</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *iconContainer</Declaration>
 			
 			
-			<Anchor>//api/name/storageType</Anchor>
+			<Anchor>//api/name/iconContainer</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocalStorageDirectory/setSubpath:</TokenIdentifier>
-			<Abstract type="html">The directory&apos;s subpath under its base location.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/iconContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *subpath</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *iconContainer</Declaration>
 			
 			
-			<Anchor>//api/name/subpath</Anchor>
+			<Anchor>//api/name/iconContainer</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocalStorageDirectory/subpath</TokenIdentifier>
-			<Abstract type="html">The directory&apos;s subpath under its base location.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setPrice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *subpath</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *price</Declaration>
 			
 			
-			<Anchor>//api/name/subpath</Anchor>
+			<Anchor>//api/name/price</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocalStorageDirectory/setOldPaths:</TokenIdentifier>
-			<Abstract type="html">The set of old directory locations to migrate existing content from.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/price</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSSet *oldPaths</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *price</Declaration>
 			
 			
-			<Anchor>//api/name/oldPaths</Anchor>
+			<Anchor>//api/name/price</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocalStorageDirectory/oldPaths</TokenIdentifier>
-			<Abstract type="html">The set of old directory locations to migrate existing content from.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setRevision:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSSet *oldPaths</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *revision</Declaration>
 			
 			
-			<Anchor>//api/name/oldPaths</Anchor>
+			<Anchor>//api/name/revision</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocalStorageDirectory/setPath:</TokenIdentifier>
-			<Abstract type="html">The full path of the directory.
-Note that this property is readonly, and the path in question is dynamically generated
-when read.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/revision</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *revision</Declaration>
 			
 			
-			<Anchor>//api/name/path</Anchor>
+			<Anchor>//api/name/revision</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocalStorageDirectory/path</TokenIdentifier>
-			<Abstract type="html">The full path of the directory.
-Note that this property is readonly, and the path in question is dynamically generated
-when read.</Abstract>
-			<DeclaredIn>UALocalStorageDirectory.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setFileSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *fileSize</Declaration>
 			
 			
-			<Anchor>//api/name/path</Anchor>
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/fileSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *fileSize</Declaration>
+			
+			
+			<Anchor>//api/name/fileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setDetailTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *detailTable</Declaration>
+			
+			
+			<Anchor>//api/name/detailTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/detailTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *detailTable</Declaration>
+			
+			
+			<Anchor>//api/name/detailTable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setPreviewImageCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *previewImageCell</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/previewImageCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *previewImageCell</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/setPreviewImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *previewImage</Declaration>
+			
+			
+			<Anchor>//api/name/previewImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductDetailViewController/previewImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *previewImage</Declaration>
+			
+			
+			<Anchor>//api/name/previewImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/purchase:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)purchase:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/purchase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/refreshUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshUI</Declaration>
+			
+			
+			<Anchor>//api/name/refreshUI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailViewController/refreshBuyButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductDetailViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshBuyButton</Declaration>
+			
+			
+			<Anchor>//api/name/refreshBuyButton</Anchor>
 		</Token>
 		
 	</File>

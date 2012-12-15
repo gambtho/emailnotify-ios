@@ -34,14 +34,16 @@ If you want to track custom information such as a user name from your applicatio
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/TestFlight/takeOff:</TokenIdentifier>
-			<Abstract type="html">Starts a TestFlight session</Abstract>
+			<Abstract type="html">Starts a TestFlight session using the Application Token for this Application</Abstract>
 			<DeclaredIn>TestFlight.h</DeclaredIn>			
 			
-			<Declaration>+ (void)takeOff:(NSString *)teamToken</Declaration>
+			<Declaration>+ (void)takeOff:(NSString *)applicationToken</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>teamToken</Name>
-					<Abstract type="html">Will be your team token obtained from https://testflightapp.com/dashboard/team/edit/</Abstract>
+					<Name>applicationToken</Name>
+					<Abstract type="html">Will be the application token for the current application.
+The token for this application can be retrieved by going to https://testflightapp.com/dashboard/applications/
+selecting this application from the list then selecting SDK.</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -124,7 +126,7 @@ feedback from custom feedback forms.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/TestFlight/setDeviceIdentifier:</TokenIdentifier>
-			<Abstract type="html">Sets the Device Identifier.
+			<Abstract type="html">Sets the Device Identifier. ( Must be called before takeOff: )
 The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
 identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
 and logs, but the data will be anonymized.

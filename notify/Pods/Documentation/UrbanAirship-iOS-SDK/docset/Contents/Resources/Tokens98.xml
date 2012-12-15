@@ -1,209 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStoreFrontUI.html">
+	<File path="Classes/UASubscriptionContentsViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontUI</TokenIdentifier>
-			<Abstract type="html">This class is the reference implementation of the UAStoreFrontUIProtocol.</Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentsViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>
 			
 			<NodeRef refid="98"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setUaWindow:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/setContentsTable:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIWindow *uaWindow</Declaration>
+			<Declaration>@property (retain) IBOutlet UITableView *contentsTable</Declaration>
 			
 			
-			<Anchor>//api/name/uaWindow</Anchor>
+			<Anchor>//api/name/contentsTable</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/uaWindow</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentsViewController/contentsTable</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIWindow *uaWindow</Declaration>
+			<Declaration>@property (retain) IBOutlet UITableView *contentsTable</Declaration>
 			
 			
-			<Anchor>//api/name/uaWindow</Anchor>
+			<Anchor>//api/name/contentsTable</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setOriginalWindow:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/setSubscriptionKey:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIWindow *originalWindow</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
 			
 			
-			<Anchor>//api/name/originalWindow</Anchor>
+			<Anchor>//api/name/subscriptionKey</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/originalWindow</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentsViewController/subscriptionKey</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIWindow *originalWindow</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *subscriptionKey</Declaration>
 			
 			
-			<Anchor>//api/name/originalWindow</Anchor>
+			<Anchor>//api/name/subscriptionKey</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setRootViewController:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentsViewController/updateDataSource</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain, readonly) UIViewController *rootViewController</Declaration>
-			
-			
-			<Anchor>//api/name/rootViewController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/rootViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain, readonly) UIViewController *rootViewController</Declaration>
+			<Declaration>- (void)updateDataSource</Declaration>
 			
 			
-			<Anchor>//api/name/rootViewController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setProductListViewController:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontViewController *productListViewController</Declaration>
-			
-			
-			<Anchor>//api/name/productListViewController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/productListViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontViewController *productListViewController</Declaration>
-			
-			
-			<Anchor>//api/name/productListViewController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setIsVisible:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isVisible</Declaration>
-			
-			
-			<Anchor>//api/name/isVisible</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/isVisible</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isVisible</Declaration>
-			
-			
-			<Anchor>//api/name/isVisible</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setIsiPad:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isiPad</Declaration>
-			
-			
-			<Anchor>//api/name/isiPad</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/isiPad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isiPad</Declaration>
-			
-			
-			<Anchor>//api/name/isiPad</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setLocalizationBundle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
-			
-			
-			<Anchor>//api/name/localizationBundle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/localizationBundle</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
-			
-			
-			<Anchor>//api/name/localizationBundle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/setRuniPhoneTargetOniPad:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setRuniPhoneTargetOniPad:(BOOL)value</Declaration>
-			
-			
-			<Anchor>//api/name/setRuniPhoneTargetOniPad:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/displayStoreFront:animated:</TokenIdentifier>
-			<Abstract type="html">Called when the IAP UI should be displayed.</Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>viewController</Name>
-					<Abstract type="html">The calling view controller.</Abstract>
-				</Parameter><Parameter>
-					<Name>animated</Name>
-					<Abstract type="html">Indicates whether the transition to the IAP UI should be animated.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/displayStoreFront:animated:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/displayStoreFront:withProductID:animated:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController withProductID:(NSString *)productID animated:(BOOL)animated</Declaration>
-			
-			
-			<Anchor>//api/name/displayStoreFront:withProductID:animated:</Anchor>
+			<Anchor>//api/name/updateDataSource</Anchor>
 		</Token>
 		
 	</File>

@@ -1,190 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAMapPresentationController.html">
+	<File path="Classes/UAPushSettingsAddTagViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAMapPresentationController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAPushSettingsAddTagViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>
 			
 			<NodeRef refid="73"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setLocationService:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagDelegate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UALocationService *locationService</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UAPushSettingsAddTagDelegate&gt; tagDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/locationService</Anchor>
+			<Anchor>//api/name/tagDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/locationService</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UALocationService *locationService</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UAPushSettingsAddTagDelegate&gt; tagDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/locationService</Anchor>
+			<Anchor>//api/name/tagDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setLocations:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTableView:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSMutableArray *locations</Declaration>
+			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
 			
 			
-			<Anchor>//api/name/locations</Anchor>
+			<Anchor>//api/name/tableView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/locations</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tableView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSMutableArray *locations</Declaration>
+			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
 			
 			
-			<Anchor>//api/name/locations</Anchor>
+			<Anchor>//api/name/tableView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setMapView:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagCell:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet MKMapView *mapView</Declaration>
+			<Declaration>@property (nonatomic, retain) UITableViewCell *tagCell</Declaration>
 			
 			
-			<Anchor>//api/name/mapView</Anchor>
+			<Anchor>//api/name/tagCell</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/mapView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagCell</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet MKMapView *mapView</Declaration>
+			<Declaration>@property (nonatomic, retain) UITableViewCell *tagCell</Declaration>
 			
 			
-			<Anchor>//api/name/mapView</Anchor>
+			<Anchor>//api/name/tagCell</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setAnnotations:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagField:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableArray *annotations</Declaration>
+			<Declaration>@property (nonatomic, retain) UITextField *tagField</Declaration>
 			
 			
-			<Anchor>//api/name/annotations</Anchor>
+			<Anchor>//api/name/tagField</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/annotations</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagField</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableArray *annotations</Declaration>
+			<Declaration>@property (nonatomic, retain) UITextField *tagField</Declaration>
 			
 			
-			<Anchor>//api/name/annotations</Anchor>
+			<Anchor>//api/name/tagField</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setRightButton:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setPresetTags:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIBarButtonItem *rightButton</Declaration>
+			<Declaration>@property (nonatomic, retain) NSArray *presetTags</Declaration>
 			
 			
-			<Anchor>//api/name/rightButton</Anchor>
+			<Anchor>//api/name/presetTags</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/rightButton</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/presetTags</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIBarButtonItem *rightButton</Declaration>
-			
-			
-			<Anchor>//api/name/rightButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/setLastUserAnnotation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id&lt;MKAnnotation&gt; lastUserAnnotation</Declaration>
+			<Declaration>@property (nonatomic, retain) NSArray *presetTags</Declaration>
 			
 			
-			<Anchor>//api/name/lastUserAnnotation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAMapPresentationController/lastUserAnnotation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id&lt;MKAnnotation&gt; lastUserAnnotation</Declaration>
-			
-			
-			<Anchor>//api/name/lastUserAnnotation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/moveSpanToCoordinate:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>- (void)moveSpanToCoordinate:(CLLocationCoordinate2D)location</Declaration>
-			
-			
-			<Anchor>//api/name/moveSpanToCoordinate:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/convertLocationsToAnnotations</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>- (void)convertLocationsToAnnotations</Declaration>
-			
-			
-			<Anchor>//api/name/convertLocationsToAnnotations</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/annotateMap</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>- (void)annotateMap</Declaration>
-			
-			
-			<Anchor>//api/name/annotateMap</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAMapPresentationController/rightBarButtonPressed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAMapPresentationController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)rightBarButtonPressed:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/rightBarButtonPressed:</Anchor>
+			<Anchor>//api/name/presetTags</Anchor>
 		</Token>
 		
 	</File>

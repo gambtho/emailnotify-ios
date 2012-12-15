@@ -1,190 +1,3369 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAUtils.html">
+	<File path="Classes/UA_ASIHTTPRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAUtils</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_ASIHTTPRequest</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>
 			
 			<NodeRef refid="126"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/md5:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/initWithURL:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)md5:(NSString *)sourceString</Declaration>
+			<Declaration>- (id)initWithURL:(NSURL *)newURL</Declaration>
 			
 			
-			<Anchor>//api/name/md5:</Anchor>
+			<Anchor>//api/name/initWithURL:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/UUID</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/requestWithURL:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)UUID</Declaration>
+			<Declaration>+ (id)requestWithURL:(NSURL *)newURL</Declaration>
 			
 			
-			<Anchor>//api/name/UUID</Anchor>
+			<Anchor>//api/name/requestWithURL:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceModelName</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/requestWithURL:usingCache:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)deviceModelName</Declaration>
+			<Declaration>+ (id)requestWithURL:(NSURL *)newURL usingCache:(id&lt;UA_ASICacheDelegate&gt;)cache</Declaration>
 			
 			
-			<Anchor>//api/name/deviceModelName</Anchor>
+			<Anchor>//api/name/requestWithURL:usingCache:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceID</TokenIdentifier>
-			<Abstract type="html">Gets the Urban Airship Device ID.</Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)deviceID</Declaration>
-			
-			<ReturnValue><Abstract type="html">The device ID, or an empty string if the ID cannot be retrieved or created.</Abstract></ReturnValue>
-			<Anchor>//api/name/deviceID</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/urlEncodedStringWithString:encoding:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/requestWithURL:usingCache:andCachePolicy:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)urlEncodedStringWithString:(NSString *)string encoding:(NSStringEncoding)encoding</Declaration>
+			<Declaration>+ (id)requestWithURL:(NSURL *)newURL usingCache:(id&lt;UA_ASICacheDelegate&gt;)cache andCachePolicy:(UA_ASICachePolicy)policy</Declaration>
 			
 			
-			<Anchor>//api/name/urlEncodedStringWithString:encoding:</Anchor>
+			<Anchor>//api/name/requestWithURL:usingCache:andCachePolicy:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setStartedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
+			<Declaration>- (void)setStartedBlock:(UA_ASIBasicBlock)aStartedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:</Anchor>
+			<Anchor>//api/name/setStartedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:fail:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setHeadersReceivedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
+			<Declaration>- (void)setHeadersReceivedBlock:(UA_ASIHeadersBlock)aReceivedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:fail:</Anchor>
+			<Anchor>//api/name/setHeadersReceivedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setCompletionBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
+			<Declaration>- (void)setCompletionBlock:(UA_ASIBasicBlock)aCompletionBlock</Declaration>
 			
 			
-			<Anchor>//api/name/requestWithURL:method:delegate:finish:</Anchor>
+			<Anchor>//api/name/setCompletionBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:fail:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setFailedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
+			<Declaration>- (void)setFailedBlock:(UA_ASIBasicBlock)aFailedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/requestWithURL:method:delegate:finish:fail:</Anchor>
+			<Anchor>//api/name/setFailedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userAuthHeaderString</TokenIdentifier>
-			<Abstract type="html">Returns a basic auth header string.</Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)userAuthHeaderString</Declaration>
-			
-			<ReturnValue><Abstract type="html">An HTTP Basic Auth header string value for the user&apos;s credentials.</Abstract></ReturnValue>
-			<Anchor>//api/name/userAuthHeaderString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/responseFromRequest:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setBytesReceivedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (id)responseFromRequest:(UA_ASIHTTPRequest *)request</Declaration>
+			<Declaration>- (void)setBytesReceivedBlock:(UA_ASIProgressBlock)aBytesReceivedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/responseFromRequest:</Anchor>
+			<Anchor>//api/name/setBytesReceivedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/parseJSON:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setBytesSentBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (id)parseJSON:(NSString *)responseString</Declaration>
+			<Declaration>- (void)setBytesSentBlock:(UA_ASIProgressBlock)aBytesSentBlock</Declaration>
 			
 			
-			<Anchor>//api/name/parseJSON:</Anchor>
+			<Anchor>//api/name/setBytesSentBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDownloadSizeIncrementedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request</Declaration>
+			<Declaration>- (void)setDownloadSizeIncrementedBlock:(UA_ASISizeBlock)aDownloadSizeIncrementedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/requestWentWrong:</Anchor>
+			<Anchor>//api/name/setDownloadSizeIncrementedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:keyword:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUploadSizeIncrementedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request keyword:(NSString *)keyword</Declaration>
+			<Declaration>- (void)setUploadSizeIncrementedBlock:(UA_ASISizeBlock)anUploadSizeIncrementedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/requestWentWrong:keyword:</Anchor>
+			<Anchor>//api/name/setUploadSizeIncrementedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/pluralize:singularForm:pluralForm:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDataReceivedBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pluralize:(int)count singularForm:(NSString *)singular pluralForm:(NSString *)plural</Declaration>
+			<Declaration>- (void)setDataReceivedBlock:(UA_ASIDataBlock)aReceivedBlock</Declaration>
 			
 			
-			<Anchor>//api/name/pluralize:singularForm:pluralForm:</Anchor>
+			<Anchor>//api/name/setDataReceivedBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/getReadableFileSizeFromBytes:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAuthenticationNeededBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAUtils.h</DeclaredIn>			
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)getReadableFileSizeFromBytes:(double)bytes</Declaration>
+			<Declaration>- (void)setAuthenticationNeededBlock:(UA_ASIBasicBlock)anAuthenticationBlock</Declaration>
 			
 			
-			<Anchor>//api/name/getReadableFileSizeFromBytes:</Anchor>
+			<Anchor>//api/name/setAuthenticationNeededBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyAuthenticationNeededBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)setProxyAuthenticationNeededBlock:(UA_ASIBasicBlock)aProxyAuthenticationBlock</Declaration>
+			
+			
+			<Anchor>//api/name/setProxyAuthenticationNeededBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestRedirectedBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)setRequestRedirectedBlock:(UA_ASIBasicBlock)aRedirectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/setRequestRedirectedBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/addRequestHeader:value:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRequestHeader:(NSString *)header value:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addRequestHeader:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/applyCookieHeader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyCookieHeader</Declaration>
+			
+			
+			<Anchor>//api/name/applyCookieHeader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/buildRequestHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)buildRequestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/buildRequestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/applyAuthorizationHeader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyAuthorizationHeader</Declaration>
+			
+			
+			<Anchor>//api/name/applyAuthorizationHeader</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/buildPostBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)buildPostBody</Declaration>
+			
+			
+			<Anchor>//api/name/buildPostBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/appendPostData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPostData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendPostData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/appendPostDataFromFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPostDataFromFile:(NSString *)file</Declaration>
+			
+			
+			<Anchor>//api/name/appendPostDataFromFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/responseString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)responseString</Declaration>
+			
+			
+			<Anchor>//api/name/responseString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/responseData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/isResponseCompressed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isResponseCompressed</Declaration>
+			
+			
+			<Anchor>//api/name/isResponseCompressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/startSynchronous</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)startSynchronous</Declaration>
+			
+			
+			<Anchor>//api/name/startSynchronous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/startAsynchronous</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)startAsynchronous</Declaration>
+			
+			
+			<Anchor>//api/name/startAsynchronous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/clearDelegatesAndCancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearDelegatesAndCancel</Declaration>
+			
+			
+			<Anchor>//api/name/clearDelegatesAndCancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/HEADRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (UA_ASIHTTPRequest *)HEADRequest</Declaration>
+			
+			
+			<Anchor>//api/name/HEADRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/updateProgressIndicators</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateProgressIndicators</Declaration>
+			
+			
+			<Anchor>//api/name/updateProgressIndicators</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/updateUploadProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateUploadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/updateUploadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/updateDownloadProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateDownloadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/updateDownloadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/removeUploadProgressSoFar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeUploadProgressSoFar</Declaration>
+			
+			
+			<Anchor>//api/name/removeUploadProgressSoFar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/incrementDownloadSizeBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)incrementDownloadSizeBy:(long long)length</Declaration>
+			
+			
+			<Anchor>//api/name/incrementDownloadSizeBy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/incrementUploadSizeBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)incrementUploadSizeBy:(long long)length</Declaration>
+			
+			
+			<Anchor>//api/name/incrementUploadSizeBy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/updateProgressIndicator:withProgress:ofTotal:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)updateProgressIndicator:(id *)indicator withProgress:(unsigned long long)progress ofTotal:(unsigned long long)total</Declaration>
+			
+			
+			<Anchor>//api/name/updateProgressIndicator:withProgress:ofTotal:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/performSelector:onTarget:withObject:amount:callerToRetain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)performSelector:(SEL)selector onTarget:(id *)target withObject:(id)object amount:(void *)amount callerToRetain:(id)caller</Declaration>
+			
+			
+			<Anchor>//api/name/performSelector:onTarget:withObject:amount:callerToRetain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/requestStarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestStarted</Declaration>
+			
+			
+			<Anchor>//api/name/requestStarted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/requestReceivedResponseHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestReceivedResponseHeaders:(NSDictionary *)newHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestReceivedResponseHeaders:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/requestFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)requestFinished</Declaration>
+			
+			
+			<Anchor>//api/name/requestFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/failWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)failWithError:(NSError *)theError</Declaration>
+			
+			
+			<Anchor>//api/name/failWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/retryUsingNewConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)retryUsingNewConnection</Declaration>
+			
+			
+			<Anchor>//api/name/retryUsingNewConnection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/redirectToURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)redirectToURL:(NSURL *)newURL</Declaration>
+			
+			
+			<Anchor>//api/name/redirectToURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/readResponseHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)readResponseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/readResponseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/parseStringEncodingFromHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)parseStringEncodingFromHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/parseStringEncodingFromHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/parseMimeType:andResponseEncoding:fromContentType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)parseMimeType:(NSString **)mimeType andResponseEncoding:(NSStringEncoding *)stringEncoding fromContentType:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/parseMimeType:andResponseEncoding:fromContentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/applyCredentials:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)applyCredentials:(NSDictionary *)newCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/applyCredentials:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/applyProxyCredentials:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)applyProxyCredentials:(NSDictionary *)newCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/applyProxyCredentials:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/findCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)findCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/findCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/findProxyCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)findProxyCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/findProxyCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/retryUsingSuppliedCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)retryUsingSuppliedCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/retryUsingSuppliedCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/cancelAuthentication</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/cancelAuthentication</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/attemptToApplyCredentialsAndResume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)attemptToApplyCredentialsAndResume</Declaration>
+			
+			
+			<Anchor>//api/name/attemptToApplyCredentialsAndResume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/attemptToApplyProxyCredentialsAndResume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)attemptToApplyProxyCredentialsAndResume</Declaration>
+			
+			
+			<Anchor>//api/name/attemptToApplyProxyCredentialsAndResume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/showProxyAuthenticationDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)showProxyAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/showProxyAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/showAuthenticationDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)showAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/showAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/addBasicAuthenticationHeaderWithUsername:andPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBasicAuthenticationHeaderWithUsername:(NSString *)theUsername andPassword:(NSString *)thePassword</Declaration>
+			
+			
+			<Anchor>//api/name/addBasicAuthenticationHeaderWithUsername:andPassword:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/handleNetworkEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleNetworkEvent:(CFStreamEventType)type</Declaration>
+			
+			
+			<Anchor>//api/name/handleNetworkEvent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/handleBytesAvailable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleBytesAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/handleBytesAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/handleStreamComplete</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleStreamComplete</Declaration>
+			
+			
+			<Anchor>//api/name/handleStreamComplete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/handleStreamError</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleStreamError</Declaration>
+			
+			
+			<Anchor>//api/name/handleStreamError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/markAsFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)markAsFinished</Declaration>
+			
+			
+			<Anchor>//api/name/markAsFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/removeTemporaryDownloadFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)removeTemporaryDownloadFile</Declaration>
+			
+			
+			<Anchor>//api/name/removeTemporaryDownloadFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/removeTemporaryUncompressedDownloadFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)removeTemporaryUncompressedDownloadFile</Declaration>
+			
+			
+			<Anchor>//api/name/removeTemporaryUncompressedDownloadFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/removeTemporaryUploadFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)removeTemporaryUploadFile</Declaration>
+			
+			
+			<Anchor>//api/name/removeTemporaryUploadFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/removeTemporaryCompressedUploadFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)removeTemporaryCompressedUploadFile</Declaration>
+			
+			
+			<Anchor>//api/name/removeTemporaryCompressedUploadFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/removeFileAtPath:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)removeFileAtPath:(NSString *)path error:(NSError **)err</Declaration>
+			
+			
+			<Anchor>//api/name/removeFileAtPath:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/connectionID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSNumber *)connectionID</Declaration>
+			
+			
+			<Anchor>//api/name/connectionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/expirePersistentConnections</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)expirePersistentConnections</Declaration>
+			
+			
+			<Anchor>//api/name/expirePersistentConnections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/defaultTimeOutSeconds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSTimeInterval)defaultTimeOutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTimeOutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setDefaultTimeOutSeconds:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultTimeOutSeconds:(NSTimeInterval)newTimeOutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultTimeOutSeconds:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setClientCertificateIdentity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)setClientCertificateIdentity:(SecIdentityRef)anIdentity</Declaration>
+			
+			
+			<Anchor>//api/name/setClientCertificateIdentity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/sessionProxyCredentialsStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSMutableArray *)sessionProxyCredentialsStore</Declaration>
+			
+			
+			<Anchor>//api/name/sessionProxyCredentialsStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/sessionCredentialsStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSMutableArray *)sessionCredentialsStore</Declaration>
+			
+			
+			<Anchor>//api/name/sessionCredentialsStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/storeProxyAuthenticationCredentialsInSessionStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)storeProxyAuthenticationCredentialsInSessionStore:(NSDictionary *)credentials</Declaration>
+			
+			
+			<Anchor>//api/name/storeProxyAuthenticationCredentialsInSessionStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/storeAuthenticationCredentialsInSessionStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)storeAuthenticationCredentialsInSessionStore:(NSDictionary *)credentials</Declaration>
+			
+			
+			<Anchor>//api/name/storeAuthenticationCredentialsInSessionStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/removeProxyAuthenticationCredentialsFromSessionStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeProxyAuthenticationCredentialsFromSessionStore:(NSDictionary *)credentials</Declaration>
+			
+			
+			<Anchor>//api/name/removeProxyAuthenticationCredentialsFromSessionStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/removeAuthenticationCredentialsFromSessionStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeAuthenticationCredentialsFromSessionStore:(NSDictionary *)credentials</Declaration>
+			
+			
+			<Anchor>//api/name/removeAuthenticationCredentialsFromSessionStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/findSessionProxyAuthenticationCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)findSessionProxyAuthenticationCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/findSessionProxyAuthenticationCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/findSessionAuthenticationCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)findSessionAuthenticationCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/findSessionAuthenticationCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/saveCredentialsToKeychain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveCredentialsToKeychain:(NSDictionary *)newCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/saveCredentialsToKeychain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/saveCredentials:forHost:port:protocol:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)saveCredentials:(NSURLCredential *)credentials forHost:(NSString *)host port:(int)port protocol:(NSString *)protocol realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/saveCredentials:forHost:port:protocol:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/saveCredentials:forProxy:port:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)saveCredentials:(NSURLCredential *)credentials forProxy:(NSString *)host port:(int)port realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/saveCredentials:forProxy:port:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/savedCredentialsForHost:port:protocol:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLCredential *)savedCredentialsForHost:(NSString *)host port:(int)port protocol:(NSString *)protocol realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/savedCredentialsForHost:port:protocol:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/savedCredentialsForProxy:port:protocol:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURLCredential *)savedCredentialsForProxy:(NSString *)host port:(int)port protocol:(NSString *)protocol realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/savedCredentialsForProxy:port:protocol:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/removeCredentialsForHost:port:protocol:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeCredentialsForHost:(NSString *)host port:(int)port protocol:(NSString *)protocol realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/removeCredentialsForHost:port:protocol:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/removeCredentialsForProxy:port:realm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeCredentialsForProxy:(NSString *)host port:(int)port realm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/removeCredentialsForProxy:port:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setSessionCookies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setSessionCookies:(NSMutableArray *)newSessionCookies</Declaration>
+			
+			
+			<Anchor>//api/name/setSessionCookies:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/sessionCookies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSMutableArray *)sessionCookies</Declaration>
+			
+			
+			<Anchor>//api/name/sessionCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/addSessionCookie:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addSessionCookie:(NSHTTPCookie *)newCookie</Declaration>
+			
+			
+			<Anchor>//api/name/addSessionCookie:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/clearSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)clearSession</Declaration>
+			
+			
+			<Anchor>//api/name/clearSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/defaultUserAgentString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)defaultUserAgentString</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUserAgentString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setDefaultUserAgentString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultUserAgentString:(NSString *)agent</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultUserAgentString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/mimeTypeForFileAtPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)mimeTypeForFileAtPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/mimeTypeForFileAtPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/maxBandwidthPerSecond</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (unsigned long)maxBandwidthPerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/maxBandwidthPerSecond</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setMaxBandwidthPerSecond:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setMaxBandwidthPerSecond:(unsigned long)bytes</Declaration>
+			
+			
+			<Anchor>//api/name/setMaxBandwidthPerSecond:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/averageBandwidthUsedPerSecond</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (unsigned long)averageBandwidthUsedPerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/averageBandwidthUsedPerSecond</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/performThrottling</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)performThrottling</Declaration>
+			
+			
+			<Anchor>//api/name/performThrottling</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/isBandwidthThrottled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBandwidthThrottled</Declaration>
+			
+			
+			<Anchor>//api/name/isBandwidthThrottled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/incrementBandwidthUsedInLastSecond:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)incrementBandwidthUsedInLastSecond:(unsigned long)bytes</Declaration>
+			
+			
+			<Anchor>//api/name/incrementBandwidthUsedInLastSecond:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setShouldThrottleBandwidthForWWAN:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setShouldThrottleBandwidthForWWAN:(BOOL)throttle</Declaration>
+			
+			
+			<Anchor>//api/name/setShouldThrottleBandwidthForWWAN:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/throttleBandwidthForWWANUsingLimit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)throttleBandwidthForWWANUsingLimit:(unsigned long)limit</Declaration>
+			
+			
+			<Anchor>//api/name/throttleBandwidthForWWANUsingLimit:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/isNetworkReachableViaWWAN</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isNetworkReachableViaWWAN</Declaration>
+			
+			
+			<Anchor>//api/name/isNetworkReachableViaWWAN</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/sharedQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSOperationQueue *)sharedQueue</Declaration>
+			
+			
+			<Anchor>//api/name/sharedQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setDefaultCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultCache:(id&lt;UA_ASICacheDelegate&gt;)cache</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultCache:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/defaultCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;UA_ASICacheDelegate&gt;)defaultCache</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/maxUploadReadLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (unsigned long)maxUploadReadLength</Declaration>
+			
+			
+			<Anchor>//api/name/maxUploadReadLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/isNetworkInUse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isNetworkInUse</Declaration>
+			
+			
+			<Anchor>//api/name/isNetworkInUse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/setShouldUpdateNetworkActivityIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setShouldUpdateNetworkActivityIndicator:(BOOL)shouldUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/setShouldUpdateNetworkActivityIndicator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/showNetworkActivityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showNetworkActivityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/showNetworkActivityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/hideNetworkActivityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (void)hideNetworkActivityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/hideNetworkActivityIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/base64forData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)base64forData:(NSData *)theData</Declaration>
+			
+			
+			<Anchor>//api/name/base64forData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/expiryDateForRequest:maxAge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDate *)expiryDateForRequest:(UA_ASIHTTPRequest *)request maxAge:(NSTimeInterval)maxAge</Declaration>
+			
+			
+			<Anchor>//api/name/expiryDateForRequest:maxAge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/dateFromRFC1123String:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDate *)dateFromRFC1123String:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/dateFromRFC1123String:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/isMultitaskingSupported</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isMultitaskingSupported</Declaration>
+			
+			
+			<Anchor>//api/name/isMultitaskingSupported</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIHTTPRequest/threadForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (NSThread *)threadForRequest:(UA_ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/threadForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUsername:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/username</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/password</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUserAgent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *userAgent</Declaration>
+			
+			
+			<Anchor>//api/name/userAgent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/userAgent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *userAgent</Declaration>
+			
+			
+			<Anchor>//api/name/userAgent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDomain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/domain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyUsername:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyUsername</Declaration>
+			
+			
+			<Anchor>//api/name/proxyUsername</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyUsername</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyUsername</Declaration>
+			
+			
+			<Anchor>//api/name/proxyUsername</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyPassword</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPassword</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyPassword</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPassword</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyDomain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyDomain</Declaration>
+			
+			
+			<Anchor>//api/name/proxyDomain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyDomain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyDomain</Declaration>
+			
+			
+			<Anchor>//api/name/proxyDomain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyHost:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyHost</Declaration>
+			
+			
+			<Anchor>//api/name/proxyHost</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyHost</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyHost</Declaration>
+			
+			
+			<Anchor>//api/name/proxyHost</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyPort:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int proxyPort</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyPort</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int proxyPort</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyType</Declaration>
+			
+			
+			<Anchor>//api/name/proxyType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyType</Declaration>
+			
+			
+			<Anchor>//api/name/proxyType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, setter=setURL, :, nonatomic) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, setter=setURL, :, nonatomic) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setOriginalURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *originalURL</Declaration>
+			
+			
+			<Anchor>//api/name/originalURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/originalURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *originalURL</Declaration>
+			
+			
+			<Anchor>//api/name/originalURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) id queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/queue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) id queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUploadProgressDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id uploadProgressDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/uploadProgressDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id uploadProgressDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDownloadProgressDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id downloadProgressDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/downloadProgressDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/downloadProgressDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id downloadProgressDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/downloadProgressDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUseKeychainPersistence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useKeychainPersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useKeychainPersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/useKeychainPersistence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useKeychainPersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useKeychainPersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUseSessionPersistence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useSessionPersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useSessionPersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/useSessionPersistence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useSessionPersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useSessionPersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDownloadDestinationPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *downloadDestinationPath</Declaration>
+			
+			
+			<Anchor>//api/name/downloadDestinationPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/downloadDestinationPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *downloadDestinationPath</Declaration>
+			
+			
+			<Anchor>//api/name/downloadDestinationPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTemporaryFileDownloadPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *temporaryFileDownloadPath</Declaration>
+			
+			
+			<Anchor>//api/name/temporaryFileDownloadPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/temporaryFileDownloadPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *temporaryFileDownloadPath</Declaration>
+			
+			
+			<Anchor>//api/name/temporaryFileDownloadPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTemporaryUncompressedDataDownloadPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *temporaryUncompressedDataDownloadPath</Declaration>
+			
+			
+			<Anchor>//api/name/temporaryUncompressedDataDownloadPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/temporaryUncompressedDataDownloadPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *temporaryUncompressedDataDownloadPath</Declaration>
+			
+			
+			<Anchor>//api/name/temporaryUncompressedDataDownloadPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidStartSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didStartSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didStartSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didStartSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didStartSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didStartSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidReceiveResponseHeadersSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didReceiveResponseHeadersSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveResponseHeadersSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didReceiveResponseHeadersSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didReceiveResponseHeadersSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveResponseHeadersSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setWillRedirectSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL willRedirectSelector</Declaration>
+			
+			
+			<Anchor>//api/name/willRedirectSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/willRedirectSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL willRedirectSelector</Declaration>
+			
+			
+			<Anchor>//api/name/willRedirectSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidFinishSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didFinishSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didFinishSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didFinishSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didFinishSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didFinishSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidFailSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didFailSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didFailSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didFailSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didFailSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didFailSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidReceiveDataSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didReceiveDataSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveDataSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didReceiveDataSelector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SEL didReceiveDataSelector</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveDataSelector</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAuthenticationRealm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *authenticationRealm</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationRealm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/authenticationRealm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *authenticationRealm</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationRealm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyAuthenticationRealm:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *proxyAuthenticationRealm</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationRealm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyAuthenticationRealm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *proxyAuthenticationRealm</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationRealm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setComplete:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL complete</Declaration>
+			
+			
+			<Anchor>//api/name/complete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/complete</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL complete</Declaration>
+			
+			
+			<Anchor>//api/name/complete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setResponseHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *responseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/responseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/responseHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *responseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/responseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/requestHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestCookies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableArray *requestCookies</Declaration>
+			
+			
+			<Anchor>//api/name/requestCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/requestCookies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableArray *requestCookies</Declaration>
+			
+			
+			<Anchor>//api/name/requestCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setResponseCookies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSArray *responseCookies</Declaration>
+			
+			
+			<Anchor>//api/name/responseCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/responseCookies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSArray *responseCookies</Declaration>
+			
+			
+			<Anchor>//api/name/responseCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUseCookiePersistence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useCookiePersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useCookiePersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/useCookiePersistence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useCookiePersistence</Declaration>
+			
+			
+			<Anchor>//api/name/useCookiePersistence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestCredentials:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *requestCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/requestCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/requestCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *requestCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/requestCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyCredentials:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *proxyCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/proxyCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *proxyCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/proxyCredentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setResponseStatusCode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int responseStatusCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseStatusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/responseStatusCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int responseStatusCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseStatusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setResponseStatusMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *responseStatusMessage</Declaration>
+			
+			
+			<Anchor>//api/name/responseStatusMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/responseStatusMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSString *responseStatusMessage</Declaration>
+			
+			
+			<Anchor>//api/name/responseStatusMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRawResponseData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableData *rawResponseData</Declaration>
+			
+			
+			<Anchor>//api/name/rawResponseData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/rawResponseData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableData *rawResponseData</Declaration>
+			
+			
+			<Anchor>//api/name/rawResponseData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTimeOutSeconds:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval timeOutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/timeOutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/timeOutSeconds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval timeOutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/timeOutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSString *requestMethod</Declaration>
+			
+			
+			<Anchor>//api/name/requestMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/requestMethod</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSString *requestMethod</Declaration>
+			
+			
+			<Anchor>//api/name/requestMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPostBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableData *postBody</Declaration>
+			
+			
+			<Anchor>//api/name/postBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/postBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSMutableData *postBody</Declaration>
+			
+			
+			<Anchor>//api/name/postBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setContentLength:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/contentLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPostLength:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long postLength</Declaration>
+			
+			
+			<Anchor>//api/name/postLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/postLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long postLength</Declaration>
+			
+			
+			<Anchor>//api/name/postLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldResetDownloadProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldResetDownloadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/shouldResetDownloadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldResetDownloadProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldResetDownloadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/shouldResetDownloadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldResetUploadProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldResetUploadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/shouldResetUploadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldResetUploadProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldResetUploadProgress</Declaration>
+			
+			
+			<Anchor>//api/name/shouldResetUploadProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setMainRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASIHTTPRequest *mainRequest</Declaration>
+			
+			
+			<Anchor>//api/name/mainRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/mainRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASIHTTPRequest *mainRequest</Declaration>
+			
+			
+			<Anchor>//api/name/mainRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShowAccurateProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL showAccurateProgress</Declaration>
+			
+			
+			<Anchor>//api/name/showAccurateProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/showAccurateProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL showAccurateProgress</Declaration>
+			
+			
+			<Anchor>//api/name/showAccurateProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTotalBytesRead:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long totalBytesRead</Declaration>
+			
+			
+			<Anchor>//api/name/totalBytesRead</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/totalBytesRead</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long totalBytesRead</Declaration>
+			
+			
+			<Anchor>//api/name/totalBytesRead</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTotalBytesSent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long totalBytesSent</Declaration>
+			
+			
+			<Anchor>//api/name/totalBytesSent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/totalBytesSent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) unsigned long long totalBytesSent</Declaration>
+			
+			
+			<Anchor>//api/name/totalBytesSent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDefaultResponseEncoding:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSStringEncoding defaultResponseEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/defaultResponseEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/defaultResponseEncoding</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSStringEncoding defaultResponseEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/defaultResponseEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setResponseEncoding:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSStringEncoding responseEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/responseEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/responseEncoding</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSStringEncoding responseEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/responseEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAllowCompressedResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL allowCompressedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/allowCompressedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/allowCompressedResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL allowCompressedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/allowCompressedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAllowResumeForFileDownloads:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL allowResumeForFileDownloads</Declaration>
+			
+			
+			<Anchor>//api/name/allowResumeForFileDownloads</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/allowResumeForFileDownloads</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL allowResumeForFileDownloads</Declaration>
+			
+			
+			<Anchor>//api/name/allowResumeForFileDownloads</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUserInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/userInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSInteger tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/tag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSInteger tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPostBodyFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *postBodyFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/postBodyFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/postBodyFilePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *postBodyFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/postBodyFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldStreamPostDataFromDisk:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldStreamPostDataFromDisk</Declaration>
+			
+			
+			<Anchor>//api/name/shouldStreamPostDataFromDisk</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldStreamPostDataFromDisk</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldStreamPostDataFromDisk</Declaration>
+			
+			
+			<Anchor>//api/name/shouldStreamPostDataFromDisk</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidCreateTemporaryPostDataFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL didCreateTemporaryPostDataFile</Declaration>
+			
+			
+			<Anchor>//api/name/didCreateTemporaryPostDataFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didCreateTemporaryPostDataFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL didCreateTemporaryPostDataFile</Declaration>
+			
+			
+			<Anchor>//api/name/didCreateTemporaryPostDataFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setUseHTTPVersionOne:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useHTTPVersionOne</Declaration>
+			
+			
+			<Anchor>//api/name/useHTTPVersionOne</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/useHTTPVersionOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL useHTTPVersionOne</Declaration>
+			
+			
+			<Anchor>//api/name/useHTTPVersionOne</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPartialDownloadSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) unsigned long long partialDownloadSize</Declaration>
+			
+			
+			<Anchor>//api/name/partialDownloadSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/partialDownloadSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) unsigned long long partialDownloadSize</Declaration>
+			
+			
+			<Anchor>//api/name/partialDownloadSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldRedirect:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldRedirect</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRedirect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldRedirect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldRedirect</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRedirect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setValidatesSecureCertificate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL validatesSecureCertificate</Declaration>
+			
+			
+			<Anchor>//api/name/validatesSecureCertificate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/validatesSecureCertificate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL validatesSecureCertificate</Declaration>
+			
+			
+			<Anchor>//api/name/validatesSecureCertificate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldCompressRequestBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldCompressRequestBody</Declaration>
+			
+			
+			<Anchor>//api/name/shouldCompressRequestBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldCompressRequestBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldCompressRequestBody</Declaration>
+			
+			
+			<Anchor>//api/name/shouldCompressRequestBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPACurl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *PACurl</Declaration>
+			
+			
+			<Anchor>//api/name/PACurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/PACurl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *PACurl</Declaration>
+			
+			
+			<Anchor>//api/name/PACurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAuthenticationScheme:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *authenticationScheme</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationScheme</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/authenticationScheme</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *authenticationScheme</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationScheme</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyAuthenticationScheme:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyAuthenticationScheme</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationScheme</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyAuthenticationScheme</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *proxyAuthenticationScheme</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationScheme</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldPresentAuthenticationDialog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldPresentAuthenticationDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldPresentProxyAuthenticationDialog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentProxyAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentProxyAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldPresentProxyAuthenticationDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentProxyAuthenticationDialog</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentProxyAuthenticationDialog</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAuthenticationNeeded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) UA_ASIAuthenticationState authenticationNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationNeeded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/authenticationNeeded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) UA_ASIAuthenticationState authenticationNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationNeeded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldPresentCredentialsBeforeChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentCredentialsBeforeChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentCredentialsBeforeChallenge</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldPresentCredentialsBeforeChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldPresentCredentialsBeforeChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPresentCredentialsBeforeChallenge</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setAuthenticationRetryCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int authenticationRetryCount</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationRetryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/authenticationRetryCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int authenticationRetryCount</Declaration>
+			
+			
+			<Anchor>//api/name/authenticationRetryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setProxyAuthenticationRetryCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int proxyAuthenticationRetryCount</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationRetryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/proxyAuthenticationRetryCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int proxyAuthenticationRetryCount</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAuthenticationRetryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setHaveBuiltRequestHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL haveBuiltRequestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/haveBuiltRequestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/haveBuiltRequestHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL haveBuiltRequestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/haveBuiltRequestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setHaveBuiltPostBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL haveBuiltPostBody</Declaration>
+			
+			
+			<Anchor>//api/name/haveBuiltPostBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/haveBuiltPostBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL haveBuiltPostBody</Declaration>
+			
+			
+			<Anchor>//api/name/haveBuiltPostBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setInProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL inProgress</Declaration>
+			
+			
+			<Anchor>//api/name/inProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/inProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL inProgress</Declaration>
+			
+			
+			<Anchor>//api/name/inProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setNumberOfTimesToRetryOnTimeout:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int numberOfTimesToRetryOnTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfTimesToRetryOnTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/numberOfTimesToRetryOnTimeout</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) int numberOfTimesToRetryOnTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfTimesToRetryOnTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRetryCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/retryCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) int retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldAttemptPersistentConnection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldAttemptPersistentConnection</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAttemptPersistentConnection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldAttemptPersistentConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldAttemptPersistentConnection</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAttemptPersistentConnection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setPersistentConnectionTimeoutSeconds:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval persistentConnectionTimeoutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/persistentConnectionTimeoutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/persistentConnectionTimeoutSeconds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval persistentConnectionTimeoutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/persistentConnectionTimeoutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldUseRFC2616RedirectBehaviour:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldUseRFC2616RedirectBehaviour</Declaration>
+			
+			
+			<Anchor>//api/name/shouldUseRFC2616RedirectBehaviour</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldUseRFC2616RedirectBehaviour</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldUseRFC2616RedirectBehaviour</Declaration>
+			
+			
+			<Anchor>//api/name/shouldUseRFC2616RedirectBehaviour</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setConnectionCanBeReused:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL connectionCanBeReused</Declaration>
+			
+			
+			<Anchor>//api/name/connectionCanBeReused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/connectionCanBeReused</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL connectionCanBeReused</Declaration>
+			
+			
+			<Anchor>//api/name/connectionCanBeReused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setRequestID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSNumber *requestID</Declaration>
+			
+			
+			<Anchor>//api/name/requestID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/requestID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, readonly) NSNumber *requestID</Declaration>
+			
+			
+			<Anchor>//api/name/requestID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDownloadCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;UA_ASICacheDelegate&gt; downloadCache</Declaration>
+			
+			
+			<Anchor>//api/name/downloadCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/downloadCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;UA_ASICacheDelegate&gt; downloadCache</Declaration>
+			
+			
+			<Anchor>//api/name/downloadCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setCachePolicy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASICachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/cachePolicy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASICachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setCacheStoragePolicy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASICacheStoragePolicy cacheStoragePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cacheStoragePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/cacheStoragePolicy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASICacheStoragePolicy cacheStoragePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cacheStoragePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDidUseCachedResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL didUseCachedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/didUseCachedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/didUseCachedResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, readonly) BOOL didUseCachedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/didUseCachedResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setSecondsToCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval secondsToCache</Declaration>
+			
+			
+			<Anchor>//api/name/secondsToCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/secondsToCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval secondsToCache</Declaration>
+			
+			
+			<Anchor>//api/name/secondsToCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setClientCertificates:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSArray *clientCertificates</Declaration>
+			
+			
+			<Anchor>//api/name/clientCertificates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/clientCertificates</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSArray *clientCertificates</Declaration>
+			
+			
+			<Anchor>//api/name/clientCertificates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldContinueWhenAppEntersBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldContinueWhenAppEntersBackground</Declaration>
+			
+			
+			<Anchor>//api/name/shouldContinueWhenAppEntersBackground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldContinueWhenAppEntersBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldContinueWhenAppEntersBackground</Declaration>
+			
+			
+			<Anchor>//api/name/shouldContinueWhenAppEntersBackground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setDataDecompressor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) UA_ASIDataDecompressor *dataDecompressor</Declaration>
+			
+			
+			<Anchor>//api/name/dataDecompressor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/dataDecompressor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) UA_ASIDataDecompressor *dataDecompressor</Declaration>
+			
+			
+			<Anchor>//api/name/dataDecompressor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIHTTPRequest/setShouldWaitToInflateCompressedResponses:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldWaitToInflateCompressedResponses</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToInflateCompressedResponses</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIHTTPRequest/shouldWaitToInflateCompressedResponses</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIHTTPRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL shouldWaitToInflateCompressedResponses</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToInflateCompressedResponses</Anchor>
 		</Token>
 		
 	</File>

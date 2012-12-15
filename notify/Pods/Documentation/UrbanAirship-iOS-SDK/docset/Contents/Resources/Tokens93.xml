@@ -1,15 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStoreFrontAlertHandler.html">
+	<File path="Classes/UASubscription.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontAlertHandler</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscription</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontAlertHandler.h</DeclaredIn>
+			<DeclaredIn>UASubscription.h</DeclaredIn>
 			
 			<NodeRef refid="93"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setKey:</TokenIdentifier>
+			<Abstract type="html">The subscription key</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/key</TokenIdentifier>
+			<Abstract type="html">The subscription key</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setName:</TokenIdentifier>
+			<Abstract type="html">The subscription name</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/name</TokenIdentifier>
+			<Abstract type="html">The subscription name</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setSubscribed:</TokenIdentifier>
+			<Abstract type="html">YES if the user subscribed, otherwise NO</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL subscribed</Declaration>
+			
+			
+			<Anchor>//api/name/subscribed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/subscribed</TokenIdentifier>
+			<Abstract type="html">YES if the user subscribed, otherwise NO</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL subscribed</Declaration>
+			
+			
+			<Anchor>//api/name/subscribed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setProducts:</TokenIdentifier>
+			<Abstract type="html">Array of all products available for this subscription, including
+promotional/default/extension subscriptions not for sale.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *products</Declaration>
+			
+			
+			<Anchor>//api/name/products</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/products</TokenIdentifier>
+			<Abstract type="html">Array of all products available for this subscription, including
+promotional/default/extension subscriptions not for sale.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *products</Declaration>
+			
+			
+			<Anchor>//api/name/products</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setPurchasedProducts:</TokenIdentifier>
+			<Abstract type="html">Array of all products purchased by this user.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *purchasedProducts</Declaration>
+			
+			
+			<Anchor>//api/name/purchasedProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/purchasedProducts</TokenIdentifier>
+			<Abstract type="html">Array of all products purchased by this user.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *purchasedProducts</Declaration>
+			
+			
+			<Anchor>//api/name/purchasedProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setAvailableProducts:</TokenIdentifier>
+			<Abstract type="html">Array of all products available for purchase on this subscription.
+This array only includes products currently for sale in the App Store
+and will not include &quot;free&quot;/default/extension products.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *availableProducts</Declaration>
+			
+			
+			<Anchor>//api/name/availableProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/availableProducts</TokenIdentifier>
+			<Abstract type="html">Array of all products available for purchase on this subscription.
+This array only includes products currently for sale in the App Store
+and will not include &quot;free&quot;/default/extension products.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *availableProducts</Declaration>
+			
+			
+			<Anchor>//api/name/availableProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setAvailableContents:</TokenIdentifier>
+			<Abstract type="html">Array of all the content available to this user via their purchased products.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *availableContents</Declaration>
+			
+			
+			<Anchor>//api/name/availableContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/availableContents</TokenIdentifier>
+			<Abstract type="html">Array of all the content available to this user via their purchased products.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *availableContents</Declaration>
+			
+			
+			<Anchor>//api/name/availableContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setDownloadedContents:</TokenIdentifier>
+			<Abstract type="html">Array of all of the content that the user has downloaded.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *downloadedContents</Declaration>
+			
+			
+			<Anchor>//api/name/downloadedContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/downloadedContents</TokenIdentifier>
+			<Abstract type="html">Array of all of the content that the user has downloaded.</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *downloadedContents</Declaration>
+			
+			
+			<Anchor>//api/name/downloadedContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setUndownloadedContents:</TokenIdentifier>
+			<Abstract type="html">Array of all the content that the user has not yet downloaded</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *undownloadedContents</Declaration>
+			
+			
+			<Anchor>//api/name/undownloadedContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscription/undownloadedContents</TokenIdentifier>
+			<Abstract type="html">Array of all the content that the user has not yet downloaded</Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *undownloadedContents</Declaration>
+			
+			
+			<Anchor>//api/name/undownloadedContents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/initWithKey:name:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithKey:(NSString *)aKey name:(NSString *)aName</Declaration>
+			
+			
+			<Anchor>//api/name/initWithKey:name:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setProductsWithArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>- (void)setProductsWithArray:(NSArray *)productArray</Declaration>
+			
+			
+			<Anchor>//api/name/setProductsWithArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setPurchasedProductsWithArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPurchasedProductsWithArray:(NSArray *)infos</Declaration>
+			
+			
+			<Anchor>//api/name/setPurchasedProductsWithArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/setContentWithArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>- (void)setContentWithArray:(NSArray *)content</Declaration>
+			
+			
+			<Anchor>//api/name/setContentWithArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscription/filterDownloadedContents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscription.h</DeclaredIn>			
+			
+			<Declaration>- (void)filterDownloadedContents</Declaration>
+			
+			
+			<Anchor>//api/name/filterDownloadedContents</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

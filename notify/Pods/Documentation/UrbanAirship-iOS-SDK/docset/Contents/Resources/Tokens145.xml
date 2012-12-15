@@ -1,102 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UA_ZipArchive.html">
+	<File path="Protocols/GHTestGroup.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UA_ZipArchive</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/GHTestGroup</TokenIdentifier>
+			<Abstract type="html">@brief Interface for a group of tests.</Abstract>
+			<DeclaredIn>GHTestGroup.h</DeclaredIn>
 			
 			<NodeRef refid="145"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/setDelegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestGroup/name</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>GHTestGroup.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			<Declaration>- (NSString *)name</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UA_ZipArchive/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestGroup/parent</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>GHTestGroup.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			<Declaration>- (id&lt;GHTestGroup&gt;)parent</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/parent</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/CreateZipFile2:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTestGroup/children</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>GHTestGroup.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)CreateZipFile2:(NSString *)zipFile</Declaration>
-			
-			
-			<Anchor>//api/name/CreateZipFile2:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/addFileToZip:newname:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)addFileToZip:(NSString *)file newname:(NSString *)newname</Declaration>
+			<Declaration>- (NSArray *)children</Declaration>
 			
 			
-			<Anchor>//api/name/addFileToZip:newname:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/CloseZipFile2</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)CloseZipFile2</Declaration>
-			
-			
-			<Anchor>//api/name/CloseZipFile2</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipOpenFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipOpenFile:(NSString *)zipFile</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipOpenFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipFileTo:overWrite:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipFileTo:(NSString *)path overWrite:(BOOL)overwrite</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipFileTo:overWrite:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ZipArchive/UnzipCloseFile</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipCloseFile</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipCloseFile</Anchor>
+			<Anchor>//api/name/children</Anchor>
 		</Token>
 		
 	</File>

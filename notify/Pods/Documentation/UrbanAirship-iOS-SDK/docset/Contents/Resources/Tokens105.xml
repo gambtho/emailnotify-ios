@@ -1,179 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASubscriptionContentCell.html">
+	<File path="Classes/UASubscriptionProductCellView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentCell</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionProductCellView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>
 			
 			<NodeRef refid="105"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setTitle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setTitle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
 			
 			
 			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/title</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/title</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
 			
 			
 			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContentDescription:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setDescription:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
 			
-			<Anchor>//api/name/contentDescription</Anchor>
+			<Anchor>//api/name/description</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/contentDescription</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/description</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
 			
-			<Anchor>//api/name/contentDescription</Anchor>
+			<Anchor>//api/name/description</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setIcon:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setPrice:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
 			
 			
-			<Anchor>//api/name/icon</Anchor>
+			<Anchor>//api/name/price</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/icon</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/price</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
 			
 			
-			<Anchor>//api/name/icon</Anchor>
+			<Anchor>//api/name/price</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setRestoreButton:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setPriceBorderColor:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
 			
 			
-			<Anchor>//api/name/restoreButton</Anchor>
+			<Anchor>//api/name/priceBorderColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/restoreButton</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/priceBorderColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
 			
 			
-			<Anchor>//api/name/restoreButton</Anchor>
+			<Anchor>//api/name/priceBorderColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setProgressBar:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setProduct:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
+			<Declaration>@property (nonatomic, assign) UASubscriptionProduct *product</Declaration>
 			
 			
-			<Anchor>//api/name/progressBar</Anchor>
+			<Anchor>//api/name/product</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/progressBar</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/product</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
+			<Declaration>@property (nonatomic, assign) UASubscriptionProduct *product</Declaration>
 			
 			
-			<Anchor>//api/name/progressBar</Anchor>
+			<Anchor>//api/name/product</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/refreshCellView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
+			<Declaration>- (void)refreshCellView</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/refreshCellView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/content</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setHighlighted:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
+			<Declaration>- (void)setHighlighted:(BOOL)h</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/setHighlighted:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/refreshCellByContent</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setSelected:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
 			
-			<Declaration>- (void)refreshCellByContent</Declaration>
-			
-			
-			<Anchor>//api/name/refreshCellByContent</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setButtonState:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)setButtonState:(BOOL)contentIsDownloaded</Declaration>
+			<Declaration>- (void)setSelected:(BOOL)s</Declaration>
 			
 			
-			<Anchor>//api/name/setButtonState:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/actionButtonClicked:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)actionButtonClicked:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/actionButtonClicked:</Anchor>
+			<Anchor>//api/name/setSelected:</Anchor>
 		</Token>
 		
 	</File>

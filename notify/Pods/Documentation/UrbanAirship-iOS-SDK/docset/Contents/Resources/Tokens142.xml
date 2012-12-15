@@ -1,58 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UA_SBJsonBase.html">
+	<File path="Protocols/GHTest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UA_SBJsonBase</TokenIdentifier>
-			<Abstract type="html">@brief common base class for parsing &amp;amp; writing</Abstract>
-			<DeclaredIn>UA_SBJsonBase.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/GHTest</TokenIdentifier>
+			<Abstract type="html">The base interface for a runnable test.
+A runnable with a unique identifier, display name, stats, timer, delegate, log and error handling.</Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>
 			
 			<NodeRef refid="142"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_SBJsonBase/setErrorTrace:</TokenIdentifier>
-			<Abstract type="html">@brief Return an error trace, or nil if there was no errors.</Abstract>
-			<DeclaredIn>UA_SBJsonBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/run:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, readonly) NSArray *errorTrace</Declaration>
+			<Declaration>- (void)run:(GHTestOptions)options</Declaration>
 			
 			
-			<Anchor>//api/name/errorTrace</Anchor>
+			<Anchor>//api/name/run:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UA_SBJsonBase/errorTrace</TokenIdentifier>
-			<Abstract type="html">@brief Return an error trace, or nil if there was no errors.</Abstract>
-			<DeclaredIn>UA_SBJsonBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, readonly) NSArray *errorTrace</Declaration>
+			<Declaration>@property (readonly, nonatomic) NSString *identifier</Declaration>
 			
 			
-			<Anchor>//api/name/errorTrace</Anchor>
+			<Anchor>//api/name/identifier</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_SBJsonBase/addErrorWithCode:description:</TokenIdentifier>
-			<Abstract type="html">@internal for use in subclasses to add errors to the stack trace</Abstract>
-			<DeclaredIn>UA_SBJsonBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/identifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
 			
-			<Declaration>- (void)addErrorWithCode:(NSUInteger)code description:(NSString *)str</Declaration>
+			<Declaration>@property (readonly, nonatomic) NSString *identifier</Declaration>
 			
 			
-			<Anchor>//api/name/addErrorWithCode:description:</Anchor>
+			<Anchor>//api/name/identifier</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_SBJsonBase/clearErrorTrace</TokenIdentifier>
-			<Abstract type="html">@internal for use in subclasess to clear the error before a new parsing attempt</Abstract>
-			<DeclaredIn>UA_SBJsonBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
 			
-			<Declaration>- (void)clearErrorTrace</Declaration>
+			<Declaration>@property (readonly, nonatomic) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/clearErrorTrace</Anchor>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval interval</Declaration>
+			
+			
+			<Anchor>//api/name/interval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/interval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval interval</Declaration>
+			
+			
+			<Anchor>//api/name/interval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) GHTestStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/status</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) GHTestStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setStats:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) GHTestStats stats</Declaration>
+			
+			
+			<Anchor>//api/name/stats</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/stats</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) GHTestStats stats</Declaration>
+			
+			
+			<Anchor>//api/name/stats</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setException:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSException *exception</Declaration>
+			
+			
+			<Anchor>//api/name/exception</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/exception</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSException *exception</Declaration>
+			
+			
+			<Anchor>//api/name/exception</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setDisabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic, getter=isDisabled) BOOL disabled</Declaration>
+			
+			
+			<Anchor>//api/name/disabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/disabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic, getter=isDisabled) BOOL disabled</Declaration>
+			
+			
+			<Anchor>//api/name/disabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setHidden:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic, getter=isHidden) BOOL hidden</Declaration>
+			
+			
+			<Anchor>//api/name/hidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/hidden</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic, getter=isHidden) BOOL hidden</Declaration>
+			
+			
+			<Anchor>//api/name/hidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;GHTestDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GHTest/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;GHTestDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/log</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)log</Declaration>
+			
+			
+			<Anchor>//api/name/log</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GHTest/disabledCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GHTest.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)disabledCount</Declaration>
+			
+			
+			<Anchor>//api/name/disabledCount</Anchor>
 		</Token>
 		
 	</File>

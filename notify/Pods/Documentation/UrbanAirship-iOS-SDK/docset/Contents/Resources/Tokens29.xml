@@ -1,124 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAAnalyticsDBManager.html">
+	<File path="Classes/UADownloadManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAAnalyticsDBManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UADownloadManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/resetDB</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/setDelegate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)resetDB</Declaration>
+			<Declaration>@property (assign, nonatomic) id&lt;UADownloadManagerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/resetDB</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/addEvent:withSession:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UADownloadManager/delegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)addEvent:(UAEvent *)event withSession:(NSDictionary *)session</Declaration>
+			<Declaration>@property (assign, nonatomic) id&lt;UADownloadManagerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/addEvent:withSession:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/getEvents:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/download:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)getEvents:(int)max</Declaration>
+			<Declaration>- (void)download:(UADownloadContent *)content</Declaration>
 			
 			
-			<Anchor>//api/name/getEvents:</Anchor>
+			<Anchor>//api/name/download:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/getEventByEventId:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/downloadingContentCount</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)getEventByEventId:(NSString *)event_id</Declaration>
+			<Declaration>- (int)downloadingContentCount</Declaration>
 			
 			
-			<Anchor>//api/name/getEventByEventId:</Anchor>
+			<Anchor>//api/name/downloadingContentCount</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/deleteEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/allDownloadingContents</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)deleteEvent:(NSNumber *)eventId</Declaration>
+			<Declaration>- (NSArray *)allDownloadingContents</Declaration>
 			
 			
-			<Anchor>//api/name/deleteEvent:</Anchor>
+			<Anchor>//api/name/allDownloadingContents</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/deleteEvents:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/cancel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)deleteEvents:(NSArray *)events</Declaration>
+			<Declaration>- (void)cancel:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/deleteEvents:</Anchor>
+			<Anchor>//api/name/cancel:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/deleteBySessionId:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/updateProgressDelegate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)deleteBySessionId:(NSString *)sessionId</Declaration>
+			<Declaration>- (void)updateProgressDelegate:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/deleteBySessionId:</Anchor>
+			<Anchor>//api/name/updateProgressDelegate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/deleteOldestSession</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/isDownloading:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)deleteOldestSession</Declaration>
+			<Declaration>- (BOOL)isDownloading:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/deleteOldestSession</Anchor>
+			<Anchor>//api/name/isDownloading:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/eventCount</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UADownloadManager/endBackground</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (NSInteger)eventCount</Declaration>
-			
-			
-			<Anchor>//api/name/eventCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAAnalyticsDBManager/sizeInBytes</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAAnalyticsDBManager.h</DeclaredIn>			
-			
-			<Declaration>- (NSInteger)sizeInBytes</Declaration>
+			<Declaration>- (void)endBackground</Declaration>
 			
 			
-			<Anchor>//api/name/sizeInBytes</Anchor>
+			<Anchor>//api/name/endBackground</Anchor>
 		</Token>
 		
 	</File>

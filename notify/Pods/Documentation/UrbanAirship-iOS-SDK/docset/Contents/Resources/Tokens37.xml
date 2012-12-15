@@ -1,278 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UADownloadContent.html">
+	<File path="Classes/UAEventCustom.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UADownloadContent</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAEventCustom</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>
+			<DeclaredIn>UAEvent.h</DeclaredIn>
 			
 			<NodeRef refid="37"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setProgressDelegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAEventCustom/initWithType:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) id progressDelegate</Declaration>
+			<Declaration>- (id)initWithType:(NSString *)aType</Declaration>
 			
 			
-			<Anchor>//api/name/progressDelegate</Anchor>
+			<Anchor>//api/name/initWithType:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/progressDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAEventCustom/eventWithType:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) id progressDelegate</Declaration>
+			<Declaration>+ (id)eventWithType:(NSString *)aType</Declaration>
 			
 			
-			<Anchor>//api/name/progressDelegate</Anchor>
+			<Anchor>//api/name/eventWithType:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setUserInfo:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAEventCustom/initWithType:andContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) id userInfo</Declaration>
+			<Declaration>- (id)initWithType:(NSString *)aType andContext:(NSDictionary *)context</Declaration>
 			
 			
-			<Anchor>//api/name/userInfo</Anchor>
+			<Anchor>//api/name/initWithType:andContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/userInfo</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAEventCustom/eventWithType:andContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
+			<DeclaredIn>UAEvent.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) id userInfo</Declaration>
-			
-			
-			<Anchor>//api/name/userInfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setClearBeforeDownload:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (assign, nonatomic) BOOL clearBeforeDownload</Declaration>
+			<Declaration>+ (id)eventWithType:(NSString *)aType andContext:(NSDictionary *)context</Declaration>
 			
 			
-			<Anchor>//api/name/clearBeforeDownload</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/clearBeforeDownload</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (assign, nonatomic) BOOL clearBeforeDownload</Declaration>
-			
-			
-			<Anchor>//api/name/clearBeforeDownload</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setUsername:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *username</Declaration>
-			
-			
-			<Anchor>//api/name/username</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/username</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *username</Declaration>
-			
-			
-			<Anchor>//api/name/username</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setPassword:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *password</Declaration>
-			
-			
-			<Anchor>//api/name/password</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/password</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *password</Declaration>
-			
-			
-			<Anchor>//api/name/password</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setDownloadRequestURL:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSURL *downloadRequestURL</Declaration>
-			
-			
-			<Anchor>//api/name/downloadRequestURL</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/downloadRequestURL</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSURL *downloadRequestURL</Declaration>
-			
-			
-			<Anchor>//api/name/downloadRequestURL</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setDownloadFileName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadFileName</Declaration>
-			
-			
-			<Anchor>//api/name/downloadFileName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/downloadFileName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadFileName</Declaration>
-			
-			
-			<Anchor>//api/name/downloadFileName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setRequestMethod:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *requestMethod</Declaration>
-			
-			
-			<Anchor>//api/name/requestMethod</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/requestMethod</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *requestMethod</Declaration>
-			
-			
-			<Anchor>//api/name/requestMethod</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setResponseString:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *responseString</Declaration>
-			
-			
-			<Anchor>//api/name/responseString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/responseString</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *responseString</Declaration>
-			
-			
-			<Anchor>//api/name/responseString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setDownloadPath:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadPath</Declaration>
-			
-			
-			<Anchor>//api/name/downloadPath</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/downloadPath</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadPath</Declaration>
-			
-			
-			<Anchor>//api/name/downloadPath</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setDownloadTmpPath:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadTmpPath</Declaration>
-			
-			
-			<Anchor>//api/name/downloadTmpPath</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/downloadTmpPath</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *downloadTmpPath</Declaration>
-			
-			
-			<Anchor>//api/name/downloadTmpPath</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UADownloadContent/setPostData:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSDictionary *postData</Declaration>
-			
-			
-			<Anchor>//api/name/postData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UADownloadContent/postData</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadContent.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSDictionary *postData</Declaration>
-			
-			
-			<Anchor>//api/name/postData</Anchor>
+			<Anchor>//api/name/eventWithType:andContext:</Anchor>
 		</Token>
 		
 	</File>

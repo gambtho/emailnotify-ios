@@ -1,113 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSNumber+GTM64BitAdditions.html">
+	<File path="Protocols/UAInboxUIProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSNumber(GTM64BitAdditions)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UAInboxUIProtocol</TokenIdentifier>
+			<Abstract type="html">All UIs should implement this protocol to interact with the UAInbox object.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>
 			
 			<NodeRef refid="152"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_numberWithCGFloat:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAInboxUIProtocol/quitInbox</TokenIdentifier>
+			<Abstract type="html">Hide the inbox UI and perform any resource cleanup.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>			
 			
-			<Declaration>+ (NSNumber *)gtm_numberWithCGFloat:(CGFloat)value</Declaration>
+			<Declaration>+ (void)quitInbox</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_numberWithCGFloat:</Anchor>
+			<Anchor>//api/name/quitInbox</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_numberWithInteger:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAInboxUIProtocol/loadLaunchMessage</TokenIdentifier>
+			<Abstract type="html">Open the Rich Push Inbox directly to the message associated with
+the push notification that launched or foregrounded the application.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>			
 			
-			<Declaration>+ (NSNumber *)gtm_numberWithInteger:(NSInteger)value</Declaration>
+			<Declaration>+ (void)loadLaunchMessage</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_numberWithInteger:</Anchor>
+			<Anchor>//api/name/loadLaunchMessage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_numberWithUnsignedInteger:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAInboxUIProtocol/displayInbox:animated:</TokenIdentifier>
+			<Abstract type="html">Display the inbox UI.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>			
 			
-			<Declaration>+ (NSNumber *)gtm_numberWithUnsignedInteger:(NSUInteger)value</Declaration>
+			<Declaration>+ (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The parent view controller</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to animate the transition</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/gtm_numberWithUnsignedInteger:</Anchor>
+			<Anchor>//api/name/displayInbox:animated:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_initWithCGFloat:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAInboxUIProtocol/displayMessage:message:</TokenIdentifier>
+			<Abstract type="html">Display the inbox UI and open a specific message.</Abstract>
+			<DeclaredIn>UAInbox.h</DeclaredIn>			
 			
-			<Declaration>- (id)gtm_initWithCGFloat:(CGFloat)value</Declaration>
+			<Declaration>+ (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The parent view controller</Abstract>
+				</Parameter><Parameter>
+					<Name>messageID</Name>
+					<Abstract type="html">The ID for the message to display</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/gtm_initWithCGFloat:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_initWithInteger:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
-			
-			<Declaration>- (id)gtm_initWithInteger:(NSInteger)value</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_initWithInteger:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_initWithUnsignedInteger:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
-			
-			<Declaration>- (id)gtm_initWithUnsignedInteger:(NSUInteger)value</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_initWithUnsignedInteger:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_cgFloatValue</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
-			
-			<Declaration>- (CGFloat)gtm_cgFloatValue</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_cgFloatValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_integerValue</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
-			
-			<Declaration>- (NSInteger)gtm_integerValue</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_integerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(GTM64BitAdditions)/gtm_unsignedIntegerValue</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSNumber+64Bit.h</DeclaredIn>			
-			
-			<Declaration>- (NSUInteger)gtm_unsignedIntegerValue</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_unsignedIntegerValue</Anchor>
+			<Anchor>//api/name/displayMessage:message:</Anchor>
 		</Token>
 		
 	</File>

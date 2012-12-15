@@ -1,53 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStandardLocationProvider.html">
+	<File path="Classes/UAStoreFrontiPadViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStandardLocationProvider</TokenIdentifier>
-			<Abstract type="html">UAStandardLocationProvider</Abstract>
-			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontiPadViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAStoreFrontiPadViewController.h</DeclaredIn>
 			
 			<NodeRef refid="91"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStandardLocationProvider/startReportingLocation</TokenIdentifier>
-			<Abstract type="html">Starts the standard location service</Abstract>
-			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
-			
-			<Declaration>- (void)startReportingLocation</Declaration>
-			
-			
-			<Anchor>//api/name/startReportingLocation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStandardLocationProvider/stopReportingLocation</TokenIdentifier>
-			<Abstract type="html">Stops the standard location service</Abstract>
-			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopReportingLocation</Declaration>
-			
-			
-			<Anchor>//api/name/stopReportingLocation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAStandardLocationProvider/providerWithDelegate:</TokenIdentifier>
-			<Abstract type="html">Returns a location provider with the provided object assigned as the delegate</Abstract>
-			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
-			
-			<Declaration>+ (UAStandardLocationProvider *)providerWithDelegate:(id&lt;UALocationProviderDelegate&gt;)serviceDelegateOrNil</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>serviceDelegateOrNil</Name>
-					<Abstract type="html">Delgate object or nil.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Standard location provider.</Abstract></ReturnValue>
-			<Anchor>//api/name/providerWithDelegate:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

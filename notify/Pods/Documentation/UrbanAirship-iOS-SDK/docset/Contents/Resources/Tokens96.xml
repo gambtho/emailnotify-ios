@@ -1,258 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStoreFrontDownloadManager.html">
+	<File path="Classes/UASubscriptionContentCell.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontDownloadManager</TokenIdentifier>
-			<Abstract type="html">This class handles IAP product downloads and decompression.</Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionContentCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>
 			
 			<NodeRef refid="96"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setDownloadDirectory:</TokenIdentifier>
-			<Abstract type="html">The download directory.  If not set by the user, this will return a default value.</Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *downloadDirectory</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDirectory</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/downloadDirectory</TokenIdentifier>
-			<Abstract type="html">The download directory.  If not set by the user, this will return a default value.</Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *downloadDirectory</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDirectory</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setContentURLCache:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setTitle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UAContentURLCache *contentURLCache</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
 			
 			
-			<Anchor>//api/name/contentURLCache</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/contentURLCache</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/title</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UAContentURLCache *contentURLCache</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *title</Declaration>
 			
 			
-			<Anchor>//api/name/contentURLCache</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setCreateProductIDSubdir:</TokenIdentifier>
-			<Abstract type="html">A BOOL indicating whether to create a product ID subdirectory for downloaded content.
-Defaults to YES.</Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) BOOL createProductIDSubdir</Declaration>
-			
-			
-			<Anchor>//api/name/createProductIDSubdir</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/createProductIDSubdir</TokenIdentifier>
-			<Abstract type="html">A BOOL indicating whether to create a product ID subdirectory for downloaded content.
-Defaults to YES.</Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) BOOL createProductIDSubdir</Declaration>
-			
-			
-			<Anchor>//api/name/createProductIDSubdir</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setPendingProducts:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContentDescription:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableDictionary *pendingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
 			
 			
-			<Anchor>//api/name/pendingProducts</Anchor>
+			<Anchor>//api/name/contentDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/pendingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/contentDescription</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableDictionary *pendingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *contentDescription</Declaration>
 			
 			
-			<Anchor>//api/name/pendingProducts</Anchor>
+			<Anchor>//api/name/contentDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setDecompressingProducts:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setIcon:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableDictionary *decompressingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
 			
 			
-			<Anchor>//api/name/decompressingProducts</Anchor>
+			<Anchor>//api/name/icon</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/decompressingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/icon</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableDictionary *decompressingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UAAsyncImageView *icon</Declaration>
 			
 			
-			<Anchor>//api/name/decompressingProducts</Anchor>
+			<Anchor>//api/name/icon</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setCurrentlyDecompressingProducts:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setRestoreButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableArray *currentlyDecompressingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
 			
 			
-			<Anchor>//api/name/currentlyDecompressingProducts</Anchor>
+			<Anchor>//api/name/restoreButton</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/currentlyDecompressingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/restoreButton</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSMutableArray *currentlyDecompressingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *, *restoreButton</Declaration>
 			
 			
-			<Anchor>//api/name/currentlyDecompressingProducts</Anchor>
+			<Anchor>//api/name/restoreButton</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/loadPendingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setProgressBar:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadPendingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
 			
 			
-			<Anchor>//api/name/loadPendingProducts</Anchor>
+			<Anchor>//api/name/progressBar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/hasPendingProduct:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/progressBar</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)hasPendingProduct:(UAProduct *)product</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIProgressView *progressBar</Declaration>
 			
 			
-			<Anchor>//api/name/hasPendingProduct:</Anchor>
+			<Anchor>//api/name/progressBar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/addPendingProduct:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setContent:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)addPendingProduct:(UAProduct *)product</Declaration>
+			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
 			
 			
-			<Anchor>//api/name/addPendingProduct:</Anchor>
+			<Anchor>//api/name/content</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/resumePendingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionContentCell/content</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)resumePendingProducts</Declaration>
+			<Declaration>@property (nonatomic, retain) UASubscriptionContent *content</Declaration>
 			
 			
-			<Anchor>//api/name/resumePendingProducts</Anchor>
+			<Anchor>//api/name/content</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/loadDecompressingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/refreshCellByContent</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadDecompressingProducts</Declaration>
+			<Declaration>- (void)refreshCellByContent</Declaration>
 			
 			
-			<Anchor>//api/name/loadDecompressingProducts</Anchor>
+			<Anchor>//api/name/refreshCellByContent</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/hasDecompressingProduct:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/setButtonState:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)hasDecompressingProduct:(UAProduct *)product</Declaration>
+			<Declaration>- (void)setButtonState:(BOOL)contentIsDownloaded</Declaration>
 			
 			
-			<Anchor>//api/name/hasDecompressingProduct:</Anchor>
+			<Anchor>//api/name/setButtonState:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/resumeDecompressingProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionContentCell/actionButtonClicked:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionContentsViewController.h</DeclaredIn>			
 			
-			<Declaration>- (void)resumeDecompressingProducts</Declaration>
-			
-			
-			<Anchor>//api/name/resumeDecompressingProducts</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/downloadPurchasedProduct:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)downloadPurchasedProduct:(UAProduct *)product</Declaration>
+			<Declaration>- (IBAction)actionButtonClicked:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/downloadPurchasedProduct:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/verifyTransactionReceipt:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)verifyTransactionReceipt:(SKPaymentTransaction *)transaction</Declaration>
-			
-			
-			<Anchor>//api/name/verifyTransactionReceipt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/downloadDidFail:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)downloadDidFail:(UADownloadContent *)downloadContent</Declaration>
-			
-			
-			<Anchor>//api/name/downloadDidFail:</Anchor>
+			<Anchor>//api/name/actionButtonClicked:</Anchor>
 		</Token>
 		
 	</File>

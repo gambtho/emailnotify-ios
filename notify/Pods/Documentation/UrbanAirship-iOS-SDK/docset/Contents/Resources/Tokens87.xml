@@ -1,377 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAPushSettingsViewController.html">
+	<File path="Classes/UAStoreFrontDownloadManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAPushSettingsViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontDownloadManager</TokenIdentifier>
+			<Abstract type="html">This class handles IAP product downloads and decompression.</Abstract>
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>
 			
 			<NodeRef refid="87"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setTableView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setDownloadDirectory:</TokenIdentifier>
+			<Abstract type="html">The download directory.  If not set by the user, this will return a default value.</Abstract>
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *downloadDirectory</Declaration>
 			
 			
-			<Anchor>//api/name/tableView</Anchor>
+			<Anchor>//api/name/downloadDirectory</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/tableView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/downloadDirectory</TokenIdentifier>
+			<Abstract type="html">The download directory.  If not set by the user, this will return a default value.</Abstract>
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *downloadDirectory</Declaration>
 			
 			
-			<Anchor>//api/name/tableView</Anchor>
+			<Anchor>//api/name/downloadDirectory</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setDatePicker:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setContentURLCache:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIDatePicker *datePicker</Declaration>
+			<Declaration>@property (nonatomic, retain) UAContentURLCache *contentURLCache</Declaration>
 			
 			
-			<Anchor>//api/name/datePicker</Anchor>
+			<Anchor>//api/name/contentURLCache</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/datePicker</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/contentURLCache</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIDatePicker *datePicker</Declaration>
+			<Declaration>@property (nonatomic, retain) UAContentURLCache *contentURLCache</Declaration>
 			
 			
-			<Anchor>//api/name/datePicker</Anchor>
+			<Anchor>//api/name/contentURLCache</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setPushEnabledCell:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setCreateProductIDSubdir:</TokenIdentifier>
+			<Abstract type="html">A BOOL indicating whether to create a product ID subdirectory for downloaded content.
+Defaults to YES.</Abstract>
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *pushEnabledCell</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL createProductIDSubdir</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledCell</Anchor>
+			<Anchor>//api/name/createProductIDSubdir</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/pushEnabledCell</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/createProductIDSubdir</TokenIdentifier>
+			<Abstract type="html">A BOOL indicating whether to create a product ID subdirectory for downloaded content.
+Defaults to YES.</Abstract>
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *pushEnabledCell</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL createProductIDSubdir</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledCell</Anchor>
+			<Anchor>//api/name/createProductIDSubdir</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setPushEnabledLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setPendingProducts:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *pushEnabledLabel</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *pendingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledLabel</Anchor>
+			<Anchor>//api/name/pendingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/pushEnabledLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/pendingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *pushEnabledLabel</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *pendingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledLabel</Anchor>
+			<Anchor>//api/name/pendingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setPushEnabledSwitch:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setDecompressingProducts:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UISwitch *pushEnabledSwitch</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *decompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledSwitch</Anchor>
+			<Anchor>//api/name/decompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/pushEnabledSwitch</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/decompressingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UISwitch *pushEnabledSwitch</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *decompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/pushEnabledSwitch</Anchor>
+			<Anchor>//api/name/decompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setQuietTimeEnabledCell:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/setCurrentlyDecompressingProducts:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *quietTimeEnabledCell</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *currentlyDecompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeEnabledCell</Anchor>
+			<Anchor>//api/name/currentlyDecompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/quietTimeEnabledCell</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontDownloadManager/currentlyDecompressingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *quietTimeEnabledCell</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *currentlyDecompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeEnabledCell</Anchor>
+			<Anchor>//api/name/currentlyDecompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setQuietTimeLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/loadPendingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *quietTimeLabel</Declaration>
+			<Declaration>- (void)loadPendingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeLabel</Anchor>
+			<Anchor>//api/name/loadPendingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/quietTimeLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/hasPendingProduct:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *quietTimeLabel</Declaration>
+			<Declaration>- (BOOL)hasPendingProduct:(UAProduct *)product</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeLabel</Anchor>
+			<Anchor>//api/name/hasPendingProduct:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setQuietTimeSwitch:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/addPendingProduct:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UISwitch *quietTimeSwitch</Declaration>
+			<Declaration>- (void)addPendingProduct:(UAProduct *)product</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeSwitch</Anchor>
+			<Anchor>//api/name/addPendingProduct:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/quietTimeSwitch</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/resumePendingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UISwitch *quietTimeSwitch</Declaration>
+			<Declaration>- (void)resumePendingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/quietTimeSwitch</Anchor>
+			<Anchor>//api/name/resumePendingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setFromCell:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/loadDecompressingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *fromCell</Declaration>
+			<Declaration>- (void)loadDecompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/fromCell</Anchor>
+			<Anchor>//api/name/loadDecompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/fromCell</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/hasDecompressingProduct:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *fromCell</Declaration>
+			<Declaration>- (BOOL)hasDecompressingProduct:(UAProduct *)product</Declaration>
 			
 			
-			<Anchor>//api/name/fromCell</Anchor>
+			<Anchor>//api/name/hasDecompressingProduct:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setToCell:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/resumeDecompressingProducts</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *toCell</Declaration>
+			<Declaration>- (void)resumeDecompressingProducts</Declaration>
 			
 			
-			<Anchor>//api/name/toCell</Anchor>
+			<Anchor>//api/name/resumeDecompressingProducts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/toCell</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/downloadPurchasedProduct:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *toCell</Declaration>
+			<Declaration>- (void)downloadPurchasedProduct:(UAProduct *)product</Declaration>
 			
 			
-			<Anchor>//api/name/toCell</Anchor>
+			<Anchor>//api/name/downloadPurchasedProduct:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setAirshipLocationEnabledSwitch:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/verifyTransactionReceipt:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *airshipLocationEnabledSwitch</Declaration>
+			<Declaration>- (void)verifyTransactionReceipt:(SKPaymentTransaction *)transaction</Declaration>
 			
 			
-			<Anchor>//api/name/airshipLocationEnabledSwitch</Anchor>
+			<Anchor>//api/name/verifyTransactionReceipt:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/airshipLocationEnabledSwitch</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontDownloadManager/downloadDidFail:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontDownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *airshipLocationEnabledSwitch</Declaration>
-			
-			
-			<Anchor>//api/name/airshipLocationEnabledSwitch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setAirshipLocationEnabledLabel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *airshipLocationEnabledLabel</Declaration>
+			<Declaration>- (void)downloadDidFail:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/airshipLocationEnabledLabel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/airshipLocationEnabledLabel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *airshipLocationEnabledLabel</Declaration>
-			
-			
-			<Anchor>//api/name/airshipLocationEnabledLabel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/setAirshipLocationEnabledCell:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *airshipLocationEnabledCell</Declaration>
-			
-			
-			<Anchor>//api/name/airshipLocationEnabledCell</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsViewController/airshipLocationEnabledCell</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) IBOutlet UITableViewCell *airshipLocationEnabledCell</Declaration>
-			
-			
-			<Anchor>//api/name/airshipLocationEnabledCell</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/quit</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)quit</Declaration>
-			
-			
-			<Anchor>//api/name/quit</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/pickerValueChanged:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)pickerValueChanged:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/pickerValueChanged:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/switchValueChanged:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)switchValueChanged:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/switchValueChanged:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/initViews</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)initViews</Declaration>
-			
-			
-			<Anchor>//api/name/initViews</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/updatePickerLayout</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)updatePickerLayout</Declaration>
-			
-			
-			<Anchor>//api/name/updatePickerLayout</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/updateDatePicker:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)updateDatePicker:(BOOL)show</Declaration>
-			
-			
-			<Anchor>//api/name/updateDatePicker:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsViewController/updateQuietTime</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)updateQuietTime</Declaration>
-			
-			
-			<Anchor>//api/name/updateQuietTime</Anchor>
+			<Anchor>//api/name/downloadDidFail:</Anchor>
 		</Token>
 		
 	</File>

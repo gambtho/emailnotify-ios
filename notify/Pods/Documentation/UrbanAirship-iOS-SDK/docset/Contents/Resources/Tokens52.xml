@@ -1,25 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAInboxAlertHandler.html">
+	<File path="Classes/UAInboxOverlayController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAInboxAlertHandler</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAInboxAlertHandler.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInboxOverlayController</TokenIdentifier>
+			<Abstract type="html">This class provides an overlay window that can be popped over
+the app&apos;s UI without totally obscuring it, and that loads a
+given rich push message in an embedded UIWebView.  It is used
+in the reference UI implementation for displaying in-app messages
+without requiring navigation to the inbox.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>
 			
 			<NodeRef refid="52"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxAlertHandler/showNewMessageAlert:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAInboxAlertHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxOverlayController/setWebView:</TokenIdentifier>
+			<Abstract type="html">The UIWebView used to display the message content.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
 			
-			<Declaration>- (void)showNewMessageAlert:(NSString *)message</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWebView *webView</Declaration>
 			
 			
-			<Anchor>//api/name/showNewMessageAlert:</Anchor>
+			<Anchor>//api/name/webView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxOverlayController/webView</TokenIdentifier>
+			<Abstract type="html">The UIWebView used to display the message content.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIWebView *webView</Declaration>
+			
+			
+			<Anchor>//api/name/webView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxOverlayController/setMessage:</TokenIdentifier>
+			<Abstract type="html">The UAInboxMessage being displayed.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAInboxMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxOverlayController/message</TokenIdentifier>
+			<Abstract type="html">The UAInboxMessage being displayed.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UAInboxMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAInboxOverlayController/showWindowInsideViewController:withMessageID:</TokenIdentifier>
+			<Abstract type="html">Convenience constructor.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showWindowInsideViewController:(UIViewController *)viewController withMessageID:(NSString *)messageId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">the view controller to display the overlay in</Abstract>
+				</Parameter><Parameter>
+					<Name>messageID</Name>
+					<Abstract type="html">the message ID of the rich push message to display</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showWindowInsideViewController:withMessageID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxOverlayController/initWithParentViewController:andMessageID:</TokenIdentifier>
+			<Abstract type="html">Initializer, creates an overlay window and loads the given content within a particular view controller.</Abstract>
+			<DeclaredIn>UAInboxOverlayController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithParentViewController:(UIViewController *)parent andMessageID:(NSString *)messageID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>messageID</Name>
+					<Abstract type="html">the message ID of the rich push message to display</Abstract>
+				</Parameter><Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">the view controller to display the overlay in</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithParentViewController:andMessageID:</Anchor>
 		</Token>
 		
 	</File>

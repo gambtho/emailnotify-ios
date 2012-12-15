@@ -1,135 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAHTTPConnection.html">
+	<File path="Classes/UAInboxMessageListController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAHTTPConnection</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAInboxMessageListController</TokenIdentifier>
+			<Abstract type="html">This class is a reference implementation of a table view controller drawing from the inbox
+message list.</Abstract>
+			<DeclaredIn>UAInboxMessageListController.h</DeclaredIn>
 			
 			<NodeRef refid="49"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/setDelegate:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListController/setShouldShowAlerts:</TokenIdentifier>
+			<Abstract type="html">Set this property to YES if the class should show alert dialogs in erroneous
+situations, NO otherwise.  Defaults to YES.</Abstract>
+			<DeclaredIn>UAInboxMessageListController.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) id&lt;UAHTTPConnectionDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL shouldShowAlerts</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/shouldShowAlerts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPConnection/delegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListController/shouldShowAlerts</TokenIdentifier>
+			<Abstract type="html">Set this property to YES if the class should show alert dialogs in erroneous
+situations, NO otherwise.  Defaults to YES.</Abstract>
+			<DeclaredIn>UAInboxMessageListController.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) id&lt;UAHTTPConnectionDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/setUrlConnection:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSURLConnection *urlConnection</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL shouldShowAlerts</Declaration>
 			
 			
-			<Anchor>//api/name/urlConnection</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAHTTPConnection/urlConnection</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSURLConnection *urlConnection</Declaration>
-			
-			
-			<Anchor>//api/name/urlConnection</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UAHTTPConnection/connectionWithRequest:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>+ (UAHTTPConnection *)connectionWithRequest:(UAHTTPRequest *)httpRequest</Declaration>
-			
-			
-			<Anchor>//api/name/connectionWithRequest:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/initWithRequest:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithRequest:(UAHTTPRequest *)httpRequest</Declaration>
-			
-			
-			<Anchor>//api/name/initWithRequest:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/start</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)start</Declaration>
-			
-			
-			<Anchor>//api/name/start</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/connection:didReceiveResponse:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSHTTPURLResponse *)response</Declaration>
-			
-			
-			<Anchor>//api/name/connection:didReceiveResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/connection:didReceiveData:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data</Declaration>
-			
-			
-			<Anchor>//api/name/connection:didReceiveData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/connection:didFailWithError:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error</Declaration>
-			
-			
-			<Anchor>//api/name/connection:didFailWithError:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAHTTPConnection/connectionDidFinishLoading:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
-			
-			<Declaration>- (void)connectionDidFinishLoading:(NSURLConnection *)connection</Declaration>
-			
-			
-			<Anchor>//api/name/connectionDidFinishLoading:</Anchor>
+			<Anchor>//api/name/shouldShowAlerts</Anchor>
 		</Token>
 		
 	</File>

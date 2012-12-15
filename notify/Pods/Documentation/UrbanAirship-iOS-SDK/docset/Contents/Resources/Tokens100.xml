@@ -1,15 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAStoreFrontiPadViewController.html">
+	<File path="Classes/UASubscriptionInventory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontiPadViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAStoreFrontiPadViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionInventory</TokenIdentifier>
+			<Abstract type="html">This class provides access to the full inventory
+of subscriptions offered for sale in this application.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>
 			
 			<NodeRef refid="100"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/setHasLoaded:</TokenIdentifier>
+			<Abstract type="html">YES if the inventory has successfully loaded, otherwise NO</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/hasLoaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionInventory/hasLoaded</TokenIdentifier>
+			<Abstract type="html">YES if the inventory has successfully loaded, otherwise NO</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/hasLoaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/setUserSubscriptions:</TokenIdentifier>
+			<Abstract type="html">The array of subscriptions the user has purchased</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *userSubscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/userSubscriptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionInventory/userSubscriptions</TokenIdentifier>
+			<Abstract type="html">The array of subscriptions the user has purchased</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *userSubscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/userSubscriptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/setSubscriptions:</TokenIdentifier>
+			<Abstract type="html">The array of all available subscriptions</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *subscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionInventory/subscriptions</TokenIdentifier>
+			<Abstract type="html">The array of all available subscriptions</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *subscriptions</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/setServerDate:</TokenIdentifier>
+			<Abstract type="html">The time of the last purchased product update. Useful for preventing users from setting back
+their clocks to access expired content.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *serverDate</Declaration>
+			
+			
+			<Anchor>//api/name/serverDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionInventory/serverDate</TokenIdentifier>
+			<Abstract type="html">The time of the last purchased product update. Useful for preventing users from setting back
+their clocks to access expired content.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDate *serverDate</Declaration>
+			
+			
+			<Anchor>//api/name/serverDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/loadInventory</TokenIdentifier>
+			<Abstract type="html">Load all products, content and purchases</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadInventory</Declaration>
+			
+			
+			<Anchor>//api/name/loadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/loadProducts</TokenIdentifier>
+			<Abstract type="html">Load all products</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadProducts</Declaration>
+			
+			
+			<Anchor>//api/name/loadProducts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/loadPurchases</TokenIdentifier>
+			<Abstract type="html">Load the content inventory and all of the user&apos;s purchases.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadPurchases</Declaration>
+			
+			
+			<Anchor>//api/name/loadPurchases</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/purchase:</TokenIdentifier>
+			<Abstract type="html">Purchase a subscription product.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)purchase:(UASubscriptionProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The product to purchase</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purchase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UASubscriptionInventory/isReceiptValid:</TokenIdentifier>
+			<Abstract type="html">Check the UA receipt verification response.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isReceiptValid:(NSString *)responseString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>responseString</Name>
+					<Abstract type="html">The receipt validatation response string (JSON).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the receipt was validated, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isReceiptValid:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/download:</TokenIdentifier>
+			<Abstract type="html">Download subscription content.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)download:(UASubscriptionContent *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">The content to download</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/download:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/contentForKey:</TokenIdentifier>
+			<Abstract type="html">Return the subscription content matching a particular content key.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscriptionContent *)contentForKey:(NSString *)contentKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentKey</Name>
+					<Abstract type="html">The content key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A matching UASubscriptionContent instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/contentForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/subscriptionForKey:</TokenIdentifier>
+			<Abstract type="html">Return the subscription matching a particular subscription key.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscription *)subscriptionForKey:(NSString *)subscriptionKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subscriptionKey</Name>
+					<Abstract type="html">The subscription key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A matching UASubscription instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/subscriptionForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/subscriptionForProduct:</TokenIdentifier>
+			<Abstract type="html">Return the subscription matching a particular subscription product.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscription *)subscriptionForProduct:(UASubscriptionProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The subscription product.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A matching UASubscription instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/subscriptionForProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/subscriptionForContent:</TokenIdentifier>
+			<Abstract type="html">Return the subscription matching a particular instance of subscription content.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscription *)subscriptionForContent:(UASubscriptionContent *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">The subscription content.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A matching UASubscription instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/subscriptionForContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/containsProduct:</TokenIdentifier>
+			<Abstract type="html">Check whether the inventory contains a particular product by identifier.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containsProduct:(NSString *)productID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productID</Name>
+					<Abstract type="html">The product identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the inventory contains the associated product, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/productForKey:</TokenIdentifier>
+			<Abstract type="html">Return the subscription product matching a particular subscription product key.</Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscriptionProduct *)productForKey:(NSString *)productKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productKey</Name>
+					<Abstract type="html">The subscription product key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A matching UASubscriptionProduct.</Abstract></ReturnValue>
+			<Anchor>//api/name/productForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/subscriptionTransactionDidComplete:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscriptionTransactionDidComplete:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionTransactionDidComplete:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/productInventoryUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)productInventoryUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/productInventoryUpdated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/contentInventoryUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)contentInventoryUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/contentInventoryUpdated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionInventory/setUserPurchaseInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUserPurchaseInfo:(NSDictionary *)purchaseInfo</Declaration>
+			
+			
+			<Anchor>//api/name/setUserPurchaseInfo:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -1,124 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAPushSettingsAddTagViewController.html">
+	<File path="Classes/UAStandardLocationProvider.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAPushSettingsAddTagViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStandardLocationProvider</TokenIdentifier>
+			<Abstract type="html">UAStandardLocationProvider</Abstract>
+			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>
 			
 			<NodeRef refid="82"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagDelegate:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAStandardLocationProvider/startReportingLocation</TokenIdentifier>
+			<Abstract type="html">Starts the standard location service</Abstract>
+			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;UAPushSettingsAddTagDelegate&gt; tagDelegate</Declaration>
+			<Declaration>- (void)startReportingLocation</Declaration>
 			
 			
-			<Anchor>//api/name/tagDelegate</Anchor>
+			<Anchor>//api/name/startReportingLocation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagDelegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UAStandardLocationProvider/stopReportingLocation</TokenIdentifier>
+			<Abstract type="html">Stops the standard location service</Abstract>
+			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;UAPushSettingsAddTagDelegate&gt; tagDelegate</Declaration>
+			<Declaration>- (void)stopReportingLocation</Declaration>
 			
 			
-			<Anchor>//api/name/tagDelegate</Anchor>
+			<Anchor>//api/name/stopReportingLocation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTableView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAStandardLocationProvider/providerWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Returns a location provider with the provided object assigned as the delegate</Abstract>
+			<DeclaredIn>UAStandardLocationProvider.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
-			
-			
-			<Anchor>//api/name/tableView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tableView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UITableView *tableView</Declaration>
-			
-			
-			<Anchor>//api/name/tableView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagCell:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *tagCell</Declaration>
-			
-			
-			<Anchor>//api/name/tagCell</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagCell</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UITableViewCell *tagCell</Declaration>
-			
-			
-			<Anchor>//api/name/tagCell</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setTagField:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UITextField *tagField</Declaration>
-			
-			
-			<Anchor>//api/name/tagField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/tagField</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UITextField *tagField</Declaration>
-			
-			
-			<Anchor>//api/name/tagField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsAddTagViewController/setPresetTags:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSArray *presetTags</Declaration>
-			
-			
-			<Anchor>//api/name/presetTags</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsAddTagViewController/presetTags</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSArray *presetTags</Declaration>
-			
-			
-			<Anchor>//api/name/presetTags</Anchor>
+			<Declaration>+ (UAStandardLocationProvider *)providerWithDelegate:(id&lt;UALocationProviderDelegate&gt;)serviceDelegateOrNil</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceDelegateOrNil</Name>
+					<Abstract type="html">Delgate object or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Standard location provider.</Abstract></ReturnValue>
+			<Anchor>//api/name/providerWithDelegate:</Anchor>
 		</Token>
 		
 	</File>

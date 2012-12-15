@@ -1,140 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAInboxMessageListCell.html">
+	<File path="Classes/UAKeychainUtils.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAInboxMessageListCell</TokenIdentifier>
-			<Abstract type="html">The UITableViewCell subclass used by UAInboxMessageListController.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAKeychainUtils</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>
 			
 			<NodeRef refid="57"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setDateView:</TokenIdentifier>
-			<Abstract type="html">Displays the message date.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/createKeychainValueForUsername:withPassword:forIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *dateView</Declaration>
+			<Declaration>+ (BOOL)createKeychainValueForUsername:(NSString *)username withPassword:(NSString *)password forIdentifier:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/dateView</Anchor>
+			<Anchor>//api/name/createKeychainValueForUsername:withPassword:forIdentifier:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListCell/dateView</TokenIdentifier>
-			<Abstract type="html">Displays the message date.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/deleteKeychainValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *dateView</Declaration>
+			<Declaration>+ (void)deleteKeychainValue:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/dateView</Anchor>
+			<Anchor>//api/name/deleteKeychainValue:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setTitle:</TokenIdentifier>
-			<Abstract type="html">Displays the message title.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/updateKeychainValueForUsername:withPassword:withEmailAddress:forIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *title</Declaration>
+			<Declaration>+ (BOOL)updateKeychainValueForUsername:(NSString *)username withPassword:(NSString *)password withEmailAddress:(NSString *)password forIdentifier:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/updateKeychainValueForUsername:withPassword:withEmailAddress:forIdentifier:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListCell/title</TokenIdentifier>
-			<Abstract type="html">Displays the message title.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/getPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UILabel *title</Declaration>
+			<Declaration>+ (NSString *)getPassword:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/getPassword:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setUnreadIndicator:</TokenIdentifier>
-			<Abstract type="html">Indicates whether a message has previously been read.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/getUsername:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *unreadIndicator</Declaration>
+			<Declaration>+ (NSString *)getUsername:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/unreadIndicator</Anchor>
+			<Anchor>//api/name/getUsername:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListCell/unreadIndicator</TokenIdentifier>
-			<Abstract type="html">Indicates whether a message has previously been read.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/getEmailAddress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIView *unreadIndicator</Declaration>
+			<Declaration>+ (NSString *)getEmailAddress:(NSString *)identifier</Declaration>
 			
 			
-			<Anchor>//api/name/unreadIndicator</Anchor>
+			<Anchor>//api/name/getEmailAddress:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setCheckmark:</TokenIdentifier>
-			<Abstract type="html">Checkmark image used in batch message selection</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAKeychainUtils/getDeviceID</TokenIdentifier>
+			<Abstract type="html">Gets the device ID, creating or refreshing if necessary. Device IDs will be regenerated if a
+device change is detected (though UAUser IDs remain the same in that case).</Abstract>
+			<DeclaredIn>UAKeychainUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIImageView *checkmark</Declaration>
+			<Declaration>+ (NSString *)getDeviceID</Declaration>
 			
-			
-			<Anchor>//api/name/checkmark</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListCell/checkmark</TokenIdentifier>
-			<Abstract type="html">Checkmark image used in batch message selection</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIImageView *checkmark</Declaration>
-			
-			
-			<Anchor>//api/name/checkmark</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setSelectedEditingBackgroundView:</TokenIdentifier>
-			<Abstract type="html">Background view used when a cell is selected in editing mode.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIView *selectedEditingBackgroundView</Declaration>
-			
-			
-			<Anchor>//api/name/selectedEditingBackgroundView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UAInboxMessageListCell/selectedEditingBackgroundView</TokenIdentifier>
-			<Abstract type="html">Background view used when a cell is selected in editing mode.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIView *selectedEditingBackgroundView</Declaration>
-			
-			
-			<Anchor>//api/name/selectedEditingBackgroundView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAInboxMessageListCell/setData:</TokenIdentifier>
-			<Abstract type="html">Set the UAInboxMessage associated with this cell.</Abstract>
-			<DeclaredIn>UAInboxMessageListCell.h</DeclaredIn>			
-			
-			<Declaration>- (void)setData:(UAInboxMessage *)message</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>message</Name>
-					<Abstract type="html">The associated UAInboxMessage object.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setData:</Anchor>
+			<ReturnValue><Abstract type="html">The Urban Airship device ID or an empty string if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/getDeviceID</Anchor>
 		</Token>
 		
 	</File>

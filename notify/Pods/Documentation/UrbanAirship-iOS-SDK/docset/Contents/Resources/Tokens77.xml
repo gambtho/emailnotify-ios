@@ -1,25 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UAProductDetailiPadViewController.html">
+	<File path="Classes/UAPushSettingsTokenViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UAProductDetailiPadViewController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAPushSettingsTokenViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAProductDetailiPadViewController.h</DeclaredIn>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>
 			
 			<NodeRef refid="77"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UAProductDetailiPadViewController/constructHtmlForWebViewWithDescription:AndImageURL:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsTokenViewController/setTokenLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAProductDetailiPadViewController.h</DeclaredIn>			
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)constructHtmlForWebViewWithDescription:(NSString *)description AndImageURL:(NSURL *)imageURL</Declaration>
+			<Declaration>@property (nonatomic, retain) UILabel *tokenLabel</Declaration>
 			
 			
-			<Anchor>//api/name/constructHtmlForWebViewWithDescription:AndImageURL:</Anchor>
+			<Anchor>//api/name/tokenLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsTokenViewController/tokenLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UILabel *tokenLabel</Declaration>
+			
+			
+			<Anchor>//api/name/tokenLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsTokenViewController/setEmailButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIButton *emailButton</Declaration>
+			
+			
+			<Anchor>//api/name/emailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UAPushSettingsTokenViewController/emailButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIButton *emailButton</Declaration>
+			
+			
+			<Anchor>//api/name/emailButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsTokenViewController/copyDeviceToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)copyDeviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/copyDeviceToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAPushSettingsTokenViewController/emailDeviceToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsTokenViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)emailDeviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/emailDeviceToken</Anchor>
 		</Token>
 		
 	</File>

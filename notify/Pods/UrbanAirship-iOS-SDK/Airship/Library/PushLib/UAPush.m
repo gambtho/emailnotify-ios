@@ -43,12 +43,34 @@
 #define kUAPushRetryTimeMultiplier 2
 #define kUAPushRetryTimeMaxDelay 300
 
+UAPushSettingsKey *const UAPushEnabledSettingsKey = @"UAPushEnabled";
+UAPushSettingsKey *const UAPushAliasSettingsKey = @"UAPushAlias";
+UAPushSettingsKey *const UAPushTagsSettingsKey = @"UAPushTags";
+UAPushSettingsKey *const UAPushBadgeSettingsKey = @"UAPushBadge";
+UAPushSettingsKey *const UAPushQuietTimeSettingsKey = @"UAPushQuietTime";
+UAPushSettingsKey *const UAPushQuietTimeEnabledSettingsKey = @"UAPushQuietTimeEnabled";
+UAPushSettingsKey *const UAPushTimeZoneSettingsKey = @"UAPushTimeZone";
+UAPushSettingsKey *const UAPushDeviceTokenDeprecatedSettingsKey = @"UAPushDeviceToken";
+UAPushSettingsKey *const UAPushDeviceCanEditTagsKey = @"UAPushDeviceCanEditTags";
+UAPushSettingsKey *const UAPushNeedsUnregistering = @"UAPushNeedsUnregistering";
+
+UAPushUserInfoKey *const UAPushUserInfoRegistration = @"Registration";
+UAPushUserInfoKey *const UAPushUserInfoPushEnabled = @"PushEnabled";
+
+UAPushJSONKey *const UAPushMultipleTagsJSONKey = @"tags";
+UAPushJSONKey *const UAPushSingleTagJSONKey = @"tag";
+UAPushJSONKey *const UAPushAliasJSONKey = @"alias";
+UAPushJSONKey *const UAPushQuietTimeJSONKey = @"quiettime";
+UAPushJSONKey *const UAPushQuietTimeStartJSONKey = @"start";
+UAPushJSONKey *const UAPushQuietTimeEndJSONKey = @"end";
+UAPushJSONKey *const UAPushTimeZoneJSONKey = @"tz";
+UAPushJSONKey *const UAPushBadgeJSONKey = @"badge";
+
 UA_VERSION_IMPLEMENTATION(UAPushVersion, UA_VERSION)
 
 @implementation UAPush 
 //Internal
 @synthesize registrationQueue;
-@synthesize standardUserDefaults;
 @synthesize defaultPushHandler;
 @synthesize registrationRetryDelay;
 @synthesize registrationPayloadCache;
@@ -63,7 +85,7 @@ UA_VERSION_IMPLEMENTATION(UAPushVersion, UA_VERSION)
 
 // Public - UserDefaults
 @dynamic pushEnabled;
-@synthesize deviceToken = _deviceToken;
+@synthesize deviceToken;
 @synthesize deviceTokenHasChanged;
 @dynamic alias;
 @dynamic tags;
@@ -77,8 +99,13 @@ SINGLETON_IMPLEMENTATION(UAPush)
 
 static Class _uiClass;
 
+// Self refers to the class at this point in execution
+// The self == check is because that a sublcass that does not implement this method
+// forwards it up the chain. It will only be called once by this class
 + (void)initialize {
-    [self registerNSUserDefaults];
+    if (self == [UAPush class]) {
+        [self registerNSUserDefaults];
+    }
 }
 
 -(void)dealloc {
@@ -96,7 +123,6 @@ static Class _uiClass;
         // released when replaced
         defaultPushHandler = [[NSClassFromString(PUSH_DELEGATE_CLASS) alloc] init];
         delegate = defaultPushHandler;
-        standardUserDefaults = [NSUserDefaults standardUserDefaults];
         [[NSNotificationCenter defaultCenter] addObserver:self 
                                                  selector:@selector(applicationDidBecomeActive) 
                                                      name:UIApplicationDidBecomeActiveNotification 
@@ -107,33 +133,12 @@ static Class _uiClass;
                                                   name:UIApplicationDidEnterBackgroundNotification 
                                                 object:[UIApplication sharedApplication]];
         registrationQueue = dispatch_queue_create("com.urbanairship.registration", DISPATCH_QUEUE_SERIAL);
-        dispatch_retain(registrationQueue);
     }
     return self;
 }
 
 #pragma mark -
 #pragma mark Device Token Get/Set Methods
-
-// TODO: Remove deviceTokenHasChanged calls when LIB-353 has been completed
-- (void)setDeviceToken:(NSString*)deviceToken {
-    [_deviceToken autorelease];
-    _deviceToken = [deviceToken copy];
-    UALOG(@"Device token: %@", deviceToken);    
-    //---------------------------------------------------------------------------------------------//
-    // *DEPRECATED *The following workflow is deprecated, it is only used to identify if the token //
-    // has changed                                                                                 //
-    //---------------------------------------------------------------------------------------------//
-    NSString *oldToken = [standardUserDefaults stringForKey:UAPushDeviceTokenDeprecatedSettingsKey];
-    if ([_deviceToken isEqualToString:oldToken]) {
-        deviceTokenHasChanged = NO;
-    }
-    else {
-        deviceTokenHasChanged = YES;
-    }
-    [standardUserDefaults setObject:deviceToken forKey:UAPushDeviceTokenDeprecatedSettingsKey];
-    // *DEPRECATED CODE END* // 
-}
 
 - (NSString*)parseDeviceToken:(NSString*)tokenStr {
     return [[[tokenStr stringByReplacingOccurrencesOfString:@"<" withString:@""]
@@ -145,32 +150,32 @@ static Class _uiClass;
 #pragma mark Get/Set Methods
 
 - (BOOL)autobadgeEnabled {
-    return [standardUserDefaults boolForKey:UAPushBadgeSettingsKey];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:UAPushBadgeSettingsKey];
 }
 
 - (void)setAutobadgeEnabled:(BOOL)autobadgeEnabled {
-    [standardUserDefaults setBool:autobadgeEnabled forKey:UAPushBadgeSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setBool:autobadgeEnabled forKey:UAPushBadgeSettingsKey];
 }
 
 
 - (NSString *)alias {
-    return [standardUserDefaults stringForKey:UAPushAliasJSONKey];
+    return [[NSUserDefaults standardUserDefaults] stringForKey:UAPushAliasSettingsKey];
 }
 
 - (void)setAlias:(NSString *)alias {
-    [standardUserDefaults setObject:alias forKey:UAPushAliasJSONKey];
+    [[NSUserDefaults standardUserDefaults] setObject:alias forKey:UAPushAliasSettingsKey];
 }
 
 - (BOOL)canEditTagsFromDevice {
-   return [standardUserDefaults boolForKey:UAPushDeviceCanEditTagsKey];
+   return [[NSUserDefaults standardUserDefaults] boolForKey:UAPushDeviceCanEditTagsKey];
 }
 
 - (void)setCanEditTagsFromDevice:(BOOL)canEditTagsFromDevice {
-    [standardUserDefaults setBool:canEditTagsFromDevice forKey:UAPushDeviceCanEditTagsKey];
+    [[NSUserDefaults standardUserDefaults] setBool:canEditTagsFromDevice forKey:UAPushDeviceCanEditTagsKey];
 }
 
 - (NSArray *)tags {
-    NSArray *currentTags = [standardUserDefaults objectForKey:UAPushTagsSettingsKey];
+    NSArray *currentTags = [[NSUserDefaults standardUserDefaults] objectForKey:UAPushTagsSettingsKey];
     if (!currentTags) {
         currentTags = [NSArray array];
     }
@@ -178,7 +183,7 @@ static Class _uiClass;
 }
 
 - (void)setTags:(NSArray *)tags {
-    [standardUserDefaults setObject:tags forKey:UAPushTagsSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setObject:tags forKey:UAPushTagsSettingsKey];
 }
 
 - (void)addTagsToCurrentDevice:(NSArray *)tags {
@@ -188,34 +193,44 @@ static Class _uiClass;
 }
 
 - (BOOL)pushEnabled {
-    return [standardUserDefaults boolForKey:UAPushEnabledSettingsKey];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:UAPushEnabledSettingsKey];
 }
 
-- (void)setPushEnabled:(BOOL)pushEnabled {
-    [standardUserDefaults setBool:pushEnabled forKey:UAPushEnabledSettingsKey];
-    // Set the flag to indicate that an unRegistration (DELETE)call is needed. This
-    // flag is checked on updateRegistration calls, and is used to prevent
-    // API calls on every app init when the device is already unregistered.
-    // It is cleared on successful unregistration
-    if (!pushEnabled) {
-        [standardUserDefaults setBool:YES forKey:UAPushNeedsUnregistering];
+- (void)setPushEnabled:(BOOL)enabled {
+    //if the value has actually changed
+    if (enabled != self.pushEnabled) {
+        [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:UAPushEnabledSettingsKey];
+        // Set the flag to indicate that an unRegistration (DELETE)call is needed. This
+        // flag is checked on updateRegistration calls, and is used to prevent
+        // API calls on every app init when the device is already unregistered.
+        // It is cleared on successful unregistration
+
+        if (enabled) {
+            UALOG(@"registering for remote notifcations");
+            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:notificationTypes];
+        } else {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:UAPushNeedsUnregistering];
+            //note: we don't want to use the wrapper method here, because otherwise it will blow away the existing notificationTypes
+            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeNone];
+            [self updateRegistration];
+        }
     }
 }
 
 - (NSDictionary *)quietTime {
-    return [standardUserDefaults dictionaryForKey:UAPushQuietTimeSettingsKey];
+    return [[NSUserDefaults standardUserDefaults] dictionaryForKey:UAPushQuietTimeSettingsKey];
 }
 
 - (void)setQuietTime:(NSMutableDictionary *)quietTime {
-    [standardUserDefaults setObject:quietTime forKey:UAPushQuietTimeSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setObject:quietTime forKey:UAPushQuietTimeSettingsKey];
 }
 
 - (BOOL)quietTimeEnabled {
-    return [standardUserDefaults boolForKey:UAPushQuietTimeEnabledSettingsKey];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:UAPushQuietTimeEnabledSettingsKey];
 }
 
 - (void)setQuietTimeEnabled:(BOOL)quietTimeEnabled {
-    [standardUserDefaults setBool:quietTimeEnabled forKey:UAPushQuietTimeEnabledSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setBool:quietTimeEnabled forKey:UAPushQuietTimeEnabledSettingsKey];
 }
 
 - (NSString *)tz {
@@ -228,12 +243,12 @@ static Class _uiClass;
 }
 
 - (NSTimeZone *)timeZone {
-    NSString* timeZoneName = [standardUserDefaults stringForKey:UAPushTimeZoneSettingsKey];
+    NSString* timeZoneName = [[NSUserDefaults standardUserDefaults] stringForKey:UAPushTimeZoneSettingsKey];
     return [NSTimeZone timeZoneWithName:timeZoneName];
 }
 
 - (void)setTimeZone:(NSTimeZone *)timeZone {
-    [standardUserDefaults setObject:[timeZone name] forKey:UAPushTimeZoneSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setObject:[timeZone name] forKey:UAPushTimeZoneSettingsKey];
 }
 
 - (NSTimeZone *)defaultTimeZoneForQuietTime {
@@ -396,9 +411,9 @@ static Class _uiClass;
 }
 
 - (void)removeTagsFromCurrentDevice:(NSArray *)tags {
-    NSMutableArray *mutableTags = [NSMutableArray arrayWithArray:[standardUserDefaults objectForKey:UAPushTagsSettingsKey]];
+    NSMutableArray *mutableTags = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:UAPushTagsSettingsKey]];
     [mutableTags removeObjectsInArray:tags];
-    [standardUserDefaults setObject:mutableTags forKey:UAPushTagsSettingsKey];
+    [[NSUserDefaults standardUserDefaults] setObject:mutableTags forKey:UAPushTagsSettingsKey];
 }
 
 - (void)enableAutobadge:(BOOL)autobadge {
@@ -410,15 +425,17 @@ static Class _uiClass;
     if ([[UIApplication sharedApplication] applicationIconBadgeNumber] == badgeNumber) {
         return;
     }
-    
+
     UALOG(@"Change Badge from %d to %d", [[UIApplication sharedApplication] applicationIconBadgeNumber], badgeNumber);
-    
+
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:badgeNumber];
-    
+
     // if the device token has already been set then
     // we are post-registration and will need to make
     // and update call
     if (self.autobadgeEnabled && self.deviceToken) {
+        //clear the registration payload cache so we can synchronize with the server
+        self.registrationPayloadCache = nil;
         UALOG(@"Sending autobadge update to UA server");
         [self updateRegistration];
     }
@@ -577,7 +594,7 @@ static Class _uiClass;
         return;
     }
     
-    [standardUserDefaults synchronize];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     NSDictionary *currentRegistrationPayload = [self registrationPayload];;
     if ([registrationPayloadCache isEqualToDictionary:currentRegistrationPayload] 
         && self.pushEnabled == self.pushEnabledPayloadCache) {
@@ -587,12 +604,10 @@ static Class _uiClass;
     }
     
     if (self.pushEnabled) {
-        // If there is no device token, register for one, and wait for the application delegate
-        // to update with a device token.
+        // If there is no device token, wait for the application delegate to update with one.
         if (!self.deviceToken) {
+            UALOG(@"Device token is nil. Registration will be attempted at a later time");
             self.isRegistering = NO;
-            UALOG(@"Cancelling update, registering for remote notifcations");
-            [self registerForRemoteNotificationTypes:notificationTypes];
             return;
         }
         UA_ASIHTTPRequest *putRequest = [self requestToRegisterDeviceTokenWithInfo:currentRegistrationPayload];
@@ -600,24 +615,33 @@ static Class _uiClass;
         [putRequest startAsynchronous];
     }
     else {
+        // If there is no device token, and push has been enabled then disabled, which occurs in certain circumstances,
+        // most notably when a developer registers for UIRemoteNotificationTypeNone and this is the first install of an app
+        // that uses push, the DELETE will fail with a 404.
+        if (!self.deviceToken) {
+            UALOG(@"Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered");
+            return;
+        }
         // Don't unregister more than once
-        if ([standardUserDefaults boolForKey:UAPushNeedsUnregistering]) {
-            // Disable notifications at device level in case unregistration fails
-            // TODO: This is a fix for the unregistration re registration issue in the case where the device token is a
-            // non nil value. In that case, the device does not re register for notifications. This will be addressed in 1.3.2
-            // [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeNone];
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:UAPushNeedsUnregistering]) {
             UA_ASIHTTPRequest *deleteRequest = [self requestToDeleteDeviceToken];
             UALOG(@"Starting registration DELETE request (unregistering)");
             [deleteRequest startAsynchronous];
         }
         else {
             UALOG(@"Device has already been unregistered, no update scheduled");
+            self.isRegistering = NO;
         }
     }
 }
 
 //The new token to register, or nil if updating the existing token 
 - (void)registerDeviceToken:(NSData *)token {
+    if (!notificationTypes) {
+        UALOG(@"***ERROR***: attempted to register device token with no notificationTypes set!  \
+              Please use [[UAPush shared] registerForRemoteNotificationTypes:] instead of the equivalent method on UIApplication");
+        return;
+    }
     self.deviceToken = [self parseDeviceToken:[token description]];
     UAEventDeviceRegistration *regEvent = [UAEventDeviceRegistration eventWithContext:nil];
     [[UAirship shared].analytics addEvent:regEvent];
@@ -707,8 +731,8 @@ static Class _uiClass;
 
 
 - (void)unRegisterDeviceToken {
+    //the setter will implicitly update registration on its own
     self.pushEnabled = NO;
-    [self updateRegistration];
 }
 
 - (UA_ASIHTTPRequest*)requestToDeleteDeviceToken {
@@ -777,7 +801,7 @@ static Class _uiClass;
         // cache before setting isRegistering to NO
         [self cacheSuccessfulUserInfo:request.userInfo];
         // note that unregistration is no longer needed
-        [standardUserDefaults setBool:NO forKey:UAPushNeedsUnregistering];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:UAPushNeedsUnregistering];
         self.isRegistering = NO;
         if ([self cacheHasChangedComparedToUserInfo:request.userInfo]) {
             [self updateRegistration];
@@ -814,6 +838,15 @@ static Class _uiClass;
     dispatch_after(popTime, registrationQueue, ^(void){
         [self updateRegistration];
     });
+}
+
+#pragma mark -
+#pragma mark Default Values
+
+// Change the default push enabled value in the registered user defaults
++ (void)setDefaultPushEnabledValue:(BOOL)enabled {
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithBool:enabled] forKey:UAPushEnabledSettingsKey];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
 }
 
 #pragma mark -

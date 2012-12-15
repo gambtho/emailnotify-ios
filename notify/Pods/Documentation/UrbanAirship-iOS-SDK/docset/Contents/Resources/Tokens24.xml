@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GTMUnitTestDevLogDebug.html">
+	<File path="Classes/UABeveledLoadingIndicator.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GTMUnitTestDevLogDebug</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUnitTestDevLog.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UABeveledLoadingIndicator</TokenIdentifier>
+			<Abstract type="html">An abstraction around a nicer looking
+loading indicator that embeds a UIActivityIndicatorView
+in a translucent black beveled rect.</Abstract>
+			<DeclaredIn>UABeveledLoadingIndicator.h</DeclaredIn>
 			
 			<NodeRef refid="24"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UABeveledLoadingIndicator/indicator</TokenIdentifier>
+			<Abstract type="html">Construct an autoreleased UABeveledLoadingIndicator with
+a container rect size of 100 x 100.</Abstract>
+			<DeclaredIn>UABeveledLoadingIndicator.h</DeclaredIn>			
+			
+			<Declaration>+ (UABeveledLoadingIndicator *)indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABeveledLoadingIndicator/show</TokenIdentifier>
+			<Abstract type="html">Show and animate the indicator</Abstract>
+			<DeclaredIn>UABeveledLoadingIndicator.h</DeclaredIn>			
+			
+			<Declaration>- (void)show</Declaration>
+			
+			
+			<Anchor>//api/name/show</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UABeveledLoadingIndicator/hide</TokenIdentifier>
+			<Abstract type="html">Hide the indicator.</Abstract>
+			<DeclaredIn>UABeveledLoadingIndicator.h</DeclaredIn>			
+			
+			<Declaration>- (void)hide</Declaration>
+			
+			
+			<Anchor>//api/name/hide</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4ACAB8FA67624A89A945BF82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80669BB3B0472EA5336FD8 /* libPods.a */; };
+		AA9EFCDE167CB4950030794A /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDD167CB4950030794A /* mail icon.png */; };
+		AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDF167CB49B0030794A /* mail icon retina.png */; };
 		E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2062A2C15DB31CE00AD5674 /* NotificationCell.m */; };
 		E2BAF0AA15E6FCE500EAF8E0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BAF0A915E6FCE500EAF8E0 /* User.m */; };
-		E2CE3B801624FD5B0073232C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CE3B7F1624FD5B0073232C /* Default-568h@2x.png */; };
 		E2E388CA15F3EA600076FABB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388C915F3EA600076FABB /* MobileCoreServices.framework */; };
 		E2E388CD15F3EA700076FABB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388CC15F3EA700076FABB /* SystemConfiguration.framework */; };
 		E2E388CF15F3EA7C0076FABB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388CE15F3EA7C0076FABB /* libz.dylib */; };
@@ -44,11 +45,12 @@
 /* Begin PBXFileReference section */
 		8F80669BB3B0472EA5336FD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7304360D95E42B8872FC721 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		AA9EFCDD167CB4950030794A /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon.png"; path = "../mail icon.png"; sourceTree = "<group>"; };
+		AA9EFCDF167CB49B0030794A /* mail icon retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon retina.png"; path = "../mail icon retina.png"; sourceTree = "<group>"; };
 		E2062A2B15DB31CE00AD5674 /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
 		E2062A2C15DB31CE00AD5674 /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
 		E2BAF0A815E6FCE500EAF8E0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		E2BAF0A915E6FCE500EAF8E0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		E2CE3B7F1624FD5B0073232C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		E2E388C915F3EA600076FABB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		E2E388CC15F3EA700076FABB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E2E388CE15F3EA7C0076FABB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -79,7 +81,6 @@
 		E2E40EAD15D733D1005AF448 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateString.h"; sourceTree = "<group>"; };
 		E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateString.m"; sourceTree = "<group>"; };
-		E2F31C2B15DF2BA60061B55E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		E2F31C2D15E049780061B55E /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		E2F31C2E15E049780061B55E /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		E2F31C3015E04AC80061B55E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -192,12 +193,12 @@
 		E2E40E9815D733D1005AF448 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2F31C2B15DF2BA60061B55E /* Icon.png */,
+				AA9EFCDD167CB4950030794A /* mail icon.png */,
+				AA9EFCDF167CB49B0030794A /* mail icon retina.png */,
 				E2E40E9915D733D1005AF448 /* notify-Info.plist */,
 				E2E40E9A15D733D1005AF448 /* InfoPlist.strings */,
 				E2E40E9D15D733D1005AF448 /* main.m */,
 				E2E40E9F15D733D1005AF448 /* notify-Prefix.pch */,
-				E2CE3B7F1624FD5B0073232C /* Default-568h@2x.png */,
 				E2E388DE15F3EB180076FABB /* AirshipConfig.plist */,
 			);
 			name = "Supporting Files";
@@ -258,7 +259,8 @@
 				E2E40E9C15D733D1005AF448 /* InfoPlist.strings in Resources */,
 				E2E40EA515D733D1005AF448 /* MainStoryboard.storyboard in Resources */,
 				E2E388DF15F3EB180076FABB /* AirshipConfig.plist in Resources */,
-				E2CE3B801624FD5B0073232C /* Default-568h@2x.png in Resources */,
+				AA9EFCDE167CB4950030794A /* mail icon.png in Resources */,
+				AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "notify/notify-Prefix.pch";
 				INFOPLIST_FILE = "notify/notify-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "notify/notify-Prefix.pch";
 				INFOPLIST_FILE = "notify/notify-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

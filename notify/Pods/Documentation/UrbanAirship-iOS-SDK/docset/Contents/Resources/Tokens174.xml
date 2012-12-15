@@ -1,47 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/UADownloadManagerDelegate.html">
+	<File path="Protocols/UA_SBJsonWriterOptions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/UADownloadManagerDelegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UA_SBJsonWriterOptions</TokenIdentifier>
+			<Abstract type="html">@brief Options for the writer class.</Abstract>
+			<DeclaredIn>UA_SBJsonWriter.h</DeclaredIn>
 			
 			<NodeRef refid="174"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/requestDidSucceed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UA_SBJsonWriterOptions/setHumanReadable:</TokenIdentifier>
+			<Abstract type="html">@brief Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<DeclaredIn>UA_SBJsonWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)requestDidSucceed:(UADownloadContent *)downloadContent</Declaration>
+			<Declaration>@property BOOL humanReadable</Declaration>
 			
 			
-			<Anchor>//api/name/requestDidSucceed:</Anchor>
+			<Anchor>//api/name/humanReadable</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/requestDidFail:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UA_SBJsonWriterOptions/humanReadable</TokenIdentifier>
+			<Abstract type="html">@brief Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<DeclaredIn>UA_SBJsonWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)requestDidFail:(UADownloadContent *)downloadContent</Declaration>
+			<Declaration>@property BOOL humanReadable</Declaration>
 			
 			
-			<Anchor>//api/name/requestDidFail:</Anchor>
+			<Anchor>//api/name/humanReadable</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/downloadQueueProgress:count:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UA_SBJsonWriterOptions/setSortKeys:</TokenIdentifier>
+			<Abstract type="html">@brief Whether or not to sort the dictionary keys in the output.</Abstract>
+			<DeclaredIn>UA_SBJsonWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)downloadQueueProgress:(float)progress count:(int)count</Declaration>
+			<Declaration>@property BOOL sortKeys</Declaration>
 			
 			
-			<Anchor>//api/name/downloadQueueProgress:count:</Anchor>
+			<Anchor>//api/name/sortKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UA_SBJsonWriterOptions/sortKeys</TokenIdentifier>
+			<Abstract type="html">@brief Whether or not to sort the dictionary keys in the output.</Abstract>
+			<DeclaredIn>UA_SBJsonWriter.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL sortKeys</Declaration>
+			
+			
+			<Anchor>//api/name/sortKeys</Anchor>
 		</Token>
 		
 	</File>

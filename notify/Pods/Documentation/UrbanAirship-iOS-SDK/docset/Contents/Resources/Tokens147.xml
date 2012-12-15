@@ -1,102 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ZipArchive.html">
+	<File path="Protocols/UADownloadManagerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ZipArchive</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/UADownloadManagerDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>
 			
 			<NodeRef refid="147"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/setDelegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/requestDidSucceed:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			<Declaration>- (void)requestDidSucceed:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/requestDidSucceed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/ZipArchive/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/requestDidFail:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id delegate</Declaration>
+			<Declaration>- (void)requestDidFail:(UADownloadContent *)downloadContent</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/requestDidFail:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/CreateZipFile2:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UADownloadManagerDelegate/downloadQueueProgress:count:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
+			<DeclaredIn>UADownloadManager.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)CreateZipFile2:(NSString *)zipFile</Declaration>
-			
-			
-			<Anchor>//api/name/CreateZipFile2:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/addFileToZip:newname:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)addFileToZip:(NSString *)file newname:(NSString *)newname</Declaration>
+			<Declaration>- (void)downloadQueueProgress:(float)progress count:(int)count</Declaration>
 			
 			
-			<Anchor>//api/name/addFileToZip:newname:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/CloseZipFile2</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)CloseZipFile2</Declaration>
-			
-			
-			<Anchor>//api/name/CloseZipFile2</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/UnzipOpenFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipOpenFile:(NSString *)zipFile</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipOpenFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/UnzipFileTo:overWrite:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipFileTo:(NSString *)path overWrite:(BOOL)overwrite</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipFileTo:overWrite:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ZipArchive/UnzipCloseFile</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)UnzipCloseFile</Declaration>
-			
-			
-			<Anchor>//api/name/UnzipCloseFile</Anchor>
+			<Anchor>//api/name/downloadQueueProgress:count:</Anchor>
 		</Token>
 		
 	</File>

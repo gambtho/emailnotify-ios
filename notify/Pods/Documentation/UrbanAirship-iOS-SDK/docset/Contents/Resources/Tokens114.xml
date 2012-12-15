@@ -1,157 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASubscriptionProductCellView.html">
+	<File path="Classes/UATableCell.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionProductCellView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UATableCell</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>
+			<DeclaredIn>UATableCell.h</DeclaredIn>
 			
 			<NodeRef refid="114"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setTitle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UATableCell/setIsOdd:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
+			<DeclaredIn>UATableCell.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL isOdd</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/isOdd</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/title</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UATableCell/isOdd</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
+			<DeclaredIn>UATableCell.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
-			
-			
-			<Anchor>//api/name/title</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setDescription:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL isOdd</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/description</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setPrice:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
-			
-			
-			<Anchor>//api/name/price</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/price</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *price</Declaration>
-			
-			
-			<Anchor>//api/name/price</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setPriceBorderColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
-			
-			
-			<Anchor>//api/name/priceBorderColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/priceBorderColor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *, *, *priceBorderColor</Declaration>
-			
-			
-			<Anchor>//api/name/priceBorderColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setProduct:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) UASubscriptionProduct *product</Declaration>
-			
-			
-			<Anchor>//api/name/product</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionProductCellView/product</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) UASubscriptionProduct *product</Declaration>
-			
-			
-			<Anchor>//api/name/product</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/refreshCellView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)refreshCellView</Declaration>
-			
-			
-			<Anchor>//api/name/refreshCellView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setHighlighted:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)setHighlighted:(BOOL)h</Declaration>
-			
-			
-			<Anchor>//api/name/setHighlighted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionProductCellView/setSelected:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionProductCellView.h</DeclaredIn>			
-			
-			<Declaration>- (void)setSelected:(BOOL)s</Declaration>
-			
-			
-			<Anchor>//api/name/setSelected:</Anchor>
+			<Anchor>//api/name/isOdd</Anchor>
 		</Token>
 		
 	</File>

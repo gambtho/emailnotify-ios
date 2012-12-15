@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIImage+GTMUnitTestingAdditions.html">
+	<File path="Protocols/UAPushSettingsAddTagDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIImage(GTMUnitTestingAdditions)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/UAPushSettingsAddTagDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>
 			
 			<NodeRef refid="158"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushSettingsAddTagDelegate/addTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTag:(NSString *)tag</Declaration>
+			
+			
+			<Anchor>//api/name/addTag:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPushSettingsAddTagDelegate/cancelAddTag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAPushSettingsAddTagViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelAddTag</Declaration>
+			
+			
+			<Anchor>//api/name/cancelAddTag</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -1,113 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UALocationDemoAnnotation.html">
+	<File path="Classes/UAProductInventory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UALocationDemoAnnotation</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAProductInventory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>
 			
 			<NodeRef refid="69"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocationDemoAnnotation/setCoordinate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/setProductIDArray:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *productIDArray</Declaration>
 			
 			
-			<Anchor>//api/name/coordinate</Anchor>
+			<Anchor>//api/name/productIDArray</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocationDemoAnnotation/coordinate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductInventory/productIDArray</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableArray *productIDArray</Declaration>
 			
 			
-			<Anchor>//api/name/coordinate</Anchor>
+			<Anchor>//api/name/productIDArray</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocationDemoAnnotation/setTitle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/setProductDict:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, copy) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableDictionary *productDict</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/productDict</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocationDemoAnnotation/title</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductInventory/productDict</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, copy) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) NSMutableDictionary *productDict</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/productDict</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocationDemoAnnotation/setSubtitle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/setHasLoaded:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, copy) NSString *subtitle</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasLoaded</Declaration>
 			
 			
-			<Anchor>//api/name/subtitle</Anchor>
+			<Anchor>//api/name/hasLoaded</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UALocationDemoAnnotation/subtitle</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAProductInventory/hasLoaded</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, copy) NSString *subtitle</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasLoaded</Declaration>
 			
 			
-			<Anchor>//api/name/subtitle</Anchor>
+			<Anchor>//api/name/hasLoaded</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocationDemoAnnotation/monthDateFromDate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/init</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)monthDateFromDate:(NSDate *)date</Declaration>
+			<Declaration>- (id)init</Declaration>
 			
 			
-			<Anchor>//api/name/monthDateFromDate:</Anchor>
+			<Anchor>//api/name/init</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UALocationDemoAnnotation/description</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/loadWithArray:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)description</Declaration>
+			<Declaration>- (void)loadWithArray:(NSArray *)invArray</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
+			<Anchor>//api/name/loadWithArray:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UALocationDemoAnnotation/locationAnnotationFromLocation:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/loadInventory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UALocationDemoAnnotation.h</DeclaredIn>			
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
 			
-			<Declaration>+ (UALocationDemoAnnotation *)locationAnnotationFromLocation:(CLLocation *)location</Declaration>
+			<Declaration>- (void)loadInventory</Declaration>
 			
 			
-			<Anchor>//api/name/locationAnnotationFromLocation:</Anchor>
+			<Anchor>//api/name/loadInventory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/productsForSubscription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)productsForSubscription:(NSString *)subscriptionKey</Declaration>
+			
+			
+			<Anchor>//api/name/productsForSubscription:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/addProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)addProduct:(UASubscriptionProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/addProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/removeProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeProduct:(NSString *)productID</Declaration>
+			
+			
+			<Anchor>//api/name/removeProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/containsProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containsProduct:(NSString *)productID</Declaration>
+			
+			
+			<Anchor>//api/name/containsProduct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UAProductInventory/productForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>- (UASubscriptionProduct *)productForKey:(NSString *)productKey</Declaration>
+			
+			
+			<Anchor>//api/name/productForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UAProductInventory/localizedPrice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UAProductInventory.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)localizedPrice:(SKProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/localizedPrice:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,25 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/GTMUnitTestViewDrawer.html">
+	<File path="Protocols/UASubscriptionManagerObserver.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/GTMUnitTestViewDrawer</TokenIdentifier>
-			<Abstract type="html">\cond Protocols</Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UASubscriptionManagerObserver</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>
 			
 			<NodeRef refid="166"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GTMUnitTestViewDrawer/gtm_unitTestViewDrawRect:contextInfo:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/subscriptionWillEnterForeground</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMUIKit+UnitTesting.h</DeclaredIn>			
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)gtm_unitTestViewDrawRect:(CGRect)rect contextInfo:(void *)contextInfo</Declaration>
+			<Declaration>- (void)subscriptionWillEnterForeground</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_unitTestViewDrawRect:contextInfo:</Anchor>
+			<Anchor>//api/name/subscriptionWillEnterForeground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/subscriptionWillEnterBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscriptionWillEnterBackground</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionWillEnterBackground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/subscriptionsUpdated:</TokenIdentifier>
+			<Abstract type="html">The subscription, subscription product and content inventory has been updated.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscriptionsUpdated:(NSArray *)subscriptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subscriptions</Name>
+					<Abstract type="html">The list of available subscriptions.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscriptionsUpdated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/userSubscriptionsUpdated:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s subscription purchase list has been updated.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)userSubscriptionsUpdated:(NSArray *)subscriptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subscriptions</Name>
+					<Abstract type="html">The array of subscriptions for which the user has purchased products.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/userSubscriptionsUpdated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/inventoryUpdateFailedWithError:</TokenIdentifier>
+			<Abstract type="html">Inventory update callback.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)inventoryUpdateFailedWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The StoreKit or UA error</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/inventoryUpdateFailedWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/downloadContentFinished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)downloadContentFinished:(UASubscriptionContent *)content</Declaration>
+			
+			
+			<Anchor>//api/name/downloadContentFinished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/downloadContentFailed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)downloadContentFailed:(UASubscriptionContent *)content</Declaration>
+			
+			
+			<Anchor>//api/name/downloadContentFailed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/purchaseProductFinished:</TokenIdentifier>
+			<Abstract type="html">A product has been successfully purchased, including receipt verification.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)purchaseProductFinished:(UASubscriptionProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The purchased product</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purchaseProductFinished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/purchaseProductFailed:withError:</TokenIdentifier>
+			<Abstract type="html">This method is called if a StoreKit purchase fails. The purchase may be
+retried.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)purchaseProductFailed:(UASubscriptionProduct *)product withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The UASubscriptionProduct</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The StoreKit error returned with the transaction or a UA error with
+a UASubscriptionTransactionErrorDomain domain</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purchaseProductFailed:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/subscriptionProductRenewed:</TokenIdentifier>
+			<Abstract type="html">Called when StoreKit delivers a renewal transaction. These types of transactions are
+are unique to autorenewables as they have a SKTransactionStateRestored state but are
+delivered outside of the context of a standard restore process</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscriptionProductRenewed:(UASubscriptionProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionProductRenewed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/restoreAutorenewablesFinished:</TokenIdentifier>
+			<Abstract type="html">This method is called when a restore process completes without error.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreAutorenewablesFinished:(NSArray *)productsRestored</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productsRestored</Name>
+					<Abstract type="html">An array of the products for which receipts were
+found, nil if no autorenewables were found.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/restoreAutorenewablesFinished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/restoreAutorenewablesFailedWithError:</TokenIdentifier>
+			<Abstract type="html">This method is called when a restore fails due to a StoreKit error,
+including cancellation.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreAutorenewablesFailedWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The StoreKit error passed back with the failed transaction.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/restoreAutorenewablesFailedWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UASubscriptionManagerObserver/restoreAutorenewableProductFailed:</TokenIdentifier>
+			<Abstract type="html">This is called when a specific autorenewable receipt verification fails due
+to an invalid receipt or network issues. A success message may still follow
+for other products.</Abstract>
+			<DeclaredIn>UASubscriptionManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreAutorenewableProductFailed:(UASubscriptionProduct *)product</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>product</Name>
+					<Abstract type="html">The product that failed during receipt verification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/restoreAutorenewableProductFailed:</Anchor>
 		</Token>
 		
 	</File>

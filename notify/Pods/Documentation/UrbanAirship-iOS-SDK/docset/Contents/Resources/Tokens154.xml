@@ -1,245 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+GTMUnitTestingAdditions.html">
+	<File path="Protocols/UALocationProviderProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(GTMUnitTestingAdditions)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UALocationProviderProtocol</TokenIdentifier>
+			<Abstract type="html">Required for building a location provider</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>
 			
 			<NodeRef refid="154"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_setUnitTestSaveToDirectory:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">Required location manager for any location services</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>+ (void)gtm_setUnitTestSaveToDirectory:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_setUnitTestSaveToDirectory:</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_getUnitTestSaveToDirectory</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/locationManager</TokenIdentifier>
+			<Abstract type="html">Required location manager for any location services</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)gtm_getUnitTestSaveToDirectory</Declaration>
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_getUnitTestSaveToDirectory</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_areSystemSettingsValidForDoingImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setDistanceFilter:</TokenIdentifier>
+			<Abstract type="html">Distance Filter</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_areSystemSettingsValidForDoingImage</Declaration>
+			<Declaration>@property (nonatomic, assign) CLLocationDistance distanceFilter</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_areSystemSettingsValidForDoingImage</Anchor>
+			<Anchor>//api/name/distanceFilter</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageUTI</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/distanceFilter</TokenIdentifier>
+			<Abstract type="html">Distance Filter</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (CFStringRef)gtm_imageUTI</Declaration>
+			<Declaration>@property (nonatomic, assign) CLLocationDistance distanceFilter</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_imageUTI</Anchor>
+			<Anchor>//api/name/distanceFilter</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageExtension</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setDesiredAccuracy:</TokenIdentifier>
+			<Abstract type="html">Desired Accuracy</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_imageExtension</Declaration>
+			<Declaration>@property (nonatomic, assign) CLLocationAccuracy desiredAccuracy</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_imageExtension</Anchor>
+			<Anchor>//api/name/desiredAccuracy</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageDataForImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/desiredAccuracy</TokenIdentifier>
+			<Abstract type="html">Desired Accuracy</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSData *)gtm_imageDataForImage:(CGImageRef)image</Declaration>
+			<Declaration>@property (nonatomic, assign) CLLocationAccuracy desiredAccuracy</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_imageDataForImage:</Anchor>
+			<Anchor>//api/name/desiredAccuracy</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToImageNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setServiceStatus:</TokenIdentifier>
+			<Abstract type="html">Current status of the location provider</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_saveToImageNamed:(NSString *)name</Declaration>
+			<Declaration>@property (nonatomic, assign) UALocationProviderStatus serviceStatus</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_saveToImageNamed:</Anchor>
+			<Anchor>//api/name/serviceStatus</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToImageAt:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/serviceStatus</TokenIdentifier>
+			<Abstract type="html">Current status of the location provider</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_saveToImageAt:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, assign) UALocationProviderStatus serviceStatus</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_saveToImageAt:</Anchor>
+			<Anchor>//api/name/serviceStatus</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_compareWithImageAt:diffImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setProvider:</TokenIdentifier>
+			<Abstract type="html">This is a required parameter on the CLLocationManager and is presented to the user for authentication</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_compareWithImageAt:(NSString *)path diffImage:(CGImageRef *)diff</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *provider</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_compareWithImageAt:diffImage:</Anchor>
+			<Anchor>//api/name/provider</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_pathForImageNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/provider</TokenIdentifier>
+			<Abstract type="html">This is a required parameter on the CLLocationManager and is presented to the user for authentication</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_pathForImageNamed:(NSString *)name</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *provider</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_pathForImageNamed:</Anchor>
+			<Anchor>//api/name/provider</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setDelegate:</TokenIdentifier>
+			<Abstract type="html">This is intended to be a UALocationProviderDelegate</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (CGImageRef)gtm_imageWithContentsOfFile:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, assign) id delegate</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_imageWithContentsOfFile:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToPathForImageNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UALocationProviderProtocol/delegate</TokenIdentifier>
+			<Abstract type="html">This is intended to be a UALocationProviderDelegate</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_saveToPathForImageNamed:(NSString *)name</Declaration>
+			<Declaration>@property (nonatomic, assign) id delegate</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_saveToPathForImageNamed:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_imageRepresentation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/purpose</TokenIdentifier>
+			<Abstract type="html">This is the purpose associated with the CLLocationManager that is displayed to the user when
+permission for location services is required</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSData *)gtm_imageRepresentation</Declaration>
+			<Declaration>- (NSString *)purpose</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_imageRepresentation</Anchor>
+			<Anchor>//api/name/purpose</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_stateExtension</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/setPurpose:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_stateExtension</Declaration>
+			<Declaration>- (void)setPurpose:(NSString *)newPurpose</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_stateExtension</Anchor>
+			<Anchor>//api/name/setPurpose:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToStateNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/startReportingLocation</TokenIdentifier>
+			<Abstract type="html">Starts updating location</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_saveToStateNamed:(NSString *)name</Declaration>
+			<Declaration>- (void)startReportingLocation</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_saveToStateNamed:</Anchor>
+			<Anchor>//api/name/startReportingLocation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToStateAt:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UALocationProviderProtocol/stopReportingLocation</TokenIdentifier>
+			<Abstract type="html">Stops providing location updates</Abstract>
+			<DeclaredIn>UALocationProviderProtocol.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)gtm_saveToStateAt:(NSString *)path</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_saveToStateAt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_compareWithStateAt:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)gtm_compareWithStateAt:(NSString *)path</Declaration>
+			<Declaration>- (void)stopReportingLocation</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_compareWithStateAt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_pathForStateNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)gtm_pathForStateNamed:(NSString *)name</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_pathForStateNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_saveToPathForStateNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)gtm_saveToPathForStateNamed:(NSString *)name</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_saveToPathForStateNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_stateRepresentation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
-			
-			<Declaration>- (NSDictionary *)gtm_stateRepresentation</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_stateRepresentation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(GTMUnitTestingAdditions)/gtm_unitTestEncodeState:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMNSObject+UnitTesting.h</DeclaredIn>			
-			
-			<Declaration>- (void)gtm_unitTestEncodeState:(NSCoder *)inCoder</Declaration>
-			
-			
-			<Anchor>//api/name/gtm_unitTestEncodeState:</Anchor>
+			<Anchor>//api/name/stopReportingLocation</Anchor>
 		</Token>
 		
 	</File>

@@ -1,223 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASQLite.html">
+	<File path="Classes/UAStoreFrontUI.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASQLite</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UAStoreFrontUI</TokenIdentifier>
+			<Abstract type="html">This class is the reference implementation of the UAStoreFrontUIProtocol.</Abstract>
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>
 			
 			<NodeRef refid="89"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/setBusyRetryTimeout:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setUaWindow:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>@property (readwrite) NSInteger busyRetryTimeout</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWindow *uaWindow</Declaration>
 			
 			
-			<Anchor>//api/name/busyRetryTimeout</Anchor>
+			<Anchor>//api/name/uaWindow</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASQLite/busyRetryTimeout</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/uaWindow</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>@property (readwrite) NSInteger busyRetryTimeout</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWindow *uaWindow</Declaration>
 			
 			
-			<Anchor>//api/name/busyRetryTimeout</Anchor>
+			<Anchor>//api/name/uaWindow</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/setDbPath:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setOriginalWindow:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly) NSString *dbPath</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWindow *originalWindow</Declaration>
 			
 			
-			<Anchor>//api/name/dbPath</Anchor>
+			<Anchor>//api/name/originalWindow</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASQLite/dbPath</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/originalWindow</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly) NSString *dbPath</Declaration>
+			<Declaration>@property (nonatomic, retain) UIWindow *originalWindow</Declaration>
 			
 			
-			<Anchor>//api/name/dbPath</Anchor>
+			<Anchor>//api/name/originalWindow</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/initWithDBPath:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setRootViewController:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithDBPath:(NSString *)aDBPath</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) UIViewController *rootViewController</Declaration>
 			
 			
-			<Anchor>//api/name/initWithDBPath:</Anchor>
+			<Anchor>//api/name/rootViewController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/open:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/rootViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)open:(NSString *)aDBPath</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) UIViewController *rootViewController</Declaration>
 			
 			
-			<Anchor>//api/name/open:</Anchor>
+			<Anchor>//api/name/rootViewController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/close</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setProductListViewController:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (void)close</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontViewController *productListViewController</Declaration>
 			
 			
-			<Anchor>//api/name/close</Anchor>
+			<Anchor>//api/name/productListViewController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/lastErrorMessage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/productListViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)lastErrorMessage</Declaration>
+			<Declaration>@property (nonatomic, retain, readonly) UAStoreFrontViewController *productListViewController</Declaration>
 			
 			
-			<Anchor>//api/name/lastErrorMessage</Anchor>
+			<Anchor>//api/name/productListViewController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/lastErrorCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setIsVisible:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (NSInteger)lastErrorCode</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isVisible</Declaration>
 			
 			
-			<Anchor>//api/name/lastErrorCode</Anchor>
+			<Anchor>//api/name/isVisible</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/executeQuery:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/isVisible</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)executeQuery:(NSString *)sql, ...</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isVisible</Declaration>
 			
 			
-			<Anchor>//api/name/executeQuery:</Anchor>
+			<Anchor>//api/name/isVisible</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/executeQuery:arguments:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setIsiPad:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)executeQuery:(NSString *)sql arguments:(NSArray *)args</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isiPad</Declaration>
 			
 			
-			<Anchor>//api/name/executeQuery:arguments:</Anchor>
+			<Anchor>//api/name/isiPad</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/executeUpdate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/isiPad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)executeUpdate:(NSString *)sql, ...</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isiPad</Declaration>
 			
 			
-			<Anchor>//api/name/executeUpdate:</Anchor>
+			<Anchor>//api/name/isiPad</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/executeUpdate:arguments:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UAStoreFrontUI/setLocalizationBundle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)executeUpdate:(NSString *)sql arguments:(NSArray *)args</Declaration>
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
 			
 			
-			<Anchor>//api/name/executeUpdate:arguments:</Anchor>
+			<Anchor>//api/name/localizationBundle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/commit</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UAStoreFrontUI/localizationBundle</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)commit</Declaration>
+			<Declaration>@property (nonatomic, retain) NSBundle *localizationBundle</Declaration>
 			
 			
-			<Anchor>//api/name/commit</Anchor>
+			<Anchor>//api/name/localizationBundle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/rollback</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/setRuniPhoneTargetOniPad:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)rollback</Declaration>
+			<Declaration>+ (void)setRuniPhoneTargetOniPad:(BOOL)value</Declaration>
 			
 			
-			<Anchor>//api/name/rollback</Anchor>
+			<Anchor>//api/name/setRuniPhoneTargetOniPad:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/beginTransaction</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/displayStoreFront:animated:</TokenIdentifier>
+			<Abstract type="html">Called when the IAP UI should be displayed.</Abstract>
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)beginTransaction</Declaration>
+			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The calling view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Indicates whether the transition to the IAP UI should be animated.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/beginTransaction</Anchor>
+			<Anchor>//api/name/displayStoreFront:animated:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/beginDeferredTransaction</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAStoreFrontUI/displayStoreFront:withProductID:animated:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
+			<DeclaredIn>UAStoreFrontUI.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)beginDeferredTransaction</Declaration>
-			
-			
-			<Anchor>//api/name/beginDeferredTransaction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/tableExists:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)tableExists:(NSString *)tableName</Declaration>
+			<Declaration>+ (void)displayStoreFront:(UIViewController *)viewController withProductID:(NSString *)productID animated:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/tableExists:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASQLite/indexExists:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASQLite.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)indexExists:(NSString *)indexName</Declaration>
-			
-			
-			<Anchor>//api/name/indexExists:</Anchor>
+			<Anchor>//api/name/displayStoreFront:withProductID:animated:</Anchor>
 		</Token>
 		
 	</File>

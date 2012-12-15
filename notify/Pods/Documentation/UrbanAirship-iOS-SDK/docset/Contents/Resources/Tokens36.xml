@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UADateUtils.html">
+	<File path="Classes/UAEventAppInit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UADateUtils</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAEventAppInit</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADateUtils.h</DeclaredIn>
+			<DeclaredIn>UAEvent.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/UADateUtils/formattedDateRelativeToNow:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UADateUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)formattedDateRelativeToNow:(NSDate *)date</Declaration>
-			
-			
-			<Anchor>//api/name/formattedDateRelativeToNow:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

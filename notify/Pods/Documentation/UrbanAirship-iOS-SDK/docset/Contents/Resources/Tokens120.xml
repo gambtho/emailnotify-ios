@@ -1,15 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASubscriptionTableViewDelegatePurchasedProducts.html">
+	<File path="Classes/UA_ASIAuthenticationDialog.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionTableViewDelegatePurchasedProducts</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_ASIAuthenticationDialog</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionTableViewDelegate.h</DeclaredIn>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>
 			
 			<NodeRef refid="120"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIAuthenticationDialog/presentAuthenticationDialogForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)presentAuthenticationDialogForRequest:(UA_ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/presentAuthenticationDialogForRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UA_ASIAuthenticationDialog/dismiss</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)dismiss</Declaration>
+			
+			
+			<Anchor>//api/name/dismiss</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIAuthenticationDialog/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) UA_ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIAuthenticationDialog/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) UA_ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIAuthenticationDialog/setType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASIAuthenticationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIAuthenticationDialog/type</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) UA_ASIAuthenticationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIAuthenticationDialog/setDidEnableRotationNotifications:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL didEnableRotationNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/didEnableRotationNotifications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIAuthenticationDialog/didEnableRotationNotifications</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL didEnableRotationNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/didEnableRotationNotifications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIAuthenticationDialog/setPresentingController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) UIViewController *presentingController</Declaration>
+			
+			
+			<Anchor>//api/name/presentingController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIAuthenticationDialog/presentingController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UA_ASIAuthenticationDialog.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) UIViewController *presentingController</Declaration>
+			
+			
+			<Anchor>//api/name/presentingController</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

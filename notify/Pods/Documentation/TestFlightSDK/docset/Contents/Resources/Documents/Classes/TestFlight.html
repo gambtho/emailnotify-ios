@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">TestFlightSDK 1.1 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">TestFlightSDK 1.2 </a></h1>
 				<a id="developerHome" href="../index.html">TestFlight</a>
 			</div>
 			
@@ -165,7 +165,7 @@ If you want to track custom information such as a user name from your applicatio
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/takeOff:">+&nbsp;takeOff:</a></code>
-		<span class="tooltip"><p>Starts a TestFlight session</p></span>
+		<span class="tooltip"><p>Starts a TestFlight session using the Application Token for this Application</p></span>
 	</span>
 	
 	
@@ -201,7 +201,7 @@ feedback from custom feedback forms.</p></span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setDeviceIdentifier:">+&nbsp;setDeviceIdentifier:</a></code>
-		<span class="tooltip"><p>Sets the Device Identifier.
+		<span class="tooltip"><p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
 The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
 identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
 and logs, but the data will be anonymized.
@@ -388,7 +388,7 @@ If you want to track custom information such as a user name from your applicatio
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the Device Identifier.
+		<p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
 The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
 identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
 and logs, but the data will be anonymized.
@@ -426,7 +426,7 @@ directive that is only active for non-app store builds.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Sets the Device Identifier.
+		<p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
 The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
 identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
 and logs, but the data will be anonymized.
@@ -579,12 +579,12 @@ feedback from custom feedback forms.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Starts a TestFlight session</p>
+		<p>Starts a TestFlight session using the Application Token for this Application</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)takeOff:(NSString *)<em>teamToken</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)takeOff:(NSString *)<em>applicationToken</em></code></div>
 
     
 	
@@ -592,8 +592,10 @@ feedback from custom feedback forms.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>teamToken</em></dt>
-			<dd><p>Will be your team token obtained from <a href="https://testflightapp.com/dashboard/team/edit/">https://testflightapp.com/dashboard/team/edit/</a></p></dd>
+			<dt><em>applicationToken</em></dt>
+			<dd><p>Will be the application token for the current application.
+The token for this application can be retrieved by going to <a href="https://testflightapp.com/dashboard/applications/">https://testflightapp.com/dashboard/applications/</a>
+selecting this application from the list then selecting SDK.</p></dd>
 		</dl>
 		
 	</div>
@@ -606,7 +608,7 @@ feedback from custom feedback forms.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Starts a TestFlight session</p>
+		<p>Starts a TestFlight session using the Application Token for this Application</p>
 	</div>
 	
 	
@@ -638,9 +640,9 @@ feedback from custom feedback forms.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 TestFlight. All rights reserved. (Last updated: 2012-09-23)</span><br />
+						<p><span class="copyright">&copy; 2012 TestFlight. All rights reserved. (Last updated: 2012-12-15)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

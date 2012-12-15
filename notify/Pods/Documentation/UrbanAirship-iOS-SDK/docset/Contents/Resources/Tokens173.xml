@@ -1,124 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SenTestCase.html">
+	<File path="Protocols/UA_SBJsonParserOptions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SenTestCase</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UA_SBJsonParserOptions</TokenIdentifier>
+			<Abstract type="html">  @brief Options for the parser class.</Abstract>
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>
 			
 			<NodeRef refid="173"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/testCaseWithInvocation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UA_SBJsonParserOptions/setMaxDepth:</TokenIdentifier>
+			<Abstract type="html">@brief The maximum recursing depth of the parser.</Abstract>
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>			
 			
-			<Declaration>+ (id)testCaseWithInvocation:(NSInvocation *)anInvocation</Declaration>
+			<Declaration>@property NSUInteger maxDepth</Declaration>
 			
 			
-			<Anchor>//api/name/testCaseWithInvocation:</Anchor>
+			<Anchor>//api/name/maxDepth</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/initWithInvocation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/UA_SBJsonParserOptions/maxDepth</TokenIdentifier>
+			<Abstract type="html">@brief The maximum recursing depth of the parser.</Abstract>
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithInvocation:(NSInvocation *)anInvocation</Declaration>
-			
-			
-			<Anchor>//api/name/initWithInvocation:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/setUp</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (void)setUp</Declaration>
+			<Declaration>@property NSUInteger maxDepth</Declaration>
 			
 			
-			<Anchor>//api/name/setUp</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/invokeTest</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (void)invokeTest</Declaration>
-			
-			
-			<Anchor>//api/name/invokeTest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/tearDown</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (void)tearDown</Declaration>
-			
-			
-			<Anchor>//api/name/tearDown</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/performTest</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (void)performTest</Declaration>
-			
-			
-			<Anchor>//api/name/performTest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/failWithException:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (void)failWithException:(NSException *)exception</Declaration>
-			
-			
-			<Anchor>//api/name/failWithException:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/invocation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (NSInvocation *)invocation</Declaration>
-			
-			
-			<Anchor>//api/name/invocation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/selector</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>- (SEL)selector</Declaration>
-			
-			
-			<Anchor>//api/name/selector</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SenTestCase/testInvocations</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTMSenTestCase.h</DeclaredIn>			
-			
-			<Declaration>+ (NSArray *)testInvocations</Declaration>
-			
-			
-			<Anchor>//api/name/testInvocations</Anchor>
+			<Anchor>//api/name/maxDepth</Anchor>
 		</Token>
 		
 	</File>

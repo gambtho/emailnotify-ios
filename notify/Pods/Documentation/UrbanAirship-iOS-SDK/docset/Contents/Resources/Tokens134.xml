@@ -1,179 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UA_ASIFormDataRequest.html">
+	<File path="Classes/UA_SBJsonParser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UA_ASIFormDataRequest</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UA_SBJsonParser</TokenIdentifier>
+			<Abstract type="html">@brief The JSON parser class.</Abstract>
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>
 			
 			<NodeRef refid="134"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/encodeURL:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UA_SBJsonParser/objectWithString:</TokenIdentifier>
+			<Abstract type="html">Return the object represented by the given string.</Abstract>
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)encodeURL:(NSString *)string</Declaration>
+			<Declaration>- (id)objectWithString:(id)repr</Declaration>
 			
 			
-			<Anchor>//api/name/encodeURL:</Anchor>
+			<Anchor>//api/name/objectWithString:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/addPostValue:forKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UA_SBJsonParser/fragmentWithString:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
+			<DeclaredIn>UA_SBJsonParser.h</DeclaredIn>			
 			
-			<Declaration>- (void)addPostValue:(id&lt;NSObject&gt;)value forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/addPostValue:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setPostValue:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)setPostValue:(id&lt;NSObject&gt;)value forKey:(NSString *)key</Declaration>
+			<Declaration>- (id)fragmentWithString:(id)repr</Declaration>
 			
 			
-			<Anchor>//api/name/setPostValue:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/addFile:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)addFile:(NSString *)filePath forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/addFile:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/addFile:withFileName:andContentType:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)addFile:(NSString *)filePath withFileName:(NSString *)fileName andContentType:(NSString *)contentType forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/addFile:withFileName:andContentType:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setFile:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)setFile:(NSString *)filePath forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/setFile:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setFile:withFileName:andContentType:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)setFile:(NSString *)filePath withFileName:(NSString *)fileName andContentType:(NSString *)contentType forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/setFile:withFileName:andContentType:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/addData:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)addData:(NSData *)data forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/addData:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/addData:withFileName:andContentType:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)addData:(id)data withFileName:(NSString *)fileName andContentType:(NSString *)contentType forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/addData:withFileName:andContentType:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setData:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)setData:(NSData *)data forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/setData:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setData:withFileName:andContentType:forKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>- (void)setData:(id)data withFileName:(NSString *)fileName andContentType:(NSString *)contentType forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/setData:withFileName:andContentType:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setPostFormat:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (assign) UA_ASIPostFormat postFormat</Declaration>
-			
-			
-			<Anchor>//api/name/postFormat</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIFormDataRequest/postFormat</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (assign) UA_ASIPostFormat postFormat</Declaration>
-			
-			
-			<Anchor>//api/name/postFormat</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UA_ASIFormDataRequest/setStringEncoding:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (assign) NSStringEncoding stringEncoding</Declaration>
-			
-			
-			<Anchor>//api/name/stringEncoding</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UA_ASIFormDataRequest/stringEncoding</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UA_ASIFormDataRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (assign) NSStringEncoding stringEncoding</Declaration>
-			
-			
-			<Anchor>//api/name/stringEncoding</Anchor>
+			<Anchor>//api/name/fragmentWithString:</Anchor>
 		</Token>
 		
 	</File>

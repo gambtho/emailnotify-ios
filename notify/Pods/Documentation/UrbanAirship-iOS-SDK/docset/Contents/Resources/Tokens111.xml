@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASubscriptionObserver.html">
+	<File path="Classes/UASubscriptionTableViewDelegatePurchasedProducts.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionObserver</TokenIdentifier>
-			<Abstract type="html">This class is a transaction observer and the primary interface to StoreKit.</Abstract>
-			<DeclaredIn>UASubscriptionObserver.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionTableViewDelegatePurchasedProducts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UASubscriptionTableViewDelegate.h</DeclaredIn>
 			
 			<NodeRef refid="111"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionObserver/setAlertDelegate:</TokenIdentifier>
-			<Abstract type="html">An alert delegate provided by the implementing library. This delegate is
-not retained.</Abstract>
-			<DeclaredIn>UASubscriptionObserver.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;UASubscriptionAlertProtocol&gt; alertDelegate</Declaration>
-			
-			
-			<Anchor>//api/name/alertDelegate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionObserver/alertDelegate</TokenIdentifier>
-			<Abstract type="html">An alert delegate provided by the implementing library. This delegate is
-not retained.</Abstract>
-			<DeclaredIn>UASubscriptionObserver.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;UASubscriptionAlertProtocol&gt; alertDelegate</Declaration>
-			
-			
-			<Anchor>//api/name/alertDelegate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionObserver/restoreAutorenewables</TokenIdentifier>
-			<Abstract type="html">Restore all autorenewable transactions.</Abstract>
-			<DeclaredIn>UASubscriptionObserver.h</DeclaredIn>			
-			
-			<Declaration>- (void)restoreAutorenewables</Declaration>
-			
-			
-			<Anchor>//api/name/restoreAutorenewables</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

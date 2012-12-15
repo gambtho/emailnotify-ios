@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocoapods.SOCKit-1.0</string>
+	<string>org.cocoapods.SOCKit-1.1</string>
 	<key>CFBundleName</key>
-	<string>SOCKit 1.0 Documentation</string>
+	<string>SOCKit 1.1 Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<string>With SOCKit and SOCPattern you can easily transform objects into strings and vice versa.</string>
 	
 	<key>DocSetFeedName</key>
-	<string>SOCKit 1.0 Documentation</string>
+	<string>SOCKit 1.1 Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>

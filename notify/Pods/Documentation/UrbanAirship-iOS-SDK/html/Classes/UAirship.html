@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.1 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">UrbanAirship-iOS-SDK 1.3.7 </a></h1>
 				<a id="developerHome" href="../index.html">Urban Airship</a>
 			</div>
 			
@@ -40,8 +40,6 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/)">&nbsp;&nbsp;&nbsp;&nbsp;)</option>
-	
 	<option value="//api/name/analytics">&nbsp;&nbsp;&nbsp;&nbsp;analytics</option>
 	
 	<option value="//api/name/appId">&nbsp;&nbsp;&nbsp;&nbsp;appId</option>
@@ -62,6 +60,8 @@
 	<option value="class_methods">Class Methods</option>
 	
 	<option value="//api/name/land">&nbsp;&nbsp;&nbsp;&nbsp;+ land</option>
+	
+	<option value="//api/name/setLogLevel:">&nbsp;&nbsp;&nbsp;&nbsp;+ setLogLevel:</option>
 	
 	<option value="//api/name/setLogging:">&nbsp;&nbsp;&nbsp;&nbsp;+ setLogging:</option>
 	
@@ -122,8 +122,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/)">)</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analytics">analytics</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appId">appId</a></span></li>
@@ -145,6 +143,8 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/land">land</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLogLevel:">setLogLevel:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLogging:">setLogging:</a></span></li>
 	
@@ -252,11 +252,11 @@ so this is for internal library use only at this time.</p></span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/appId">&nbsp;&nbsp;appId</a></code>
-		<span class="tooltip"><p>The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_KEY will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_KEY will be used.</p></span>
+		<span class="tooltip"><p>The current Urban Airship app key. This value is loaded from the <code>AirshipConfig.plist</code> file or
+an NSDictionary passed in to <a href="#//api/name/takeOff:">[UAirship takeOff:]</a> with the
+UAirshipTakeOffOptionsAirshipConfigKey. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_KEY</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_KEY</code> will be used.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -264,27 +264,17 @@ DEVELOPMENT_APP_KEY will be used.</p></span>
 	<span class="tooltip">
 		<code><a href="#//api/name/appSecret">&nbsp;&nbsp;appSecret</a></code>
 		<span class="tooltip"><p>The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_SECRET will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_SECRET will be used.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
-		<span class="tooltip"><p>This flag is set to YES if the device token has been updated. It is intended for use by
-<a href="../Classes/UAUser.html">UAUser</a> and should not be used by implementing applications. To receive updates when the
-device token changes, applications should implement a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> and observe
-<a href="../Classes/UAPush.html">UAPush</a>.</p></span>
+an NSDictionary passed in to <a href="#//api/name/takeOff:"><code>[UAirship takeOff:]</code></a> with the
+<code>UAirshipTakeOffOptionsAirshipConfigKey</code>. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_SECRET</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_SECRET</code> will be used.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/ready">&nbsp;&nbsp;ready</a></code>
-		<span class="tooltip"><p>This flag is set to YES if the <a href="#//api/name/shared">shared</a> instance of
+		<span class="tooltip"><p>This flag is set to <code>YES</code> if the <a href="#//api/name/shared">shared</a> instance of
 UAirship has been initialized and is ready for use.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -322,9 +312,18 @@ UAirship has been initialized and is ready for use.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setLogging:">+&nbsp;setLogging:</a></code>
-		<span class="tooltip"><p>Enables or disables logging. Logging is enabled by default, but it will be disabled when the
-APP_STORE_OR_AD_HOC_BUILD AirshipConfig flag is set to YES. This flag overrides the
-AirshipConfig settings.</p></span>
+		<span class="tooltip"><p>Enables or disables logging. Logging is enabled by default, though the log level must still be set
+to an appropriate value. This flag overrides the AirshipConfig settings if called after takeOff.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLogLevel:">+&nbsp;setLogLevel:</a></code>
+		<span class="tooltip"><p>Sets the log level for the Urban Airship library. The log level defaults to UALogLevelDebug
+for development apps, and UALogLevelError for production apps (when the APP_STORE_OR_AD_HOC_BUILD
+AirshipConfig flag is set to YES). Setting LOG_LEVEL in the AirshipConfig settings will override
+these defaults, but will not override a value set with this method.</p></span>
 	</span>
 	
 	
@@ -372,40 +371,35 @@ if <a href="#//api/name/takeOff:">[UAirship takeOff:]</a> has not been called.</
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/registerDeviceToken:">&ndash;&nbsp;registerDeviceToken:</a></code>
-		<span class="tooltip"><p>Register a device token with UA. This will register a device token without an alias or tags.
-If an alias is set on the device token, it will be removed. Tags will not be changed.</p></span>
+		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/registerDeviceTokenWithExtraInfo:">&ndash;&nbsp;registerDeviceTokenWithExtraInfo:</a></code>
-		<span class="tooltip"><p>Register the current device token with UA.</p></span>
+		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/registerDeviceToken:withAlias:">&ndash;&nbsp;registerDeviceToken:withAlias:</a></code>
-		<span class="tooltip"><p>Register a device token and alias with UA.  An alias should only have a small
-number (&lt; 10) of device tokens associated with it. Use the tags API for arbitrary
-groupings.</p></span>
+		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/registerDeviceToken:withExtraInfo:">&ndash;&nbsp;registerDeviceToken:withExtraInfo:</a></code>
-		<span class="tooltip"><p>Register a device token with a custom API payload.</p></span>
+		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/unRegisterDeviceToken">&ndash;&nbsp;unRegisterDeviceToken</a></code>
-		<span class="tooltip"><p>Remove this device token&rsquo;s registration from the server.
-This call is equivalent to an API DELETE call, as described here:
-<a href="http://urbanairship.com/docs/push.html">http://urbanairship.com/docs/push.html</a>#registration</p></span>
+		
 	</span>
 	
 	
@@ -436,53 +430,6 @@ This call is equivalent to an API DELETE call, as described here:
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/)" title=")"></a>
-	<h3 class="subsubtitle method-title">)</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This flag is set to YES if the device token has been updated. It is intended for use by
-<a href="../Classes/UAUser.html">UAUser</a> and should not be used by implementing applications. To receive updates when the
-device token changes, applications should implement a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> and observe
-<a href="../Classes/UAPush.html">UAPush</a>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL deviceTokenHasChanged UA_DEPRECATED ( __UA_LIB_1_3_0__ )</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This flag is set to YES if the device token has been updated. It is intended for use by
-<a href="../Classes/UAUser.html">UAUser</a> and should not be used by implementing applications. To receive updates when the
-device token changes, applications should implement a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> and observe
-<a href="../Classes/UAPush.html">UAPush</a>.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/analytics" title="analytics"></a>
@@ -534,11 +481,11 @@ so this is for internal library use only at this time.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_KEY will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_KEY will be used.</p>
+		<p>The current Urban Airship app key. This value is loaded from the <code>AirshipConfig.plist</code> file or
+an NSDictionary passed in to <a href="#//api/name/takeOff:">[UAirship takeOff:]</a> with the
+UAirshipTakeOffOptionsAirshipConfigKey. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_KEY</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_KEY</code> will be used.</p>
 	</div>		
 	
     
@@ -555,11 +502,11 @@ DEVELOPMENT_APP_KEY will be used.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The current Urban Airship app key. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_KEY will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_KEY will be used.</p>
+		<p>The current Urban Airship app key. This value is loaded from the <code>AirshipConfig.plist</code> file or
+an NSDictionary passed in to <a href="#//api/name/takeOff:">[UAirship takeOff:]</a> with the
+UAirshipTakeOffOptionsAirshipConfigKey. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_KEY</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_KEY</code> will be used.</p>
 	</div>
 	
 	
@@ -584,10 +531,10 @@ DEVELOPMENT_APP_KEY will be used.</p>
 	
 	<div class="method-subsection brief-description">
 		<p>The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_SECRET will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_SECRET will be used.</p>
+an NSDictionary passed in to <a href="#//api/name/takeOff:"><code>[UAirship takeOff:]</code></a> with the
+<code>UAirshipTakeOffOptionsAirshipConfigKey</code>. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_SECRET</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_SECRET</code> will be used.</p>
 	</div>		
 	
     
@@ -605,10 +552,10 @@ DEVELOPMENT_APP_SECRET will be used.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>The current Urban Airship app secret. This value is loaded from the AirshipConfig.plist file or
-an NSDictionary passed in to [UAAirship takeOff:] with the
-UAirshipTakeOffOptionsAirshipConfigKey. If APP_STORE_OR_AD_HOC_BUILD is set to YES, the value set
-in PRODUCTION_APP_SECRET will be used. If APP_STORE_OR_AD_HOC_BUILD is set to NO, the value set in
-DEVELOPMENT_APP_SECRET will be used.</p>
+an NSDictionary passed in to <a href="#//api/name/takeOff:"><code>[UAirship takeOff:]</code></a> with the
+<code>UAirshipTakeOffOptionsAirshipConfigKey</code>. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>YES</code>, the value set
+in <code>PRODUCTION_APP_SECRET</code> will be used. If <code>APP_STORE_OR_AD_HOC_BUILD</code> is set to <code>NO</code>, the value set in
+<code>DEVELOPMENT_APP_SECRET</code> will be used.</p>
 	</div>
 	
 	
@@ -684,7 +631,7 @@ DEVELOPMENT_APP_SECRET will be used.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This flag is set to YES if the <a href="#//api/name/shared">shared</a> instance of
+		<p>This flag is set to <code>YES</code> if the <a href="#//api/name/shared">shared</a> instance of
 UAirship has been initialized and is ready for use.</p>
 	</div>		
 	
@@ -702,7 +649,7 @@ UAirship has been initialized and is ready for use.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This flag is set to YES if the <a href="#//api/name/shared">shared</a> instance of
+		<p>This flag is set to <code>YES</code> if the <a href="#//api/name/shared">shared</a> instance of
 UAirship has been initialized and is ready for use.</p>
 	</div>
 	
@@ -813,15 +760,71 @@ terminates.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/setLogLevel:" title="setLogLevel:"></a>
+	<h3 class="subsubtitle method-title">setLogLevel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the log level for the Urban Airship library. The log level defaults to UALogLevelDebug
+for development apps, and UALogLevelError for production apps (when the APP_STORE_OR_AD_HOC_BUILD
+AirshipConfig flag is set to YES). Setting LOG_LEVEL in the AirshipConfig settings will override
+these defaults, but will not override a value set with this method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setLogLevel:(UALogLevel)<em>level</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>level</em></dt>
+			<dd><p>The desired UALogLevel value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the log level for the Urban Airship library. The log level defaults to UALogLevelDebug
+for development apps, and UALogLevelError for production apps (when the APP_STORE_OR_AD_HOC_BUILD
+AirshipConfig flag is set to YES). Setting LOG_LEVEL in the AirshipConfig settings will override
+these defaults, but will not override a value set with this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UAirship.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/setLogging:" title="setLogging:"></a>
 	<h3 class="subsubtitle method-title">setLogging:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Enables or disables logging. Logging is enabled by default, but it will be disabled when the
-APP_STORE_OR_AD_HOC_BUILD AirshipConfig flag is set to YES. This flag overrides the
-AirshipConfig settings.</p>
+		<p>Enables or disables logging. Logging is enabled by default, though the log level must still be set
+to an appropriate value. This flag overrides the AirshipConfig settings if called after takeOff.</p>
 	</div>		
 	
     
@@ -848,9 +851,8 @@ AirshipConfig settings.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Enables or disables logging. Logging is enabled by default, but it will be disabled when the
-APP_STORE_OR_AD_HOC_BUILD AirshipConfig flag is set to YES. This flag overrides the
-AirshipConfig settings.</p>
+		<p>Enables or disables logging. Logging is enabled by default, though the log level must still be set
+to an appropriate value. This flag overrides the AirshipConfig settings if called after takeOff.</p>
 	</div>
 	
 	
@@ -963,7 +965,7 @@ parameter with the UAirshipTakeOffOptionsLaunchOptionsKey.</p>
 
 <p>Configuration are read from the AirshipConfig.plist file. You may overrride the
 AirshipConfig.plist values at runtime by including an NSDictionary containing the override
-values with the UAirshipTakeOffOptionsAirshipConfigKey.</p>
+values with the UAirshipTakeOffOptionsAirshipConfigKey.</p><div class="warning"><p><strong>Warning:</strong> takeOff: must be called on the main thread. Not doing so results in an UAirshipTakeOffMainThreadException</p></div>
 	</div>
 	
 	
@@ -1015,54 +1017,10 @@ values with the UAirshipTakeOffOptionsAirshipConfigKey.</p>
 	<h3 class="subsubtitle method-title">registerDeviceToken:</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Register a device token with UA. This will register a device token without an alias or tags.
-If an alias is set on the device token, it will be removed. Tags will not be changed.</p>
-	</div>		
-	
-    
 
 	<div class="method-subsection method-declaration"><code>- (void)registerDeviceToken:(NSData *)<em>token</em></code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>token</em></dt>
-			<dd><p>The device token to register.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Register a device token with UA. This will register a device token without an alias or tags.
-If an alias is set on the device token, it will be removed. Tags will not be changed.</p>
-
-<p>Add a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> to <a href="../Classes/UAPush.html">UAPush</a> to receive success or failure callbacks.</p><div class="warning"><p><strong>Warning:</strong> Deprecated: Use the method on <a href="../Classes/UAPush.html">UAPush</a> instead</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
@@ -1070,61 +1028,10 @@ If an alias is set on the device token, it will be removed. Tags will not be cha
 	<h3 class="subsubtitle method-title">registerDeviceToken:withAlias:</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Register a device token and alias with UA.  An alias should only have a small
-number (&lt; 10) of device tokens associated with it. Use the tags API for arbitrary
-groupings.</p>
-	</div>		
-	
-    
 
 	<div class="method-subsection method-declaration"><code>- (void)registerDeviceToken:(NSData *)<em>token</em> withAlias:(NSString *)<em>alias</em></code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>token</em></dt>
-			<dd><p>The device token to register.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>alias</em></dt>
-			<dd><p>The alias to register for this device token.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Register a device token and alias with UA.  An alias should only have a small
-number (&lt; 10) of device tokens associated with it. Use the tags API for arbitrary
-groupings.</p>
-
-<p>Add a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> to <a href="../Classes/UAPush.html">UAPush</a> to receive success or failure callbacks.</p><div class="warning"><p><strong>Warning:</strong> Deprecated: Use the method on <a href="../Classes/UAPush.html">UAPush</a> instead</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
@@ -1132,58 +1039,10 @@ groupings.</p>
 	<h3 class="subsubtitle method-title">registerDeviceToken:withExtraInfo:</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Register a device token with a custom API payload.</p>
-	</div>		
-	
-    
 
 	<div class="method-subsection method-declaration"><code>- (void)registerDeviceToken:(NSData *)<em>token</em> withExtraInfo:(NSDictionary *)<em>info</em></code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>token</em></dt>
-			<dd><p>The device token to register.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>info</em></dt>
-			<dd><p>An NSDictionary containing registraton keys and values. See
-<a href="https://docs.urbanairship.com/display/DOCS/Server%3A+iOS+Push+API">https://docs.urbanairship.com/display/DOCS/Server%3A+iOS+Push+API</a> for details.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Register a device token with a custom API payload.</p>
-
-<p>Add a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> to <a href="../Classes/UAPush.html">UAPush</a> to receive success or failure callbacks.</p><div class="warning"><p><strong>Warning:</strong> Deprecated: Use the method on <a href="../Classes/UAPush.html">UAPush</a> instead</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
@@ -1191,53 +1050,10 @@ groupings.</p>
 	<h3 class="subsubtitle method-title">registerDeviceTokenWithExtraInfo:</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Register the current device token with UA.</p>
-	</div>		
-	
-    
 
 	<div class="method-subsection method-declaration"><code>- (void)registerDeviceTokenWithExtraInfo:(NSDictionary *)<em>info</em></code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>info</em></dt>
-			<dd><p>An NSDictionary containing registraton keys and values. See
-<a href="http://urbanairship.com/docs/push.html">http://urbanairship.com/docs/push.html</a>#registration for details.</p>
-
-<p>Add a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> to <a href="../Classes/UAPush.html">UAPush</a> to receive success or failure callbacks.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Register the current device token with UA.</p><div class="warning"><p><strong>Warning:</strong> Deprecated: Use the method on <a href="../Classes/UAPush.html">UAPush</a> instead</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
@@ -1245,46 +1061,10 @@ groupings.</p>
 	<h3 class="subsubtitle method-title">unRegisterDeviceToken</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Remove this device token&rsquo;s registration from the server.
-This call is equivalent to an API DELETE call, as described here:
-<a href="http://urbanairship.com/docs/push.html">http://urbanairship.com/docs/push.html</a>#registration</p>
-	</div>		
-	
-    
 
 	<div class="method-subsection method-declaration"><code>- (void)unRegisterDeviceToken</code></div>
 
     
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Remove this device token&rsquo;s registration from the server.
-This call is equivalent to an API DELETE call, as described here:
-<a href="http://urbanairship.com/docs/push.html">http://urbanairship.com/docs/push.html</a>#registration</p>
-
-<p>Add a <a href="../Protocols/UARegistrationObserver.html">UARegistrationObserver</a> to <a href="../Classes/UAPush.html">UAPush</a> to receive success or failure callbacks.</p><div class="warning"><p><strong>Warning:</strong> Deprecated: Use the method on <a href="../Classes/UAPush.html">UAPush</a> instead</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UAirship.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 					</div>
@@ -1300,9 +1080,9 @@ This call is equivalent to an API DELETE call, as described here:
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-09-02)</span><br />
+						<p><span class="copyright">&copy; 2012 Urban Airship. All rights reserved. (Last updated: 2012-12-15)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

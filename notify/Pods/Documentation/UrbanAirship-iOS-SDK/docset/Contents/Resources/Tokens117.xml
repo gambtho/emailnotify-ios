@@ -1,256 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UASubscriptionSettingsViewController.html">
+	<File path="Classes/UAUtils.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UASubscriptionSettingsViewController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UAUtils</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>
+			<DeclaredIn>UAUtils.h</DeclaredIn>
 			
 			<NodeRef refid="117"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailHints:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/md5:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UILabel *emailHints</Declaration>
+			<Declaration>+ (NSString *)md5:(NSString *)sourceString</Declaration>
 			
 			
-			<Anchor>//api/name/emailHints</Anchor>
+			<Anchor>//api/name/md5:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailHints</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/UUID</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UILabel *emailHints</Declaration>
+			<Declaration>+ (NSString *)UUID</Declaration>
 			
 			
-			<Anchor>//api/name/emailHints</Anchor>
+			<Anchor>//api/name/UUID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailInput:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceModelName</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UITextField *emailInput</Declaration>
+			<Declaration>+ (NSString *)deviceModelName</Declaration>
 			
 			
-			<Anchor>//api/name/emailInput</Anchor>
+			<Anchor>//api/name/deviceModelName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailInput</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/deviceID</TokenIdentifier>
+			<Abstract type="html">Gets the Urban Airship Device ID.</Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UITextField *emailInput</Declaration>
+			<Declaration>+ (NSString *)deviceID</Declaration>
 			
-			
-			<Anchor>//api/name/emailInput</Anchor>
+			<ReturnValue><Abstract type="html">The device ID, or an empty string if the ID cannot be retrieved or created.</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setEmailButton:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/urlEncodedStringWithString:encoding:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *emailButton</Declaration>
+			<Declaration>+ (NSString *)urlEncodedStringWithString:(NSString *)string encoding:(NSStringEncoding)encoding</Declaration>
 			
 			
-			<Anchor>//api/name/emailButton</Anchor>
+			<Anchor>//api/name/urlEncodedStringWithString:encoding:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/emailButton</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *emailButton</Declaration>
+			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/emailButton</Anchor>
+			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setResendEmailButton:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userRequestWithURL:method:delegate:finish:fail:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *resendEmailButton</Declaration>
+			<Declaration>+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
 			
 			
-			<Anchor>//api/name/resendEmailButton</Anchor>
+			<Anchor>//api/name/userRequestWithURL:method:delegate:finish:fail:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/resendEmailButton</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *resendEmailButton</Declaration>
+			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/resendEmailButton</Anchor>
+			<Anchor>//api/name/requestWithURL:method:delegate:finish:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setCancelEmailButton:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWithURL:method:delegate:finish:fail:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *cancelEmailButton</Declaration>
+			<Declaration>+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2</Declaration>
 			
 			
-			<Anchor>//api/name/cancelEmailButton</Anchor>
+			<Anchor>//api/name/requestWithURL:method:delegate:finish:fail:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/cancelEmailButton</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/userAuthHeaderString</TokenIdentifier>
+			<Abstract type="html">Returns a basic auth header string.</Abstract>
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UIButton *cancelEmailButton</Declaration>
+			<Declaration>+ (NSString *)userAuthHeaderString</Declaration>
 			
-			
-			<Anchor>//api/name/cancelEmailButton</Anchor>
+			<ReturnValue><Abstract type="html">An HTTP Basic Auth header string value for the user&apos;s credentials.</Abstract></ReturnValue>
+			<Anchor>//api/name/userAuthHeaderString</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setRecoveryHints:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/responseFromRequest:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UILabel *recoveryHints</Declaration>
+			<Declaration>+ (id)responseFromRequest:(UA_ASIHTTPRequest *)request</Declaration>
 			
 			
-			<Anchor>//api/name/recoveryHints</Anchor>
+			<Anchor>//api/name/responseFromRequest:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/recoveryHints</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/parseJSON:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain) IBOutlet UILabel *recoveryHints</Declaration>
+			<Declaration>+ (id)parseJSON:(NSString *)responseString</Declaration>
 			
 			
-			<Anchor>//api/name/recoveryHints</Anchor>
+			<Anchor>//api/name/parseJSON:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/setRecoveryAlert:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) UIAlertView *recoveryAlert</Declaration>
+			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request</Declaration>
 			
 			
-			<Anchor>//api/name/recoveryAlert</Anchor>
+			<Anchor>//api/name/requestWentWrong:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UASubscriptionSettingsViewController/recoveryAlert</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/requestWentWrong:keyword:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) UIAlertView *recoveryAlert</Declaration>
+			<Declaration>+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request keyword:(NSString *)keyword</Declaration>
 			
 			
-			<Anchor>//api/name/recoveryAlert</Anchor>
+			<Anchor>//api/name/requestWentWrong:keyword:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/submitEmail:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/pluralize:singularForm:pluralForm:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>- (IBAction)submitEmail:(id)sender</Declaration>
+			<Declaration>+ (NSString *)pluralize:(int)count singularForm:(NSString *)singular pluralForm:(NSString *)plural</Declaration>
 			
 			
-			<Anchor>//api/name/submitEmail:</Anchor>
+			<Anchor>//api/name/pluralize:singularForm:pluralForm:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/resendEmail:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/UAUtils/getReadableFileSizeFromBytes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
+			<DeclaredIn>UAUtils.h</DeclaredIn>			
 			
-			<Declaration>- (IBAction)resendEmail:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/resendEmail:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/cancelEmail:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)cancelEmail:(id)sender</Declaration>
+			<Declaration>+ (NSString *)getReadableFileSizeFromBytes:(double)bytes</Declaration>
 			
 			
-			<Anchor>//api/name/cancelEmail:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/updateUI</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)updateUI</Declaration>
-			
-			
-			<Anchor>//api/name/updateUI</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/showRecoveryAlert</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)showRecoveryAlert</Declaration>
-			
-			
-			<Anchor>//api/name/showRecoveryAlert</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/hideRecoveryAlert</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)hideRecoveryAlert</Declaration>
-			
-			
-			<Anchor>//api/name/hideRecoveryAlert</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/showRecoveryFailAlert</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (void)showRecoveryFailAlert</Declaration>
-			
-			
-			<Anchor>//api/name/showRecoveryFailAlert</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UASubscriptionSettingsViewController/validateEmail:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UASubscriptionSettingsViewController.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)validateEmail:(NSString *)candidate</Declaration>
-			
-			
-			<Anchor>//api/name/validateEmail:</Anchor>
+			<Anchor>//api/name/getReadableFileSizeFromBytes:</Anchor>
 		</Token>
 		
 	</File>

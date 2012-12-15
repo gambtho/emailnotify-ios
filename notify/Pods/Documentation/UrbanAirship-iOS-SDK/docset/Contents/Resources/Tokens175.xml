@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/UAHTTPConnectionDelegate.html">
+	<File path="Protocols/UA_ZipArchiveDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/UAHTTPConnectionDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/UA_ZipArchiveDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>
 			
 			<NodeRef refid="175"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UAHTTPConnectionDelegate/requestDidSucceed:response:responseData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UA_ZipArchiveDelegate/ErrorMessage:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
 			
-			<Declaration>- (void)requestDidSucceed:(UAHTTPRequest *)request response:(NSHTTPURLResponse *)response responseData:(NSData *)responseData</Declaration>
+			<Declaration>- (void)ErrorMessage:(NSString *)msg</Declaration>
 			
 			
-			<Anchor>//api/name/requestDidSucceed:response:responseData:</Anchor>
+			<Anchor>//api/name/ErrorMessage:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UAHTTPConnectionDelegate/requestDidFail:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UA_ZipArchiveDelegate/OverWriteOperation:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UAHTTPConnection.h</DeclaredIn>			
+			<DeclaredIn>UA_ZipArchive.h</DeclaredIn>			
 			
-			<Declaration>- (void)requestDidFail:(UAHTTPRequest *)request</Declaration>
+			<Declaration>- (BOOL)OverWriteOperation:(NSString *)file</Declaration>
 			
 			
-			<Anchor>//api/name/requestDidFail:</Anchor>
+			<Anchor>//api/name/OverWriteOperation:</Anchor>
 		</Token>
 		
 	</File>

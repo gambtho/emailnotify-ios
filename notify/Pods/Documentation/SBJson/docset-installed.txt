@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/tng/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.SBJson-3.1.1.docset
+Time: 2012-12-15 12:02:04 +0000

@@ -1,58 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/GHTestDelegate.html">
+	<File path="Protocols/UAStoreFrontObserverProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/GHTestDelegate</TokenIdentifier>
-			<Abstract type="html">Test delegate for notification when a test starts and ends.</Abstract>
-			<DeclaredIn>GHTest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UAStoreFrontObserverProtocol</TokenIdentifier>
+			<Abstract type="html">Implementers of this protocol will receive callbacks
+related to inventory state changes</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>
 			
 			<NodeRef refid="163"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidStart:source:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GHTest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontObserverProtocol/restoreStatusChanged:</TokenIdentifier>
+			<Abstract type="html">Called when the restore status has changed</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
 			
-			<Declaration>- (void)testDidStart:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			<Declaration>- (void)restoreStatusChanged:(NSNumber *)inRestoring</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inRestoring</Name>
+					<Abstract type="html">A boolean value wrappen in a NSNumber indicating whether
+a restore is in progress.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/testDidStart:source:</Anchor>
+			<Anchor>//api/name/restoreStatusChanged:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidUpdate:source:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GHTest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontObserverProtocol/inventoryGroupUpdated</TokenIdentifier>
+			<Abstract type="html">Called when the inventory groups are updated.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
 			
-			<Declaration>- (void)testDidUpdate:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			<Declaration>- (void)inventoryGroupUpdated</Declaration>
 			
 			
-			<Anchor>//api/name/testDidUpdate:source:</Anchor>
+			<Anchor>//api/name/inventoryGroupUpdated</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/testDidEnd:source:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GHTest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontObserverProtocol/inventoryStatusChanged:</TokenIdentifier>
+			<Abstract type="html">Called when the inventory status has changed.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
 			
-			<Declaration>- (void)testDidEnd:(id&lt;GHTest&gt;)test source:(id&lt;GHTest&gt;)source</Declaration>
+			<Declaration>- (void)inventoryStatusChanged:(NSNumber *)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">A UAInventoryStatus enum value wrapped in an NSNumber.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/testDidEnd:source:</Anchor>
+			<Anchor>//api/name/inventoryStatusChanged:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GHTestDelegate/test:didLog:source:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GHTest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UAStoreFrontObserverProtocol/inventoryProductsChanged:</TokenIdentifier>
+			<Abstract type="html">Called when thet status of any one of the products in the inventory has
+changed state.</Abstract>
+			<DeclaredIn>UAStoreFront.h</DeclaredIn>			
 			
-			<Declaration>- (void)test:(id&lt;GHTest&gt;)test didLog:(NSString *)message source:(id&lt;GHTest&gt;)source</Declaration>
+			<Declaration>- (void)inventoryProductsChanged:(NSNumber *)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">A corresponding UAProductStatus enum value wrapped in an NSNumber.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/test:didLog:source:</Anchor>
+			<Anchor>//api/name/inventoryProductsChanged:</Anchor>
 		</Token>
 		
 	</File>
