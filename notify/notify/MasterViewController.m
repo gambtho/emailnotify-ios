@@ -36,6 +36,12 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
+    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
+    [refresh addTarget:self action:@selector(refreshView:)forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refresh;
+    
     self.pinValidated = NO;
     
     [self getNotifications];
@@ -140,6 +146,23 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }
     [self.tableView reloadData];
 }
+
+#pragma mark - Refresh
+
+-(void)refreshView:(UIRefreshControl *)refresh {
+         refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Refreshing data..."];
+    
+        [self getNotifications];
+        [self performFetch];
+        [self.tableView reloadData];
+    
+         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+         [formatter setDateFormat:@"MMM d, h:mm a"];
+         NSString *lastUpdated = [NSString stringWithFormat:@"Last updated on %@",
+                                                                    [formatter stringFromDate:[NSDate date]]];
+         refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
+         [refresh endRefreshing];
+     }
 
 #pragma mark - Fetched results controller
 
@@ -311,9 +334,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [alert show];
         _fetchedResultsController = nil;
         self.loggedInUser = nil;
-       // [self getNotifications];
-      //  [self performFetch];
-          [self.tableView reloadData];
+        [self.tableView reloadData];
     }
 }
 
@@ -368,7 +389,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         // 3
         NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
         //self.userEmail = user;
-        NSString *message = [NSString stringWithFormat:@"Username is %@?", user];
+        NSString *message = [NSString stringWithFormat:@"Username is %@", user];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
                                                         message:message
                                                        delegate:self

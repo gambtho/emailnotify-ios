@@ -19,6 +19,7 @@
 @synthesize subjectLabel;
 @synthesize fromAddressLabel;
 @synthesize sendDateLabel;
+@synthesize messageBodyText;
 
 - (void)setNotification:(Notification *)newNotifyItem
 {
@@ -36,7 +37,7 @@
 
     if (self.notifyItem) {
 
-        self.messageBodyLabel.text = self.notifyItem.subject;
+        self.messageBodyText.text = self.notifyItem.messageBody;
         self.sendDateLabel.text = [self getDateString:self.notifyItem.sentDate];
         self.fromAddressLabel.text = self.notifyItem.fromAddress;
         self.subjectLabel.text = self.notifyItem.subject;
@@ -55,6 +56,7 @@
     [self setSubjectLabel:nil];
     [self setFromAddressLabel:nil];
     [self setSendDateLabel:nil];
+    [self setMessageBodyText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *subjectLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fromAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sendDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *messageBodyLabel;
+@property (weak, nonatomic) IBOutlet UITextView *messageBodyText;
 @end
