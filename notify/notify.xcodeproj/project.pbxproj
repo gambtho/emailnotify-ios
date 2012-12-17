@@ -10,6 +10,7 @@
 		4ACAB8FA67624A89A945BF82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80669BB3B0472EA5336FD8 /* libPods.a */; };
 		AA9EFCDE167CB4950030794A /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDD167CB4950030794A /* mail icon.png */; };
 		AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDF167CB49B0030794A /* mail icon retina.png */; };
+		AA9EFCF1167D18930030794A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCF0167D18930030794A /* Default-568h@2x.png */; };
 		E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2062A2C15DB31CE00AD5674 /* NotificationCell.m */; };
 		E2BAF0AA15E6FCE500EAF8E0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BAF0A915E6FCE500EAF8E0 /* User.m */; };
 		E2E388CA15F3EA600076FABB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388C915F3EA600076FABB /* MobileCoreServices.framework */; };
@@ -47,6 +48,7 @@
 		A7304360D95E42B8872FC721 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA9EFCDD167CB4950030794A /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon.png"; path = "../mail icon.png"; sourceTree = "<group>"; };
 		AA9EFCDF167CB49B0030794A /* mail icon retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon retina.png"; path = "../mail icon retina.png"; sourceTree = "<group>"; };
+		AA9EFCF0167D18930030794A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		E2062A2B15DB31CE00AD5674 /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
 		E2062A2C15DB31CE00AD5674 /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
 		E2BAF0A815E6FCE500EAF8E0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		E2E40E9815D733D1005AF448 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA9EFCF0167D18930030794A /* Default-568h@2x.png */,
 				AA9EFCDD167CB4950030794A /* mail icon.png */,
 				AA9EFCDF167CB49B0030794A /* mail icon retina.png */,
 				E2E40E9915D733D1005AF448 /* notify-Info.plist */,
@@ -261,6 +264,7 @@
 				E2E388DF15F3EB180076FABB /* AirshipConfig.plist in Resources */,
 				AA9EFCDE167CB4950030794A /* mail icon.png in Resources */,
 				AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */,
+				AA9EFCF1167D18930030794A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

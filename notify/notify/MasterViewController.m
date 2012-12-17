@@ -334,6 +334,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [alert show];
         _fetchedResultsController = nil;
         self.loggedInUser = nil;
+        self.loginButton.title = @"Login";
         [self.tableView reloadData];
     }
 }
@@ -401,7 +402,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         // 5
         UITextField *pinField = [alert textFieldAtIndex:0];
         pinField.delegate = self;
-        pinField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        pinField.autocapitalizationType = UITextAutocapitalizationTypeNone;
         pinField.tag = kTextFieldPIN;
         [alert show];
     } else {
@@ -414,12 +415,14 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [alert setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
         alert.tag = kAlertTypeSetup;
         UITextField *nameField = [alert textFieldAtIndex:0];
-        nameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        nameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+        nameField.keyboardType = UIKeyboardTypeEmailAddress;
         nameField.placeholder = @"Name"; // Replace the standard placeholder text with something more applicable
         nameField.delegate = self;
         nameField.tag = kTextFieldName;
         UITextField *passwordField = [alert textFieldAtIndex:1]; // Capture the Password text field since there are 2 fields
         passwordField.delegate = self;
+        passwordField.autocapitalizationType = UITextAutocapitalizationTypeNone;
         passwordField.tag = kTextFieldPassword;
         [alert show];
     }
