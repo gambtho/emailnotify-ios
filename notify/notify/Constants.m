@@ -13,7 +13,7 @@
 #if DEBUG
 NSString * const HOST = @"http://localhost:8888";
 #else
-NSString * const HOST = @"http://notifyweb.appspot.com";
+NSString * const HOST = @"https://notifyweb.appspot.com";
 #endif
 
 NSString * const NOTIFICATION_PATH = @"/notifyweb/notification";

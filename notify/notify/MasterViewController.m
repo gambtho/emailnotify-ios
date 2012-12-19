@@ -299,7 +299,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         DDLogInfo(@"Host name is %@", HOST);
         [NSFetchedResultsController deleteCacheWithName:@"Notifications"];
         [self.fetchedResultsController.fetchRequest setPredicate:[self currentPredicate]];
-        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:[self.loggedInUser getUserAddress], @"user", nil];
+        
+        NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
+        DDLogInfo(@"Pin is %@", fieldString);
+        DDLogInfo(@"User is %@", [self.loggedInUser getUserAddress]);
+        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:[self.loggedInUser getUserAddress], @"user",
+                                     fieldString, @"token",
+                                     nil];
         NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
         DDLogVerbose(@"%@", resourcePath);
         [objectManager loadObjectsAtResourcePath:resourcePath delegate:self];
