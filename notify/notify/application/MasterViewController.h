@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) RKObjectManager *objectManager;
+@property (nonatomic, strong) NSData *urbanToken;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 
 - (IBAction)login:(id)sender;

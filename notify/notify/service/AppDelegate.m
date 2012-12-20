@@ -16,7 +16,7 @@
 
 static const int ddLogLevel = LOG_LEVEL_INFO;
 
-@synthesize objectManager, objectStore, objectContext;
+@synthesize objectManager, objectStore, objectContext, urbanToken;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -29,6 +29,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.objectContext;
     controller.objectManager = self.objectManager;
+    controller.urbanToken = self.urbanToken;
 
     return YES;
 }
@@ -135,13 +136,20 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     UALOG(@"APN device token: %@", deviceToken);
     
     // Sets the alias. It will be sent to the server on registration.
-    NSString *yourAlias = @"thomas_gamble@homedepot.com";
-    [UAPush shared].alias = yourAlias;
+    
+    NSString *yourAlias = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+    
+    urbanToken = deviceToken;
+   
+    if(yourAlias!=nil)
+    {
+        UALOG(@"user alias set to: %@", yourAlias);
+        [UAPush shared].alias = yourAlias;
+    }
     
     // Updates the device token and registers the token with UA
     [[UAPush shared] registerDeviceToken:deviceToken];
 }
-
 
 #pragma mark - RestKit
 

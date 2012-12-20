@@ -14,6 +14,7 @@
 @property (nonatomic, strong) RKObjectManager *objectManager;
 @property (nonatomic, strong) RKManagedObjectStore *objectStore;
 @property (nonatomic, strong) NSManagedObjectContext *objectContext;
+@property (nonatomic, strong) NSData *urbanToken;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

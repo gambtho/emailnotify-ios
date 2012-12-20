@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4ACAB8FA67624A89A945BF82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80669BB3B0472EA5336FD8 /* libPods.a */; };
-		AA9EFCDE167CB4950030794A /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDD167CB4950030794A /* mail icon.png */; };
-		AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCDF167CB49B0030794A /* mail icon retina.png */; };
-		AA9EFCF1167D18930030794A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EFCF0167D18930030794A /* Default-568h@2x.png */; };
-		E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2062A2C15DB31CE00AD5674 /* NotificationCell.m */; };
-		E2BAF0AA15E6FCE500EAF8E0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BAF0A915E6FCE500EAF8E0 /* User.m */; };
+		AA9EC52116825A460057CE7C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4ED16825A460057CE7C /* DetailViewController.m */; };
+		AA9EC52216825A460057CE7C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4EF16825A460057CE7C /* MasterViewController.m */; };
+		AA9EC52316825A460057CE7C /* notify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4F116825A460057CE7C /* notify.xcdatamodeld */; };
+		AA9EC52416825A460057CE7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC4F416825A460057CE7C /* InfoPlist.strings */; };
+		AA9EC52516825A460057CE7C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC4F616825A460057CE7C /* MainStoryboard.storyboard */; };
+		AA9EC52616825A460057CE7C /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4FA16825A460057CE7C /* MappingProvider.m */; };
+		AA9EC52716825A460057CE7C /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4FD16825A460057CE7C /* Notification.m */; };
+		AA9EC52816825A460057CE7C /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4FF16825A460057CE7C /* NotificationCell.m */; };
+		AA9EC52916825A460057CE7C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC50116825A460057CE7C /* User.m */; };
+		AA9EC52A16825A460057CE7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50416825A460057CE7C /* Default-568h@2x.png */; };
+		AA9EC52C16825A460057CE7C /* mail icon retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50616825A460057CE7C /* mail icon retina.png */; };
+		AA9EC52D16825A460057CE7C /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50716825A460057CE7C /* mail icon.png */; };
+		AA9EC52E16825A460057CE7C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50916825A460057CE7C /* AirshipConfig.plist */; };
+		AA9EC53616825A460057CE7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51716825A460057CE7C /* AppDelegate.m */; };
+		AA9EC53716825A460057CE7C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51A16825A460057CE7C /* Constants.m */; };
+		AA9EC53816825A460057CE7C /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51C16825A460057CE7C /* KeychainWrapper.m */; };
+		AA9EC53916825A460057CE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51D16825A460057CE7C /* main.m */; };
+		AA9EC53A16825A460057CE7C /* UIViewController+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC52016825A460057CE7C /* UIViewController+DateString.m */; };
 		E2E388CA15F3EA600076FABB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388C915F3EA600076FABB /* MobileCoreServices.framework */; };
 		E2E388CD15F3EA700076FABB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388CC15F3EA700076FABB /* SystemConfiguration.framework */; };
 		E2E388CF15F3EA7C0076FABB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388CE15F3EA7C0076FABB /* libz.dylib */; };
@@ -23,36 +36,45 @@
 		E2E388D915F3EAA50076FABB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388D815F3EAA50076FABB /* MessageUI.framework */; };
 		E2E388DB15F3EAAC0076FABB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388DA15F3EAAC0076FABB /* AudioToolbox.framework */; };
 		E2E388DD15F3EAB20076FABB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E388DC15F3EAB20076FABB /* MapKit.framework */; };
-		E2E388DF15F3EB180076FABB /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E388DE15F3EB180076FABB /* AirshipConfig.plist */; };
 		E2E40E9015D733D1005AF448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E8F15D733D1005AF448 /* UIKit.framework */; };
 		E2E40E9215D733D1005AF448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E9115D733D1005AF448 /* Foundation.framework */; };
 		E2E40E9415D733D1005AF448 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E9315D733D1005AF448 /* CoreGraphics.framework */; };
 		E2E40E9615D733D1005AF448 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E40E9515D733D1005AF448 /* CoreData.framework */; };
-		E2E40E9C15D733D1005AF448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2E40E9A15D733D1005AF448 /* InfoPlist.strings */; };
-		E2E40E9E15D733D1005AF448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40E9D15D733D1005AF448 /* main.m */; };
-		E2E40EA215D733D1005AF448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EA115D733D1005AF448 /* AppDelegate.m */; };
-		E2E40EA515D733D1005AF448 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E40EA315D733D1005AF448 /* MainStoryboard.storyboard */; };
-		E2E40EA815D733D1005AF448 /* notify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EA615D733D1005AF448 /* notify.xcdatamodeld */; };
-		E2E40EAB15D733D1005AF448 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAA15D733D1005AF448 /* MasterViewController.m */; };
-		E2E40EAE15D733D1005AF448 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E40EAD15D733D1005AF448 /* DetailViewController.m */; };
-		E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */; };
-		E2F31C2F15E049780061B55E /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F31C2E15E049780061B55E /* KeychainWrapper.m */; };
 		E2F31C3115E04AC80061B55E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F31C3015E04AC80061B55E /* Security.framework */; };
-		E2FCFDF515D73A8700030A2B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFDF415D73A8700030A2B /* Constants.m */; };
-		E2FCFE0215D7444300030A2B /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0115D7444300030A2B /* MappingProvider.m */; };
-		E2FCFE0815D745D100030A2B /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCFE0715D745D100030A2B /* Notification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F80669BB3B0472EA5336FD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7304360D95E42B8872FC721 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		AA9EFCDD167CB4950030794A /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon.png"; path = "../mail icon.png"; sourceTree = "<group>"; };
-		AA9EFCDF167CB49B0030794A /* mail icon retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail icon retina.png"; path = "../mail icon retina.png"; sourceTree = "<group>"; };
-		AA9EFCF0167D18930030794A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		E2062A2B15DB31CE00AD5674 /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
-		E2062A2C15DB31CE00AD5674 /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
-		E2BAF0A815E6FCE500EAF8E0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		E2BAF0A915E6FCE500EAF8E0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AA9EC4EC16825A460057CE7C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AA9EC4ED16825A460057CE7C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AA9EC4EE16825A460057CE7C /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		AA9EC4EF16825A460057CE7C /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		AA9EC4F216825A460057CE7C /* notify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notify.xcdatamodel; sourceTree = "<group>"; };
+		AA9EC4F516825A460057CE7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AA9EC4F716825A460057CE7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AA9EC4F916825A460057CE7C /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		AA9EC4FA16825A460057CE7C /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
+		AA9EC4FC16825A460057CE7C /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		AA9EC4FD16825A460057CE7C /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		AA9EC4FE16825A460057CE7C /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
+		AA9EC4FF16825A460057CE7C /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
+		AA9EC50016825A460057CE7C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AA9EC50116825A460057CE7C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AA9EC50416825A460057CE7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA9EC50616825A460057CE7C /* mail icon retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail icon retina.png"; sourceTree = "<group>"; };
+		AA9EC50716825A460057CE7C /* mail icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail icon.png"; sourceTree = "<group>"; };
+		AA9EC50916825A460057CE7C /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		AA9EC50A16825A460057CE7C /* notify-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "notify-Info.plist"; sourceTree = "<group>"; };
+		AA9EC51616825A460057CE7C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA9EC51716825A460057CE7C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA9EC51916825A460057CE7C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		AA9EC51A16825A460057CE7C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		AA9EC51B16825A460057CE7C /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		AA9EC51C16825A460057CE7C /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		AA9EC51D16825A460057CE7C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA9EC51F16825A460057CE7C /* UIViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateString.h"; sourceTree = "<group>"; };
+		AA9EC52016825A460057CE7C /* UIViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateString.m"; sourceTree = "<group>"; };
 		E2E388C915F3EA600076FABB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		E2E388CC15F3EA700076FABB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E2E388CE15F3EA7C0076FABB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -63,35 +85,12 @@
 		E2E388D815F3EAA50076FABB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E2E388DA15F3EAAC0076FABB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E2E388DC15F3EAB20076FABB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E2E388DE15F3EB180076FABB /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		E2E40E8B15D733D1005AF448 /* notify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E40E8F15D733D1005AF448 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2E40E9115D733D1005AF448 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2E40E9315D733D1005AF448 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E2E40E9515D733D1005AF448 /* CoreData.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E2E40E9915D733D1005AF448 /* notify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "notify-Info.plist"; sourceTree = "<group>"; };
-		E2E40E9B15D733D1005AF448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2E40E9D15D733D1005AF448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2E40E9F15D733D1005AF448 /* notify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "notify-Prefix.pch"; sourceTree = "<group>"; };
-		E2E40EA015D733D1005AF448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2E40EA115D733D1005AF448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2E40EA415D733D1005AF448 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E2E40EA715D733D1005AF448 /* notify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notify.xcdatamodel; sourceTree = "<group>"; };
-		E2E40EA915D733D1005AF448 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		E2E40EAA15D733D1005AF448 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E2E40EAC15D733D1005AF448 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		E2E40EAD15D733D1005AF448 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateString.h"; sourceTree = "<group>"; };
-		E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateString.m"; sourceTree = "<group>"; };
-		E2F31C2D15E049780061B55E /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		E2F31C2E15E049780061B55E /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		E2F31C3015E04AC80061B55E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		E2FCFDF315D73A8700030A2B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		E2FCFDF415D73A8700030A2B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		E2FCFE0015D7444300030A2B /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
-		E2FCFE0115D7444300030A2B /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
-		E2FCFE0615D745D100030A2B /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
-		E2FCFE0715D745D100030A2B /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +120,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA9EC4EB16825A460057CE7C /* application */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC4F616825A460057CE7C /* MainStoryboard.storyboard */,
+				AA9EC4EC16825A460057CE7C /* DetailViewController.h */,
+				AA9EC4ED16825A460057CE7C /* DetailViewController.m */,
+				AA9EC4EE16825A460057CE7C /* MasterViewController.h */,
+				AA9EC4EF16825A460057CE7C /* MasterViewController.m */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		AA9EC4F016825A460057CE7C /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC4F116825A460057CE7C /* notify.xcdatamodeld */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		AA9EC4F816825A460057CE7C /* gateway */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC4F916825A460057CE7C /* MappingProvider.h */,
+				AA9EC4FA16825A460057CE7C /* MappingProvider.m */,
+			);
+			path = gateway;
+			sourceTree = "<group>";
+		};
+		AA9EC4FB16825A460057CE7C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC4FC16825A460057CE7C /* Notification.h */,
+				AA9EC4FD16825A460057CE7C /* Notification.m */,
+				AA9EC4FE16825A460057CE7C /* NotificationCell.h */,
+				AA9EC4FF16825A460057CE7C /* NotificationCell.m */,
+				AA9EC50016825A460057CE7C /* User.h */,
+				AA9EC50116825A460057CE7C /* User.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AA9EC50216825A460057CE7C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC50316825A460057CE7C /* images */,
+				AA9EC50816825A460057CE7C /* other */,
+				AA9EC50B16825A460057CE7C /* sounds */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		AA9EC50316825A460057CE7C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC50416825A460057CE7C /* Default-568h@2x.png */,
+				AA9EC50616825A460057CE7C /* mail icon retina.png */,
+				AA9EC50716825A460057CE7C /* mail icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		AA9EC50816825A460057CE7C /* other */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC4F416825A460057CE7C /* InfoPlist.strings */,
+				AA9EC50916825A460057CE7C /* AirshipConfig.plist */,
+				AA9EC50A16825A460057CE7C /* notify-Info.plist */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		AA9EC50B16825A460057CE7C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		AA9EC51516825A460057CE7C /* service */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC51616825A460057CE7C /* AppDelegate.h */,
+				AA9EC51716825A460057CE7C /* AppDelegate.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		AA9EC51816825A460057CE7C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EC51916825A460057CE7C /* Constants.h */,
+				AA9EC51A16825A460057CE7C /* Constants.m */,
+				AA9EC51B16825A460057CE7C /* KeychainWrapper.h */,
+				AA9EC51C16825A460057CE7C /* KeychainWrapper.m */,
+				AA9EC51D16825A460057CE7C /* main.m */,
+				AA9EC51F16825A460057CE7C /* UIViewController+DateString.h */,
+				AA9EC52016825A460057CE7C /* UIViewController+DateString.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		E2E40E8015D733D1005AF448 = {
 			isa = PBXGroup;
 			children = (
@@ -165,46 +266,15 @@
 		E2E40E9715D733D1005AF448 /* notify */ = {
 			isa = PBXGroup;
 			children = (
-				E2F31C2D15E049780061B55E /* KeychainWrapper.h */,
-				E2F31C2E15E049780061B55E /* KeychainWrapper.m */,
-				E2FCFE0615D745D100030A2B /* Notification.h */,
-				E2FCFE0715D745D100030A2B /* Notification.m */,
-				E2E40EA015D733D1005AF448 /* AppDelegate.h */,
-				E2E40EA115D733D1005AF448 /* AppDelegate.m */,
-				E2E40EA315D733D1005AF448 /* MainStoryboard.storyboard */,
-				E2E40EA915D733D1005AF448 /* MasterViewController.h */,
-				E2E40EAA15D733D1005AF448 /* MasterViewController.m */,
-				E2062A2B15DB31CE00AD5674 /* NotificationCell.h */,
-				E2062A2C15DB31CE00AD5674 /* NotificationCell.m */,
-				E2E40EAC15D733D1005AF448 /* DetailViewController.h */,
-				E2E40EAD15D733D1005AF448 /* DetailViewController.m */,
-				E2E40EA615D733D1005AF448 /* notify.xcdatamodeld */,
-				E2FCFDF315D73A8700030A2B /* Constants.h */,
-				E2FCFDF415D73A8700030A2B /* Constants.m */,
-				E2E40E9815D733D1005AF448 /* Supporting Files */,
-				E2FCFE0015D7444300030A2B /* MappingProvider.h */,
-				E2FCFE0115D7444300030A2B /* MappingProvider.m */,
-				E2F31C2415DF1B6D0061B55E /* UIViewController+DateString.h */,
-				E2F31C2515DF1B7F0061B55E /* UIViewController+DateString.m */,
-				E2BAF0A815E6FCE500EAF8E0 /* User.h */,
-				E2BAF0A915E6FCE500EAF8E0 /* User.m */,
+				AA9EC4EB16825A460057CE7C /* application */,
+				AA9EC4F016825A460057CE7C /* dao */,
+				AA9EC4F816825A460057CE7C /* gateway */,
+				AA9EC4FB16825A460057CE7C /* model */,
+				AA9EC50216825A460057CE7C /* resources */,
+				AA9EC51516825A460057CE7C /* service */,
+				AA9EC51816825A460057CE7C /* util */,
 			);
 			path = notify;
-			sourceTree = "<group>";
-		};
-		E2E40E9815D733D1005AF448 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA9EFCF0167D18930030794A /* Default-568h@2x.png */,
-				AA9EFCDD167CB4950030794A /* mail icon.png */,
-				AA9EFCDF167CB49B0030794A /* mail icon retina.png */,
-				E2E40E9915D733D1005AF448 /* notify-Info.plist */,
-				E2E40E9A15D733D1005AF448 /* InfoPlist.strings */,
-				E2E40E9D15D733D1005AF448 /* main.m */,
-				E2E40E9F15D733D1005AF448 /* notify-Prefix.pch */,
-				E2E388DE15F3EB180076FABB /* AirshipConfig.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,12 +329,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E40E9C15D733D1005AF448 /* InfoPlist.strings in Resources */,
-				E2E40EA515D733D1005AF448 /* MainStoryboard.storyboard in Resources */,
-				E2E388DF15F3EB180076FABB /* AirshipConfig.plist in Resources */,
-				AA9EFCDE167CB4950030794A /* mail icon.png in Resources */,
-				AA9EFCE0167CB49B0030794A /* mail icon retina.png in Resources */,
-				AA9EFCF1167D18930030794A /* Default-568h@2x.png in Resources */,
+				AA9EC52416825A460057CE7C /* InfoPlist.strings in Resources */,
+				AA9EC52516825A460057CE7C /* MainStoryboard.storyboard in Resources */,
+				AA9EC52A16825A460057CE7C /* Default-568h@2x.png in Resources */,
+				AA9EC52C16825A460057CE7C /* mail icon retina.png in Resources */,
+				AA9EC52D16825A460057CE7C /* mail icon.png in Resources */,
+				AA9EC52E16825A460057CE7C /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,38 +362,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E40E9E15D733D1005AF448 /* main.m in Sources */,
-				E2E40EA215D733D1005AF448 /* AppDelegate.m in Sources */,
-				E2E40EA815D733D1005AF448 /* notify.xcdatamodeld in Sources */,
-				E2E40EAB15D733D1005AF448 /* MasterViewController.m in Sources */,
-				E2E40EAE15D733D1005AF448 /* DetailViewController.m in Sources */,
-				E2FCFDF515D73A8700030A2B /* Constants.m in Sources */,
-				E2FCFE0215D7444300030A2B /* MappingProvider.m in Sources */,
-				E2FCFE0815D745D100030A2B /* Notification.m in Sources */,
-				E2062A2D15DB31CE00AD5674 /* NotificationCell.m in Sources */,
-				E2F31C2615DF1B7F0061B55E /* UIViewController+DateString.m in Sources */,
-				E2F31C2F15E049780061B55E /* KeychainWrapper.m in Sources */,
-				E2BAF0AA15E6FCE500EAF8E0 /* User.m in Sources */,
+				AA9EC52116825A460057CE7C /* DetailViewController.m in Sources */,
+				AA9EC52216825A460057CE7C /* MasterViewController.m in Sources */,
+				AA9EC52316825A460057CE7C /* notify.xcdatamodeld in Sources */,
+				AA9EC52616825A460057CE7C /* MappingProvider.m in Sources */,
+				AA9EC52716825A460057CE7C /* Notification.m in Sources */,
+				AA9EC52816825A460057CE7C /* NotificationCell.m in Sources */,
+				AA9EC52916825A460057CE7C /* User.m in Sources */,
+				AA9EC53616825A460057CE7C /* AppDelegate.m in Sources */,
+				AA9EC53716825A460057CE7C /* Constants.m in Sources */,
+				AA9EC53816825A460057CE7C /* KeychainWrapper.m in Sources */,
+				AA9EC53916825A460057CE7C /* main.m in Sources */,
+				AA9EC53A16825A460057CE7C /* UIViewController+DateString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2E40E9A15D733D1005AF448 /* InfoPlist.strings */ = {
+		AA9EC4F416825A460057CE7C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2E40E9B15D733D1005AF448 /* en */,
+				AA9EC4F516825A460057CE7C /* en */,
 			);
 			name = InfoPlist.strings;
+			path = ../../en.lproj;
 			sourceTree = "<group>";
 		};
-		E2E40EA315D733D1005AF448 /* MainStoryboard.storyboard */ = {
+		AA9EC4F616825A460057CE7C /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2E40EA415D733D1005AF448 /* en */,
+				AA9EC4F716825A460057CE7C /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ../en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -383,8 +455,8 @@
 			baseConfigurationReference = A7304360D95E42B8872FC721 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "notify/notify-Prefix.pch";
-				INFOPLIST_FILE = "notify/notify-Info.plist";
+				GCC_PREFIX_HEADER = "notify/resources/other/notify-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/notify/resources/other/notify-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -396,8 +468,8 @@
 			baseConfigurationReference = A7304360D95E42B8872FC721 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "notify/notify-Prefix.pch";
-				INFOPLIST_FILE = "notify/notify-Info.plist";
+				GCC_PREFIX_HEADER = "notify/resources/other/notify-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/notify/resources/other/notify-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -428,12 +500,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E2E40EA615D733D1005AF448 /* notify.xcdatamodeld */ = {
+		AA9EC4F116825A460057CE7C /* notify.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E2E40EA715D733D1005AF448 /* notify.xcdatamodel */,
+				AA9EC4F216825A460057CE7C /* notify.xcdatamodel */,
 			);
-			currentVersion = E2E40EA715D733D1005AF448 /* notify.xcdatamodel */;
+			currentVersion = AA9EC4F216825A460057CE7C /* notify.xcdatamodel */;
 			path = notify.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

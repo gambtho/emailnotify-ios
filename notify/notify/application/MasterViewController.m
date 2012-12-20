@@ -11,6 +11,8 @@
 #import "DetailViewController.h"
 #import "UIViewController+DateString.h"
 #import "KeychainWrapper.h"
+#import "UAirship.h"
+#import "UAPush.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -27,6 +29,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 @synthesize pinValidated;
 @synthesize loggedInUser;
 @synthesize loginButton;
+@synthesize urbanToken;
 
 - (void)awakeFromNib
 {
@@ -456,6 +459,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             self.loginButton.title = @"Login";
         }
     }
+    [self updateUrbanAlias];
 }
 
 // Helper method to congregate the Name and PIN fields for validation.
@@ -563,12 +567,30 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:PIN_SAVED];
         [KeychainWrapper deleteItemFromKeychainWithIdentifier:PIN_SAVED];
         
+        [self updateUrbanAlias];
         self.loginButton.title = @"Login";
         self.loggedInUser = nil;
         _fetchedResultsController = nil;
-        
         [self performFetch];
         [self.tableView reloadData];
     }
 }
+
+- (void)updateUrbanAlias
+{
+
+    // Sets the alias. It will be sent to the server on registration.
+    
+    NSString *yourAlias = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+    DDLogInfo(@"Updating urban airship token %@", yourAlias);
+    
+    if(yourAlias==nil)
+    {
+        yourAlias = @"logged_out";
+    }
+    
+    // Updates the device token and registers the token with UA
+    [[UAPush shared] registerDeviceToken:urbanToken];
+}
+
 @end
