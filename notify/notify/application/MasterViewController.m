@@ -36,49 +36,51 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     [super awakeFromNib];
 }
 
-- (void)viewDidLoad
+- (void)refreshSetup
 {
-    [super viewDidLoad];
-    
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
     [refresh addTarget:self action:@selector(refreshView:)forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
-    
-    self.pinValidated = NO;
-    
-    [self getNotifications];
+}
 
-    [self performFetch];
-    
+- (void)loginButtonConfigure
+{
     if(self.loggedInUser == nil)
     {
         self.loginButton.title = @"Login";
+        // pin validated previously in didLoad
+        self.pinValidated = NO;
     }
     else
     {
         self.loginButton.title = @"Logout";
     }
+}
 
-//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-//    self.navigationItem.rightBarButtonItem = addButton;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self refreshSetup];
+    [self refreshScreen];
+    
 }
 
 - (void)viewDidUnload
 {
     [self setLoginButton:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    if(self.loggedInUser==nil)
-    {
-        [self presentAlertViewForLogin];
-    }
+//    if(self.loggedInUser==nil)
+//    {
+//        [self presentAlertViewForLogin];
+//    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -152,12 +154,22 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 #pragma mark - Refresh
 
+-(void)refreshScreen
+{
+    [self getNotifications];
+    [self performFetch];
+    [self loginButtonConfigure];
+    [self.tableView reloadData];
+    [self updateBadge];
+}
+
+- (IBAction)help:(id)sender {
+}
+
 -(void)refreshView:(UIRefreshControl *)refresh {
          refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Refreshing data..."];
     
-        [self getNotifications];
-        [self performFetch];
-        [self.tableView reloadData];
+        [self refreshScreen];
     
          NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
          [formatter setDateFormat:@"MMM d, h:mm a"];
@@ -166,6 +178,21 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
          refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
          [refresh endRefreshing];
      }
+#pragma mark - Badge Fetch Request
+
+- (void)updateBadge
+{
+    int badgeCount = 0;
+    
+    for (Notification *info in [[self fetchedResultsController] fetchedObjects]) {
+        NSLog(@"Subject: %@", [info subject]);
+        if(![info isRead])
+        {
+            badgeCount++;
+        }
+    }
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badgeCount;
+}
 
 #pragma mark - Fetched results controller
 
@@ -240,7 +267,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
-    
     NSError *error = nil;
     if (![self.managedObjectContext save:&error]) {
         // Replace this implementation with code to handle the error appropriately.
@@ -343,8 +369,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [alert show];
         _fetchedResultsController = nil;
         self.loggedInUser = nil;
-        self.loginButton.title = @"Login";
-        [self.tableView reloadData];
+        [self refreshScreen];
+        
     }
 }
 
@@ -358,11 +384,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     DDLogInfo(@"Objectloader loaded objects[%d]", [objects count]);
     if(objectLoader.userData == @"user")
     {
-        loggedInUser = [objects objectAtIndex:0];
+        self.loggedInUser = [objects objectAtIndex:0];
         _fetchedResultsController = nil;
-        [self getNotifications];
-        [self performFetch];
-        [self.tableView reloadData];
+        [self refreshScreen];
     }
 }
 
@@ -415,8 +439,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         pinField.tag = kTextFieldPIN;
         [alert show];
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Setup Credentials"
-                                                        message:@"Secure your notifications!"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Setup Account"
+                                                        message:@""
                                                        delegate:self
                                               cancelButtonTitle:@"Cancel"
                                               otherButtonTitles:@"Done", nil];
@@ -426,7 +450,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         UITextField *nameField = [alert textFieldAtIndex:0];
         nameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
         nameField.keyboardType = UIKeyboardTypeEmailAddress;
-        nameField.placeholder = @"Name"; // Replace the standard placeholder text with something more applicable
+        nameField.placeholder = @"Email Address"; // Replace the standard placeholder text with something more applicable
         nameField.delegate = self;
         nameField.tag = kTextFieldName;
         UITextField *passwordField = [alert textFieldAtIndex:1]; // Capture the Password text field since there are 2 fields
@@ -441,22 +465,20 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
     if (alertView.tag == kAlertTypePIN) {
         if (buttonIndex == 1 && self.pinValidated) { // User selected "Done"
-            [self performFetch];
+            DDLogInfo(@"User logged into account: %@", [self.loggedInUser getUserAddress]);
             self.pinValidated = NO;
-            self.loginButton.title = @"Logout";
         } else { // User selected "Cancel"
-            //[self presentAlertViewForLogin];
+            _fetchedResultsController = nil;
             self.loggedInUser = nil;
-            self.loginButton.title = @"Login";
+            [self refreshScreen];
         }
     } else if (alertView.tag == kAlertTypeSetup) {
         if (buttonIndex == 1 && [self credentialsValidated]) { // User selected "Done"
-            [self performFetch];
-            self.loginButton.title = @"Logout";
+            DDLogInfo(@"User setup account: %@", [self.loggedInUser getUserAddress]);
         } else { // User selected "Cancel"
-            // [self presentAlertViewForLogin];
+            _fetchedResultsController = nil;
             self.loggedInUser = nil;
-            self.loginButton.title = @"Login";
+            [self refreshScreen];
         }
     }
     [self updateUrbanAlias];
@@ -568,11 +590,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [KeychainWrapper deleteItemFromKeychainWithIdentifier:PIN_SAVED];
         
         [self updateUrbanAlias];
-        self.loginButton.title = @"Login";
         self.loggedInUser = nil;
         _fetchedResultsController = nil;
-        [self performFetch];
-        [self.tableView reloadData];
+        [self refreshScreen];
     }
 }
 

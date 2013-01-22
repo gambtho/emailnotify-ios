@@ -9,14 +9,13 @@
 #import "AppDelegate.h"
 #import "UAirship.h"
 #import "UAPush.h"
-#import "MasterViewController.h"
 #import "MappingProvider.h"
 
 @implementation AppDelegate
 
 static const int ddLogLevel = LOG_LEVEL_INFO;
 
-@synthesize objectManager, objectStore, objectContext, urbanToken;
+@synthesize objectManager, objectStore, objectContext, urbanToken, controller;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,8 +24,16 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [self setupLogging];
     [self airShipSetup:launchOptions];
     
+    
+    NSDictionary* userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+    NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
+    if( [apsInfo objectForKey:@"alert"] != NULL)
+    {
+        // REACT TO PN IF APP WAS CLOSED
+    }
+    
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+    controller = (MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.objectContext;
     controller.objectManager = self.objectManager;
     controller.urbanToken = self.urbanToken;
@@ -79,6 +86,16 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
             abort();
         } 
     }
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+
+    if (application.applicationState == UIApplicationStateActive)
+    {
+        [self.controller refreshScreen];
+    }
+    
 }
 
 -(void)fatalCoreDataError:(NSError *)error

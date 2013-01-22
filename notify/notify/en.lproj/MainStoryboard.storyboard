@@ -88,6 +88,11 @@
                                 <action selector="login:" destination="12" id="FTj-pI-7rO"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="oOZ-nL-NuZ">
+                            <connections>
+                                <segue destination="EMc-91-Uaq" kind="push" identifier="helpButton" id="YjV-qn-G1b"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="loginButton" destination="Olj-wn-HJG" id="iV7-rb-tOB"/>
@@ -96,6 +101,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gcy-ue-JZA">
+            <objects>
+                <viewController id="EMc-91-Uaq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qFr-U3-yW6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="BLM-SH-v1X">
+                                <rect key="frame" x="0.0" y="11" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Initial Setup">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+- Login with the email address you wish to monitor for notifications
+- Do not use the password for your email account, use a password that you wish to use for this application
+- Setup a mail forward rule from that email address, sending emails that should generate notifications to notifyme@notifyweb.appspotmail.com (or to dontpersist@notifyweb.appspotmail.com if you don't want the messages saved on the server)
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Usage">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+- Notifications will be pushed as they arrive, if you have persisted them you can view the notification and the contents of the email within the application
+- Read messages will have a green checkmark next to them
+- Pull down on the list of notifications to refresh
+- Swipe across a message to display the delete option - If you need to reset your password, send an email from your email account to reset@notifyweb.appspotmail.com, then log in to the application using a new password of your choice</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C7W-BH-9eO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wd-iQ-uXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="740"/>
         </scene>
         <!--Detail View Controller - Detail-->
         <scene sceneID="24">
@@ -185,6 +266,7 @@
         <class className="MasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
             <relationships>
+                <relationship kind="action" name="help:"/>
                 <relationship kind="action" name="login:"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIBarButtonItem"/>
             </relationships>
