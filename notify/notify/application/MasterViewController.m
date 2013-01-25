@@ -46,14 +46,28 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)loginButtonConfigure
 {
+    DDLogVerbose(@"Configuring login button");
     if(self.loggedInUser == nil)
     {
-        self.loginButton.title = @"Login";
-        // pin validated previously in didLoad
-        self.pinValidated = NO;
+        DDLogVerbose(@"Logged in user is currently nil");
+        if([[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED])
+        {
+            _fetchedResultsController = nil;
+            DDLogVerbose(@"Found saved pin");
+            self.loggedInUser =  [[User alloc] init];
+            [self.loggedInUser setUserAddress:[[NSUserDefaults standardUserDefaults] stringForKey:USERNAME]];
+            self.loginButton.title = @"Logout";
+        }
+        else
+        {
+            DDLogVerbose(@"Did not find saved pin");
+            self.loginButton.title = @"Login";
+            self.pinValidated = NO;
+        }
     }
     else
     {
+        DDLogVerbose(@"Logged in user is already valid");
         self.loginButton.title = @"Logout";
     }
 }
@@ -156,9 +170,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 -(void)refreshScreen
 {
+    [self loginButtonConfigure];
     [self getNotifications];
     [self performFetch];
-    [self loginButtonConfigure];
     [self.tableView reloadData];
     [self updateBadge];
 }
@@ -596,6 +610,12 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }
 }
 
+- (void)retrieveUser {
+    
+        
+
+}
+    
 - (void)updateUrbanAlias
 {
 

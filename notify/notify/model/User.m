@@ -12,6 +12,8 @@
 
 @synthesize userAddress;
 
+//TODO: Add init with address
+
 -(NSString *)getUserAddress;
 {
     return self.userAddress;
