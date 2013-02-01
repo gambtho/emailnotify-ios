@@ -90,11 +90,17 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self becomeFirstResponder];
     
 //    if(self.loggedInUser==nil)
 //    {
 //        [self presentAlertViewForLogin];
 //    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self resignFirstResponder];
+    [super viewWillDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -163,7 +169,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [notifyItem setRead:TRUE];
         [[segue destinationViewController] setNotifyItem:notifyItem];
     }
-    [self.tableView reloadData];
+    [self refreshScreen];
 }
 
 #pragma mark - Refresh
@@ -190,8 +196,10 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
          NSString *lastUpdated = [NSString stringWithFormat:@"Last updated on %@",
                                                                     [formatter stringFromDate:[NSDate date]]];
          refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
+          
          [refresh endRefreshing];
      }
+
 #pragma mark - Badge Fetch Request
 
 - (void)updateBadge
@@ -377,8 +385,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     DDLogError(@"Error: %@", [error localizedDescription]);
-    if(objectLoader.userData == @"user")
+    if([objectLoader.userData isEqual: @"user"])
     {
+        DDLogInfo(@"In object loader error");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Unable to validate login!" delegate:Nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
         [alert show];
         _fetchedResultsController = nil;
@@ -386,6 +395,12 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         [self refreshScreen];
         
     }
+    else if ([objectLoader.userData isEqual:@"deleteAll"])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Delete Error" message:@"Error processing delete all request!" delegate:Nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+
 }
 
 - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
@@ -396,10 +411,20 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
     DDLogInfo(@"Objectloader loaded objects[%d]", [objects count]);
-    if(objectLoader.userData == @"user")
+    DDLogInfo(@"User Data is %@", objectLoader.userData);
+    if([objectLoader.userData isEqual: @"user"])
     {
         self.loggedInUser = [objects objectAtIndex:0];
         _fetchedResultsController = nil;
+        [self refreshScreen];
+    }
+    else if ([objectLoader.userData isEqual:@"deleteAll"])
+    {
+        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+        for (Notification *info in [[self fetchedResultsController] fetchedObjects]) {
+            NSLog(@"Subject: %@", [info subject]);
+            [context deleteObject:info];
+        }
         [self refreshScreen];
     }
 }
@@ -423,6 +448,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         loader.delegate = self;
         loader.method = RKRequestMethodDELETE;
     }];
+    
 }
 
 #pragma mark Login
@@ -494,6 +520,23 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             self.loggedInUser = nil;
             [self refreshScreen];
         }
+    }  else if (alertView.tag == kAlertTypeDeleteAll) {
+        
+        NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
+        
+        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                     [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
+                                     fieldString, @"token", @"deleteAll", @"type", nil];
+        
+        NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+        DDLogInfo(@"User create resource path: %@", resourcePath);
+        
+        [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+            loader.delegate = self;
+            loader.method = RKRequestMethodPOST;
+            [loader setUserData:@"deleteAll"];
+        }];
+        
     }
     [self updateUrbanAlias];
 }
@@ -610,11 +653,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     }
 }
 
-- (void)retrieveUser {
-    
-        
-
-}
     
 - (void)updateUrbanAlias
 {
@@ -631,6 +669,27 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
     // Updates the device token and registers the token with UA
     [[UAPush shared] registerDeviceToken:urbanToken];
+}
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Delete All?"
+                                                            message:@"Select ok to delete all notifications"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"OK", nil];
+        alertView.tag = kAlertTypeDeleteAll;
+        [alertView show];
+    }
 }
 
 @end

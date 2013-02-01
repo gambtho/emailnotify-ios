@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -157,7 +157,8 @@
 - Notifications will be pushed as they arrive, if you have persisted them you can view the notification and the contents of the email within the application
 - Read messages will have a green checkmark next to them
 - Pull down on the list of notifications to refresh
-- Swipe across a message to display the delete option - If you need to reset your password, send an email from your email account to reset@notifyweb.appspotmail.com, then log in to the application using a new password of your choice</string>
+- Swipe across a message to display the delete option
+- Shake device while on main screen to delete all notifications - If you need to reset your password, send an email from your email account to reset@notifyweb.appspotmail.com, then log in to the application using a new password of your choice</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="ArialMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
@@ -266,7 +267,6 @@
         <class className="MasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
             <relationships>
-                <relationship kind="action" name="help:"/>
                 <relationship kind="action" name="login:"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIBarButtonItem"/>
             </relationships>

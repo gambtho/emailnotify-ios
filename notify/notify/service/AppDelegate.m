@@ -24,19 +24,22 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [self setupLogging];
     [self airShipSetup:launchOptions];
     
+    application.applicationSupportsShakeToEdit = YES;
     
     NSDictionary* userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
     NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
-    if( [apsInfo objectForKey:@"alert"] != NULL)
-    {
-        // REACT TO PN IF APP WAS CLOSED
-    }
     
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     controller = (MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.objectContext;
     controller.objectManager = self.objectManager;
     controller.urbanToken = self.urbanToken;
+    
+    if( [apsInfo objectForKey:@"alert"] != NULL)
+    {
+        // REACT TO PN IF APP WAS CLOSED
+        [controller updateBadge];
+    }
 
     return YES;
 }
@@ -63,7 +66,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
+    [TestFlight passCheckpoint:@"APPLICATION WENT BECOME ACTIVE"];
+    [controller refreshScreen];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

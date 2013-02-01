@@ -8,7 +8,7 @@
 
 #import "User.h"
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate, UITextFieldDelegate, RKRequestDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate, UITextFieldDelegate, RKRequestDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) NSFetchRequest *badgeFetchRequest;
@@ -19,6 +19,7 @@
 
 - (IBAction)login:(id)sender;
 -(void)refreshScreen;
+-(void)updateBadge;
 
 @property (nonatomic) BOOL pinValidated;
 @property (strong, nonatomic) User *loggedInUser;

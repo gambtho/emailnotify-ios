@@ -32,7 +32,8 @@ extern NSString * const TF_ID;
 // Typedefs just to make it a little easier to read in code.
 typedef enum {
     kAlertTypePIN = 0,
-    kAlertTypeSetup
+    kAlertTypeSetup,
+    kAlertTypeDeleteAll
 } AlertTypes;
 
 typedef enum {
