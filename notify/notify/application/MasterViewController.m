@@ -521,21 +521,23 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             [self refreshScreen];
         }
     }  else if (alertView.tag == kAlertTypeDeleteAll) {
+        if (buttonIndex == 1)
+        {
+            NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
         
-        NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
-        
-        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
+            NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
                                      [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
                                      fieldString, @"token", @"deleteAll", @"type", nil];
         
-        NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
-        DDLogInfo(@"User create resource path: %@", resourcePath);
+            NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
+            DDLogInfo(@"User create resource path: %@", resourcePath);
         
-        [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+            [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
             loader.delegate = self;
             loader.method = RKRequestMethodPOST;
             [loader setUserData:@"deleteAll"];
-        }];
+            }];
+        }
         
     }
     [self updateUrbanAlias];
