@@ -24,6 +24,11 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [self setupLogging];
     [self airShipSetup:launchOptions];
     
+    // Handle any incoming incoming push notifications.
+    // This will invoke `handleBackgroundNotification` on your UAPushNotificationDelegate.
+    [[UAPush shared] handleNotification:[launchOptions valueForKey:UIApplicationLaunchOptionsRemoteNotificationKey]
+                       applicationState:application.applicationState];
+    
     application.applicationSupportsShakeToEdit = YES;
     
     NSDictionary* userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
@@ -43,7 +48,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 
     return YES;
 }
-							
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -99,6 +105,10 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     {
         [self.controller refreshScreen];
     }
+    else
+    {
+        [self.controller updateBadge];
+    }
     
 }
 
@@ -145,13 +155,11 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     // Please populate AirshipConfig.plist with your info from http://go.urbanairship.com
     [UAirship takeOff:takeOffOptions];
     
-    [[UAPush shared]
-     
-
-     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
-                                         UIRemoteNotificationTypeSound |
-                                         UIRemoteNotificationTypeAlert)];
-    
+    // Register for remote notfications with the UA Library. This call is required.
+    [[UAPush shared] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                         UIRemoteNotificationTypeSound |
+                                                         UIRemoteNotificationTypeAlert)];
+        
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
