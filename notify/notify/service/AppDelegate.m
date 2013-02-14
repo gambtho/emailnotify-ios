@@ -27,7 +27,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     application.applicationSupportsShakeToEdit = YES;
     
     NSDictionary* userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
-    NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
+    NSDictionary *apsInfo = userInfo[@"aps"];
     
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     controller = (MasterViewController *)navigationController.topViewController;
@@ -35,7 +35,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     controller.objectManager = self.objectManager;
     controller.urbanToken = self.urbanToken;
     
-    if( [apsInfo objectForKey:@"alert"] != NULL)
+    if( apsInfo[@"alert"] != NULL)
     {
         // REACT TO PN IF APP WAS CLOSED
         [controller updateBadge];
@@ -66,7 +66,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [TestFlight passCheckpoint:@"APPLICATION WENT BECOME ACTIVE"];
+    [TestFlight passCheckpoint:@"APPLICATION WENT ACTIVE"];
     [controller refreshScreen];
 }
 
@@ -146,6 +146,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [UAirship takeOff:takeOffOptions];
     
     [[UAPush shared]
+     
+
      registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
@@ -167,6 +169,8 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         UALOG(@"user alias set to: %@", yourAlias);
         [UAPush shared].alias = yourAlias;
     }
+    
+    DDLogInfo(@"Registering with UA");
     
     // Updates the device token and registers the token with UA
     [[UAPush shared] registerDeviceToken:deviceToken];

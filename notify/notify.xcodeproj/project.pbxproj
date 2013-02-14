@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4ACAB8FA67624A89A945BF82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80669BB3B0472EA5336FD8 /* libPods.a */; };
+		AA5DDBEC16C99E8A0055CBE0 /* Icon Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5DDBE816C99E2E0055CBE0 /* Icon Small.png */; };
+		AA5DDBED16C99E8F0055CBE0 /* Icon Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5DDBEA16C99E320055CBE0 /* Icon Retina.png */; };
 		AA9EC52116825A460057CE7C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4ED16825A460057CE7C /* DetailViewController.m */; };
 		AA9EC52216825A460057CE7C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4EF16825A460057CE7C /* MasterViewController.m */; };
 		AA9EC52316825A460057CE7C /* notify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4F116825A460057CE7C /* notify.xcdatamodeld */; };
@@ -18,8 +20,6 @@
 		AA9EC52816825A460057CE7C /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC4FF16825A460057CE7C /* NotificationCell.m */; };
 		AA9EC52916825A460057CE7C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC50116825A460057CE7C /* User.m */; };
 		AA9EC52A16825A460057CE7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50416825A460057CE7C /* Default-568h@2x.png */; };
-		AA9EC52C16825A460057CE7C /* mail icon retina.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50616825A460057CE7C /* mail icon retina.png */; };
-		AA9EC52D16825A460057CE7C /* mail icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50716825A460057CE7C /* mail icon.png */; };
 		AA9EC52E16825A460057CE7C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9EC50916825A460057CE7C /* AirshipConfig.plist */; };
 		AA9EC53616825A460057CE7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51716825A460057CE7C /* AppDelegate.m */; };
 		AA9EC53716825A460057CE7C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9EC51A16825A460057CE7C /* Constants.m */; };
@@ -46,6 +46,8 @@
 /* Begin PBXFileReference section */
 		8F80669BB3B0472EA5336FD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7304360D95E42B8872FC721 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		AA5DDBE816C99E2E0055CBE0 /* Icon Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon Small.png"; path = "../../../Icon Small.png"; sourceTree = "<group>"; };
+		AA5DDBEA16C99E320055CBE0 /* Icon Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon Retina.png"; path = "../../../Icon Retina.png"; sourceTree = "<group>"; };
 		AA9EC4EC16825A460057CE7C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AA9EC4ED16825A460057CE7C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AA9EC4EE16825A460057CE7C /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -175,6 +177,8 @@
 		AA9EC50316825A460057CE7C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AA5DDBEA16C99E320055CBE0 /* Icon Retina.png */,
+				AA5DDBE816C99E2E0055CBE0 /* Icon Small.png */,
 				AA9EC50416825A460057CE7C /* Default-568h@2x.png */,
 				AA9EC50616825A460057CE7C /* mail icon retina.png */,
 				AA9EC50716825A460057CE7C /* mail icon.png */,
@@ -332,9 +336,9 @@
 				AA9EC52416825A460057CE7C /* InfoPlist.strings in Resources */,
 				AA9EC52516825A460057CE7C /* MainStoryboard.storyboard in Resources */,
 				AA9EC52A16825A460057CE7C /* Default-568h@2x.png in Resources */,
-				AA9EC52C16825A460057CE7C /* mail icon retina.png in Resources */,
-				AA9EC52D16825A460057CE7C /* mail icon.png in Resources */,
 				AA9EC52E16825A460057CE7C /* AirshipConfig.plist in Resources */,
+				AA5DDBEC16C99E8A0055CBE0 /* Icon Small.png in Resources */,
+				AA5DDBED16C99E8F0055CBE0 /* Icon Retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +467,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "notify/resources/other/notify-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/notify/resources/other/notify-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,7 +480,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "notify/resources/other/notify-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/notify/resources/other/notify-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

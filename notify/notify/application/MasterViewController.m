@@ -15,21 +15,20 @@
 #import "UAPush.h"
 
 @interface MasterViewController ()
+
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *loginButton;
+@property (nonatomic) BOOL pinValidated;
+@property (nonatomic, strong) User *loggedInUser;
+- (IBAction)login:(id)sender;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
-@implementation MasterViewController {
-    NSString *enteredUser;
-    NSString *enteredPin;
-}
+@implementation MasterViewController 
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
-
-@synthesize objectManager;
-@synthesize pinValidated;
-@synthesize loggedInUser;
-@synthesize loginButton;
-@synthesize urbanToken;
 
 - (void)awakeFromNib
 {
@@ -53,9 +52,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         if([[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED])
         {
             _fetchedResultsController = nil;
-            DDLogVerbose(@"Found saved pin");
-            self.loggedInUser =  [[User alloc] init];
-            [self.loggedInUser setUserAddress:[[NSUserDefaults standardUserDefaults] stringForKey:USERNAME]];
+            self.loggedInUser =  [User initWithName:[[NSUserDefaults standardUserDefaults] stringForKey:USERNAME]];
             self.loginButton.title = @"Logout";
         }
         else
@@ -78,24 +75,27 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
     [self refreshSetup];
     [self refreshScreen];
+    [self updateUrbanAlias];
     
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
-    [self setLoginButton:nil];
-    [super viewDidUnload];
+    DDLogVerbose(@"Received low memory warning");
+    [super didReceiveMemoryWarning];
+    
+    if ([self isViewLoaded] && self.view.window == nil) {
+        DDLogVerbose(@"will unload view");
+        self.view = nil;
+        self.fetchedResultsController = nil;
+        self.loggedInUser = nil;
+    }
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
-    
-//    if(self.loggedInUser==nil)
-//    {
-//        [self presentAlertViewForLogin];
-//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -117,7 +117,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
     return [sectionInfo numberOfObjects];
 }
 
@@ -213,6 +213,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             badgeCount++;
         }
     }
+    DDLogInfo(@"Badge count is %d", badgeCount);
     [UIApplication sharedApplication].applicationIconBadgeNumber = badgeCount;
 }
 
@@ -354,12 +355,15 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
         DDLogInfo(@"Pin is %@", fieldString);
         DDLogInfo(@"User is %@", [self.loggedInUser getUserAddress]);
-        NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:[self.loggedInUser getUserAddress], @"user",
-                                     fieldString, @"token",
-                                     nil];
+        NSDictionary *queryParams = @{@"user": [self.loggedInUser getUserAddress],
+                                     @"token": fieldString};
         NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
         DDLogVerbose(@"%@", resourcePath);
-        [objectManager loadObjectsAtResourcePath:resourcePath delegate:self];
+        [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+            loader.delegate = self;
+            loader.method = RKRequestMethodGET;
+            [loader setUserData:@"getNotifications"];
+        }];
     }
 }
 
@@ -376,7 +380,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     else{
 #if DEBUG
         DDLogVerbose(@"Fetch succesful");
-        id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:0];
+        id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][0];
         DDLogInfo(@"Number objects fetched: %d", [sectionInfo numberOfObjects]);
 #endif
     }
@@ -414,7 +418,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     DDLogInfo(@"User Data is %@", objectLoader.userData);
     if([objectLoader.userData isEqual: @"user"])
     {
-        self.loggedInUser = [objects objectAtIndex:0];
+        self.loggedInUser = objects[0];
         _fetchedResultsController = nil;
         [self refreshScreen];
     }
@@ -425,7 +429,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             NSLog(@"Subject: %@", [info subject]);
             [context deleteObject:info];
         }
+        //_fetchedResultsController = nil;
         [self refreshScreen];
+        //[self updateBadge];
+    }
+    else
+    {
+        [self updateBadge];
     }
 }
 
@@ -439,14 +449,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 -(void)deleteRemote:(Notification *)notification {
     DDLogVerbose(@"Notification for delete is %d", [notification.notifyId intValue]);
     DDLogVerbose(@"Contacting server to delete %@", notification.subject);
-    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                 notification.notifyId, @"id",
-                                 nil];
+    NSDictionary *queryParams = @{@"id": notification.notifyId};
     NSString *resourcePath = [NOTIFICATION_PATH stringByAppendingQueryParameters:queryParams];
     DDLogInfo(@"Resource path for delete is %@", resourcePath);
-    [objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
+    [self.objectManager loadObjectsAtResourcePath:resourcePath usingBlock:^(RKObjectLoader *loader) {
         loader.delegate = self;
         loader.method = RKRequestMethodDELETE;
+        [loader setUserData:@"singleDelete"];
     }];
     
 }
@@ -525,9 +534,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         {
             NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
         
-            NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                     [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
-                                     fieldString, @"token", @"deleteAll", @"type", nil];
+            NSDictionary *queryParams = @{@"user": [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME],
+                                     @"token": fieldString, @"type": @"deleteAll"};
         
             NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
             DDLogInfo(@"User create resource path: %@", resourcePath);
@@ -569,10 +577,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                 if ([KeychainWrapper compareKeychainValueForMatchingPIN:fieldHash]) { // Compare them
                     NSLog(@"** User Authenticated!!");
                     NSString *fieldString = [KeychainWrapper keychainStringFromMatchingIdentifier:PIN_SAVED];
-                    NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                 [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
-                                                 fieldString, @"token",
-                                                 nil];
+                    NSDictionary *queryParams = @{@"user": [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME],
+                                                 @"token": fieldString};
                     NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
                     DDLogInfo(@"User create resource path: %@", resourcePath);
                     
@@ -611,10 +617,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                 NSLog(@"** Password Hash - %@", fieldString);
                 // Save PIN hash to the keychain (NEVER store the direct PIN)
                 
-                NSDictionary *queryParams = [NSDictionary dictionaryWithObjectsAndKeys:
-                                             [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME], @"user",
-                                             fieldString, @"token",
-                                             nil];
+                NSDictionary *queryParams = @{@"user": [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME],
+                                             @"token": fieldString};
                 NSString *resourcePath = [USER_PATH stringByAppendingQueryParameters:queryParams];
                 DDLogInfo(@"User create resource path: %@", resourcePath);
                 
@@ -658,8 +662,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
 - (void)updateUrbanAlias
 {
-
-    // Sets the alias. It will be sent to the server on registration.
     
     NSString *yourAlias = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
     DDLogInfo(@"Updating urban airship token %@", yourAlias);
@@ -668,9 +670,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     {
         yourAlias = @"logged_out";
     }
+    else
+    {
+        [UAPush shared].alias = yourAlias;
+    }
     
     // Updates the device token and registers the token with UA
-    [[UAPush shared] registerDeviceToken:urbanToken];
+    [[UAPush shared] registerDeviceToken:self.urbanToken];
 }
 
 -(BOOL)canBecomeFirstResponder {

@@ -10,9 +10,9 @@
 
 @interface User : NSObject
 
-@property (nonatomic, retain) NSString * userAddress;
-
 -(NSString *)getUserAddress;
 -(void)setUserAddress:(NSString *)userAddress;
+- (id)initWithName:(NSString *)userAddress;
++ (id)initWithName:(NSString *)userAddress;
 
 @end

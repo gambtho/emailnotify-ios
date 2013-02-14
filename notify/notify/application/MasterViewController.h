@@ -10,18 +10,11 @@
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKObjectLoaderDelegate, UITextFieldDelegate, RKRequestDelegate, UIAlertViewDelegate>
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic, strong) NSFetchRequest *badgeFetchRequest;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) RKObjectManager *objectManager;
 @property (nonatomic, strong) NSData *urbanToken;
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 
-- (IBAction)login:(id)sender;
 -(void)refreshScreen;
 -(void)updateBadge;
-
-@property (nonatomic) BOOL pinValidated;
-@property (strong, nonatomic) User *loggedInUser;
 
 @end

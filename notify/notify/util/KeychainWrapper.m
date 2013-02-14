@@ -10,14 +10,14 @@
     // Setup dictionary to access keychain.
     NSMutableDictionary *searchDictionary = [[NSMutableDictionary alloc] init];
     // Specify we are using a password (rather than a certificate, internet password, etc).
-    [searchDictionary setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
+    searchDictionary[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
     // Uniquely identify this keychain accessor.
-    [searchDictionary setObject:APP_NAME forKey:(__bridge id)kSecAttrService];
+    searchDictionary[(__bridge id)kSecAttrService] = APP_NAME;
 	
     // Uniquely identify the account who will be accessing the keychain.
     NSData *encodedIdentifier = [identifier dataUsingEncoding:NSUTF8StringEncoding];
-    [searchDictionary setObject:encodedIdentifier forKey:(__bridge id)kSecAttrGeneric];
-    [searchDictionary setObject:encodedIdentifier forKey:(__bridge id)kSecAttrAccount];
+    searchDictionary[(__bridge id)kSecAttrGeneric] = encodedIdentifier;
+    searchDictionary[(__bridge id)kSecAttrAccount] = encodedIdentifier;
 	
     return searchDictionary;
 }
@@ -27,10 +27,10 @@
     
     NSMutableDictionary *searchDictionary = [self setupSearchDirectoryForIdentifier:identifier];
     // Limit search results to one.
-    [searchDictionary setObject:(__bridge id)kSecMatchLimitOne forKey:(__bridge id)kSecMatchLimit];
+    searchDictionary[(__bridge id)kSecMatchLimit] = (__bridge id)kSecMatchLimitOne;
 	
     // Specify we want NSData/CFData returned.
-    [searchDictionary setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge id)kSecReturnData];
+    searchDictionary[(__bridge id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
 	
     // Search.
     NSData *result = nil;
@@ -63,10 +63,10 @@
     
     NSMutableDictionary *dictionary = [self setupSearchDirectoryForIdentifier:identifier];
     NSData *valueData = [value dataUsingEncoding:NSUTF8StringEncoding];
-    [dictionary setObject:valueData forKey:(__bridge id)kSecValueData];
+    dictionary[(__bridge id)kSecValueData] = valueData;
     
     // Protect the keychain entry so it's only valid when the device is unlocked.
-    [dictionary setObject:(__bridge id)kSecAttrAccessibleWhenUnlocked forKey:(__bridge id)kSecAttrAccessible];
+    dictionary[(__bridge id)kSecAttrAccessible] = (__bridge id)kSecAttrAccessibleWhenUnlocked;
     
     // Add.
     OSStatus status = SecItemAdd((__bridge CFDictionaryRef)dictionary, NULL);
@@ -87,7 +87,7 @@
     NSMutableDictionary *searchDictionary = [self setupSearchDirectoryForIdentifier:identifier];
     NSMutableDictionary *updateDictionary = [[NSMutableDictionary alloc] init];
     NSData *valueData = [value dataUsingEncoding:NSUTF8StringEncoding];
-    [updateDictionary setObject:valueData forKey:(__bridge id)kSecValueData];
+    updateDictionary[(__bridge id)kSecValueData] = valueData;
 	
     // Update.
     OSStatus status = SecItemUpdate((__bridge CFDictionaryRef)searchDictionary,

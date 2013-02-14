@@ -10,16 +10,19 @@
 #import "UIViewController+DateString.h"
 
 @interface DetailViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *subjectLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fromAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sendDateLabel;
+@property (weak, nonatomic) IBOutlet UITextView *messageBodyText;
+
 - (void)configureView;
 @end
 
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
-@synthesize subjectLabel;
-@synthesize fromAddressLabel;
-@synthesize sendDateLabel;
-@synthesize messageBodyText;
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)setNotification:(Notification *)newNotifyItem
 {
@@ -51,15 +54,17 @@
     [self configureView];
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
-    [self setSubjectLabel:nil];
-    [self setFromAddressLabel:nil];
-    [self setSendDateLabel:nil];
-    [self setMessageBodyText:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    DDLogVerbose(@"Received low memory warning");
+    [super didReceiveMemoryWarning];
+    
+    if ([self isViewLoaded] && self.view.window == nil) {
+        DDLogVerbose(@"will unload view");
+        self.view = nil;
+    }
 }
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

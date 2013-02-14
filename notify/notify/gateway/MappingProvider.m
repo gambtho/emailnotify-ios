@@ -26,7 +26,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         
         [self setObjectMapping:[self notificationObjectMapping] forResourcePathPattern:NOTIFICATION_PATH withFetchRequestBlock:^NSFetchRequest *(NSString *resourcePath) {
             NSFetchRequest *fetchRequest = [Notification fetchRequest];
-            fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"sentDate" ascending:YES]];
+            fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"sentDate" ascending:YES]];
             return fetchRequest;
         }];
         
@@ -56,7 +56,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"EST"];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     
-    mapping.dateFormatters = [NSArray arrayWithObject: dateFormatter];
+    mapping.dateFormatters = @[dateFormatter];
     
     return mapping;
 }

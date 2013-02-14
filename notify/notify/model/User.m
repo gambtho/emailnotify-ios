@@ -8,20 +8,36 @@
 
 #import "User.h"
 
+@interface User ()
+
+@property (nonatomic, strong) NSString * userAddress;
+
+@end
+
 @implementation User
 
-@synthesize userAddress;
++(id)initWithName:(NSString *)userAddress
+{
+    return [[self alloc] initWithName:userAddress];
+}
 
-//TODO: Add init with address
+-(id)initWithName:(NSString *)userAddress
+{
+    if ((self = [super init]))
+    {
+        _userAddress = userAddress;
+    }
+    return self;
+}
 
 -(NSString *)getUserAddress;
 {
     return self.userAddress;
 }
 
--(void)setUserAddress:(NSString *)userAddress:(NSString *)address
+-(void)setUserAddress:(NSString *)userAddress
 {
-    self.userAddress = address;
+    _userAddress = userAddress;
 }
 
 @end
