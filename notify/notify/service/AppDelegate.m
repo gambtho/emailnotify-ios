@@ -42,8 +42,11 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     
     if( apsInfo[@"alert"] != NULL)
     {
-        // REACT TO PN IF APP WAS CLOSED
-        [controller updateBadge];
+        NSInteger badge = [[apsInfo objectForKey:@"badge"] integerValue];
+        if( [apsInfo objectForKey:@"alert"] != NULL)
+        {
+            application.applicationIconBadgeNumber = badge;
+        }
     }
 
     return YES;
@@ -106,8 +109,13 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         [self.controller refreshScreen];
     }
     else
-    {
-        [self.controller updateBadge];
+    {   
+        NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
+        NSInteger badge = [[apsInfo objectForKey:@"badge"] integerValue];
+        if( [apsInfo objectForKey:@"alert"] != NULL)
+        {
+            application.applicationIconBadgeNumber = badge;
+        }
     }
     
 }
