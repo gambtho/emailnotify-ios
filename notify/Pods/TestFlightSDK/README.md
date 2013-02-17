@@ -59,11 +59,10 @@ This SDK can be run from both the iPhone Simulator and Device and has been teste
             -(BOOL)application:(UIApplication *)application 
                 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
             // start of your application:didFinishLaunchingWithOptions 
-            // ...
-            #define TESTING 1
-            #ifdef TESTING
-                [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-            #endif
+
+            // !!!: Use the next line only during beta
+            // [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+            
             [TestFlight takeOff:@"Insert your Application Token here"];
             // The rest of your application:didFinishLaunchingWithOptions method
             // ...
@@ -81,12 +80,10 @@ This SDK can be run from both the iPhone Simulator and Device and has been teste
 
 In order to provide more information about your testers while beta testing you will need to provide the device's unique identifier. This identifier is not something that the SDK will collect from the device and we do not recommend using this in production. To send the device identifier to us put the following code **before your call to takeOff**.
 
-    #define TESTING 1
-    #ifdef TESTING
-        [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    #endif
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    [TestFlight takeOff:@"Insert your Application Token here"];
 
-This will allow you to have the best possible information during testing, but disable getting and sending of the device unique identifier when you release your application. When it is time to release simply comment out #define TESTING 1. If you decide to not include the device's unique identifier during your testing phase TestFlight will still collect all of the information that you send but it may be anonymized.
+This will allow you to have the best possible information during testing. **When it is time to submit to the App Store comment this line out**. Apple may reject your app if you leave this line in. If you decide to not include the device's unique identifier during your testing phase TestFlight will still collect all of the information that you send but it may be anonymized.
 
     
 ##Checkpoint API
@@ -197,13 +194,13 @@ We have implemented three different loggers.
 
 Each of the loggers log asynchronously and all TFLog calls are non blocking. The TestFlight logger writes its data to a file which is then sent to our servers on Session End events. The Apple System Logger sends its messages to the Apple System Log and are viewable using the Organizer in Xcode when the device is attached to your computer. The ASL logger can be disabled by turning it off in your TestFlight options
 
-    [TestFlight setOptions:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:@"logToConsole"]];
+    [TestFlight setOptions:{ TFOptionLogToConsole : @NO }];
 
 The default option is YES.
 
 The STDERR logger sends log messages to STDERR so that you can see your log statements while debugging. The STDERR logger is only active when a debugger is attached to your application. If you do not wish to use the STDERR logger you can disable it by turning it off in your TestFlight options
 
-    [TestFlight setOptions:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:@"logToSTDERR"]];
+    [TestFlight setOptions:{ TFOptionLogToSTDERR : @NO }];
 
 The default option is YES.
 

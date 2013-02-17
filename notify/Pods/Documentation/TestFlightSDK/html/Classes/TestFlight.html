@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">TestFlightSDK 1.2 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">TestFlightSDK 1.2.3.beta1 </a></h1>
 				<a id="developerHome" href="../index.html">TestFlight</a>
 			</div>
 			
@@ -201,18 +201,7 @@ feedback from custom feedback forms.</p></span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setDeviceIdentifier:">+&nbsp;setDeviceIdentifier:</a></code>
-		<span class="tooltip"><p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
-The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
-identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
-and logs, but the data will be anonymized.
-It is recommended that you only use this method during testing. We also recommended that you wrap this method with a pre-processor
-directive that is only active for non-app store builds.</p>
-
-<h1>ifndef RELEASE</h1>
-
-<p>[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];</p>
-
-<h1>endif</h1></span>
+		<span class="tooltip"><p>Sets the Device Identifier.</p></span>
 	</span>
 	
 	
@@ -388,18 +377,7 @@ If you want to track custom information such as a user name from your applicatio
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
-The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
-identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
-and logs, but the data will be anonymized.
-It is recommended that you only use this method during testing. We also recommended that you wrap this method with a pre-processor
-directive that is only active for non-app store builds.</p>
-
-<h1>ifndef RELEASE</h1>
-
-<p>[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];</p>
-
-<h1>endif</h1>
+		<p>Sets the Device Identifier.</p>
 	</div>		
 	
     
@@ -426,18 +404,22 @@ directive that is only active for non-app store builds.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Sets the Device Identifier. (<em> Must be called before <a href="#//api/name/takeOff:">takeOff:</a> </em>)
-The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
-identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
-and logs, but the data will be anonymized.
-It is recommended that you only use this method during testing. We also recommended that you wrap this method with a pre-processor
-directive that is only active for non-app store builds.</p>
+		<p>Sets the Device Identifier.</p>
 
-<h1>ifndef RELEASE</h1>
+<p>!! DO NOT CALL IN SUBMITTED APP STORE APP.</p>
 
-<p>[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];</p>
+<p>!! MUST BE CALLED BEFORE +takeOff:</p>
 
-<h1>endif</h1>
+<p>This method should only be used during testing so that you can identify a testers test data with them.
+If you do not provide the identifier you will still see all session data, with checkpoints
+and logs, but the data will be anonymized.</p>
+
+<p>It is recommended that you only use this method during testing.
+Apple may reject your app if left in a submitted app.</p>
+
+<p>Use:
+Only use this with the Apple device UDID. DO NOT use Open ID or your own identifier.
+[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];</p>
 	</div>
 	
 	
@@ -475,21 +457,7 @@ directive that is only active for non-app store builds.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
-			<dd><p>NSDictionary containing the options you want to set available options are described below</p>
-
-<p>Option                      Accepted Values                 Description
-reinstallCrashHandlers      [ NSNumber numberWithBool:YES ] Reinstalls crash handlers, to be used if a third party
-library installs crash handlers overtop of the TestFlight Crash Handlers
-logToConsole                [ NSNumber numberWithBool:YES ] YES &ndash; default, sends log statements to Apple System Log and TestFlight log
-NO  &ndash; sends log statements to TestFlight log only
-logToSTDERR                 [ NSNumber numberWithBool:YES ] YES &ndash; default, sends log statements to STDERR when debugger is attached
-NO  &ndash; sends log statements to TestFlight log only
-sendLogOnlyOnCrash          [ NSNumber numberWithBool:YES ] NO  &ndash; default, sends logs to TestFlight at the end of every session
-YES &ndash; sends logs statements to TestFlight only if there was a crash
-attachBacktraceToFeedback   [ NSNumber numberWithBool:YES ] NO  &ndash; default, feedback is sent exactly as the user enters it
-YES &ndash; attaches the current backtrace, with symbols, to the feedback.
-disableInAppUpdates         [ NSNumber numberWithBool:YES ] NO  &ndash; default, in application updates are allowed
-YES &ndash; the in application update screen will not be displayed</p></dd>
+			<dd><p>NSDictionary containing the options you want to set. Available options are described below at &ldquo;TestFlight Option Keys&rdquo;</p></dd>
 		</dl>
 		
 	</div>
@@ -640,7 +608,7 @@ selecting this application from the list then selecting SDK.</p></dd>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 TestFlight. All rights reserved. (Last updated: 2012-12-15)</span><br />
+						<p><span class="copyright">&copy; 2013 TestFlight. All rights reserved. (Last updated: 2013-02-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

@@ -4,14 +4,9 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParser</TokenIdentifier>
-			<Abstract type="html">@brief Parse a stream of JSON data.</Abstract>
+			<Abstract type="html">Parse a stream of JSON data.</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserAdapter</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="2"/>
 		</Token>
 		
@@ -62,7 +57,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setSupportMultipleDocuments:</TokenIdentifier>
-			<Abstract type="html">@brief Expect multiple documents separated by whitespace</Abstract>
+			<Abstract type="html">Expect multiple documents separated by whitespace</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL supportMultipleDocuments</Declaration>
@@ -73,7 +68,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/supportMultipleDocuments</TokenIdentifier>
-			<Abstract type="html">@brief Expect multiple documents separated by whitespace</Abstract>
+			<Abstract type="html">Expect multiple documents separated by whitespace</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL supportMultipleDocuments</Declaration>
@@ -84,7 +79,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setDelegate:</TokenIdentifier>
-			<Abstract type="html">@brief Delegate to receive messages</Abstract>
+			<Abstract type="html">Delegate to receive messages</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserDelegate&gt; delegate</Declaration>
@@ -95,7 +90,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/delegate</TokenIdentifier>
-			<Abstract type="html">@brief Delegate to receive messages</Abstract>
+			<Abstract type="html">Delegate to receive messages</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserDelegate&gt; delegate</Declaration>
@@ -106,7 +101,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setMaxDepth:</TokenIdentifier>
-			<Abstract type="html">@brief The max parse depth</Abstract>
+			<Abstract type="html">The max parse depth</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -117,7 +112,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/maxDepth</TokenIdentifier>
-			<Abstract type="html">@brief The max parse depth</Abstract>
+			<Abstract type="html">The max parse depth</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -150,7 +145,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/parse:</TokenIdentifier>
-			<Abstract type="html">@brief Parse some JSON</Abstract>
+			<Abstract type="html">Parse some JSON</Abstract>
 			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>			
 			
 			<Declaration>- (SBJsonStreamParserStatus)parse:(NSData *)data</Declaration>
@@ -160,9 +155,9 @@
 					<Abstract type="html">An NSData object containing the next chunk of JSON
 
 @return
-@li SBJsonStreamParserComplete if a full document was found
-@li SBJsonStreamParserWaitingForData if a partial document was found and more data is required to complete it
-@li SBJsonStreamParserError if an error occured. (See the error property for details in this case.)</Abstract>
+- SBJsonStreamParserComplete if a full document was found
+- SBJsonStreamParserWaitingForData if a partial document was found and more data is required to complete it
+- SBJsonStreamParserError if an error occured. (See the error property for details in this case.)</Abstract>
 				</Parameter>
 			</Parameters>
 			

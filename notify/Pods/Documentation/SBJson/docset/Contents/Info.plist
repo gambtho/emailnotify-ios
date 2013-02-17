@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocoapods.SBJson-3.1.1</string>
+	<string>org.cocoapods.SBJson-3.2</string>
 	<key>CFBundleName</key>
-	<string>SBJson 3.1.1 Documentation</string>
+	<string>SBJson 3.2 Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<string>This library implements strict JSON parsing and generation in Objective-C.</string>
 	
 	<key>DocSetFeedName</key>
-	<string>SBJson 3.1.1 Documentation</string>
+	<string>SBJson 3.2 Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>

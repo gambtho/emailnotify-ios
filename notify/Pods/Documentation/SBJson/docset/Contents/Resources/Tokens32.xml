@@ -13,7 +13,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(NSObject_SBJsonWriting)/JSONRepresentation</TokenIdentifier>
-			<Abstract type="html">@brief Encodes the receiver into a JSON string</Abstract>
+			<Abstract type="html">Encodes the receiver into a JSON string</Abstract>
 			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>			
 			
 			<Declaration>- (NSString *)JSONRepresentation</Declaration>

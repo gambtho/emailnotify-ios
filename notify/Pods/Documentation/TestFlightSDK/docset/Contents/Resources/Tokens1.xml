@@ -59,21 +59,7 @@ selecting this application from the list then selecting SDK.</Abstract>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
-					<Abstract type="html">NSDictionary containing the options you want to set available options are described below
-
-Option                      Accepted Values                 Description
-reinstallCrashHandlers      [ NSNumber numberWithBool:YES ] Reinstalls crash handlers, to be used if a third party
-library installs crash handlers overtop of the TestFlight Crash Handlers
-logToConsole                [ NSNumber numberWithBool:YES ] YES - default, sends log statements to Apple System Log and TestFlight log
-NO  - sends log statements to TestFlight log only
-logToSTDERR                 [ NSNumber numberWithBool:YES ] YES - default, sends log statements to STDERR when debugger is attached
-NO  - sends log statements to TestFlight log only
-sendLogOnlyOnCrash          [ NSNumber numberWithBool:YES ] NO  - default, sends logs to TestFlight at the end of every session
-YES - sends logs statements to TestFlight only if there was a crash
-attachBacktraceToFeedback   [ NSNumber numberWithBool:YES ] NO  - default, feedback is sent exactly as the user enters it
-YES - attaches the current backtrace, with symbols, to the feedback.
-disableInAppUpdates         [ NSNumber numberWithBool:YES ] NO  - default, in application updates are allowed
-YES - the in application update screen will not be displayed</Abstract>
+					<Abstract type="html">NSDictionary containing the options you want to set. Available options are described below at &quot;TestFlight Option Keys&quot;</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -126,15 +112,7 @@ feedback from custom feedback forms.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/TestFlight/setDeviceIdentifier:</TokenIdentifier>
-			<Abstract type="html">Sets the Device Identifier. ( Must be called before takeOff: )
-The SDK no longer obtains the device unique identifier. This method should only be used during testing so that you can
-identify a testers test data with them. If you do not provide the identifier you will still see all session data, with checkpoints
-and logs, but the data will be anonymized.
-It is recommended that you only use this method during testing. We also recommended that you wrap this method with a pre-processor
-directive that is only active for non-app store builds.
-#ifndef RELEASE
-[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-#endif</Abstract>
+			<Abstract type="html">Sets the Device Identifier.</Abstract>
 			<DeclaredIn>TestFlight.h</DeclaredIn>			
 			
 			<Declaration>+ (void)setDeviceIdentifier:(NSString *)deviceIdentifer</Declaration>

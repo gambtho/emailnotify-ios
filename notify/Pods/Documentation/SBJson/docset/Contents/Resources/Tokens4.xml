@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserAdapter</TokenIdentifier>
-			<Abstract type="html">@brief SBJsonStreamParserDelegate protocol adapter</Abstract>
+			<Abstract type="html">SBJsonStreamParserDelegate protocol adapter</Abstract>
 			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
 			
 			<NodeRef refid="4"/>
@@ -13,7 +13,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/setLevelsToSkip:</TokenIdentifier>
-			<Abstract type="html">@brief How many levels to skip</Abstract>
+			<Abstract type="html">How many levels to skip</Abstract>
 			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger levelsToSkip</Declaration>
@@ -24,7 +24,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAdapter/levelsToSkip</TokenIdentifier>
-			<Abstract type="html">@brief How many levels to skip</Abstract>
+			<Abstract type="html">How many levels to skip</Abstract>
 			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger levelsToSkip</Declaration>
@@ -35,7 +35,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/setDelegate:</TokenIdentifier>
-			<Abstract type="html">@brief Your delegate object
+			<Abstract type="html">Your delegate object
 Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.</Abstract>
 			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>			
 			
@@ -47,7 +47,7 @@ Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAdapter/delegate</TokenIdentifier>
-			<Abstract type="html">@brief Your delegate object
+			<Abstract type="html">Your delegate object
 Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.</Abstract>
 			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>			
 			

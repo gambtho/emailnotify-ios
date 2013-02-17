@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SBJsonParser</TokenIdentifier>
-			<Abstract type="html">@brief Parse JSON Strings and NSData objects</Abstract>
+			<Abstract type="html">Parse JSON Strings and NSData objects</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>
 			
 			<NodeRef refid="1"/>
@@ -13,7 +13,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/setMaxDepth:</TokenIdentifier>
-			<Abstract type="html">@brief The maximum recursing depth.</Abstract>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -24,7 +24,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonParser/maxDepth</TokenIdentifier>
-			<Abstract type="html">@brief The maximum recursing depth.</Abstract>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -35,7 +35,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/setError:</TokenIdentifier>
-			<Abstract type="html">@brief Description of parse error</Abstract>
+			<Abstract type="html">Description of parse error</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>@property (copy) NSString *error</Declaration>
@@ -46,7 +46,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonParser/error</TokenIdentifier>
-			<Abstract type="html">@brief Description of parse error</Abstract>
+			<Abstract type="html">Description of parse error</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>@property (copy) NSString *error</Declaration>
@@ -57,7 +57,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithData:</TokenIdentifier>
-			<Abstract type="html">@brief Return the object represented by the given NSData object.</Abstract>
+			<Abstract type="html">Return the object represented by the given NSData object.</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>- (id)objectWithData:(NSData *)data</Declaration>
@@ -73,7 +73,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithString:</TokenIdentifier>
-			<Abstract type="html">@brief Return the object represented by the given string</Abstract>
+			<Abstract type="html">Return the object represented by the given string</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>- (id)objectWithString:(NSString *)repr</Declaration>
@@ -84,7 +84,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithString:error:</TokenIdentifier>
-			<Abstract type="html">@brief Return the object represented by the given string</Abstract>
+			<Abstract type="html">Return the object represented by the given string</Abstract>
 			<DeclaredIn>SBJsonParser.h</DeclaredIn>			
 			
 			<Declaration>- (id)objectWithString:(NSString *)jsonText error:(NSError **)error</Declaration>

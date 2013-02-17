@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriter</TokenIdentifier>
-			<Abstract type="html">@brief The Stream Writer class.</Abstract>
+			<Abstract type="html">The Stream Writer class.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
@@ -57,7 +57,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriter/setDelegate:</TokenIdentifier>
-			<Abstract type="html">@brief delegate to receive JSON output
+			<Abstract type="html">delegate to receive JSON output
 Delegate that will receive messages with output.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
@@ -69,7 +69,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriter/delegate</TokenIdentifier>
-			<Abstract type="html">@brief delegate to receive JSON output
+			<Abstract type="html">delegate to receive JSON output
 Delegate that will receive messages with output.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
@@ -81,7 +81,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriter/setMaxDepth:</TokenIdentifier>
-			<Abstract type="html">@brief The maximum recursing depth.</Abstract>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -92,7 +92,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriter/maxDepth</TokenIdentifier>
-			<Abstract type="html">@brief The maximum recursing depth.</Abstract>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property NSUInteger maxDepth</Declaration>
@@ -103,7 +103,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriter/setHumanReadable:</TokenIdentifier>
-			<Abstract type="html">@brief Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<Abstract type="html">Whether we are generating human-readable (multiline) JSON.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL humanReadable</Declaration>
@@ -114,7 +114,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriter/humanReadable</TokenIdentifier>
-			<Abstract type="html">@brief Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<Abstract type="html">Whether we are generating human-readable (multiline) JSON.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL humanReadable</Declaration>
@@ -125,7 +125,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriter/setSortKeys:</TokenIdentifier>
-			<Abstract type="html">@brief Whether or not to sort the dictionary keys in the output.</Abstract>
+			<Abstract type="html">Whether or not to sort the dictionary keys in the output.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL sortKeys</Declaration>
@@ -136,7 +136,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriter/sortKeys</TokenIdentifier>
-			<Abstract type="html">@brief Whether or not to sort the dictionary keys in the output.</Abstract>
+			<Abstract type="html">Whether or not to sort the dictionary keys in the output.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property BOOL sortKeys</Declaration>
@@ -147,7 +147,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriter/setSortKeysComparator:</TokenIdentifier>
-			<Abstract type="html">@brief An optional comparator to be used if sortKeys is YES.</Abstract>
+			<Abstract type="html">An optional comparator to be used if sortKeys is YES.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property (copy) NSComparator sortKeysComparator</Declaration>
@@ -158,7 +158,7 @@ Delegate that will receive messages with output.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriter/sortKeysComparator</TokenIdentifier>
-			<Abstract type="html">@brief An optional comparator to be used if sortKeys is YES.</Abstract>
+			<Abstract type="html">An optional comparator to be used if sortKeys is YES.</Abstract>
 			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>			
 			
 			<Declaration>@property (copy) NSComparator sortKeysComparator</Declaration>

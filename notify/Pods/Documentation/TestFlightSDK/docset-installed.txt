@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/tng/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.TestFlightSDK-1.2.docset
-Time: 2012-12-15 12:02:11 +0000
+Path: /Users/tng/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.TestFlightSDK-1.2.3.beta1.docset
+Time: 2013-02-17 03:02:45 +0000

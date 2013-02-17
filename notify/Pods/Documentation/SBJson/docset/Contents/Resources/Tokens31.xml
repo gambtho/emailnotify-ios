@@ -13,7 +13,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSData_SBJsonParsing)/JSONValue</TokenIdentifier>
-			<Abstract type="html">@brief Decodes the receiver&apos;s JSON data</Abstract>
+			<Abstract type="html">Decodes the receiver&apos;s JSON data</Abstract>
 			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>			
 			
 			<Declaration>- (id)JSONValue</Declaration>
