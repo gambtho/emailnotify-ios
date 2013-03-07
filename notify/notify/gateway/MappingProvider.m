@@ -53,7 +53,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 
     NSDateFormatter* dateFormatter = [NSDateFormatter new];
     [dateFormatter  setDateFormat:@"MM dd, yy HH:mm:ss a"];
-    dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"EST"];
+    dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     
     mapping.dateFormatters = @[dateFormatter];

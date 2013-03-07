@@ -131,6 +131,7 @@
 - Login with the email address you wish to monitor for notifications
 - Do not use the password for your email account, use a password that you wish to use for this application
 - Setup a mail forward rule from that email address, sending emails that should generate notifications to notifyme@notifyweb.appspotmail.com (or to dontpersist@notifyweb.appspotmail.com if you don't want the messages saved on the server)
+- If notifications are not generating an alert, please logout of the application, restart your phone, then log back in
 
 </string>
                                         <attributes>
@@ -155,6 +156,7 @@
                                         <string key="content">
 
 - Notifications will be pushed as they arrive, if you have persisted them you can view the notification and the contents of the email within the application
+- All messages are deleted from the server within 48 hours
 - Read messages will have a green checkmark next to them
 - Pull down on the list of notifications to refresh
 - Swipe across a message to display the delete option

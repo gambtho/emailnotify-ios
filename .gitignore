@@ -7,6 +7,9 @@ notify/build/*
  
 # Exclude OS X folder attributes
 .DS_Store
+
+#exclude cocoapods
+notify/Pods/
  
 # Exclude user-specific XCode 3 and 4 files
 *.mode1
