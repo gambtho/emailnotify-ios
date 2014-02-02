@@ -1,91 +1,106 @@
+PODS:
+  - ASIHTTPRequest (1.8.1):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/S3
+    - Reachability
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/CloudFiles (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.1):
+    - Reachability
+  - cocoa-oauth (0.0.1):
+    - NSData+Base64 (~> 1.0)
+  - CocoaLumberjack (1.8.0):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.0)
+  - CocoaLumberjack/Extensions (1.8.0):
+    - CocoaLumberjack/Core
+  - FileMD5Hash (0.0.1)
+  - ISO8601DateFormatter (0.7)
+  - JSONKit (1.5pre)
+  - LibComponentLogging-Core (1.3.2)
+  - LibComponentLogging-NSLog (1.0.4):
+    - LibComponentLogging-Core (>= 1.1.6)
+  - LibComponentLogging-pods (0.0.1):
+    - LibComponentLogging-Core
+  - NSData+Base64 (1.0.0)
+  - Reachability (3.1.1)
+  - RestKit (0.10.3):
+    - RestKit/JSON
+  - RestKit/JSON (0.10.3):
+    - RestKit/Network
+    - RestKit/ObjectMapping
+    - RestKit/ObjectMapping/CoreData
+    - RestKit/ObjectMapping/JSON
+    - RestKit/UI
+  - RestKit/Network (0.10.3):
+    - cocoa-oauth
+    - FileMD5Hash
+    - LibComponentLogging-NSLog (>= 1.0.4)
+    - SOCKit
+  - RestKit/ObjectMapping (0.10.3):
+    - ISO8601DateFormatter (>= 0.6)
+    - RestKit/Network
+    - RestKit/ObjectMapping/Core
+    - RestKit/ObjectMapping/CoreData
+    - RestKit/ObjectMapping/JSON
+    - RestKit/ObjectMapping/XML
+  - RestKit/ObjectMapping/Core (0.10.3):
+    - ISO8601DateFormatter (>= 0.6)
+    - RestKit/Network
+  - RestKit/ObjectMapping/CoreData (0.10.3):
+    - ISO8601DateFormatter (>= 0.6)
+    - RestKit/Network
+    - RestKit/ObjectMapping/Core
+  - RestKit/ObjectMapping/JSON (0.10.3):
+    - ISO8601DateFormatter (>= 0.6)
+    - JSONKit (>= 1.5pre)
+    - RestKit/Network
+    - RestKit/ObjectMapping/Core
+  - RestKit/ObjectMapping/XML (0.10.3):
+    - ISO8601DateFormatter (>= 0.6)
+    - RestKit/Network
+    - RestKit/ObjectMapping/Core
+    - XMLReader
+  - RestKit/UI (0.10.3)
+  - SBJson (4.0.0)
+  - SOCKit (1.1)
+  - TestFlightSDK (1.3.0-beta.7)
+  - UrbanAirship-iOS-SDK (1.3.7):
+    - ASIHTTPRequest
+    - Reachability
+    - SBJson
+    - ZipArchive
+  - XMLReader (0.0.2)
+  - ZipArchive (1.2.0)
 
-DEPENDENCIES: 
-- CocoaLumberjack (~> 1.6)
-- LibComponentLogging-pods
-- RestKit (~> 0.10.3)
-- TestFlightSDK (~> 1.1)
-- UrbanAirship-iOS-SDK (~> 1.3.1)
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.6)
+  - LibComponentLogging-pods
+  - RestKit (~> 0.10.3)
+  - TestFlightSDK (~> 1.1)
+  - UrbanAirship-iOS-SDK (~> 1.3.1)
 
-COCOAPODS: 0.16.4
-
-SPEC CHECKSUMS: 
-  RestKit/UI: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  RestKit/Network: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  UrbanAirship-iOS-SDK: e682c0ca268005f451f5c5446576afb7b66bfd80
-  RestKit/ObjectMapping/JSON: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  RestKit/JSON: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  SBJson: 4971016670e7b3fa04a36d4e72ab0fb1ad3a9f69
-  ASIHTTPRequest/ASIWebPageRequest: e606d2df58b0aace6c1cf1d39a08d3484f91324a
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 162783e0cd71bdd3ff1ceed0cd5fa9505e0116a8
   cocoa-oauth: 8f4c8b77c77ac660de37f8125557c4ec09b0118a
-  ASIHTTPRequest: e606d2df58b0aace6c1cf1d39a08d3484f91324a
-  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
-  NSData+Base64: 8b910cb8a64f45daec6fb15936c36a9a911c57ca
-  LibComponentLogging-Core: 344f6045453ca28fa8f2909eb9624ec9d15ef256
-  ZipArchive: 1a98724ab6c80f6bb1bde02f831589b73062e91d
-  TestFlightSDK: aeec97fd81096753d53b942f030a443520a087f4
-  LibComponentLogging-NSLog: a4bb0f6de612eef7b5fcdbd9cc96dc868ba1f2df
+  CocoaLumberjack: 6ed94046d2ca7fde03a73b3d01b8cfc56574b314
   FileMD5Hash: c3b015e6fb293eea0a0c276747f61f20408c2644
-  SOCKit: ed67aeeca4a697b63a933229e53f4670d5b9300f
-  JSONKit: 3d4708953ea7ae399a49777372d8b060a43ddd27
-  ISO8601DateFormatter: dc05a2481edf49668d85d3ff8c466c32eb544780
-  CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
-  RestKit/ObjectMapping/CoreData: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  LibComponentLogging-pods: 1d12de9ecebbab0ec5be2c63f6ab1cf30a5f1f27
-  ASIHTTPRequest/S3: e606d2df58b0aace6c1cf1d39a08d3484f91324a
-  RestKit: 1fb57eb941d7d2587648491507a0bcaeb70b67f2
-  ASIHTTPRequest/CloudFiles: e606d2df58b0aace6c1cf1d39a08d3484f91324a
+  ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
+  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
+  LibComponentLogging-Core: f86c1221a20106257dbac29fb638711f1e9c11cd
+  LibComponentLogging-NSLog: a4bb0f6de612eef7b5fcdbd9cc96dc868ba1f2df
+  LibComponentLogging-pods: 9dd0aa1e093b46af59136767ceb55b19eedac5f9
+  NSData+Base64: 4819562faee4544e3cf5703f2139820b09732b28
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  RestKit: 90469f1fb221423f7c2215e7bc1cc1ad134489b9
+  SBJson: f3c686806e8e36ab89e020189ac582ba26ec4220
+  SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581
+  TestFlightSDK: 3af0a385405725e36452a35ef63ba8b3f2ef3ffc
+  UrbanAirship-iOS-SDK: cb5454ecdf68b06b52a35101618327d3f1c6a45a
+  XMLReader: d8a522b0362140b328bcaec7f289ff4ffffebf29
+  ZipArchive: 93bff5d8b435767ccfac976ed08ca611d950d3d0
 
-PODS: 
-- ASIHTTPRequest (1.8.1): 
-  - ASIHTTPRequest/ASIWebPageRequest (= 1.8.1)
-  - ASIHTTPRequest/CloudFiles (= 1.8.1)
-  - ASIHTTPRequest/S3 (= 1.8.1)
-  - Reachability
-- ASIHTTPRequest/ASIWebPageRequest (1.8.1): 
-  - Reachability
-- ASIHTTPRequest/CloudFiles (1.8.1): 
-  - Reachability
-- ASIHTTPRequest/S3 (1.8.1): 
-  - Reachability
-- CocoaLumberjack (1.6)
-- FileMD5Hash (0.0.1)
-- ISO8601DateFormatter (0.6)
-- JSONKit (1.5pre)
-- LibComponentLogging-Core (1.3.1)
-- LibComponentLogging-NSLog (1.0.4): 
-  - LibComponentLogging-Core (>= 1.1.6)
-- LibComponentLogging-pods (0.0.1): 
-  - LibComponentLogging-Core
-- NSData+Base64 (1.0.0)
-- Reachability (3.1.0)
-- RestKit (0.10.3): 
-  - RestKit/JSON (= 0.10.3)
-- RestKit/JSON (0.10.3): 
-  - RestKit/Network
-  - RestKit/ObjectMapping/CoreData
-  - RestKit/ObjectMapping/JSON
-  - RestKit/UI
-- RestKit/Network (0.10.3): 
-  - FileMD5Hash
-  - LibComponentLogging-NSLog (>= 1.0.4)
-  - SOCKit
-  - cocoa-oauth
-- RestKit/ObjectMapping/CoreData (0.10.3): 
-  - ISO8601DateFormatter (>= 0.6)
-  - RestKit/Network
-- RestKit/ObjectMapping/JSON (0.10.3): 
-  - ISO8601DateFormatter (>= 0.6)
-  - JSONKit (>= 1.5pre)
-  - RestKit/Network
-- RestKit/UI (0.10.3)
-- SBJson (3.2)
-- SOCKit (1.1)
-- TestFlightSDK (1.2.4.beta)
-- UrbanAirship-iOS-SDK (1.3.7): 
-  - ASIHTTPRequest
-  - Reachability
-  - SBJson
-  - ZipArchive
-- ZipArchive (1.01h)
-- cocoa-oauth (0.0.1): 
-  - NSData+Base64 (~> 1.0)
+COCOAPODS: 0.29.0
